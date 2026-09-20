@@ -1,0 +1,103 @@
+{
+  "created_utc": "2026-09-20T03:20:08+00:00",
+  "dataset_version": "HTT-P1-AACT-20260905",
+  "model_version": "HTT-TEMPORAL-LR-v1",
+  "model_type": "StandardScaler + LogisticRegression",
+  "predictors": [
+    "submission_year"
+  ],
+  "class_weight": null,
+  "release_status": "FAIL",
+  "computational_integrity_checks": {
+    "predictor_exactly_submission_year": true,
+    "development_rows_1904": true,
+    "validation_rows_464": true,
+    "final_labels_masked": true,
+    "preprocessor_fit_on_development_only": true,
+    "probabilities_finite": true,
+    "probabilities_in_unit_interval": true,
+    "validation_has_both_classes": true
+  },
+  "basic_evaluation_checks": {
+    "auroc_at_least_random_ranking": false,
+    "auprc_at_least_validation_prevalence": false
+  },
+  "splits": {
+    "development": {
+      "rows": 1904,
+      "discontinued": 399
+    },
+    "validation": {
+      "rows": 464,
+      "discontinued": 108
+    },
+    "final_test": {
+      "rows": 456,
+      "labels_used": false,
+      "evaluated": false
+    }
+  },
+  "validation_metrics": {
+    "auprc": 0.228136,
+    "auroc": 0.484108,
+    "brier_score": 0.178645,
+    "prevalence_no_skill_auprc": 0.232759,
+    "validation_derived_f1_threshold": 0.226552,
+    "precision_at_threshold": 0.232759,
+    "recall_at_threshold": 1.0,
+    "f1_at_threshold": 0.377622
+  },
+  "bootstrap_95_percent_intervals": {
+    "auprc": [
+      0.187903,
+      0.276328
+    ],
+    "auroc": [
+      0.427895,
+      0.539002
+    ],
+    "brier_score": [
+      0.158612,
+      0.199712
+    ]
+  },
+  "validation_metrics_by_submission_year": {
+    "2018": {
+      "rows": 184,
+      "discontinued": 46,
+      "prevalence": 0.25,
+      "auprc": 0.25,
+      "brier_score": 0.18805,
+      "auroc": 0.5
+    },
+    "2019": {
+      "rows": 135,
+      "discontinued": 29,
+      "prevalence": 0.214815,
+      "auprc": 0.214815,
+      "brier_score": 0.168875,
+      "auroc": 0.5
+    },
+    "2020": {
+      "rows": 145,
+      "discontinued": 33,
+      "prevalence": 0.227586,
+      "auprc": 0.227586,
+      "brier_score": 0.175808,
+      "auroc": 0.5
+    }
+  },
+  "fitted_parameters_on_standardized_year": {
+    "coefficient": 0.06069681785447192,
+    "intercept": -1.3285261101229313,
+    "development_year_mean": 2011.1817226890757,
+    "development_year_scale": 4.112080222348711
+  },
+  "limitations": [
+    "Submission year is the only predictor.",
+    "The model cannot represent trial design, enrollment, sponsor, clinical, or operational factors.",
+    "Association with calendar time is not causal.",
+    "The final-test split has not been evaluated.",
+    "This is a technical proof of concept, not a clinically validated prediction system."
+  ]
+}

@@ -1,0 +1,27 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/
+*.log
+
+# Local build and validation workspaces
+.codex-finalizer/
+.pptx_build/
+.pptx_render*/
+
+# Original course materials and prior-stage working data are preserved locally
+# but are not required to run the Challenge 2 submission.
+Capstone Project - Obed.pptx
+Milestone_3_ Project Presentation-Obed.pptx
+Obed_*.pdf
+HeartTrialTwin_Heart_Failure_Cohort*.ipynb
+week 2/
+week 3/
+week 4/
+step2_reconciliation/
+document_discovery/
+
+# One-off local screenshot automation; captured evidence is retained.
+p1_app/capture_app_screenshots.mjs

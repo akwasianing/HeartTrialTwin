@@ -1,0 +1,20 @@
+{
+  "pilot_id": "HTT-HISTORY-RETRIEVAL-PILOT-20260919",
+  "created_at_utc": "2026-09-20T03:10:59.335579+00:00",
+  "parent_dataset_version": "HTT-P1-AACT-20260905",
+  "manifest_path": "step3_manifest/HeartTrialTwin_first_p1_cohort_manifest_HTT-P1-AACT-20260905.csv",
+  "manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+  "selection_used_outcome_labels": false,
+  "selection_seed": "HTT-HISTORY-PILOT-20260919",
+  "selection_method": "four earliest 1999-2004 development records; lowest salted SHA-256 NCT IDs within two modern development strata and validation",
+  "attempted": 18,
+  "public_history_page_http_200": 18,
+  "programmatic_records_retrieved": 0,
+  "historically_eligible": 0,
+  "known_internal_history_endpoint_result": "HTTP 403; not retried and no bypass attempted",
+  "notes": [
+    "The official browser UI can render history records, but the public HTML response contains only the client application shell.",
+    "Response hashes in pilot_attempts.csv hash the HTML shell and are not historical-record content hashes.",
+    "No current-snapshot value was substituted for a missing historical value."
+  ]
+}

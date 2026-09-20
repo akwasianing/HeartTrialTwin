@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-20T14:09:48+00:00",
+  "dataset_version": "HTT-P1-AACT-20260905",
+  "manifest_path": "step3_manifest/HeartTrialTwin_first_p1_cohort_manifest_HTT-P1-AACT-20260905.csv",
+  "manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+  "approved_predictors": [
+    "submission_year"
+  ],
+  "rows": 2824,
+  "split_rows": {
+    "development": 1904,
+    "final_test": 456,
+    "validation": 464
+  },
+  "final_test_labels_masked": true,
+  "validation_checks": {
+    "row_count_2824": true,
+    "unique_nct_ids_2824": true,
+    "no_missing_nct_id": true,
+    "no_missing_submission_date": true,
+    "no_missing_submission_year": true,
+    "year_matches_date": true,
+    "expected_temporal_groups": true,
+    "dataset_version_exact": true
+  },
+  "excluded_current_snapshot_features": [
+    "phase",
+    "enrollment",
+    "start_date",
+    "brief_title",
+    "sponsor",
+    "study_design",
+    "eligibility"
+  ]
+}

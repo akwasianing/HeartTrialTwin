@@ -1,0 +1,22 @@
+{
+  "model_version": "HTT-TEMPORAL-LR-v1",
+  "dataset_version": "HTT-P1-AACT-20260905",
+  "intended_use": "Temporal baseline / technical proof of concept",
+  "not_intended_for": "Clinical decisions or multifeature risk assessment",
+  "predictors": [
+    "submission_year"
+  ],
+  "training_split": "development (1999-2017)",
+  "validation_split": "validation (2018-2020)",
+  "final_test_status": "locked and not evaluated",
+  "release_status": "FAIL",
+  "training_ids_sha256": "a1dad8f54dcdfd4c6590a8e3c0b2386b31c84ac138f8cbfde5372c2888a12b80",
+  "validation_ids_sha256": "fad89e11bc4dc8cbaa3ae3258a9615b855d6ee70a1639708e08665d364bdbafa",
+  "limitations": [
+    "Submission year is the only predictor.",
+    "The model cannot represent trial design, enrollment, sponsor, clinical, or operational factors.",
+    "Association with calendar time is not causal.",
+    "The final-test split has not been evaluated.",
+    "This is a technical proof of concept, not a clinically validated prediction system."
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "dataset_version": "HTT-P1-AACT-20260905",
+  "created_utc": "2026-09-16T03:26:49+00:00",
+  "manifest": {
+    "path": "HeartTrialTwin_first_p1_cohort_manifest_HTT-P1-AACT-20260905.csv",
+    "sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+    "rows": 2824,
+    "unique_nct_ids": 2824
+  },
+  "source": {
+    "aact_snapshot_date": "2026-09-05",
+    "aact_snapshot_file": "20260905_export_ctgov.zip",
+    "step2_artifact": "step2_reconciliation/HeartTrialTwin_step2_cohort_reconciliation.csv",
+    "step2_artifact_sha256": "5a254575d8d5276d1176b53b38dad6600b46d6732441698e8e14668699d8ac43"
+  },
+  "generation_code": {
+    "path": "build_and_validate_manifest.py",
+    "sha256": "ff3352d4cabe0ee41c37a7f2ff62faf268a7dbb079860499ffa42148c2be7855"
+  },
+  "counts_by_temporal_group_and_outcome": {
+    "development": {
+      "total": 1904,
+      "completed": 1505,
+      "terminated": 281,
+      "withdrawn": 118,
+      "discontinued": 399
+    },
+    "validation": {
+      "total": 464,
+      "completed": 356,
+      "terminated": 66,
+      "withdrawn": 42,
+      "discontinued": 108
+    },
+    "final_test": {
+      "total": 456,
+      "completed": 376,
+      "terminated": 46,
+      "withdrawn": 34,
+      "discontinued": 80
+    }
+  },
+  "overall_outcomes": {
+    "completed": 2237,
+    "terminated": 393,
+    "withdrawn": 194,
+    "discontinued": 587
+  },
+  "validation_checks": [
+    {
+      "check": "exactly_2824_rows",
+      "passed": true,
+      "observed": 2824,
+      "expected": 2824
+    },
+    {
+      "check": "one_row_per_nct_id",
+      "passed": true,
+      "observed": 2824,
+      "expected": 2824
+    },
+    {
+      "check": "no_duplicate_nct_ids",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "no_missing_nct_ids",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "no_missing_or_invalid_submission_dates_years",
+      "passed": true,
+      "observed": {
+        "missing": [],
+        "invalid_or_year_mismatch": []
+      },
+      "expected": {
+        "missing": [],
+        "invalid_or_year_mismatch": []
+      }
+    },
+    {
+      "check": "only_permitted_statuses",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "target_agrees_with_status",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "development_count",
+      "passed": true,
+      "observed": 1904,
+      "expected": 1904
+    },
+    {
+      "check": "validation_count",
+      "passed": true,
+      "observed": 464,
+      "expected": 464
+    },
+    {
+      "check": "final_test_count",
+      "passed": true,
+      "observed": 456,
+      "expected": 456
+    },
+    {
+      "check": "total_discontinued",
+      "passed": true,
+      "observed": 587,
+      "expected": 587
+    },
+    {
+      "check": "no_nct_in_multiple_groups",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "no_2025_2026_trials",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "year_to_temporal_group_mapping",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "group_counts_match_expected",
+      "passed": true,
+      "observed": {
+        "development": 1904,
+        "validation": 464,
+        "final_test": 456
+      },
+      "expected": {
+        "development": 1904,
+        "validation": 464,
+        "final_test": 456
+      }
+    },
+    {
+      "check": "group_outcome_counts_match_expected",
+      "passed": true,
+      "observed": {
+        "development": {
+          "total": 1904,
+          "completed": 1505,
+          "terminated": 281,
+          "withdrawn": 118,
+          "discontinued": 399
+        },
+        "validation": {
+          "total": 464,
+          "completed": 356,
+          "terminated": 66,
+          "withdrawn": 42,
+          "discontinued": 108
+        },
+        "final_test": {
+          "total": 456,
+          "completed": 376,
+          "terminated": 46,
+          "withdrawn": 34,
+          "discontinued": 80
+        }
+      },
+      "expected": {
+        "development": {
+          "total": 1904,
+          "completed": 1505,
+          "terminated": 281,
+          "withdrawn": 118,
+          "discontinued": 399
+        },
+        "validation": {
+          "total": 464,
+          "completed": 356,
+          "terminated": 66,
+          "withdrawn": 42,
+          "discontinued": 108
+        },
+        "final_test": {
+          "total": 456,
+          "completed": 376,
+          "terminated": 46,
+          "withdrawn": 34,
+          "discontinued": 80
+        }
+      }
+    }
+  ],
+  "all_checks_passed": true
+}

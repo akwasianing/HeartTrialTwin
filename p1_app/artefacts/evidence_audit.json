@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-09-20T03:20:23+00:00",
+  "records": 2824,
+  "exact_nct_ids": 2824,
+  "source_file": "step3_manifest/HeartTrialTwin_first_p1_cohort_manifest_HTT-P1-AACT-20260905.csv",
+  "source_file_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+  "fields_included": [
+    "nct_id",
+    "study_first_submitted_date",
+    "submission_year",
+    "temporal_group",
+    "dataset_version",
+    "aact_snapshot_date",
+    "aact_snapshot_file",
+    "source_file",
+    "source_file_sha256",
+    "source_field",
+    "derived_predictor",
+    "model_version",
+    "prediction_point",
+    "historical_data_limitation"
+  ],
+  "outcome_fields_included": false,
+  "network_access_used": false
+}

@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-20T03:20:21+00:00",
+  "model_version": "HTT-TEMPORAL-LR-v1",
+  "explainer": "shap.LinearExplainer",
+  "explained_output": "LogisticRegression decision_function (log-odds)",
+  "feature": "submission_year",
+  "rows": 2824,
+  "additivity_equation": "base_log_odds + submission_year_SHAP = model_decision_log_odds",
+  "additivity_tolerance": 1e-08,
+  "maximum_absolute_additivity_error": 2.220446049250313e-16,
+  "shap_enabled": true,
+  "probability_source": "pipeline.predict_proba",
+  "final_test_outcomes_accessed": false
+}
