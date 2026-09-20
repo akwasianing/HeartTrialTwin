@@ -1,16 +1,34 @@
-# HeartTrialTwin — Temporal Baseline / Technical Proof of Concept
+# HeartTrialTwin — Challenge 2
 
-HeartTrialTwin is a CS 5588 Challenge 2 prototype exploring three P1 mechanics:
+Repository: <https://github.com/akwasianing/HeartTrialTwin>
 
-1. Estimate heart-failure trial discontinuation risk.
-2. Attribute the model score with SHAP.
-3. Ground an explanation in exact-NCT project evidence and collect human review.
+## Working Human–AI task
 
-## Current checkpoint: safe failure
+**Model-release readiness review for a selected clinical trial.**
 
-The historically verified multifeature model was deferred because the approved retrieval pilot could not obtain initial ClinicalTrials.gov records programmatically at scale. A one-predictor Logistic Regression baseline was then trained using only verified `submission_year`.
+The implemented workflow is:
 
-That baseline **failed its predeclared validation release checks**:
+> Human selects an NCT ID → application retrieves exact-record provenance → checks model validation and release status → displays a grounded release-readiness result and uncertainty → human accepts, rejects, or requests revision.
+
+This task is narrower than the planned HeartTrialTwin P1 capability. The application does not perform clinical risk prediction, trial-design analysis, runtime RAG, or LLM-generated explanation.
+
+## What the application does
+
+For an eligible NCT ID, the Streamlit application displays:
+
+- frozen-cohort membership and exact registration-submission provenance;
+- the model release status and actual validation metrics;
+- bootstrap uncertainty intervals and historical-data limitations;
+- a deterministic explanation of why the risk output is blocked; and
+- accept, reject, and revision controls for human review.
+
+The review log is session-only. A reviewer must download it before reloading or closing the browser.
+
+## AI capability and release decision
+
+A Logistic Regression baseline was trained on the 1999–2017 development group using only the verified `submission_year` predictor. It was evaluated on the 2018–2020 validation group. SHAP calculations were also checked for numerical additivity on the log-odds scale.
+
+The model was **trained and evaluated but rejected for operational release**:
 
 | Validation measure | Result |
 |---|---:|
@@ -19,62 +37,79 @@ That baseline **failed its predeclared validation release checks**:
 | AUROC | 0.484108 |
 | Brier score | 0.178645 |
 
-Because AUPRC was below prevalence and AUROC was below 0.5, the Streamlit application blocks the selected-trial probability, SHAP attribution, and risk explanation. It instead demonstrates exact-NCT provenance, a grounded safety explanation, and functional accept/reject/revision review. This is not a clinically validated system.
+Because AUPRC was below prevalence and AUROC was below 0.5, the application blocks the selected-trial probability, SHAP attribution, and risk explanation. The visible output is a deterministic release-readiness explanation grounded in the stored validation metrics and selected trial's verified provenance. It is not an LLM-generated explanation or a clinically validated prediction.
 
-The final-test split (2021–2024) remains locked and was not evaluated.
+The 2021–2024 final-test group remains locked and was not evaluated.
 
-## Data and splits
+## Data
 
 - Dataset version: `HTT-P1-AACT-20260905`
-- Frozen cohort: 2,824 trials
+- Frozen AACT cohort: 2,824 trials
 - Development: 1,904 trials, 1999–2017
 - Validation: 464 trials, 2018–2020
 - Final test: 456 trials, 2021–2024, labels masked in derived features
-- Sole predictor: `submission_year`
+- Sole model predictor: `submission_year`
 
-See [DATA.md](DATA.md) and [p1_app/feature_audit.md](p1_app/feature_audit.md).
+See [DATA.md](DATA.md) and [p1_app/feature_audit.md](p1_app/feature_audit.md) for provenance, leakage controls, and historical-data limitations.
 
-## Run locally
+## Fresh-clone setup
 
-Use the existing project environment:
+Python 3.12 is required for this reproducible setup because the committed model artifact was created and tested with Python 3.12 and the pinned packages in `requirements.txt`.
 
-```bash
-.venv/bin/python -m pytest p1_app/tests/test_p1.py -v
-.venv/bin/streamlit run p1_app/app.py
-```
-
-To reproduce the already completed pipeline in order:
+### macOS or Linux
 
 ```bash
-.venv/bin/python p1_app/feature_build.py
-.venv/bin/python p1_app/train_model.py
-.venv/bin/python p1_app/score_all.py
-.venv/bin/python p1_app/evidence_fetch.py
+git clone https://github.com/akwasianing/HeartTrialTwin.git
+cd HeartTrialTwin
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+streamlit run p1_app/app.py
 ```
 
-`train_model.py` reads development and validation rows only. It checks that final-test labels are masked and does not evaluate them.
+### Windows PowerShell
 
-## SHAP integrity
-
-`shap.LinearExplainer` was applied to the fitted Logistic Regression on the standardized submission year. The maximum observed error in
-
-```text
-base log-odds + submission-year SHAP = model decision log-odds
+```powershell
+git clone https://github.com/akwasianing/HeartTrialTwin.git
+cd HeartTrialTwin
+py -3.12 -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+streamlit run p1_app/app.py
 ```
 
-was `2.220446049250313e-16`, below the `1e-8` tolerance. Although the calculation is internally consistent, the app does not display trial-level SHAP because the model failed validation release checks.
+Keep the Streamlit server running and open `http://localhost:8501` in a browser. Streamlit will report a different URL if port 8501 is unavailable.
+
+Run the tests after activating the environment:
+
+```bash
+python -m pytest p1_app/tests/test_p1.py -v
+```
+
+The application runs from the committed artifacts. Retraining is not required for the Challenge 2 demonstration.
+
+## Agentic AI implementation and human oversight
+
+Codex served as the agentic AI implementation partner. Its documented contributions included repository and data audits, scoped code implementation, debugging, automated test execution, provenance checks, Streamlit workflow verification, screenshot capture, presentation preparation, and Git publication preparation.
+
+Human oversight controlled the work. The project owner reviewed and approved the task scope, methodological constraints, frozen cohort, validation evidence, blocked-output policy, test evidence, and GitHub publication. This statement does not claim that the project owner performed a line-by-line code review.
+
+No autonomous agent, LLM, or RAG system runs inside the Streamlit application.
 
 ## Tests
 
-Eight tests cover valid and invalid NCT lookup, split integrity, probability consistency, application blocking, SHAP additivity, provenance, explanation safety, missing evidence, and human revision. Current result: **8 passed, 0 failed, 0 skipped**.
+Eight tests cover valid and invalid NCT lookup, split integrity, probability consistency, application blocking, SHAP additivity, provenance, explanation safety, missing evidence, and functional revision. Current result: **8 passed, 0 failed, 0 skipped**.
 
 See [p1_app/TEST_RESULTS.md](p1_app/TEST_RESULTS.md).
 
-## Limitations
+## What remains to be developed
 
-- Submission year alone did not generalize adequately to the later validation period.
-- Calendar year is not a causal or clinical risk factor.
-- The prototype cannot assess design, enrollment, sponsor, operational, or clinical factors.
-- Historical multifeature records were unavailable through an approved scalable retrieval method.
-- No LLM, RAG, vector database, agent, PDF model, or multimodal model is used.
-- No repository has been pushed to GitHub at this checkpoint.
+- Obtain scalable, verified registration-time predictors beyond submission year.
+- Train and validate a useful multifeature discontinuation-risk model.
+- Release probability and SHAP output only after defensible validation.
+- Build a grounded risk explanation from verified trial evidence.
+- Add durable review storage if the application moves beyond a local demonstration.
+
+Submission year alone did not generalize to the later validation period and does not represent clinical, design, enrollment, sponsor, or operational factors.

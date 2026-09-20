@@ -18,7 +18,11 @@ from core import (
 from explain import generate_explanation, generate_failure_explanation
 
 
-st.set_page_config(page_title="HeartTrialTwin Temporal Baseline", page_icon="🫀", layout="wide")
+st.set_page_config(
+    page_title="HeartTrialTwin Model-Release Readiness Review",
+    page_icon="🫀",
+    layout="wide",
+)
 
 
 @st.cache_data
@@ -51,6 +55,10 @@ def render_review(
     revision_factory: Callable[[str], dict],
 ) -> None:
     st.markdown("### Human review")
+    st.warning(
+        "The reviewer audit log is session-only. Download the log before reloading or "
+        "closing the browser if you need to preserve it."
+    )
     action_label = st.radio(
         "Review decision",
         ["Accept", "Reject", "Request revision"],
@@ -86,7 +94,7 @@ def render_review(
             st.success(f"Review recorded: {action}.")
 
     if st.session_state.review_log:
-        with st.expander("Reviewer audit log"):
+        with st.expander("Reviewer audit log (session-only)"):
             st.json(st.session_state.review_log)
             st.download_button(
                 "Download review log",
@@ -97,11 +105,15 @@ def render_review(
 
 
 def main() -> None:
-    st.title("HeartTrialTwin — Temporal Baseline")
-    st.subheader("Technical Proof of Concept")
+    st.title("HeartTrialTwin")
+    st.subheader("Model-release readiness review for a selected clinical trial.")
+    st.caption(
+        "Human selects an NCT ID → exact-record provenance → model validation and "
+        "release check → grounded readiness result → human review."
+    )
     st.warning(
-        "This is a one-predictor mechanics demonstration, not a clinically validated "
-        "prediction system or a meaningful multifeature risk model."
+        "This workflow reviews whether an existing model result may be released. It does "
+        "not perform clinical risk prediction or trial-design analysis."
     )
 
     missing = missing_artefacts()
@@ -147,6 +159,11 @@ def main() -> None:
     # Safe failure state: provenance and review remain functional, but no trial-level
     # probability, SHAP attribution, or risk explanation is released.
     if metrics["release_status"] != "PASS":
+        st.markdown("### Release-readiness result")
+        r1, r2, r3 = st.columns(3)
+        r1.metric("Cohort membership", "VERIFIED")
+        r2.metric("Model release status", "BLOCKED")
+        r3.metric("Trial-level risk output", "NOT RELEASED")
         st.error(
             "Trial-level risk output is blocked. The temporal baseline failed its "
             "predeclared basic validation release checks."
@@ -159,9 +176,20 @@ def main() -> None:
             "Because AUPRC was below prevalence and AUROC was below 0.5, the app does "
             "not display a selected-trial probability, SHAP attribution, or risk explanation."
         )
+        intervals = metrics["bootstrap_95_percent_intervals"]
+        with st.expander("Uncertainty and evidence limits", expanded=True):
+            st.write(
+                "Validation AUPRC bootstrap 95% interval: "
+                f"{intervals['auprc'][0]:.6f} to {intervals['auprc'][1]:.6f}."
+            )
+            st.write(
+                "Validation AUROC bootstrap 95% interval: "
+                f"{intervals['auroc'][0]:.6f} to {intervals['auroc'][1]:.6f}."
+            )
+            st.write(evidence["historical_data_limitation"])
         original = generate_failure_explanation(metrics, evidence)
         explanation = st.session_state.revised_explanations.get(selected, original)
-        st.markdown("### Grounded safety explanation")
+        st.markdown("### Grounded release-readiness explanation")
         st.info(explanation["text"])
         st.caption(
             f"Generator: {explanation['generator']} · Revision mode: "

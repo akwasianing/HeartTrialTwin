@@ -2,12 +2,14 @@
   "failure_state_visible": true,
   "selected_nct_visible": true,
   "provenance_visible": true,
+  "release_readiness_result_visible": true,
   "safety_explanation_visible": true,
+  "session_only_warning_visible": true,
   "probability_metric_absent": true,
   "shap_metric_absent": true,
   "accept_workflow": true,
   "revision_workflow": true,
   "reject_workflow": true,
   "review_audit_log_visible": true,
-  "verified_at": "2026-09-20T14:27:40.490Z"
+  "verified_at": "2026-09-20T22:05:30.674Z"
 }
