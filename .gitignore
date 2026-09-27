@@ -1,10 +1,17 @@
 .DS_Store
 .venv/
+.venv-full-system/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.ipynb_checkpoints/
 .streamlit/
 *.log
+*.tmp
+*.temp
+.cache/
+cache/
+downloads/
 
 # Local build and validation workspaces
 .codex-finalizer/
@@ -20,8 +27,13 @@ HeartTrialTwin_Heart_Failure_Cohort*.ipynb
 week 2/
 week 3/
 week 4/
+week 5/
 step2_reconciliation/
 document_discovery/
+historical_retrieval_pilot/
+full_system_feasibility/
+full_system_ml/
+DEVELOPMENT_HANDOFF.md
 
 # One-off local screenshot automation; captured evidence is retained.
 p1_app/capture_app_screenshots.mjs

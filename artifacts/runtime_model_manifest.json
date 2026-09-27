@@ -1,0 +1,62 @@
+{
+  "manifest_version": "HTT-FULL-SYSTEM-RUNTIME-20260926",
+  "model_version": "hearttrialtwin-final-lr-a47ef63f5d74",
+  "data_version": "runtime-inputs-e8a00748cadd",
+  "model_file": "hearttrialtwin_final_model.joblib",
+  "model_sha256": "a47ef63f5d7408d2525946df57a28e4b781e36c3355bf9ab1840f64c58db8083",
+  "runtime_inputs_file": "runtime_inputs.parquet",
+  "runtime_inputs_sha256": "e8a00748cadd9aa01526e3cec5bb85b6048204abae0269d594b849da5f8a418e",
+  "training_environment_file": "training_environment.json",
+  "training_environment_sha256": "31bc61b03d2fa492c89de96498a1dd3631b7820740fb60b5567da1c28d82379c",
+  "final_model_summary_file": "final_model_summary.json",
+  "final_model_summary_sha256": "d88fc1d9e19a234137a2feacad6e0232419aaf26f312ce928fab5463530b2ef6",
+  "outcome_definition": {
+    "completed": 0,
+    "terminated_or_withdrawn": 1
+  },
+  "development_period": "submission year <= 2020",
+  "locked_temporal_test_period": "2021-2024",
+  "threshold": 0.2129,
+  "threshold_provenance": "selected from development temporal out-of-fold predictions only",
+  "model": "Unweighted Logistic Regression",
+  "features": "Structured protocol/design features plus eligibility criteria TF-IDF",
+  "enrollment_predictor_included": false,
+  "posthoc_calibration": "None",
+  "training_versions": {
+    "python": "3.13.15",
+    "scikit_learn": "1.6.1",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "joblib": "1.6.0"
+  },
+  "locally_verified_compatible_python": "3.12.14",
+  "temporal_test_metrics": {
+    "n": 462,
+    "discontinued": 82,
+    "completed": 380,
+    "prevalence": 0.1775,
+    "pr_auc": 0.3102,
+    "prevalence_baseline": 0.1775,
+    "pr_auc_gain": 0.1327,
+    "roc_auc": 0.6017,
+    "brier": 0.1433,
+    "mean_predicted_risk": 0.2001,
+    "precision": 0.2283,
+    "recall": 0.5122,
+    "specificity": 0.6263,
+    "f1": 0.3158,
+    "tn": 238,
+    "fp": 142,
+    "fn": 40,
+    "tp": 42
+  },
+  "runtime_policy": {
+    "outcomes_available_to_application": false,
+    "stored_test_predictions_used_for_application_scoring": false,
+    "error_analysis_used_by_application": false,
+    "explanation_type": "exact frozen Logistic Regression additive contributions",
+    "disclaimer": "Experimental — not validated for clinical decision-making."
+  },
+  "data_limitation": "Protocol/design and eligibility text are current-record fields supplied in the frozen runtime input artifact; they are not claimed to be exact historical registration snapshots."
+}

@@ -1,0 +1,42 @@
+{
+  "model": "Unweighted Logistic Regression",
+  "features": "Structured + eligibility criteria TF-IDF",
+  "enrollment_predictor_included": false,
+  "posthoc_calibration": "None",
+  "threshold": 0.2129,
+  "development_oof": {
+    "n": 972,
+    "prevalence": 0.2202,
+    "pr_auc": 0.3209,
+    "roc_auc": 0.6116,
+    "brier": 0.168
+  },
+  "temporal_test": {
+    "period": "2021-2024",
+    "n": 462,
+    "discontinued": 82,
+    "completed": 380,
+    "prevalence": 0.1775,
+    "pr_auc": 0.3102,
+    "roc_auc": 0.6017,
+    "brier": 0.1433,
+    "mean_predicted_risk": 0.2001,
+    "precision": 0.2283,
+    "recall": 0.5122,
+    "specificity": 0.6263,
+    "f1": 0.3158,
+    "TN": 238,
+    "FP": 142,
+    "FN": 40,
+    "TP": 42
+  },
+  "notes": [
+    "2021-2024 temporal test evaluated once after model freeze.",
+    "Current-record enrollment excluded after empirical leakage audit.",
+    "Balanced and moderate class weighting evaluated on development data only.",
+    "Unweighted LR retained.",
+    "Platt calibration evaluated prospectively on development folds and not retained.",
+    "Threshold selected using development temporal OOF predictions only.",
+    "SHAP and error analyses are post-hoc interpretation only."
+  ]
+}
