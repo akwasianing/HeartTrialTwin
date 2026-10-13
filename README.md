@@ -135,6 +135,112 @@ The preserved Challenge 2 workflow and its blocked-release rationale are
 documented in [p1_app/TEST_RESULTS.md](p1_app/TEST_RESULTS.md) and
 [p1_app/feature_audit.md](p1_app/feature_audit.md).
 
+## Challenge 3: AI Design — Knowledge Graph with Neo4j
+
+### Objective and data selection
+
+Challenge 3 adds a Neo4j knowledge graph for exploring connections among
+heart-failure trials, submitted and browse conditions, interventions, lead
+sponsors, registered planned outcomes, and source provenance. It is a semantic
+research layer and does not change the frozen predictive model or its results.
+
+The graph is grounded in the pinned September 5, 2026 AACT/ClinicalTrials.gov
+dataset, `HTT-P1-AACT-20260905`, whose authoritative cohort contains 2,824
+trials. A deterministic, outcome-blind procedure retained trials with a
+submitted condition, a named intervention, a named lead sponsor, and at least
+two planned outcomes. It ranked shared condition/intervention pairs by support
+and stable lexical tie-breaks, then selected the first five NCT IDs from the
+highest-ranked eligible pair. Trial status, outcome labels, predictions, and
+model performance were not used. The shared **Heart Failure** submitted
+condition and **DRUG — Spironolactone** intervention emerged from this process.
+
+### Verified graph schema
+
+| Node label | Count |
+|---|---:|
+| `Trial` | 5 |
+| `ConditionTerm` | 4 |
+| `Intervention` | 1 |
+| `Sponsor` | 5 |
+| `PlannedOutcome` | 10 |
+| `SourceDataset` | 1 |
+
+The seven relationship types are `HAS_SUBMITTED_CONDITION`,
+`HAS_BROWSE_CONDITION`, `HAS_INTERVENTION`, `LEAD_SPONSORED_BY`,
+`HAS_PLANNED_OUTCOME`, `MEMBER_OF_DATASET`, and `SOURCED_FROM`. Submitted
+conditions and browse-condition terms remain source-distinct. Prediction,
+Evidence, HumanReview, and GraphRAG nodes were intentionally deferred.
+
+### Preparation, import, and validation
+
+The [CSV preparation script](artifacts/knowledge_graph/prepare_neo4j_import.py)
+uses the pinned cohort and verified AACT archive members, applies conservative
+normalization, preserves source identifiers and provenance, and writes separate
+node and relationship CSVs. The
+[Neo4j importer](artifacts/knowledge_graph/import_to_neo4j.py) uses the official
+Python driver, uniqueness constraints, parameterized Cypher, and `MERGE`; it
+imports all node types before relationships and performs post-import integrity
+checks. File hashes, archive metadata, selection rules, and expected counts are
+recorded in the
+[graph import manifest](artifacts/knowledge_graph/graph_import_manifest.json).
+
+The verified graph contains **26 nodes and 65 relationships**. All node IDs are
+unique within type, every relationship endpoint exists, all five trials belong
+to the pinned cohort, the graph is fully connected, and shared-condition and
+shared-intervention traversal paths are present. See the complete
+[validation report](artifacts/knowledge_graph/VALIDATION_REPORT.md).
+
+### Research demonstrations
+
+The Neo4j evidence captures the
+[full graph visualization](artifacts/knowledge_graph/Neo4j_Evidence/screenshots/HeartTrialTwin_Full_Knowledge_Graph.png),
+[shared condition/intervention comparison](artifacts/knowledge_graph/Neo4j_Evidence/screenshots/shared%20condition%20and%20intervention.png),
+[sponsor analysis](artifacts/knowledge_graph/Neo4j_Evidence/screenshots/sponsor%20analysis.png),
+[planned-outcome comparison](artifacts/knowledge_graph/Neo4j_Evidence/screenshots/planned%20outcome%20across%20trials%20.png),
+[multi-hop trial comparison](artifacts/knowledge_graph/Neo4j_Evidence/screenshots/multti%20hop%20tial%20comparison.png),
+and [dataset-provenance validation](artifacts/knowledge_graph/Neo4j_Evidence/screenshots/dataset%20provenance.png).
+Together, these demonstrations show how shared clinical concepts support
+cross-trial exploration while retaining exact links to the pinned source.
+
+### Human–AI collaboration
+
+Codex assisted with semantic-design critique, source reconciliation, schema
+preparation, and reproducibility checks. Human review retained final authority
+over the approved entities, relationships, provenance safeguards, and validation
+criteria. The design record is preserved in the
+[Challenge 3 semantic-design notebook](notebooks/HeartTrialTwin_Challenge3_Semantic_Design.ipynb).
+
+### Reproduce the Neo4j import
+
+Create an isolated environment, install the pinned dependencies, and copy the
+credential template to a local `.env` file. Fill that file privately; never
+commit connection credentials.
+
+```bash
+python3 -m venv /tmp/hearttrialtwin-neo4j
+source /tmp/hearttrialtwin-neo4j/bin/activate
+python -m pip install -r artifacts/knowledge_graph/requirements-neo4j.txt
+cp artifacts/knowledge_graph/.env.example artifacts/knowledge_graph/.env
+python artifacts/knowledge_graph/import_to_neo4j.py
+python artifacts/knowledge_graph/import_to_neo4j.py \
+  --execute --confirm-database <exact-database-name>
+```
+
+The first importer command performs local file and manifest validation without
+connecting to Neo4j. The executing command requires the exact target database
+name and reads connection settings from the ignored local `.env` file. See the
+[dependency pins](artifacts/knowledge_graph/requirements-neo4j.txt) and
+[environment template](artifacts/knowledge_graph/.env.example).
+
+### Challenge 3 limitations
+
+- The five-trial graph is illustrative and is not statistically representative
+  of the full 2,824-trial cohort.
+- `PlannedOutcome` nodes describe registered planned measures, not clinical
+  results or evidence of a terminal trial status.
+- GraphRAG was deferred; this challenge implements a verified knowledge graph,
+  not a retrieval-augmented generation system.
+
 ## Reproducibility and integrity
 
 - Frozen model SHA-256:
