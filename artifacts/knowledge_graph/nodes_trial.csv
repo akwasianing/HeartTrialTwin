@@ -1,0 +1,6 @@
+trial_id:ID(Trial),nct_id,brief_title,study_type,phase,enrollment,start_date,completion_date,study_first_submitted_date,submission_year:int,temporal_group,dataset_version,:LABEL
+NCT00206232,NCT00206232,Novel Treatment for Diastolic Heart Failure in Women,INTERVENTIONAL,PHASE4,48,2004-07-31,2010-07-31,2005-09-12,2005,Development (1999-2017),HTT-P1-AACT-20260905,Trial
+NCT00391846,NCT00391846,Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone,INTERVENTIONAL,PHASE4,252,2006-10-31,2009-01-31,2006-10-19,2006,Development (1999-2017),HTT-P1-AACT-20260905,Trial
+NCT00574119,NCT00574119,Effect of Aldosterone on Energy Starvation in Heart Failure,INTERVENTIONAL,PHASE4,16,2007-12-31,2012-07-31,2007-12-13,2007,Development (1999-2017),HTT-P1-AACT-20260905,Trial
+NCT00604006,NCT00604006,SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study),INTERVENTIONAL,PHASE3,20,2008-09-30,2015-01-31,2008-01-16,2008,Development (1999-2017),HTT-P1-AACT-20260905,Trial
+NCT01130597,NCT01130597,Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease,INTERVENTIONAL,PHASE2,63,2010-05-31,2010-09-30,2010-05-24,2010,Development (1999-2017),HTT-P1-AACT-20260905,Trial

@@ -1,0 +1,6 @@
+:START_ID(Trial),:END_ID(ConditionTerm),source_table,source_record_id,source_record_id_status,dataset_version,:TYPE
+NCT00206232,condition:629e3a1901f0194c01ec,conditions.txt,,not_retained_in_step2_extract,HTT-P1-AACT-20260905,HAS_SUBMITTED_CONDITION
+NCT00391846,condition:629e3a1901f0194c01ec,conditions.txt,,not_retained_in_step2_extract,HTT-P1-AACT-20260905,HAS_SUBMITTED_CONDITION
+NCT00574119,condition:629e3a1901f0194c01ec,conditions.txt,,not_retained_in_step2_extract,HTT-P1-AACT-20260905,HAS_SUBMITTED_CONDITION
+NCT00604006,condition:629e3a1901f0194c01ec,conditions.txt,,not_retained_in_step2_extract,HTT-P1-AACT-20260905,HAS_SUBMITTED_CONDITION
+NCT01130597,condition:629e3a1901f0194c01ec,conditions.txt,,not_retained_in_step2_extract,HTT-P1-AACT-20260905,HAS_SUBMITTED_CONDITION

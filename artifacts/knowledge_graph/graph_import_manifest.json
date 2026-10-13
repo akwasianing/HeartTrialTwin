@@ -1,0 +1,189 @@
+{
+  "archive": {
+    "accept_ranges": "bytes",
+    "bytes_downloaded": 446076940,
+    "etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+    "last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+    "members": {
+      "design_outcomes.txt": {
+        "cohort_duplicate_record_id_count": 0,
+        "cohort_missing_nct_count": 41,
+        "cohort_missingness": {
+          "description": 4482,
+          "population": 19740,
+          "time_frame": 528
+        },
+        "cohort_nct_coverage": 2783,
+        "cohort_rows": 19740,
+        "compressed_bytes": 291243695,
+        "crc32": "a850c718",
+        "crc_verified_by_full_member_read": true,
+        "header": [
+          "id",
+          "nct_id",
+          "outcome_type",
+          "measure",
+          "time_frame",
+          "population",
+          "description"
+        ],
+        "nct_linkage_field": "nct_id",
+        "record_identifier": "id",
+        "total_missing_record_id": 0,
+        "total_rows": 3755893,
+        "uncompressed_bytes": 1148688101,
+        "zip_member": "design_outcomes.txt"
+      },
+      "interventions.txt": {
+        "cohort_duplicate_record_id_count": 0,
+        "cohort_missing_nct_count": 0,
+        "cohort_missingness": {
+          "description": 554
+        },
+        "cohort_nct_coverage": 2824,
+        "cohort_rows": 4836,
+        "compressed_bytes": 72584561,
+        "crc32": "a646ad7d",
+        "crc_verified_by_full_member_read": true,
+        "header": [
+          "id",
+          "nct_id",
+          "intervention_type",
+          "name",
+          "description"
+        ],
+        "nct_linkage_field": "nct_id",
+        "record_identifier": "id",
+        "total_missing_record_id": 0,
+        "total_rows": 1017744,
+        "uncompressed_bytes": 218234222,
+        "zip_member": "interventions.txt"
+      },
+      "sponsors.txt": {
+        "cohort_duplicate_record_id_count": 0,
+        "cohort_missing_nct_count": 0,
+        "cohort_missingness": {},
+        "cohort_nct_coverage": 2824,
+        "cohort_rows": 4908,
+        "compressed_bytes": 17511292,
+        "crc32": "547c0e54",
+        "crc_verified_by_full_member_read": true,
+        "header": [
+          "id",
+          "nct_id",
+          "agency_class",
+          "lead_or_collaborator",
+          "name"
+        ],
+        "nct_linkage_field": "nct_id",
+        "record_identifier": "id",
+        "total_missing_record_id": 0,
+        "total_rows": 959297,
+        "uncompressed_bytes": 64539463,
+        "zip_member": "sponsors.txt"
+      }
+    },
+    "range_requests": 14,
+    "resolved_url": "https://ctti-aact.nyc3.digitaloceanspaces.com/70t1jezd68k8u50bfhvacc7yd6kf",
+    "size_bytes": 2526451724,
+    "snapshot_date": "2026-09-05",
+    "snapshot_file": "20260905_export_ctgov.zip",
+    "source_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+    "transport_metadata_source": "pinned_audit_and_verified_preflight",
+    "whole_archive_sha256": null,
+    "whole_archive_sha256_note": "not computed; archive accessed by bounded ranges"
+  },
+  "authoritative_dataset_version": "HTT-P1-AACT-20260905",
+  "created_utc": "2026-10-08T17:09:21.136281+00:00",
+  "files_sha256": {
+    "VALIDATION_REPORT.md": "c8e6a0ee3c6f52b498ee7b6da7f8a58801f0cfe45bd15d7f01fbaecf1ee57d47",
+    "archive_table_audit.csv": "8a5119739fe720e908d152e939772a12aaebc28d385d7726f0c5852e5ae9f16c",
+    "nodes_condition_term.csv": "e62354e8acef200055bb867a0d006cd19e94ff6c880575d8547c3c7032756209",
+    "nodes_intervention.csv": "e760a3ca22781b4293759ac230763878e422fc8343622285aa02988a8e499dd6",
+    "nodes_planned_outcome.csv": "f278ed3c70c4e11a2adc9691c01c7280b2cd571b22070d78d13e79da6cefba69",
+    "nodes_source_dataset.csv": "71209150b447c1634884d0438c4fc53f5be90771fdb3b6f487565d32b962d72f",
+    "nodes_sponsor.csv": "18793b58339ddb668a1e34f87773fa4ca03f88096a64e4541c38500d7caddbb6",
+    "nodes_trial.csv": "3ef3d3740567078ace0fe6fedb0dcb90929d3a41101b744802faa1309a37ba8e",
+    "prepare_neo4j_import.py": "da6d7f2a3af97aee27b9c8340a2c1f712ecc36a2af692e23c6e029b8a7b78317",
+    "relationships_condition_source_dataset.csv": "7b395a9e5865a72852058af7dd6ff9e927e9db187d366c2747bec336785f838e",
+    "relationships_intervention_source_dataset.csv": "e9c1385847da8d1b8101461c7efc047f02efe4fc416bf45e5d9084e455ec6a85",
+    "relationships_outcome_source_dataset.csv": "b7ae3028d0a72a1676ed3af6c61836d6c573e61342c93e6968f89f4d721ae388",
+    "relationships_sponsor_source_dataset.csv": "61b70a21b5026f3e6452728a4159c71d217d620c2c6386264b4d0272670aee8d",
+    "relationships_trial_browse_condition.csv": "62d38604af6c81edabba5d192ba7135bc9333531cceda6bf27514e2546df37fa",
+    "relationships_trial_intervention.csv": "97979cd9a5c2b01d192aae20ede6c2316b028e7feb6e5f1ee7f95c047c8ddf54",
+    "relationships_trial_planned_outcome.csv": "c911f1b598ebaffc71f7b1041f5443de6ef3478313e7ca283ea7da32baf688ae",
+    "relationships_trial_source_dataset.csv": "f81210ff5da1080c05e962efe6d62d2bcd3ec5d1596c01801682cf864707588e",
+    "relationships_trial_sponsor.csv": "b7c71470aa7de072e50954d82ceff047571346d6f41abfb11cf8e19688559065",
+    "relationships_trial_submitted_condition.csv": "97bd08f88139f57b96524eac803bbb420a512d923eb2f8a090893d8dc7bb1026",
+    "selected_trials.csv": "752e1b0f2379706752013379d8bc41dc121c20b94b3411598e5b399bbc8873a6"
+  },
+  "graph_version": "HTT-KG-AACT-20260905-v1",
+  "node_counts": {
+    "ConditionTerm": 4,
+    "Intervention": 1,
+    "PlannedOutcome": 10,
+    "SourceDataset": 1,
+    "Sponsor": 5,
+    "Trial": 5
+  },
+  "pinned_cohort_size": 2824,
+  "prediction_nodes_included": false,
+  "prediction_nodes_reason": "Deferred until a durable prediction file manifest binds each stored prediction to the exact trial, model version, and input-data version.",
+  "relationship_counts": {
+    "HAS_BROWSE_CONDITION": 15,
+    "HAS_INTERVENTION": 5,
+    "HAS_PLANNED_OUTCOME": 10,
+    "HAS_SUBMITTED_CONDITION": 5,
+    "LEAD_SPONSORED_BY": 5,
+    "MEMBER_OF_DATASET": 5,
+    "SOURCED_FROM": 20
+  },
+  "relationship_types": [
+    "HAS_BROWSE_CONDITION",
+    "HAS_INTERVENTION",
+    "HAS_PLANNED_OUTCOME",
+    "HAS_SUBMITTED_CONDITION",
+    "LEAD_SPONSORED_BY",
+    "MEMBER_OF_DATASET",
+    "SOURCED_FROM"
+  ],
+  "selection": {
+    "mode": "HF-specific submitted condition plus non-generic intervention",
+    "outcome_blind": true,
+    "prediction_blind": true,
+    "selected_nct_ids": [
+      "NCT00206232",
+      "NCT00391846",
+      "NCT00574119",
+      "NCT00604006",
+      "NCT01130597"
+    ],
+    "shared_condition_normalized": "heart failure",
+    "shared_intervention_name_normalized": "spironolactone",
+    "shared_intervention_type_normalized": "drug",
+    "shared_pair_support": 11
+  },
+  "source_inputs": {
+    "pinned_manifest": "step3_manifest/HeartTrialTwin_first_p1_cohort_manifest_HTT-P1-AACT-20260905.csv",
+    "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+    "step2_reconciliation": "step2_reconciliation/HeartTrialTwin_step2_cohort_reconciliation.csv",
+    "step2_reconciliation_sha256": "5a254575d8d5276d1176b53b38dad6600b46d6732441698e8e14668699d8ac43"
+  },
+  "total_nodes": 26,
+  "total_relationships": 65,
+  "validation": {
+    "all_trial_ids_in_pinned_cohort": true,
+    "archive_identity_matches_pinned_audit": true,
+    "every_relationship_endpoint_exists": true,
+    "exactly_five_outcome_blind_trials_selected": true,
+    "graph_is_connected": true,
+    "no_prediction_evidence_review_or_graphrag_nodes": true,
+    "node_count_within_20_to_40": true,
+    "node_identifiers_unique_within_type": true,
+    "relationship_triples_unique": true,
+    "relationship_type_count_within_5_to_12": true,
+    "shared_intervention_path_exists": true,
+    "shared_submitted_condition_path_exists": true,
+    "source_members_fully_read_and_crc_checked": true
+  }
+}

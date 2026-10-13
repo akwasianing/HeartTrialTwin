@@ -1,0 +1,5 @@
+condition_id:ID(ConditionTerm),name,normalized_name,source_kind,source_table,dataset_version,:LABEL
+condition:629e3a1901f0194c01ec,Heart Failure,heart failure,submitted,conditions.txt,HTT-P1-AACT-20260905,ConditionTerm
+condition:6414c5b8adecc13a3786,Cardiovascular Diseases,cardiovascular diseases,browse,browse_conditions.txt,HTT-P1-AACT-20260905,ConditionTerm
+condition:76106621b8d52df0409b,Heart Diseases,heart diseases,browse,browse_conditions.txt,HTT-P1-AACT-20260905,ConditionTerm
+condition:220601b84d713b61467c,Heart Failure,heart failure,browse,browse_conditions.txt,HTT-P1-AACT-20260905,ConditionTerm

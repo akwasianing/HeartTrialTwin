@@ -1,0 +1,6 @@
+:START_ID(Trial),:END_ID(Intervention),source_table,source_record_ids,dataset_version,:TYPE
+NCT00206232,intervention:eb4e562ee31fac7ede8a,interventions.txt,392379839,HTT-P1-AACT-20260905,HAS_INTERVENTION
+NCT00391846,intervention:eb4e562ee31fac7ede8a,interventions.txt,392598879,HTT-P1-AACT-20260905,HAS_INTERVENTION
+NCT00574119,intervention:eb4e562ee31fac7ede8a,interventions.txt,392894341,HTT-P1-AACT-20260905,HAS_INTERVENTION
+NCT00604006,intervention:eb4e562ee31fac7ede8a,interventions.txt,392593447,HTT-P1-AACT-20260905,HAS_INTERVENTION
+NCT01130597,intervention:eb4e562ee31fac7ede8a,interventions.txt,392083486,HTT-P1-AACT-20260905,HAS_INTERVENTION

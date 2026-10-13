@@ -1,0 +1,2 @@
+source_dataset_id:ID(SourceDataset),dataset_version,graph_version,snapshot_date,snapshot_file,snapshot_url,archive_size_bytes:long,archive_etag,archive_last_modified,pinned_manifest_sha256,:LABEL
+HTT-P1-AACT-20260905,HTT-P1-AACT-20260905,HTT-KG-AACT-20260905-v1,2026-09-05,20260905_export_ctgov.zip,https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip,2526451724,99e62b3f8ae5838b36bc0c2277ad2714,"Sat, 05 Sep 2026 05:19:09 GMT",5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab,SourceDataset

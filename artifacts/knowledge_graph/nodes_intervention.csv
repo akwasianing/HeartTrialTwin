@@ -1,0 +1,2 @@
+intervention_id:ID(Intervention),name,normalized_name,intervention_type,normalized_intervention_type,source_table,dataset_version,:LABEL
+intervention:eb4e562ee31fac7ede8a,Spironolactone,spironolactone,DRUG,drug,interventions.txt,HTT-P1-AACT-20260905,Intervention

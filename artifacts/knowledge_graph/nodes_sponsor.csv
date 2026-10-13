@@ -1,0 +1,6 @@
+sponsor_id:ID(Sponsor),name,normalized_name,agency_class,source_table,dataset_version,:LABEL
+sponsor:59216acbedf193ccee74,Vanderbilt University,vanderbilt university,OTHER,sponsors.txt,HTT-P1-AACT-20260905,Sponsor
+sponsor:64f999d92d1b73893f9b,Baylor College of Medicine,baylor college of medicine,OTHER,sponsors.txt,HTT-P1-AACT-20260905,Sponsor
+sponsor:73f028fcb1012cf7d1e8,AstraZeneca,astrazeneca,INDUSTRY,sponsors.txt,HTT-P1-AACT-20260905,Sponsor
+sponsor:b946f114ca1bd09f372c,Monash University,monash university,OTHER,sponsors.txt,HTT-P1-AACT-20260905,Sponsor
+sponsor:e2299c0be1c8d388bf8e,"Relypsa, Inc.","relypsa, inc.",INDUSTRY,sponsors.txt,HTT-P1-AACT-20260905,Sponsor

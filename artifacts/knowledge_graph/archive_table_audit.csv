@@ -1,0 +1,4 @@
+snapshot_file,snapshot_date,zip_member,header_pipe_delimited,record_identifier,nct_linkage_field,crc32,compressed_bytes,uncompressed_bytes,total_rows,cohort_rows,cohort_nct_coverage,cohort_missing_nct_count,cohort_duplicate_record_id_count,total_missing_record_id,cohort_missingness_json,crc_verified_by_full_member_read
+20260905_export_ctgov.zip,2026-09-05,interventions.txt,id|nct_id|intervention_type|name|description,id,nct_id,a646ad7d,72584561,218234222,1017744,4836,2824,0,0,0,"{""description"": 554}",true
+20260905_export_ctgov.zip,2026-09-05,sponsors.txt,id|nct_id|agency_class|lead_or_collaborator|name,id,nct_id,547c0e54,17511292,64539463,959297,4908,2824,0,0,0,{},true
+20260905_export_ctgov.zip,2026-09-05,design_outcomes.txt,id|nct_id|outcome_type|measure|time_frame|population|description,id,nct_id,a850c718,291243695,1148688101,3755893,19740,2783,41,0,0,"{""description"": 4482, ""population"": 19740, ""time_frame"": 528}",true
