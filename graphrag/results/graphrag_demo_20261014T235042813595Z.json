@@ -1,0 +1,396 @@
+{
+  "completed_utc": "2026-10-14T23:50:42.812791+00:00",
+  "configuration": {
+    "api_key_configured": false,
+    "credentials_required": false,
+    "database": "57aa5fa3",
+    "env_source": "artifacts/knowledge_graph/.env",
+    "llm_model": "qwen2.5:1.5b",
+    "llm_provider": "ollama",
+    "uri_scheme": "neo4j+s",
+    "username_configured": "true"
+  },
+  "connection": {
+    "connected": true,
+    "database": "57aa5fa3",
+    "dataset_version": "HTT-P1-AACT-20260905",
+    "graph_version": "HTT-KG-AACT-20260905-v1",
+    "node_count": 26,
+    "relationship_count": 65,
+    "snapshot_date": "2026-09-05"
+  },
+  "phase": "Neo4j retrieval plus grounded LLM answer generation",
+  "provider_status": {
+    "available": true,
+    "base_url": "http://localhost:11434",
+    "installed_models": [
+      "qwen2.5:1.5b",
+      "qwen3:4b"
+    ],
+    "model": "qwen2.5:1.5b"
+  },
+  "results": [
+    {
+      "generation": {
+        "answer": "ABSTAIN: The generated response failed grounding validation and has been blocked. Review the raw model output and validation errors.",
+        "attempts": [
+          {
+            "attempt": 1,
+            "done_reason": "stop",
+            "eval_count": 164,
+            "grounding_validation": {
+              "errors": [
+                "missing_source_record_id_citation",
+                "missing_snapshot_date:2026-09-05",
+                "missing_planned_outcome_safeguard"
+              ],
+              "evidence_identifiers": {
+                "dataset_versions": [
+                  "HTT-P1-AACT-20260905"
+                ],
+                "nct_ids": [
+                  "NCT00206232"
+                ],
+                "snapshot_dates": [
+                  "2026-09-05"
+                ],
+                "source_record_ids": [
+                  "1426533443",
+                  "1426534673"
+                ]
+              },
+              "passed": false,
+              "status": "blocked_ungrounded"
+            },
+            "latency_ms": 75483.702,
+            "ollama_total_duration_ms": 75450.355,
+            "prompt_eval_count": 1713,
+            "raw_model_output": "Registered information for clinical trial NCT00206232 includes:\n\n- The trial is titled \"Novel Treatment for Diastolic Heart Failure in Women\" and is a Phase 4 intervention study.\n- The trial was submitted on September 12, 2005.\n- The trial is sponsored by Baylor College of Medicine.\n- The trial involves interventions related to the treatment of heart failure.\n- The trial includes two primary outcomes: Six minute walk distance and echocardiography parameters of diastolic function.\n- The trial has two planned secondary outcomes: Six minute walk distance and echocardiography parameters of diastolic function.\n- The trial is registered in the ClinicalTrials.gov dataset version HTT-P1-AACT-20260905."
+          },
+          {
+            "attempt": 2,
+            "done_reason": "stop",
+            "eval_count": 202,
+            "grounding_validation": {
+              "errors": [
+                "missing_source_record_id_citation",
+                "missing_snapshot_date:2026-09-05",
+                "missing_planned_outcome_safeguard"
+              ],
+              "evidence_identifiers": {
+                "dataset_versions": [
+                  "HTT-P1-AACT-20260905"
+                ],
+                "nct_ids": [
+                  "NCT00206232"
+                ],
+                "snapshot_dates": [
+                  "2026-09-05"
+                ],
+                "source_record_ids": [
+                  "1426533443",
+                  "1426534673"
+                ]
+              },
+              "passed": false,
+              "status": "blocked_ungrounded"
+            },
+            "latency_ms": 32923.322,
+            "ollama_total_duration_ms": 32908.373,
+            "prompt_eval_count": 1777,
+            "raw_model_output": "The registered clinical trial NCT00206232 is for a novel treatment for diastolic heart failure in women. The information registered includes:\n\n- The trial's brief title: \"Novel Treatment for Diastolic Heart Failure in Women\"\n- The dataset version: HTT-P1-AACT-20260905\n- The NCT ID: NCT00206232\n- The phase: PHASE4\n- The study first submitted date: 2005-09-12\n- The study type: INTERVENTIONAL\n\nThe registered planned outcomes for this trial include:\n\n- A primary outcome: Six minute walk distance\n- A secondary outcome: Echocardiography parameters of diastolic function\n\nThese outcomes were planned for baseline, 3 months, and 6 months after randomization. The registered outcomes are not clinical results but are part of the trial's design and planning."
+          }
+        ],
+        "completed_utc": "2026-10-14T23:50:42.810143+00:00",
+        "generation_parameters": {
+          "api": "ollama_generate",
+          "base_url": "http://localhost:11434",
+          "keep_alive": "5m",
+          "maximum_grounding_attempts": 2,
+          "num_ctx": 8192,
+          "num_predict": 700,
+          "request_timeout_seconds": 180.0,
+          "stream": false,
+          "temperature": 0.0
+        },
+        "grounding_validation": {
+          "errors": [
+            "missing_source_record_id_citation",
+            "missing_snapshot_date:2026-09-05",
+            "missing_planned_outcome_safeguard"
+          ],
+          "evidence_identifiers": {
+            "dataset_versions": [
+              "HTT-P1-AACT-20260905"
+            ],
+            "nct_ids": [
+              "NCT00206232"
+            ],
+            "snapshot_dates": [
+              "2026-09-05"
+            ],
+            "source_record_ids": [
+              "1426533443",
+              "1426534673"
+            ]
+          },
+          "passed": false,
+          "status": "blocked_ungrounded"
+        },
+        "latency_ms": 108409.292,
+        "prompt_audit": {
+          "compaction_ratio": 0.7672,
+          "factual_context_fields": [
+            "user_question",
+            "retrieved_kg_evidence"
+          ],
+          "instructions_sha256": "bcb524801e5908722759687e2b499eaf296b45b367364e4e9582b40444f00abf",
+          "model_input_characters": 4738,
+          "model_input_sha256": "3613bc11166f18d402b4df7f7220a316422b9652ef27affcb623063b64b6fc0d",
+          "raw_evidence_characters": 6176
+        },
+        "provider": "ollama",
+        "provider_reported_total_duration_ms": 108358.728,
+        "raw_model_output": "The registered clinical trial NCT00206232 is for a novel treatment for diastolic heart failure in women. The information registered includes:\n\n- The trial's brief title: \"Novel Treatment for Diastolic Heart Failure in Women\"\n- The dataset version: HTT-P1-AACT-20260905\n- The NCT ID: NCT00206232\n- The phase: PHASE4\n- The study first submitted date: 2005-09-12\n- The study type: INTERVENTIONAL\n\nThe registered planned outcomes for this trial include:\n\n- A primary outcome: Six minute walk distance\n- A secondary outcome: Echocardiography parameters of diastolic function\n\nThese outcomes were planned for baseline, 3 months, and 6 months after randomization. The registered outcomes are not clinical results but are part of the trial's design and planning.",
+        "requested_model": "qwen2.5:1.5b",
+        "response_id": "",
+        "response_model": "qwen2.5:1.5b",
+        "started_utc": "2026-10-14T23:48:54.397553+00:00",
+        "status": "blocked_ungrounded",
+        "usage": {
+          "eval_count": 202,
+          "prompt_eval_count": 1777
+        }
+      },
+      "kg_evidence": {
+        "dataset_version": "HTT-P1-AACT-20260905",
+        "evidence": [
+          {
+            "evidence_paths": [
+              {
+                "evidence_labels": [
+                  "ConditionTerm"
+                ],
+                "evidence_properties": {
+                  "condition_id": "condition:6414c5b8adecc13a3786",
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "name": "Cardiovascular Diseases",
+                  "normalized_name": "cardiovascular diseases",
+                  "source_kind": "browse",
+                  "source_table": "browse_conditions.txt"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "browse_conditions.txt"
+                },
+                "relationship_type": "HAS_BROWSE_CONDITION"
+              },
+              {
+                "evidence_labels": [
+                  "ConditionTerm"
+                ],
+                "evidence_properties": {
+                  "condition_id": "condition:76106621b8d52df0409b",
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "name": "Heart Diseases",
+                  "normalized_name": "heart diseases",
+                  "source_kind": "browse",
+                  "source_table": "browse_conditions.txt"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "browse_conditions.txt"
+                },
+                "relationship_type": "HAS_BROWSE_CONDITION"
+              },
+              {
+                "evidence_labels": [
+                  "ConditionTerm"
+                ],
+                "evidence_properties": {
+                  "condition_id": "condition:220601b84d713b61467c",
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "name": "Heart Failure",
+                  "normalized_name": "heart failure",
+                  "source_kind": "browse",
+                  "source_table": "browse_conditions.txt"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "browse_conditions.txt"
+                },
+                "relationship_type": "HAS_BROWSE_CONDITION"
+              },
+              {
+                "evidence_labels": [
+                  "Intervention"
+                ],
+                "evidence_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+                  "intervention_type": "DRUG",
+                  "name": "Spironolactone",
+                  "normalized_intervention_type": "drug",
+                  "normalized_name": "spironolactone",
+                  "source_table": "interventions.txt"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392379839",
+                  "source_table": "interventions.txt"
+                },
+                "relationship_type": "HAS_INTERVENTION"
+              },
+              {
+                "evidence_labels": [
+                  "PlannedOutcome"
+                ],
+                "evidence_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "description": "",
+                  "measure": "Echocardiography parameters of diastolic function",
+                  "nct_id": "NCT00206232",
+                  "outcome_type": "secondary",
+                  "planned_outcome_id": "planned_outcome:1426533443",
+                  "population": "",
+                  "source_record_id": "1426533443",
+                  "source_table": "design_outcomes.txt",
+                  "time_frame": "Baseline, then 3 and 6 months after randomization"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426533443",
+                  "source_table": "design_outcomes.txt"
+                },
+                "relationship_type": "HAS_PLANNED_OUTCOME"
+              },
+              {
+                "evidence_labels": [
+                  "PlannedOutcome"
+                ],
+                "evidence_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "description": "",
+                  "measure": "Six minute walk distance",
+                  "nct_id": "NCT00206232",
+                  "outcome_type": "primary",
+                  "planned_outcome_id": "planned_outcome:1426534673",
+                  "population": "",
+                  "source_record_id": "1426534673",
+                  "source_table": "design_outcomes.txt",
+                  "time_frame": "Baseline, then 3 and 6 months after randomization"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426534673",
+                  "source_table": "design_outcomes.txt"
+                },
+                "relationship_type": "HAS_PLANNED_OUTCOME"
+              },
+              {
+                "evidence_labels": [
+                  "ConditionTerm"
+                ],
+                "evidence_properties": {
+                  "condition_id": "condition:629e3a1901f0194c01ec",
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "name": "Heart Failure",
+                  "normalized_name": "heart failure",
+                  "source_kind": "submitted",
+                  "source_table": "conditions.txt"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "conditions.txt"
+                },
+                "relationship_type": "HAS_SUBMITTED_CONDITION"
+              },
+              {
+                "evidence_labels": [
+                  "Sponsor"
+                ],
+                "evidence_properties": {
+                  "agency_class": "OTHER",
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "name": "Baylor College of Medicine",
+                  "normalized_name": "baylor college of medicine",
+                  "source_table": "sponsors.txt",
+                  "sponsor_id": "sponsor:64f999d92d1b73893f9b"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381715287",
+                  "source_table": "sponsors.txt"
+                },
+                "relationship_type": "LEAD_SPONSORED_BY"
+              },
+              {
+                "evidence_labels": [
+                  "SourceDataset"
+                ],
+                "evidence_properties": {
+                  "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+                  "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+                  "archive_size_bytes": 2526451724,
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "graph_version": "HTT-KG-AACT-20260905-v1",
+                  "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+                  "snapshot_date": "2026-09-05",
+                  "snapshot_file": "20260905_export_ctgov.zip",
+                  "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+                  "source_dataset_id": "HTT-P1-AACT-20260905"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "relationship_type": "MEMBER_OF_DATASET"
+              }
+            ],
+            "trial": {
+              "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+              "completion_date": "2010-07-31",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "enrollment": "48",
+              "nct_id": "NCT00206232",
+              "phase": "PHASE4",
+              "start_date": "2004-07-31",
+              "study_first_submitted_date": "2005-09-12",
+              "study_type": "INTERVENTIONAL",
+              "submission_year": 2005,
+              "temporal_group": "Development (1999-2017)",
+              "trial_id": "NCT00206232"
+            }
+          }
+        ],
+        "graph_version": "HTT-KG-AACT-20260905-v1",
+        "parameters": {
+          "nct_id": "NCT00206232"
+        },
+        "question": "What information is registered for clinical trial NCT00206232?",
+        "question_id": "1",
+        "retrieved_utc": "2026-10-14T23:48:54.396175+00:00",
+        "row_count": 1,
+        "safeguards": {
+          "no_llm_generation": true,
+          "planned_outcomes": "Registered planned outcome — not a clinical result.",
+          "read_only_retrieval": true,
+          "snapshot": "Evidence comes from the pinned September 5, 2026 snapshot and may include later amendments; it is not asserted to be the original registration record."
+        }
+      },
+      "question": "What information is registered for clinical trial NCT00206232?",
+      "question_id": "1",
+      "retrieval_latency_ms": 80.942
+    }
+  ],
+  "started_utc": "2026-10-14T23:48:52.325475+00:00",
+  "total_latency_ms": 110483.505,
+  "trace_schema_version": "HTT-GRAPHRAG-DEMO-v1"
+}

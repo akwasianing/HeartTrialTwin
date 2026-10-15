@@ -1,0 +1,1755 @@
+{
+  "configuration": {
+    "database": "57aa5fa3",
+    "env_source": "artifacts/knowledge_graph/.env",
+    "uri_scheme": "neo4j+s",
+    "username_configured": "true"
+  },
+  "connection": {
+    "connected": true,
+    "database": "57aa5fa3",
+    "dataset_version": "HTT-P1-AACT-20260905",
+    "graph_version": "HTT-KG-AACT-20260905-v1",
+    "node_count": 26,
+    "relationship_count": 65,
+    "snapshot_date": "2026-09-05"
+  },
+  "phase": "Neo4j retrieval only; no LLM",
+  "results": [
+    {
+      "dataset_version": "HTT-P1-AACT-20260905",
+      "evidence": [
+        {
+          "evidence_paths": [
+            {
+              "evidence_labels": [
+                "ConditionTerm"
+              ],
+              "evidence_properties": {
+                "condition_id": "condition:6414c5b8adecc13a3786",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "name": "Cardiovascular Diseases",
+                "normalized_name": "cardiovascular diseases",
+                "source_kind": "browse",
+                "source_table": "browse_conditions.txt"
+              },
+              "relationship_properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "browse_conditions.txt"
+              },
+              "relationship_type": "HAS_BROWSE_CONDITION"
+            },
+            {
+              "evidence_labels": [
+                "ConditionTerm"
+              ],
+              "evidence_properties": {
+                "condition_id": "condition:76106621b8d52df0409b",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "name": "Heart Diseases",
+                "normalized_name": "heart diseases",
+                "source_kind": "browse",
+                "source_table": "browse_conditions.txt"
+              },
+              "relationship_properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "browse_conditions.txt"
+              },
+              "relationship_type": "HAS_BROWSE_CONDITION"
+            },
+            {
+              "evidence_labels": [
+                "ConditionTerm"
+              ],
+              "evidence_properties": {
+                "condition_id": "condition:220601b84d713b61467c",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "name": "Heart Failure",
+                "normalized_name": "heart failure",
+                "source_kind": "browse",
+                "source_table": "browse_conditions.txt"
+              },
+              "relationship_properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "browse_conditions.txt"
+              },
+              "relationship_type": "HAS_BROWSE_CONDITION"
+            },
+            {
+              "evidence_labels": [
+                "Intervention"
+              ],
+              "evidence_properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+                "intervention_type": "DRUG",
+                "name": "Spironolactone",
+                "normalized_intervention_type": "drug",
+                "normalized_name": "spironolactone",
+                "source_table": "interventions.txt"
+              },
+              "relationship_properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392379839",
+                "source_table": "interventions.txt"
+              },
+              "relationship_type": "HAS_INTERVENTION"
+            },
+            {
+              "evidence_labels": [
+                "PlannedOutcome"
+              ],
+              "evidence_properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "measure": "Echocardiography parameters of diastolic function",
+                "nct_id": "NCT00206232",
+                "outcome_type": "secondary",
+                "planned_outcome_id": "planned_outcome:1426533443",
+                "population": "",
+                "source_record_id": "1426533443",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Baseline, then 3 and 6 months after randomization"
+              },
+              "relationship_properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426533443",
+                "source_table": "design_outcomes.txt"
+              },
+              "relationship_type": "HAS_PLANNED_OUTCOME"
+            },
+            {
+              "evidence_labels": [
+                "PlannedOutcome"
+              ],
+              "evidence_properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "measure": "Six minute walk distance",
+                "nct_id": "NCT00206232",
+                "outcome_type": "primary",
+                "planned_outcome_id": "planned_outcome:1426534673",
+                "population": "",
+                "source_record_id": "1426534673",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Baseline, then 3 and 6 months after randomization"
+              },
+              "relationship_properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426534673",
+                "source_table": "design_outcomes.txt"
+              },
+              "relationship_type": "HAS_PLANNED_OUTCOME"
+            },
+            {
+              "evidence_labels": [
+                "ConditionTerm"
+              ],
+              "evidence_properties": {
+                "condition_id": "condition:629e3a1901f0194c01ec",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "name": "Heart Failure",
+                "normalized_name": "heart failure",
+                "source_kind": "submitted",
+                "source_table": "conditions.txt"
+              },
+              "relationship_properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "conditions.txt"
+              },
+              "relationship_type": "HAS_SUBMITTED_CONDITION"
+            },
+            {
+              "evidence_labels": [
+                "Sponsor"
+              ],
+              "evidence_properties": {
+                "agency_class": "OTHER",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "name": "Baylor College of Medicine",
+                "normalized_name": "baylor college of medicine",
+                "source_table": "sponsors.txt",
+                "sponsor_id": "sponsor:64f999d92d1b73893f9b"
+              },
+              "relationship_properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "381715287",
+                "source_table": "sponsors.txt"
+              },
+              "relationship_type": "LEAD_SPONSORED_BY"
+            },
+            {
+              "evidence_labels": [
+                "SourceDataset"
+              ],
+              "evidence_properties": {
+                "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+                "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+                "archive_size_bytes": 2526451724,
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "graph_version": "HTT-KG-AACT-20260905-v1",
+                "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+                "snapshot_date": "2026-09-05",
+                "snapshot_file": "20260905_export_ctgov.zip",
+                "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+                "source_dataset_id": "HTT-P1-AACT-20260905"
+              },
+              "relationship_properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "relationship_type": "MEMBER_OF_DATASET"
+            }
+          ],
+          "trial": {
+            "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+            "completion_date": "2010-07-31",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "enrollment": "48",
+            "nct_id": "NCT00206232",
+            "phase": "PHASE4",
+            "start_date": "2004-07-31",
+            "study_first_submitted_date": "2005-09-12",
+            "study_type": "INTERVENTIONAL",
+            "submission_year": 2005,
+            "temporal_group": "Development (1999-2017)",
+            "trial_id": "NCT00206232"
+          }
+        }
+      ],
+      "graph_version": "HTT-KG-AACT-20260905-v1",
+      "parameters": {
+        "nct_id": "NCT00206232"
+      },
+      "question": "What information is registered for clinical trial NCT00206232?",
+      "question_id": "1",
+      "retrieved_utc": "2026-10-14T22:46:20.320059+00:00",
+      "row_count": 1,
+      "safeguards": {
+        "no_llm_generation": true,
+        "planned_outcomes": "Registered planned outcome — not a clinical result.",
+        "read_only_retrieval": true,
+        "snapshot": "Evidence comes from the pinned September 5, 2026 snapshot and may include later amendments; it is not asserted to be the original registration record."
+      }
+    },
+    {
+      "dataset_version": "HTT-P1-AACT-20260905",
+      "evidence": [
+        {
+          "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+          "condition": {
+            "condition_id": "condition:629e3a1901f0194c01ec",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Heart Failure",
+            "normalized_name": "heart failure",
+            "source_kind": "submitted",
+            "source_table": "conditions.txt"
+          },
+          "intervention": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+            "intervention_type": "DRUG",
+            "name": "Spironolactone",
+            "normalized_intervention_type": "drug",
+            "normalized_name": "spironolactone",
+            "source_table": "interventions.txt"
+          },
+          "nct_id": "NCT00206232",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "",
+            "measure": "Echocardiography parameters of diastolic function",
+            "nct_id": "NCT00206232",
+            "outcome_type": "secondary",
+            "planned_outcome_id": "planned_outcome:1426533443",
+            "population": "",
+            "source_record_id": "1426533443",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "Baseline, then 3 and 6 months after randomization"
+          },
+          "relationship_path": {
+            "condition": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "conditions.txt"
+              },
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "intervention": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392379839",
+                "source_table": "interventions.txt"
+              },
+              "type": "HAS_INTERVENTION"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426533443",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "sponsor": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "381715287",
+                "source_table": "sponsors.txt"
+              },
+              "type": "LEAD_SPONSORED_BY"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "sponsor": {
+            "agency_class": "OTHER",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Baylor College of Medicine",
+            "normalized_name": "baylor college of medicine",
+            "source_table": "sponsors.txt",
+            "sponsor_id": "sponsor:64f999d92d1b73893f9b"
+          }
+        },
+        {
+          "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+          "condition": {
+            "condition_id": "condition:629e3a1901f0194c01ec",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Heart Failure",
+            "normalized_name": "heart failure",
+            "source_kind": "submitted",
+            "source_table": "conditions.txt"
+          },
+          "intervention": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+            "intervention_type": "DRUG",
+            "name": "Spironolactone",
+            "normalized_intervention_type": "drug",
+            "normalized_name": "spironolactone",
+            "source_table": "interventions.txt"
+          },
+          "nct_id": "NCT00206232",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "",
+            "measure": "Six minute walk distance",
+            "nct_id": "NCT00206232",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1426534673",
+            "population": "",
+            "source_record_id": "1426534673",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "Baseline, then 3 and 6 months after randomization"
+          },
+          "relationship_path": {
+            "condition": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "conditions.txt"
+              },
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "intervention": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392379839",
+                "source_table": "interventions.txt"
+              },
+              "type": "HAS_INTERVENTION"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426534673",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "sponsor": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "381715287",
+                "source_table": "sponsors.txt"
+              },
+              "type": "LEAD_SPONSORED_BY"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "sponsor": {
+            "agency_class": "OTHER",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Baylor College of Medicine",
+            "normalized_name": "baylor college of medicine",
+            "source_table": "sponsors.txt",
+            "sponsor_id": "sponsor:64f999d92d1b73893f9b"
+          }
+        },
+        {
+          "brief_title": "Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone",
+          "condition": {
+            "condition_id": "condition:629e3a1901f0194c01ec",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Heart Failure",
+            "normalized_name": "heart failure",
+            "source_kind": "submitted",
+            "source_table": "conditions.txt"
+          },
+          "intervention": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+            "intervention_type": "DRUG",
+            "name": "Spironolactone",
+            "normalized_intervention_type": "drug",
+            "normalized_name": "spironolactone",
+            "source_table": "interventions.txt"
+          },
+          "nct_id": "NCT00391846",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "Number of deaths",
+            "measure": "Number of CV Deaths",
+            "nct_id": "NCT00391846",
+            "outcome_type": "secondary",
+            "planned_outcome_id": "planned_outcome:1427333625",
+            "population": "",
+            "source_record_id": "1427333625",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "9 months"
+          },
+          "relationship_path": {
+            "condition": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "conditions.txt"
+              },
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "intervention": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392598879",
+                "source_table": "interventions.txt"
+              },
+              "type": "HAS_INTERVENTION"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1427333625",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "sponsor": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "381921083",
+                "source_table": "sponsors.txt"
+              },
+              "type": "LEAD_SPONSORED_BY"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "sponsor": {
+            "agency_class": "INDUSTRY",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "AstraZeneca",
+            "normalized_name": "astrazeneca",
+            "source_table": "sponsors.txt",
+            "sponsor_id": "sponsor:73f028fcb1012cf7d1e8"
+          }
+        },
+        {
+          "brief_title": "Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone",
+          "condition": {
+            "condition_id": "condition:629e3a1901f0194c01ec",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Heart Failure",
+            "normalized_name": "heart failure",
+            "source_kind": "submitted",
+            "source_table": "conditions.txt"
+          },
+          "intervention": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+            "intervention_type": "DRUG",
+            "name": "Spironolactone",
+            "normalized_intervention_type": "drug",
+            "normalized_name": "spironolactone",
+            "source_table": "interventions.txt"
+          },
+          "nct_id": "NCT00391846",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "The non-parametric scale is constructed from 3 variables, modified after Cleland. Each patient receives a rank score from 1 to 246 (246-number of patients in the study). The lowest score receive patients who die (due to CV event), next patients still alive at end-of-study with the worst composite score, the best alive patients with 0 days in hospital and the largest improvement in the KCCQ (self-administered by patient symptom score, where the higher score reflect better health status). Scores will be summarized using non-parametric calculations. The mean of non-parametric scores is presented",
+            "measure": "Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9)",
+            "nct_id": "NCT00391846",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1427335324",
+            "population": "",
+            "source_record_id": "1427335324",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "9 months"
+          },
+          "relationship_path": {
+            "condition": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "conditions.txt"
+              },
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "intervention": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392598879",
+                "source_table": "interventions.txt"
+              },
+              "type": "HAS_INTERVENTION"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1427335324",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "sponsor": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "381921083",
+                "source_table": "sponsors.txt"
+              },
+              "type": "LEAD_SPONSORED_BY"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "sponsor": {
+            "agency_class": "INDUSTRY",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "AstraZeneca",
+            "normalized_name": "astrazeneca",
+            "source_table": "sponsors.txt",
+            "sponsor_id": "sponsor:73f028fcb1012cf7d1e8"
+          }
+        },
+        {
+          "brief_title": "Effect of Aldosterone on Energy Starvation in Heart Failure",
+          "condition": {
+            "condition_id": "condition:629e3a1901f0194c01ec",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Heart Failure",
+            "normalized_name": "heart failure",
+            "source_kind": "submitted",
+            "source_table": "conditions.txt"
+          },
+          "intervention": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+            "intervention_type": "DRUG",
+            "name": "Spironolactone",
+            "normalized_intervention_type": "drug",
+            "normalized_name": "spironolactone",
+            "source_table": "interventions.txt"
+          },
+          "nct_id": "NCT00574119",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "WMI=\\[left ventricular stroke work/decay rate of 11C-acetate\\]",
+            "measure": "Left Ventricular Work-metabolic Index (WMI) at Baseline",
+            "nct_id": "NCT00574119",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1428445987",
+            "population": "",
+            "source_record_id": "1428445987",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "baseline"
+          },
+          "relationship_path": {
+            "condition": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "conditions.txt"
+              },
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "intervention": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392894341",
+                "source_table": "interventions.txt"
+              },
+              "type": "HAS_INTERVENTION"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1428445987",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "sponsor": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "382201825",
+                "source_table": "sponsors.txt"
+              },
+              "type": "LEAD_SPONSORED_BY"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "sponsor": {
+            "agency_class": "OTHER",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Vanderbilt University",
+            "normalized_name": "vanderbilt university",
+            "source_table": "sponsors.txt",
+            "sponsor_id": "sponsor:59216acbedf193ccee74"
+          }
+        },
+        {
+          "brief_title": "Effect of Aldosterone on Energy Starvation in Heart Failure",
+          "condition": {
+            "condition_id": "condition:629e3a1901f0194c01ec",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Heart Failure",
+            "normalized_name": "heart failure",
+            "source_kind": "submitted",
+            "source_table": "conditions.txt"
+          },
+          "intervention": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+            "intervention_type": "DRUG",
+            "name": "Spironolactone",
+            "normalized_intervention_type": "drug",
+            "normalized_name": "spironolactone",
+            "source_table": "interventions.txt"
+          },
+          "nct_id": "NCT00574119",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "WMI=\\[left ventricular stroke work/decay rate of 11C-acetate\\]",
+            "measure": "Left Ventricular Work-metabolic Index (WMI) at 6 Months",
+            "nct_id": "NCT00574119",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1428445988",
+            "population": "",
+            "source_record_id": "1428445988",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "6 months"
+          },
+          "relationship_path": {
+            "condition": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "conditions.txt"
+              },
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "intervention": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392894341",
+                "source_table": "interventions.txt"
+              },
+              "type": "HAS_INTERVENTION"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1428445988",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "sponsor": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "382201825",
+                "source_table": "sponsors.txt"
+              },
+              "type": "LEAD_SPONSORED_BY"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "sponsor": {
+            "agency_class": "OTHER",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Vanderbilt University",
+            "normalized_name": "vanderbilt university",
+            "source_table": "sponsors.txt",
+            "sponsor_id": "sponsor:59216acbedf193ccee74"
+          }
+        },
+        {
+          "brief_title": "SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)",
+          "condition": {
+            "condition_id": "condition:629e3a1901f0194c01ec",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Heart Failure",
+            "normalized_name": "heart failure",
+            "source_kind": "submitted",
+            "source_table": "conditions.txt"
+          },
+          "intervention": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+            "intervention_type": "DRUG",
+            "name": "Spironolactone",
+            "normalized_intervention_type": "drug",
+            "normalized_name": "spironolactone",
+            "source_table": "interventions.txt"
+          },
+          "nct_id": "NCT00604006",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "",
+            "measure": "Effectiveness of Spironolactone in preventing heart failure",
+            "nct_id": "NCT00604006",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1427315147",
+            "population": "",
+            "source_record_id": "1427315147",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "1 year and 3 year"
+          },
+          "relationship_path": {
+            "condition": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "conditions.txt"
+              },
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "intervention": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392593447",
+                "source_table": "interventions.txt"
+              },
+              "type": "HAS_INTERVENTION"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1427315147",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "sponsor": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "381915737",
+                "source_table": "sponsors.txt"
+              },
+              "type": "LEAD_SPONSORED_BY"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "sponsor": {
+            "agency_class": "OTHER",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Monash University",
+            "normalized_name": "monash university",
+            "source_table": "sponsors.txt",
+            "sponsor_id": "sponsor:b946f114ca1bd09f372c"
+          }
+        },
+        {
+          "brief_title": "SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)",
+          "condition": {
+            "condition_id": "condition:629e3a1901f0194c01ec",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Heart Failure",
+            "normalized_name": "heart failure",
+            "source_kind": "submitted",
+            "source_table": "conditions.txt"
+          },
+          "intervention": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+            "intervention_type": "DRUG",
+            "name": "Spironolactone",
+            "normalized_intervention_type": "drug",
+            "normalized_name": "spironolactone",
+            "source_table": "interventions.txt"
+          },
+          "nct_id": "NCT00604006",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "",
+            "measure": "Cost effectiveness of Spironolactone prevention",
+            "nct_id": "NCT00604006",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1427315148",
+            "population": "",
+            "source_record_id": "1427315148",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "3 years"
+          },
+          "relationship_path": {
+            "condition": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "conditions.txt"
+              },
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "intervention": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392593447",
+                "source_table": "interventions.txt"
+              },
+              "type": "HAS_INTERVENTION"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1427315148",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "sponsor": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "381915737",
+                "source_table": "sponsors.txt"
+              },
+              "type": "LEAD_SPONSORED_BY"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "sponsor": {
+            "agency_class": "OTHER",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Monash University",
+            "normalized_name": "monash university",
+            "source_table": "sponsors.txt",
+            "sponsor_id": "sponsor:b946f114ca1bd09f372c"
+          }
+        },
+        {
+          "brief_title": "Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease",
+          "condition": {
+            "condition_id": "condition:629e3a1901f0194c01ec",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Heart Failure",
+            "normalized_name": "heart failure",
+            "source_kind": "submitted",
+            "source_table": "conditions.txt"
+          },
+          "intervention": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+            "intervention_type": "DRUG",
+            "name": "Spironolactone",
+            "normalized_intervention_type": "drug",
+            "normalized_name": "spironolactone",
+            "source_table": "interventions.txt"
+          },
+          "nct_id": "NCT01130597",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "",
+            "measure": "Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4",
+            "nct_id": "NCT01130597",
+            "outcome_type": "secondary",
+            "planned_outcome_id": "planned_outcome:1425435516",
+            "population": "",
+            "source_record_id": "1425435516",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "28 Days"
+          },
+          "relationship_path": {
+            "condition": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "conditions.txt"
+              },
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "intervention": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392083486",
+                "source_table": "interventions.txt"
+              },
+              "type": "HAS_INTERVENTION"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1425435516",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "sponsor": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "381436330",
+                "source_table": "sponsors.txt"
+              },
+              "type": "LEAD_SPONSORED_BY"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "sponsor": {
+            "agency_class": "INDUSTRY",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Relypsa, Inc.",
+            "normalized_name": "relypsa, inc.",
+            "source_table": "sponsors.txt",
+            "sponsor_id": "sponsor:e2299c0be1c8d388bf8e"
+          }
+        },
+        {
+          "brief_title": "Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease",
+          "condition": {
+            "condition_id": "condition:629e3a1901f0194c01ec",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Heart Failure",
+            "normalized_name": "heart failure",
+            "source_kind": "submitted",
+            "source_table": "conditions.txt"
+          },
+          "intervention": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+            "intervention_type": "DRUG",
+            "name": "Spironolactone",
+            "normalized_intervention_type": "drug",
+            "normalized_name": "spironolactone",
+            "source_table": "interventions.txt"
+          },
+          "nct_id": "NCT01130597",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "",
+            "measure": "Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment",
+            "nct_id": "NCT01130597",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1425436986",
+            "population": "",
+            "source_record_id": "1425436986",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "56 days"
+          },
+          "relationship_path": {
+            "condition": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "",
+                "source_record_id_status": "not_retained_in_step2_extract",
+                "source_table": "conditions.txt"
+              },
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "intervention": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392083486",
+                "source_table": "interventions.txt"
+              },
+              "type": "HAS_INTERVENTION"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1425436986",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "sponsor": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "381436330",
+                "source_table": "sponsors.txt"
+              },
+              "type": "LEAD_SPONSORED_BY"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "sponsor": {
+            "agency_class": "INDUSTRY",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "name": "Relypsa, Inc.",
+            "normalized_name": "relypsa, inc.",
+            "source_table": "sponsors.txt",
+            "sponsor_id": "sponsor:e2299c0be1c8d388bf8e"
+          }
+        }
+      ],
+      "graph_version": "HTT-KG-AACT-20260905-v1",
+      "parameters": {
+        "condition_normalized": "heart failure",
+        "dataset_version": "HTT-P1-AACT-20260905",
+        "intervention_normalized": "spironolactone"
+      },
+      "question": "Which sponsors are associated with heart-failure trials investigating spironolactone, and what planned outcomes did those trials register?",
+      "question_id": "2",
+      "retrieved_utc": "2026-10-14T22:46:20.754942+00:00",
+      "row_count": 10,
+      "safeguards": {
+        "no_llm_generation": true,
+        "planned_outcomes": "Registered planned outcome — not a clinical result.",
+        "read_only_retrieval": true,
+        "snapshot": "Evidence comes from the pinned September 5, 2026 snapshot and may include later amendments; it is not asserted to be the original registration record."
+      }
+    },
+    {
+      "dataset_version": "HTT-P1-AACT-20260905",
+      "deterministic_comparison": {
+        "comparison_method": "Exact normalized-string comparison of registered measure names, plus counts of stored outcome types and time frames; no clinical inference.",
+        "per_trial": [
+          {
+            "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+            "nct_id": "NCT00206232",
+            "outcome_type_counts": {
+              "primary": 1,
+              "secondary": 1
+            },
+            "planned_outcome_count": 2,
+            "registered_measures": [
+              "Echocardiography parameters of diastolic function",
+              "Six minute walk distance"
+            ],
+            "registered_time_frames": [
+              "Baseline, then 3 and 6 months after randomization",
+              "Baseline, then 3 and 6 months after randomization"
+            ]
+          },
+          {
+            "brief_title": "Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone",
+            "nct_id": "NCT00391846",
+            "outcome_type_counts": {
+              "primary": 1,
+              "secondary": 1
+            },
+            "planned_outcome_count": 2,
+            "registered_measures": [
+              "Number of CV Deaths",
+              "Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9)"
+            ],
+            "registered_time_frames": [
+              "9 months",
+              "9 months"
+            ]
+          },
+          {
+            "brief_title": "Effect of Aldosterone on Energy Starvation in Heart Failure",
+            "nct_id": "NCT00574119",
+            "outcome_type_counts": {
+              "primary": 2
+            },
+            "planned_outcome_count": 2,
+            "registered_measures": [
+              "Left Ventricular Work-metabolic Index (WMI) at Baseline",
+              "Left Ventricular Work-metabolic Index (WMI) at 6 Months"
+            ],
+            "registered_time_frames": [
+              "baseline",
+              "6 months"
+            ]
+          },
+          {
+            "brief_title": "SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)",
+            "nct_id": "NCT00604006",
+            "outcome_type_counts": {
+              "primary": 2
+            },
+            "planned_outcome_count": 2,
+            "registered_measures": [
+              "Effectiveness of Spironolactone in preventing heart failure",
+              "Cost effectiveness of Spironolactone prevention"
+            ],
+            "registered_time_frames": [
+              "1 year and 3 year",
+              "3 years"
+            ]
+          },
+          {
+            "brief_title": "Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease",
+            "nct_id": "NCT01130597",
+            "outcome_type_counts": {
+              "primary": 1,
+              "secondary": 1
+            },
+            "planned_outcome_count": 2,
+            "registered_measures": [
+              "Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4",
+              "Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment"
+            ],
+            "registered_time_frames": [
+              "28 Days",
+              "56 days"
+            ]
+          }
+        ],
+        "planned_outcome_count": 10,
+        "shared_exact_measure_count": 0,
+        "shared_exact_measures": [],
+        "trial_count": 5
+      },
+      "evidence": [
+        {
+          "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+          "nct_id": "NCT00206232",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "",
+            "measure": "Echocardiography parameters of diastolic function",
+            "nct_id": "NCT00206232",
+            "outcome_type": "secondary",
+            "planned_outcome_id": "planned_outcome:1426533443",
+            "population": "",
+            "source_record_id": "1426533443",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "Baseline, then 3 and 6 months after randomization"
+          },
+          "relationship_path": {
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426533443",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          }
+        },
+        {
+          "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+          "nct_id": "NCT00206232",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "",
+            "measure": "Six minute walk distance",
+            "nct_id": "NCT00206232",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1426534673",
+            "population": "",
+            "source_record_id": "1426534673",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "Baseline, then 3 and 6 months after randomization"
+          },
+          "relationship_path": {
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426534673",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          }
+        },
+        {
+          "brief_title": "Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone",
+          "nct_id": "NCT00391846",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "Number of deaths",
+            "measure": "Number of CV Deaths",
+            "nct_id": "NCT00391846",
+            "outcome_type": "secondary",
+            "planned_outcome_id": "planned_outcome:1427333625",
+            "population": "",
+            "source_record_id": "1427333625",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "9 months"
+          },
+          "relationship_path": {
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1427333625",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          }
+        },
+        {
+          "brief_title": "Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone",
+          "nct_id": "NCT00391846",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "The non-parametric scale is constructed from 3 variables, modified after Cleland. Each patient receives a rank score from 1 to 246 (246-number of patients in the study). The lowest score receive patients who die (due to CV event), next patients still alive at end-of-study with the worst composite score, the best alive patients with 0 days in hospital and the largest improvement in the KCCQ (self-administered by patient symptom score, where the higher score reflect better health status). Scores will be summarized using non-parametric calculations. The mean of non-parametric scores is presented",
+            "measure": "Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9)",
+            "nct_id": "NCT00391846",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1427335324",
+            "population": "",
+            "source_record_id": "1427335324",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "9 months"
+          },
+          "relationship_path": {
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1427335324",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          }
+        },
+        {
+          "brief_title": "Effect of Aldosterone on Energy Starvation in Heart Failure",
+          "nct_id": "NCT00574119",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "WMI=\\[left ventricular stroke work/decay rate of 11C-acetate\\]",
+            "measure": "Left Ventricular Work-metabolic Index (WMI) at Baseline",
+            "nct_id": "NCT00574119",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1428445987",
+            "population": "",
+            "source_record_id": "1428445987",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "baseline"
+          },
+          "relationship_path": {
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1428445987",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          }
+        },
+        {
+          "brief_title": "Effect of Aldosterone on Energy Starvation in Heart Failure",
+          "nct_id": "NCT00574119",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "WMI=\\[left ventricular stroke work/decay rate of 11C-acetate\\]",
+            "measure": "Left Ventricular Work-metabolic Index (WMI) at 6 Months",
+            "nct_id": "NCT00574119",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1428445988",
+            "population": "",
+            "source_record_id": "1428445988",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "6 months"
+          },
+          "relationship_path": {
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1428445988",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          }
+        },
+        {
+          "brief_title": "SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)",
+          "nct_id": "NCT00604006",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "",
+            "measure": "Effectiveness of Spironolactone in preventing heart failure",
+            "nct_id": "NCT00604006",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1427315147",
+            "population": "",
+            "source_record_id": "1427315147",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "1 year and 3 year"
+          },
+          "relationship_path": {
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1427315147",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          }
+        },
+        {
+          "brief_title": "SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)",
+          "nct_id": "NCT00604006",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "",
+            "measure": "Cost effectiveness of Spironolactone prevention",
+            "nct_id": "NCT00604006",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1427315148",
+            "population": "",
+            "source_record_id": "1427315148",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "3 years"
+          },
+          "relationship_path": {
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1427315148",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          }
+        },
+        {
+          "brief_title": "Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease",
+          "nct_id": "NCT01130597",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "",
+            "measure": "Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4",
+            "nct_id": "NCT01130597",
+            "outcome_type": "secondary",
+            "planned_outcome_id": "planned_outcome:1425435516",
+            "population": "",
+            "source_record_id": "1425435516",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "28 Days"
+          },
+          "relationship_path": {
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1425435516",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          }
+        },
+        {
+          "brief_title": "Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease",
+          "nct_id": "NCT01130597",
+          "planned_outcome": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "description": "",
+            "measure": "Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment",
+            "nct_id": "NCT01130597",
+            "outcome_type": "primary",
+            "planned_outcome_id": "planned_outcome:1425436986",
+            "population": "",
+            "source_record_id": "1425436986",
+            "source_table": "design_outcomes.txt",
+            "time_frame": "56 days"
+          },
+          "relationship_path": {
+            "dataset": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "type": "MEMBER_OF_DATASET"
+            },
+            "planned_outcome": {
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1425436986",
+                "source_table": "design_outcomes.txt"
+              },
+              "type": "HAS_PLANNED_OUTCOME"
+            }
+          },
+          "source_dataset": {
+            "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+            "archive_size_bytes": 2526451724,
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          }
+        }
+      ],
+      "graph_version": "HTT-KG-AACT-20260905-v1",
+      "parameters": {
+        "dataset_version": "HTT-P1-AACT-20260905"
+      },
+      "question": "What similarities and differences exist in the registered planned outcomes across the five selected heart-failure trials?",
+      "question_id": "3",
+      "retrieved_utc": "2026-10-14T22:46:20.882101+00:00",
+      "row_count": 10,
+      "safeguards": {
+        "no_llm_generation": true,
+        "planned_outcomes": "Registered planned outcome — not a clinical result.",
+        "read_only_retrieval": true,
+        "snapshot": "Evidence comes from the pinned September 5, 2026 snapshot and may include later amendments; it is not asserted to be the original registration record."
+      }
+    }
+  ]
+}

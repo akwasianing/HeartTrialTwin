@@ -1,0 +1,945 @@
+{
+  "completed_utc": "2026-10-15T01:02:19.236123+00:00",
+  "configuration": {
+    "api_key_configured": false,
+    "credentials_required": false,
+    "database": "57aa5fa3",
+    "env_source": "artifacts/knowledge_graph/.env",
+    "llm_model": "qwen2.5:1.5b",
+    "llm_provider": "ollama",
+    "uri_scheme": "neo4j+s",
+    "username_configured": "true"
+  },
+  "connection": {
+    "connected": true,
+    "database": "57aa5fa3",
+    "dataset_version": "HTT-P1-AACT-20260905",
+    "graph_version": "HTT-KG-AACT-20260905-v1",
+    "node_count": 26,
+    "relationship_count": 65,
+    "snapshot_date": "2026-09-05"
+  },
+  "phase": "Neo4j retrieval plus grounded LLM answer generation",
+  "provider_status": {
+    "available": true,
+    "base_url": "http://localhost:11434",
+    "installed_models": [
+      "qwen2.5:1.5b",
+      "qwen3:4b"
+    ],
+    "model": "qwen2.5:1.5b"
+  },
+  "results": [
+    {
+      "generation": {
+        "answer": "ABSTAIN: The generated explanation contained claims that could not be verified against the retrieved KG evidence.",
+        "attempts": [
+          {
+            "attempt": 1,
+            "deterministic_evidence_summary": {
+              "applicable": false,
+              "construction": "not_applicable",
+              "errors": [],
+              "planned_outcome_count": 0,
+              "ready": true,
+              "text": "",
+              "trial_count": 0
+            },
+            "done_reason": "length",
+            "eval_count": 150,
+            "generated_evidence_section": "Evidence and provenance (deterministically constructed from retrieved KG evidence):\n- NCT IDs: NCT00206232, NCT00391846, NCT00574119, NCT00604006, NCT01130597\n- Registered trial titles: Effect of Aldosterone on Energy Starvation in Heart Failure; Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone; Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease; Novel Treatment for Diastolic Heart Failure in Women; SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)\n- Registered planned-outcome measures: Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9); Cost effectiveness of Spironolactone prevention; Echocardiography parameters of diastolic function; Effectiveness of Spironolactone in preventing heart failure; Left Ventricular Work-metabolic Index (WMI) at 6 Months; Left Ventricular Work-metabolic Index (WMI) at Baseline; Number of CV Deaths; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment; Six minute walk distance\n- Source-record citations: [source_record_id: 1425435516], [source_record_id: 1425436986], [source_record_id: 1426533443], [source_record_id: 1426534673], [source_record_id: 1427315147], [source_record_id: 1427315148], [source_record_id: 1427333625], [source_record_id: 1427335324], [source_record_id: 1428445987], [source_record_id: 1428445988]\n- Dataset version: HTT-P1-AACT-20260905\n- Snapshot date: 2026-09-05\nRegistered planned outcomes are not observed clinical results.",
+            "grounding_validation": {
+              "errors": [
+                "claim_2:unsupported_outcome_measure_assertion"
+              ],
+              "evidence_identifiers": {
+                "dataset_versions": [
+                  "HTT-P1-AACT-20260905"
+                ],
+                "nct_ids": [
+                  "NCT00206232",
+                  "NCT00391846",
+                  "NCT00574119",
+                  "NCT00604006",
+                  "NCT01130597"
+                ],
+                "snapshot_dates": [
+                  "2026-09-05"
+                ],
+                "source_record_ids": [
+                  "1425435516",
+                  "1425436986",
+                  "1426533443",
+                  "1426534673",
+                  "1427315147",
+                  "1427315148",
+                  "1427333625",
+                  "1427335324",
+                  "1428445987",
+                  "1428445988"
+                ]
+              },
+              "passed": false,
+              "status": "blocked_unsupported_claims"
+            },
+            "latency_ms": 88038.329,
+            "ollama_total_duration_ms": 88023.216,
+            "prompt_eval_count": 2521,
+            "provenance_construction": {
+              "construction": "deterministic_from_retrieved_kg_evidence",
+              "errors": [],
+              "identifiers": {
+                "dataset_versions": [
+                  "HTT-P1-AACT-20260905"
+                ],
+                "nct_ids": [
+                  "NCT00206232",
+                  "NCT00391846",
+                  "NCT00574119",
+                  "NCT00604006",
+                  "NCT01130597"
+                ],
+                "snapshot_dates": [
+                  "2026-09-05"
+                ],
+                "source_record_ids": [
+                  "1425435516",
+                  "1425436986",
+                  "1426533443",
+                  "1426534673",
+                  "1427315147",
+                  "1427315148",
+                  "1427333625",
+                  "1427335324",
+                  "1428445987",
+                  "1428445988"
+                ]
+              },
+              "planned_outcome_safeguard_appended": true,
+              "ready": true,
+              "text": "Evidence and provenance (deterministically constructed from retrieved KG evidence):\n- NCT IDs: NCT00206232, NCT00391846, NCT00574119, NCT00604006, NCT01130597\n- Registered trial titles: Effect of Aldosterone on Energy Starvation in Heart Failure; Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone; Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease; Novel Treatment for Diastolic Heart Failure in Women; SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)\n- Registered planned-outcome measures: Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9); Cost effectiveness of Spironolactone prevention; Echocardiography parameters of diastolic function; Effectiveness of Spironolactone in preventing heart failure; Left Ventricular Work-metabolic Index (WMI) at 6 Months; Left Ventricular Work-metabolic Index (WMI) at Baseline; Number of CV Deaths; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment; Six minute walk distance\n- Source-record citations: [source_record_id: 1425435516], [source_record_id: 1425436986], [source_record_id: 1426533443], [source_record_id: 1426534673], [source_record_id: 1427315147], [source_record_id: 1427315148], [source_record_id: 1427333625], [source_record_id: 1427335324], [source_record_id: 1428445987], [source_record_id: 1428445988]\n- Dataset version: HTT-P1-AACT-20260905\n- Snapshot date: 2026-09-05\nRegistered planned outcomes are not observed clinical results."
+            },
+            "raw_model_output": "The five selected heart-failure trials share the following similarities in their registered planned outcomes:\n\n1. **Primary Outcome**: All trials aim to assess the effectiveness of treatments in preventing heart failure.\n2. **Secondary Outcome**: All trials evaluate the impact of treatments on various secondary outcomes, such as the composite value of 3 variables after 9 months, the effectiveness of spironolactone in preventing heart failure, and the cost effectiveness of spironolactone prevention.\n\nThe differences in the registered planned outcomes across the trials are as follows:\n\n1. **Diastolic Heart Failure in Women**: The primary outcome is the six-minute walk distance, while the secondary outcome is the echocardiography parameters of diastolic function.\n2. **Evaluation",
+            "substantive_claim_validation": {
+              "claim_checks": [
+                {
+                  "claim_index": 1,
+                  "errors": [],
+                  "evidence_value_anchors": [],
+                  "supported": true,
+                  "text": "The five selected heart-failure trials share the following similarities in their registered planned outcomes:",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 2,
+                  "errors": [
+                    "unsupported_outcome_measure_assertion"
+                  ],
+                  "evidence_value_anchors": [
+                    "primary"
+                  ],
+                  "supported": false,
+                  "text": "**Primary Outcome**: All trials aim to assess the effectiveness of treatments in preventing heart failure.",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 3,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "9months",
+                    "costeffectivenessofspironolactoneprevention",
+                    "effectivenessofspironolactoneinpreventingheartfailure",
+                    "secondary"
+                  ],
+                  "supported": true,
+                  "text": "**Secondary Outcome**: All trials evaluate the impact of treatments on various secondary outcomes, such as the composite value of 3 variables after 9 months, the effectiveness of spironolactone in preventing heart failure, and the cost effectiveness of spironolactone prevention.",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 4,
+                  "errors": [],
+                  "evidence_value_anchors": [],
+                  "supported": true,
+                  "text": "The differences in the registered planned outcomes across the trials are as follows:",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 5,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "echocardiographyparametersofdiastolicfunction",
+                    "primary",
+                    "secondary",
+                    "sixminutewalkdistance"
+                  ],
+                  "supported": true,
+                  "text": "**Diastolic Heart Failure in Women**: The primary outcome is the six-minute walk distance, while the secondary outcome is the echocardiography parameters of diastolic function.",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 6,
+                  "errors": [],
+                  "evidence_value_anchors": [],
+                  "supported": true,
+                  "text": "**Evaluation",
+                  "unknown_numbers": []
+                }
+              ],
+              "errors": [
+                "claim_2:unsupported_outcome_measure_assertion"
+              ],
+              "limitations": "Normalized identifier, named-entity, numeric, and high-risk scientific-claim checks; not a general semantic-entailment model.",
+              "method": "normalized_identifier_entity_and_safety_validation",
+              "passed": false,
+              "status": "unsupported_claims"
+            }
+          }
+        ],
+        "completed_utc": "2026-10-15T01:02:19.234806+00:00",
+        "deterministic_evidence_summary": {
+          "applicable": false,
+          "construction": "not_applicable",
+          "errors": [],
+          "planned_outcome_count": 0,
+          "ready": true,
+          "text": "",
+          "trial_count": 0
+        },
+        "generated_evidence_section": "Evidence and provenance (deterministically constructed from retrieved KG evidence):\n- NCT IDs: NCT00206232, NCT00391846, NCT00574119, NCT00604006, NCT01130597\n- Registered trial titles: Effect of Aldosterone on Energy Starvation in Heart Failure; Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone; Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease; Novel Treatment for Diastolic Heart Failure in Women; SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)\n- Registered planned-outcome measures: Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9); Cost effectiveness of Spironolactone prevention; Echocardiography parameters of diastolic function; Effectiveness of Spironolactone in preventing heart failure; Left Ventricular Work-metabolic Index (WMI) at 6 Months; Left Ventricular Work-metabolic Index (WMI) at Baseline; Number of CV Deaths; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment; Six minute walk distance\n- Source-record citations: [source_record_id: 1425435516], [source_record_id: 1425436986], [source_record_id: 1426533443], [source_record_id: 1426534673], [source_record_id: 1427315147], [source_record_id: 1427315148], [source_record_id: 1427333625], [source_record_id: 1427335324], [source_record_id: 1428445987], [source_record_id: 1428445988]\n- Dataset version: HTT-P1-AACT-20260905\n- Snapshot date: 2026-09-05\nRegistered planned outcomes are not observed clinical results.",
+        "generation_parameters": {
+          "api": "ollama_generate",
+          "base_url": "http://localhost:11434",
+          "keep_alive": "5m",
+          "maximum_grounding_attempts": 1,
+          "num_ctx": 8192,
+          "num_predict": 150,
+          "request_timeout_seconds": 180.0,
+          "stream": false,
+          "temperature": 0.0
+        },
+        "grounding_validation": {
+          "errors": [
+            "claim_2:unsupported_outcome_measure_assertion"
+          ],
+          "evidence_identifiers": {
+            "dataset_versions": [
+              "HTT-P1-AACT-20260905"
+            ],
+            "nct_ids": [
+              "NCT00206232",
+              "NCT00391846",
+              "NCT00574119",
+              "NCT00604006",
+              "NCT01130597"
+            ],
+            "snapshot_dates": [
+              "2026-09-05"
+            ],
+            "source_record_ids": [
+              "1425435516",
+              "1425436986",
+              "1426533443",
+              "1426534673",
+              "1427315147",
+              "1427315148",
+              "1427333625",
+              "1427335324",
+              "1428445987",
+              "1428445988"
+            ]
+          },
+          "passed": false,
+          "status": "blocked_unsupported_claims"
+        },
+        "latency_ms": 88046.719,
+        "prompt_audit": {
+          "compaction_ratio": 0.4104,
+          "factual_context_fields": [
+            "user_question",
+            "retrieved_kg_evidence"
+          ],
+          "instructions_sha256": "754787da951049ed8b0d159a678e4fbb2dc86bb7dba4f61f680ea8eef06873f3",
+          "model_input_characters": 7492,
+          "model_input_sha256": "ff6ca4d3c835fa8e51837651e54ec22d9b3be5759d1a176936db8d6cc32a9505",
+          "raw_evidence_characters": 18256
+        },
+        "provenance_construction": {
+          "construction": "deterministic_from_retrieved_kg_evidence",
+          "errors": [],
+          "identifiers": {
+            "dataset_versions": [
+              "HTT-P1-AACT-20260905"
+            ],
+            "nct_ids": [
+              "NCT00206232",
+              "NCT00391846",
+              "NCT00574119",
+              "NCT00604006",
+              "NCT01130597"
+            ],
+            "snapshot_dates": [
+              "2026-09-05"
+            ],
+            "source_record_ids": [
+              "1425435516",
+              "1425436986",
+              "1426533443",
+              "1426534673",
+              "1427315147",
+              "1427315148",
+              "1427333625",
+              "1427335324",
+              "1428445987",
+              "1428445988"
+            ]
+          },
+          "planned_outcome_safeguard_appended": true,
+          "ready": true,
+          "text": "Evidence and provenance (deterministically constructed from retrieved KG evidence):\n- NCT IDs: NCT00206232, NCT00391846, NCT00574119, NCT00604006, NCT01130597\n- Registered trial titles: Effect of Aldosterone on Energy Starvation in Heart Failure; Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone; Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease; Novel Treatment for Diastolic Heart Failure in Women; SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)\n- Registered planned-outcome measures: Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9); Cost effectiveness of Spironolactone prevention; Echocardiography parameters of diastolic function; Effectiveness of Spironolactone in preventing heart failure; Left Ventricular Work-metabolic Index (WMI) at 6 Months; Left Ventricular Work-metabolic Index (WMI) at Baseline; Number of CV Deaths; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment; Six minute walk distance\n- Source-record citations: [source_record_id: 1425435516], [source_record_id: 1425436986], [source_record_id: 1426533443], [source_record_id: 1426534673], [source_record_id: 1427315147], [source_record_id: 1427315148], [source_record_id: 1427333625], [source_record_id: 1427335324], [source_record_id: 1428445987], [source_record_id: 1428445988]\n- Dataset version: HTT-P1-AACT-20260905\n- Snapshot date: 2026-09-05\nRegistered planned outcomes are not observed clinical results."
+        },
+        "provider": "ollama",
+        "provider_reported_total_duration_ms": 88023.216,
+        "raw_model_output": "The five selected heart-failure trials share the following similarities in their registered planned outcomes:\n\n1. **Primary Outcome**: All trials aim to assess the effectiveness of treatments in preventing heart failure.\n2. **Secondary Outcome**: All trials evaluate the impact of treatments on various secondary outcomes, such as the composite value of 3 variables after 9 months, the effectiveness of spironolactone in preventing heart failure, and the cost effectiveness of spironolactone prevention.\n\nThe differences in the registered planned outcomes across the trials are as follows:\n\n1. **Diastolic Heart Failure in Women**: The primary outcome is the six-minute walk distance, while the secondary outcome is the echocardiography parameters of diastolic function.\n2. **Evaluation",
+        "requested_model": "qwen2.5:1.5b",
+        "response_id": "",
+        "response_model": "qwen2.5:1.5b",
+        "started_utc": "2026-10-15T01:00:51.185416+00:00",
+        "status": "blocked_unsupported_claims",
+        "substantive_claim_validation": {
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "errors": [],
+              "evidence_value_anchors": [],
+              "supported": true,
+              "text": "The five selected heart-failure trials share the following similarities in their registered planned outcomes:",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 2,
+              "errors": [
+                "unsupported_outcome_measure_assertion"
+              ],
+              "evidence_value_anchors": [
+                "primary"
+              ],
+              "supported": false,
+              "text": "**Primary Outcome**: All trials aim to assess the effectiveness of treatments in preventing heart failure.",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 3,
+              "errors": [],
+              "evidence_value_anchors": [
+                "9months",
+                "costeffectivenessofspironolactoneprevention",
+                "effectivenessofspironolactoneinpreventingheartfailure",
+                "secondary"
+              ],
+              "supported": true,
+              "text": "**Secondary Outcome**: All trials evaluate the impact of treatments on various secondary outcomes, such as the composite value of 3 variables after 9 months, the effectiveness of spironolactone in preventing heart failure, and the cost effectiveness of spironolactone prevention.",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 4,
+              "errors": [],
+              "evidence_value_anchors": [],
+              "supported": true,
+              "text": "The differences in the registered planned outcomes across the trials are as follows:",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 5,
+              "errors": [],
+              "evidence_value_anchors": [
+                "echocardiographyparametersofdiastolicfunction",
+                "primary",
+                "secondary",
+                "sixminutewalkdistance"
+              ],
+              "supported": true,
+              "text": "**Diastolic Heart Failure in Women**: The primary outcome is the six-minute walk distance, while the secondary outcome is the echocardiography parameters of diastolic function.",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 6,
+              "errors": [],
+              "evidence_value_anchors": [],
+              "supported": true,
+              "text": "**Evaluation",
+              "unknown_numbers": []
+            }
+          ],
+          "errors": [
+            "claim_2:unsupported_outcome_measure_assertion"
+          ],
+          "limitations": "Normalized identifier, named-entity, numeric, and high-risk scientific-claim checks; not a general semantic-entailment model.",
+          "method": "normalized_identifier_entity_and_safety_validation",
+          "passed": false,
+          "status": "unsupported_claims"
+        },
+        "usage": {
+          "eval_count": 150,
+          "prompt_eval_count": 2521
+        }
+      },
+      "kg_evidence": {
+        "dataset_version": "HTT-P1-AACT-20260905",
+        "deterministic_comparison": {
+          "comparison_method": "Exact normalized-string comparison of registered measure names, plus counts of stored outcome types and time frames; no clinical inference.",
+          "per_trial": [
+            {
+              "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+              "nct_id": "NCT00206232",
+              "outcome_type_counts": {
+                "primary": 1,
+                "secondary": 1
+              },
+              "planned_outcome_count": 2,
+              "registered_measures": [
+                "Echocardiography parameters of diastolic function",
+                "Six minute walk distance"
+              ],
+              "registered_time_frames": [
+                "Baseline, then 3 and 6 months after randomization",
+                "Baseline, then 3 and 6 months after randomization"
+              ]
+            },
+            {
+              "brief_title": "Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone",
+              "nct_id": "NCT00391846",
+              "outcome_type_counts": {
+                "primary": 1,
+                "secondary": 1
+              },
+              "planned_outcome_count": 2,
+              "registered_measures": [
+                "Number of CV Deaths",
+                "Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9)"
+              ],
+              "registered_time_frames": [
+                "9 months",
+                "9 months"
+              ]
+            },
+            {
+              "brief_title": "Effect of Aldosterone on Energy Starvation in Heart Failure",
+              "nct_id": "NCT00574119",
+              "outcome_type_counts": {
+                "primary": 2
+              },
+              "planned_outcome_count": 2,
+              "registered_measures": [
+                "Left Ventricular Work-metabolic Index (WMI) at Baseline",
+                "Left Ventricular Work-metabolic Index (WMI) at 6 Months"
+              ],
+              "registered_time_frames": [
+                "baseline",
+                "6 months"
+              ]
+            },
+            {
+              "brief_title": "SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)",
+              "nct_id": "NCT00604006",
+              "outcome_type_counts": {
+                "primary": 2
+              },
+              "planned_outcome_count": 2,
+              "registered_measures": [
+                "Effectiveness of Spironolactone in preventing heart failure",
+                "Cost effectiveness of Spironolactone prevention"
+              ],
+              "registered_time_frames": [
+                "1 year and 3 year",
+                "3 years"
+              ]
+            },
+            {
+              "brief_title": "Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease",
+              "nct_id": "NCT01130597",
+              "outcome_type_counts": {
+                "primary": 1,
+                "secondary": 1
+              },
+              "planned_outcome_count": 2,
+              "registered_measures": [
+                "Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4",
+                "Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment"
+              ],
+              "registered_time_frames": [
+                "28 Days",
+                "56 days"
+              ]
+            }
+          ],
+          "planned_outcome_count": 10,
+          "shared_exact_measure_count": 0,
+          "shared_exact_measures": [],
+          "trial_count": 5
+        },
+        "evidence": [
+          {
+            "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+            "nct_id": "NCT00206232",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "",
+              "measure": "Echocardiography parameters of diastolic function",
+              "nct_id": "NCT00206232",
+              "outcome_type": "secondary",
+              "planned_outcome_id": "planned_outcome:1426533443",
+              "population": "",
+              "source_record_id": "1426533443",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "Baseline, then 3 and 6 months after randomization"
+            },
+            "relationship_path": {
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426533443",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            }
+          },
+          {
+            "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+            "nct_id": "NCT00206232",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "",
+              "measure": "Six minute walk distance",
+              "nct_id": "NCT00206232",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1426534673",
+              "population": "",
+              "source_record_id": "1426534673",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "Baseline, then 3 and 6 months after randomization"
+            },
+            "relationship_path": {
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426534673",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            }
+          },
+          {
+            "brief_title": "Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone",
+            "nct_id": "NCT00391846",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "Number of deaths",
+              "measure": "Number of CV Deaths",
+              "nct_id": "NCT00391846",
+              "outcome_type": "secondary",
+              "planned_outcome_id": "planned_outcome:1427333625",
+              "population": "",
+              "source_record_id": "1427333625",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "9 months"
+            },
+            "relationship_path": {
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1427333625",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            }
+          },
+          {
+            "brief_title": "Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone",
+            "nct_id": "NCT00391846",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "The non-parametric scale is constructed from 3 variables, modified after Cleland. Each patient receives a rank score from 1 to 246 (246-number of patients in the study). The lowest score receive patients who die (due to CV event), next patients still alive at end-of-study with the worst composite score, the best alive patients with 0 days in hospital and the largest improvement in the KCCQ (self-administered by patient symptom score, where the higher score reflect better health status). Scores will be summarized using non-parametric calculations. The mean of non-parametric scores is presented",
+              "measure": "Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9)",
+              "nct_id": "NCT00391846",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1427335324",
+              "population": "",
+              "source_record_id": "1427335324",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "9 months"
+            },
+            "relationship_path": {
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1427335324",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            }
+          },
+          {
+            "brief_title": "Effect of Aldosterone on Energy Starvation in Heart Failure",
+            "nct_id": "NCT00574119",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "WMI=\\[left ventricular stroke work/decay rate of 11C-acetate\\]",
+              "measure": "Left Ventricular Work-metabolic Index (WMI) at Baseline",
+              "nct_id": "NCT00574119",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1428445987",
+              "population": "",
+              "source_record_id": "1428445987",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "baseline"
+            },
+            "relationship_path": {
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1428445987",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            }
+          },
+          {
+            "brief_title": "Effect of Aldosterone on Energy Starvation in Heart Failure",
+            "nct_id": "NCT00574119",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "WMI=\\[left ventricular stroke work/decay rate of 11C-acetate\\]",
+              "measure": "Left Ventricular Work-metabolic Index (WMI) at 6 Months",
+              "nct_id": "NCT00574119",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1428445988",
+              "population": "",
+              "source_record_id": "1428445988",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "6 months"
+            },
+            "relationship_path": {
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1428445988",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            }
+          },
+          {
+            "brief_title": "SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)",
+            "nct_id": "NCT00604006",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "",
+              "measure": "Effectiveness of Spironolactone in preventing heart failure",
+              "nct_id": "NCT00604006",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1427315147",
+              "population": "",
+              "source_record_id": "1427315147",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "1 year and 3 year"
+            },
+            "relationship_path": {
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1427315147",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            }
+          },
+          {
+            "brief_title": "SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)",
+            "nct_id": "NCT00604006",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "",
+              "measure": "Cost effectiveness of Spironolactone prevention",
+              "nct_id": "NCT00604006",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1427315148",
+              "population": "",
+              "source_record_id": "1427315148",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "3 years"
+            },
+            "relationship_path": {
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1427315148",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            }
+          },
+          {
+            "brief_title": "Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease",
+            "nct_id": "NCT01130597",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "",
+              "measure": "Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4",
+              "nct_id": "NCT01130597",
+              "outcome_type": "secondary",
+              "planned_outcome_id": "planned_outcome:1425435516",
+              "population": "",
+              "source_record_id": "1425435516",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "28 Days"
+            },
+            "relationship_path": {
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1425435516",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            }
+          },
+          {
+            "brief_title": "Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease",
+            "nct_id": "NCT01130597",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "",
+              "measure": "Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment",
+              "nct_id": "NCT01130597",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1425436986",
+              "population": "",
+              "source_record_id": "1425436986",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "56 days"
+            },
+            "relationship_path": {
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1425436986",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            }
+          }
+        ],
+        "graph_version": "HTT-KG-AACT-20260905-v1",
+        "parameters": {
+          "dataset_version": "HTT-P1-AACT-20260905"
+        },
+        "question": "What similarities and differences exist in the registered planned outcomes across the five selected heart-failure trials?",
+        "question_id": "3",
+        "retrieved_utc": "2026-10-15T01:00:51.183696+00:00",
+        "row_count": 10,
+        "safeguards": {
+          "no_llm_generation": true,
+          "planned_outcomes": "Registered planned outcome — not a clinical result.",
+          "read_only_retrieval": true,
+          "snapshot": "Evidence comes from the pinned September 5, 2026 snapshot and may include later amendments; it is not asserted to be the original registration record."
+        }
+      },
+      "question": "What similarities and differences exist in the registered planned outcomes across the five selected heart-failure trials?",
+      "question_id": "3",
+      "retrieval_latency_ms": 159.357
+    }
+  ],
+  "started_utc": "2026-10-15T01:00:49.740555+00:00",
+  "total_latency_ms": 89491.608,
+  "trace_schema_version": "HTT-GRAPHRAG-DEMO-v1"
+}

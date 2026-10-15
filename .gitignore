@@ -1,6 +1,8 @@
 .DS_Store
 .venv/
 .venv-full-system/
+.venv-vector-rag/
+.venv-graphrag/
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -12,6 +14,16 @@ __pycache__/
 .cache/
 cache/
 downloads/
+
+# Rebuildable Vector RAG runtime data and local model caches
+vector_rag/chroma_db/
+vector_rag/model_cache/
+vector_rag/.cache/
+
+# Local credentials and environment configuration
+.env
+.env.*
+!.env.example
 
 # Local build and validation workspaces
 .codex-finalizer/

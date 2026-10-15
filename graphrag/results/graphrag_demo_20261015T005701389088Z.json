@@ -1,0 +1,1461 @@
+{
+  "completed_utc": "2026-10-15T00:57:01.388317+00:00",
+  "configuration": {
+    "api_key_configured": false,
+    "credentials_required": false,
+    "database": "57aa5fa3",
+    "env_source": "artifacts/knowledge_graph/.env",
+    "llm_model": "qwen2.5:1.5b",
+    "llm_provider": "ollama",
+    "uri_scheme": "neo4j+s",
+    "username_configured": "true"
+  },
+  "connection": {
+    "connected": true,
+    "database": "57aa5fa3",
+    "dataset_version": "HTT-P1-AACT-20260905",
+    "graph_version": "HTT-KG-AACT-20260905-v1",
+    "node_count": 26,
+    "relationship_count": 65,
+    "snapshot_date": "2026-09-05"
+  },
+  "phase": "Neo4j retrieval plus grounded LLM answer generation",
+  "provider_status": {
+    "available": true,
+    "base_url": "http://localhost:11434",
+    "installed_models": [
+      "qwen2.5:1.5b",
+      "qwen3:4b"
+    ],
+    "model": "qwen2.5:1.5b"
+  },
+  "results": [
+    {
+      "generation": {
+        "answer": "ABSTAIN: The generated explanation contained claims that could not be verified against the retrieved KG evidence.",
+        "attempts": [
+          {
+            "attempt": 1,
+            "deterministic_evidence_summary": {
+              "applicable": true,
+              "construction": "deterministic_from_question2_retrieved_rows",
+              "errors": [],
+              "planned_outcome_count": 10,
+              "ready": true,
+              "text": "Verified Question 2 evidence summary (deterministically constructed from retrieved KG rows):\n- NCT00206232 — Novel Treatment for Diastolic Heart Failure in Women\n  Sponsor: Baylor College of Medicine\n  Registered planned outcomes:\n  - Echocardiography parameters of diastolic function (secondary; time frame: Baseline, then 3 and 6 months after randomization) [source_record_id: 1426533443]\n  - Six minute walk distance (primary; time frame: Baseline, then 3 and 6 months after randomization) [source_record_id: 1426534673]\n- NCT00391846 — Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone\n  Sponsor: AstraZeneca\n  Registered planned outcomes:\n  - Number of CV Deaths (secondary; time frame: 9 months) [source_record_id: 1427333625]\n  - Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9) (primary; time frame: 9 months) [source_record_id: 1427335324]\n- NCT00574119 — Effect of Aldosterone on Energy Starvation in Heart Failure\n  Sponsor: Vanderbilt University\n  Registered planned outcomes:\n  - Left Ventricular Work-metabolic Index (WMI) at Baseline (primary; time frame: baseline) [source_record_id: 1428445987]\n  - Left Ventricular Work-metabolic Index (WMI) at 6 Months (primary; time frame: 6 months) [source_record_id: 1428445988]\n- NCT00604006 — SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)\n  Sponsor: Monash University\n  Registered planned outcomes:\n  - Effectiveness of Spironolactone in preventing heart failure (primary; time frame: 1 year and 3 year) [source_record_id: 1427315147]\n  - Cost effectiveness of Spironolactone prevention (primary; time frame: 3 years) [source_record_id: 1427315148]\n- NCT01130597 — Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease\n  Sponsor: Relypsa, Inc.\n  Registered planned outcomes:\n  - Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4 (secondary; time frame: 28 Days) [source_record_id: 1425435516]\n  - Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment (primary; time frame: 56 days) [source_record_id: 1425436986]",
+              "trial_count": 5
+            },
+            "done_reason": "length",
+            "eval_count": 150,
+            "generated_evidence_section": "Evidence and provenance (deterministically constructed from retrieved KG evidence):\n- NCT IDs: NCT00206232, NCT00391846, NCT00574119, NCT00604006, NCT01130597\n- Registered trial titles: Effect of Aldosterone on Energy Starvation in Heart Failure; Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone; Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease; Novel Treatment for Diastolic Heart Failure in Women; SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)\n- Registered conditions: Heart Failure\n- Registered interventions: Spironolactone\n- Registered sponsors: AstraZeneca; Baylor College of Medicine; Monash University; Relypsa, Inc.; Vanderbilt University\n- Registered planned-outcome measures: Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9); Cost effectiveness of Spironolactone prevention; Echocardiography parameters of diastolic function; Effectiveness of Spironolactone in preventing heart failure; Left Ventricular Work-metabolic Index (WMI) at 6 Months; Left Ventricular Work-metabolic Index (WMI) at Baseline; Number of CV Deaths; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment; Six minute walk distance\n- Source-record citations: [source_record_id: 1425435516], [source_record_id: 1425436986], [source_record_id: 1426533443], [source_record_id: 1426534673], [source_record_id: 1427315147], [source_record_id: 1427315148], [source_record_id: 1427333625], [source_record_id: 1427335324], [source_record_id: 1428445987], [source_record_id: 1428445988], [source_record_id: 381436330], [source_record_id: 381715287], [source_record_id: 381915737], [source_record_id: 381921083], [source_record_id: 382201825], [source_record_id: 392083486], [source_record_id: 392379839], [source_record_id: 392593447], [source_record_id: 392598879], [source_record_id: 392894341]\n- Dataset version: HTT-P1-AACT-20260905\n- Snapshot date: 2026-09-05\nRegistered planned outcomes are not observed clinical results.",
+            "grounding_validation": {
+              "errors": [
+                "claim_2:unsupported_condition_assertion",
+                "claim_3:unsupported_condition_assertion",
+                "claim_4:unsupported_condition_assertion",
+                "claim_5:unsupported_condition_assertion"
+              ],
+              "evidence_identifiers": {
+                "dataset_versions": [
+                  "HTT-P1-AACT-20260905"
+                ],
+                "nct_ids": [
+                  "NCT00206232",
+                  "NCT00391846",
+                  "NCT00574119",
+                  "NCT00604006",
+                  "NCT01130597"
+                ],
+                "snapshot_dates": [
+                  "2026-09-05"
+                ],
+                "source_record_ids": [
+                  "1425435516",
+                  "1425436986",
+                  "1426533443",
+                  "1426534673",
+                  "1427315147",
+                  "1427315148",
+                  "1427333625",
+                  "1427335324",
+                  "1428445987",
+                  "1428445988",
+                  "381436330",
+                  "381715287",
+                  "381915737",
+                  "381921083",
+                  "382201825",
+                  "392083486",
+                  "392379839",
+                  "392593447",
+                  "392598879",
+                  "392894341"
+                ]
+              },
+              "passed": false,
+              "status": "blocked_unsupported_claims"
+            },
+            "latency_ms": 115343.434,
+            "ollama_total_duration_ms": 115326.211,
+            "prompt_eval_count": 2869,
+            "provenance_construction": {
+              "construction": "deterministic_from_retrieved_kg_evidence",
+              "errors": [],
+              "identifiers": {
+                "dataset_versions": [
+                  "HTT-P1-AACT-20260905"
+                ],
+                "nct_ids": [
+                  "NCT00206232",
+                  "NCT00391846",
+                  "NCT00574119",
+                  "NCT00604006",
+                  "NCT01130597"
+                ],
+                "snapshot_dates": [
+                  "2026-09-05"
+                ],
+                "source_record_ids": [
+                  "1425435516",
+                  "1425436986",
+                  "1426533443",
+                  "1426534673",
+                  "1427315147",
+                  "1427315148",
+                  "1427333625",
+                  "1427335324",
+                  "1428445987",
+                  "1428445988",
+                  "381436330",
+                  "381715287",
+                  "381915737",
+                  "381921083",
+                  "382201825",
+                  "392083486",
+                  "392379839",
+                  "392593447",
+                  "392598879",
+                  "392894341"
+                ]
+              },
+              "planned_outcome_safeguard_appended": true,
+              "ready": true,
+              "text": "Evidence and provenance (deterministically constructed from retrieved KG evidence):\n- NCT IDs: NCT00206232, NCT00391846, NCT00574119, NCT00604006, NCT01130597\n- Registered trial titles: Effect of Aldosterone on Energy Starvation in Heart Failure; Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone; Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease; Novel Treatment for Diastolic Heart Failure in Women; SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)\n- Registered conditions: Heart Failure\n- Registered interventions: Spironolactone\n- Registered sponsors: AstraZeneca; Baylor College of Medicine; Monash University; Relypsa, Inc.; Vanderbilt University\n- Registered planned-outcome measures: Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9); Cost effectiveness of Spironolactone prevention; Echocardiography parameters of diastolic function; Effectiveness of Spironolactone in preventing heart failure; Left Ventricular Work-metabolic Index (WMI) at 6 Months; Left Ventricular Work-metabolic Index (WMI) at Baseline; Number of CV Deaths; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment; Six minute walk distance\n- Source-record citations: [source_record_id: 1425435516], [source_record_id: 1425436986], [source_record_id: 1426533443], [source_record_id: 1426534673], [source_record_id: 1427315147], [source_record_id: 1427315148], [source_record_id: 1427333625], [source_record_id: 1427335324], [source_record_id: 1428445987], [source_record_id: 1428445988], [source_record_id: 381436330], [source_record_id: 381715287], [source_record_id: 381915737], [source_record_id: 381921083], [source_record_id: 382201825], [source_record_id: 392083486], [source_record_id: 392379839], [source_record_id: 392593447], [source_record_id: 392598879], [source_record_id: 392894341]\n- Dataset version: HTT-P1-AACT-20260905\n- Snapshot date: 2026-09-05\nRegistered planned outcomes are not observed clinical results."
+            },
+            "raw_model_output": "The sponsors associated with heart-failure trials investigating spironolactone are:\n\n1. Baylor College of Medicine (condition:629e3a1901f0194c01ec)\n2. AstraZeneca (condition:629e3a1901f0194c01ec)\n3. Vanderbilt University (condition:629e3a1901f0194c01ec)\n4. Monash University (condition:629e3a1901f0194c01ec)\n\nThe planned outcomes for these trials include:\n\n- Baylor College of Medicine: \n  - Echocardi",
+            "substantive_claim_validation": {
+              "claim_checks": [
+                {
+                  "claim_index": 1,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "heartfailure",
+                    "spironolactone"
+                  ],
+                  "supported": true,
+                  "text": "The sponsors associated with heart-failure trials investigating spironolactone are:",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 2,
+                  "errors": [
+                    "unsupported_condition_assertion"
+                  ],
+                  "evidence_value_anchors": [
+                    "baylorcollegeofmedicine",
+                    "condition629e3a1901f0194c01ec"
+                  ],
+                  "supported": false,
+                  "text": "Baylor College of Medicine (condition:629e3a1901f0194c01ec)",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 3,
+                  "errors": [
+                    "unsupported_condition_assertion"
+                  ],
+                  "evidence_value_anchors": [
+                    "astrazeneca",
+                    "condition629e3a1901f0194c01ec"
+                  ],
+                  "supported": false,
+                  "text": "AstraZeneca (condition:629e3a1901f0194c01ec)",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 4,
+                  "errors": [
+                    "unsupported_condition_assertion"
+                  ],
+                  "evidence_value_anchors": [
+                    "condition629e3a1901f0194c01ec",
+                    "vanderbiltuniversity"
+                  ],
+                  "supported": false,
+                  "text": "Vanderbilt University (condition:629e3a1901f0194c01ec)",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 5,
+                  "errors": [
+                    "unsupported_condition_assertion"
+                  ],
+                  "evidence_value_anchors": [
+                    "condition629e3a1901f0194c01ec",
+                    "monashuniversity"
+                  ],
+                  "supported": false,
+                  "text": "Monash University (condition:629e3a1901f0194c01ec)",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 6,
+                  "errors": [],
+                  "evidence_value_anchors": [],
+                  "supported": true,
+                  "text": "The planned outcomes for these trials include:",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 7,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "baylorcollegeofmedicine"
+                  ],
+                  "supported": true,
+                  "text": "Baylor College of Medicine:",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 8,
+                  "errors": [],
+                  "evidence_value_anchors": [],
+                  "supported": true,
+                  "text": "Echocardi",
+                  "unknown_numbers": []
+                }
+              ],
+              "errors": [
+                "claim_2:unsupported_condition_assertion",
+                "claim_3:unsupported_condition_assertion",
+                "claim_4:unsupported_condition_assertion",
+                "claim_5:unsupported_condition_assertion"
+              ],
+              "limitations": "Normalized identifier, named-entity, numeric, and high-risk scientific-claim checks; not a general semantic-entailment model.",
+              "method": "normalized_identifier_entity_and_safety_validation",
+              "passed": false,
+              "status": "unsupported_claims"
+            }
+          }
+        ],
+        "completed_utc": "2026-10-15T00:57:01.384470+00:00",
+        "deterministic_evidence_summary": {
+          "applicable": true,
+          "construction": "deterministic_from_question2_retrieved_rows",
+          "errors": [],
+          "planned_outcome_count": 10,
+          "ready": true,
+          "text": "Verified Question 2 evidence summary (deterministically constructed from retrieved KG rows):\n- NCT00206232 — Novel Treatment for Diastolic Heart Failure in Women\n  Sponsor: Baylor College of Medicine\n  Registered planned outcomes:\n  - Echocardiography parameters of diastolic function (secondary; time frame: Baseline, then 3 and 6 months after randomization) [source_record_id: 1426533443]\n  - Six minute walk distance (primary; time frame: Baseline, then 3 and 6 months after randomization) [source_record_id: 1426534673]\n- NCT00391846 — Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone\n  Sponsor: AstraZeneca\n  Registered planned outcomes:\n  - Number of CV Deaths (secondary; time frame: 9 months) [source_record_id: 1427333625]\n  - Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9) (primary; time frame: 9 months) [source_record_id: 1427335324]\n- NCT00574119 — Effect of Aldosterone on Energy Starvation in Heart Failure\n  Sponsor: Vanderbilt University\n  Registered planned outcomes:\n  - Left Ventricular Work-metabolic Index (WMI) at Baseline (primary; time frame: baseline) [source_record_id: 1428445987]\n  - Left Ventricular Work-metabolic Index (WMI) at 6 Months (primary; time frame: 6 months) [source_record_id: 1428445988]\n- NCT00604006 — SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)\n  Sponsor: Monash University\n  Registered planned outcomes:\n  - Effectiveness of Spironolactone in preventing heart failure (primary; time frame: 1 year and 3 year) [source_record_id: 1427315147]\n  - Cost effectiveness of Spironolactone prevention (primary; time frame: 3 years) [source_record_id: 1427315148]\n- NCT01130597 — Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease\n  Sponsor: Relypsa, Inc.\n  Registered planned outcomes:\n  - Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4 (secondary; time frame: 28 Days) [source_record_id: 1425435516]\n  - Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment (primary; time frame: 56 days) [source_record_id: 1425436986]",
+          "trial_count": 5
+        },
+        "generated_evidence_section": "Evidence and provenance (deterministically constructed from retrieved KG evidence):\n- NCT IDs: NCT00206232, NCT00391846, NCT00574119, NCT00604006, NCT01130597\n- Registered trial titles: Effect of Aldosterone on Energy Starvation in Heart Failure; Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone; Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease; Novel Treatment for Diastolic Heart Failure in Women; SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)\n- Registered conditions: Heart Failure\n- Registered interventions: Spironolactone\n- Registered sponsors: AstraZeneca; Baylor College of Medicine; Monash University; Relypsa, Inc.; Vanderbilt University\n- Registered planned-outcome measures: Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9); Cost effectiveness of Spironolactone prevention; Echocardiography parameters of diastolic function; Effectiveness of Spironolactone in preventing heart failure; Left Ventricular Work-metabolic Index (WMI) at 6 Months; Left Ventricular Work-metabolic Index (WMI) at Baseline; Number of CV Deaths; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment; Six minute walk distance\n- Source-record citations: [source_record_id: 1425435516], [source_record_id: 1425436986], [source_record_id: 1426533443], [source_record_id: 1426534673], [source_record_id: 1427315147], [source_record_id: 1427315148], [source_record_id: 1427333625], [source_record_id: 1427335324], [source_record_id: 1428445987], [source_record_id: 1428445988], [source_record_id: 381436330], [source_record_id: 381715287], [source_record_id: 381915737], [source_record_id: 381921083], [source_record_id: 382201825], [source_record_id: 392083486], [source_record_id: 392379839], [source_record_id: 392593447], [source_record_id: 392598879], [source_record_id: 392894341]\n- Dataset version: HTT-P1-AACT-20260905\n- Snapshot date: 2026-09-05\nRegistered planned outcomes are not observed clinical results.",
+        "generation_parameters": {
+          "api": "ollama_generate",
+          "base_url": "http://localhost:11434",
+          "keep_alive": "5m",
+          "maximum_grounding_attempts": 1,
+          "num_ctx": 8192,
+          "num_predict": 150,
+          "request_timeout_seconds": 180.0,
+          "stream": false,
+          "temperature": 0.0
+        },
+        "grounding_validation": {
+          "errors": [
+            "claim_2:unsupported_condition_assertion",
+            "claim_3:unsupported_condition_assertion",
+            "claim_4:unsupported_condition_assertion",
+            "claim_5:unsupported_condition_assertion"
+          ],
+          "evidence_identifiers": {
+            "dataset_versions": [
+              "HTT-P1-AACT-20260905"
+            ],
+            "nct_ids": [
+              "NCT00206232",
+              "NCT00391846",
+              "NCT00574119",
+              "NCT00604006",
+              "NCT01130597"
+            ],
+            "snapshot_dates": [
+              "2026-09-05"
+            ],
+            "source_record_ids": [
+              "1425435516",
+              "1425436986",
+              "1426533443",
+              "1426534673",
+              "1427315147",
+              "1427315148",
+              "1427333625",
+              "1427335324",
+              "1428445987",
+              "1428445988",
+              "381436330",
+              "381715287",
+              "381915737",
+              "381921083",
+              "382201825",
+              "392083486",
+              "392379839",
+              "392593447",
+              "392598879",
+              "392894341"
+            ]
+          },
+          "passed": false,
+          "status": "blocked_unsupported_claims"
+        },
+        "latency_ms": 115355.652,
+        "prompt_audit": {
+          "compaction_ratio": 0.2693,
+          "factual_context_fields": [
+            "user_question",
+            "retrieved_kg_evidence"
+          ],
+          "instructions_sha256": "754787da951049ed8b0d159a678e4fbb2dc86bb7dba4f61f680ea8eef06873f3",
+          "model_input_characters": 7787,
+          "model_input_sha256": "bed92ee54e7ac5b9301cec5caa82cebbb25ac9ca1f74e9fa483027f5dc09cb68",
+          "raw_evidence_characters": 28914
+        },
+        "provenance_construction": {
+          "construction": "deterministic_from_retrieved_kg_evidence",
+          "errors": [],
+          "identifiers": {
+            "dataset_versions": [
+              "HTT-P1-AACT-20260905"
+            ],
+            "nct_ids": [
+              "NCT00206232",
+              "NCT00391846",
+              "NCT00574119",
+              "NCT00604006",
+              "NCT01130597"
+            ],
+            "snapshot_dates": [
+              "2026-09-05"
+            ],
+            "source_record_ids": [
+              "1425435516",
+              "1425436986",
+              "1426533443",
+              "1426534673",
+              "1427315147",
+              "1427315148",
+              "1427333625",
+              "1427335324",
+              "1428445987",
+              "1428445988",
+              "381436330",
+              "381715287",
+              "381915737",
+              "381921083",
+              "382201825",
+              "392083486",
+              "392379839",
+              "392593447",
+              "392598879",
+              "392894341"
+            ]
+          },
+          "planned_outcome_safeguard_appended": true,
+          "ready": true,
+          "text": "Evidence and provenance (deterministically constructed from retrieved KG evidence):\n- NCT IDs: NCT00206232, NCT00391846, NCT00574119, NCT00604006, NCT01130597\n- Registered trial titles: Effect of Aldosterone on Energy Starvation in Heart Failure; Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone; Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease; Novel Treatment for Diastolic Heart Failure in Women; SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)\n- Registered conditions: Heart Failure\n- Registered interventions: Spironolactone\n- Registered sponsors: AstraZeneca; Baylor College of Medicine; Monash University; Relypsa, Inc.; Vanderbilt University\n- Registered planned-outcome measures: Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9); Cost effectiveness of Spironolactone prevention; Echocardiography parameters of diastolic function; Effectiveness of Spironolactone in preventing heart failure; Left Ventricular Work-metabolic Index (WMI) at 6 Months; Left Ventricular Work-metabolic Index (WMI) at Baseline; Number of CV Deaths; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4; Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment; Six minute walk distance\n- Source-record citations: [source_record_id: 1425435516], [source_record_id: 1425436986], [source_record_id: 1426533443], [source_record_id: 1426534673], [source_record_id: 1427315147], [source_record_id: 1427315148], [source_record_id: 1427333625], [source_record_id: 1427335324], [source_record_id: 1428445987], [source_record_id: 1428445988], [source_record_id: 381436330], [source_record_id: 381715287], [source_record_id: 381915737], [source_record_id: 381921083], [source_record_id: 382201825], [source_record_id: 392083486], [source_record_id: 392379839], [source_record_id: 392593447], [source_record_id: 392598879], [source_record_id: 392894341]\n- Dataset version: HTT-P1-AACT-20260905\n- Snapshot date: 2026-09-05\nRegistered planned outcomes are not observed clinical results."
+        },
+        "provider": "ollama",
+        "provider_reported_total_duration_ms": 115326.211,
+        "raw_model_output": "The sponsors associated with heart-failure trials investigating spironolactone are:\n\n1. Baylor College of Medicine (condition:629e3a1901f0194c01ec)\n2. AstraZeneca (condition:629e3a1901f0194c01ec)\n3. Vanderbilt University (condition:629e3a1901f0194c01ec)\n4. Monash University (condition:629e3a1901f0194c01ec)\n\nThe planned outcomes for these trials include:\n\n- Baylor College of Medicine: \n  - Echocardi",
+        "requested_model": "qwen2.5:1.5b",
+        "response_id": "",
+        "response_model": "qwen2.5:1.5b",
+        "started_utc": "2026-10-15T00:55:06.025300+00:00",
+        "status": "blocked_unsupported_claims",
+        "substantive_claim_validation": {
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "errors": [],
+              "evidence_value_anchors": [
+                "heartfailure",
+                "spironolactone"
+              ],
+              "supported": true,
+              "text": "The sponsors associated with heart-failure trials investigating spironolactone are:",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 2,
+              "errors": [
+                "unsupported_condition_assertion"
+              ],
+              "evidence_value_anchors": [
+                "baylorcollegeofmedicine",
+                "condition629e3a1901f0194c01ec"
+              ],
+              "supported": false,
+              "text": "Baylor College of Medicine (condition:629e3a1901f0194c01ec)",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 3,
+              "errors": [
+                "unsupported_condition_assertion"
+              ],
+              "evidence_value_anchors": [
+                "astrazeneca",
+                "condition629e3a1901f0194c01ec"
+              ],
+              "supported": false,
+              "text": "AstraZeneca (condition:629e3a1901f0194c01ec)",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 4,
+              "errors": [
+                "unsupported_condition_assertion"
+              ],
+              "evidence_value_anchors": [
+                "condition629e3a1901f0194c01ec",
+                "vanderbiltuniversity"
+              ],
+              "supported": false,
+              "text": "Vanderbilt University (condition:629e3a1901f0194c01ec)",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 5,
+              "errors": [
+                "unsupported_condition_assertion"
+              ],
+              "evidence_value_anchors": [
+                "condition629e3a1901f0194c01ec",
+                "monashuniversity"
+              ],
+              "supported": false,
+              "text": "Monash University (condition:629e3a1901f0194c01ec)",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 6,
+              "errors": [],
+              "evidence_value_anchors": [],
+              "supported": true,
+              "text": "The planned outcomes for these trials include:",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 7,
+              "errors": [],
+              "evidence_value_anchors": [
+                "baylorcollegeofmedicine"
+              ],
+              "supported": true,
+              "text": "Baylor College of Medicine:",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 8,
+              "errors": [],
+              "evidence_value_anchors": [],
+              "supported": true,
+              "text": "Echocardi",
+              "unknown_numbers": []
+            }
+          ],
+          "errors": [
+            "claim_2:unsupported_condition_assertion",
+            "claim_3:unsupported_condition_assertion",
+            "claim_4:unsupported_condition_assertion",
+            "claim_5:unsupported_condition_assertion"
+          ],
+          "limitations": "Normalized identifier, named-entity, numeric, and high-risk scientific-claim checks; not a general semantic-entailment model.",
+          "method": "normalized_identifier_entity_and_safety_validation",
+          "passed": false,
+          "status": "unsupported_claims"
+        },
+        "usage": {
+          "eval_count": 150,
+          "prompt_eval_count": 2869
+        }
+      },
+      "kg_evidence": {
+        "dataset_version": "HTT-P1-AACT-20260905",
+        "evidence": [
+          {
+            "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+            "condition": {
+              "condition_id": "condition:629e3a1901f0194c01ec",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure",
+              "normalized_name": "heart failure",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "intervention": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+              "intervention_type": "DRUG",
+              "name": "Spironolactone",
+              "normalized_intervention_type": "drug",
+              "normalized_name": "spironolactone",
+              "source_table": "interventions.txt"
+            },
+            "nct_id": "NCT00206232",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "",
+              "measure": "Echocardiography parameters of diastolic function",
+              "nct_id": "NCT00206232",
+              "outcome_type": "secondary",
+              "planned_outcome_id": "planned_outcome:1426533443",
+              "population": "",
+              "source_record_id": "1426533443",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "Baseline, then 3 and 6 months after randomization"
+            },
+            "relationship_path": {
+              "condition": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "conditions.txt"
+                },
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "intervention": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392379839",
+                  "source_table": "interventions.txt"
+                },
+                "type": "HAS_INTERVENTION"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426533443",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sponsor": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381715287",
+                  "source_table": "sponsors.txt"
+                },
+                "type": "LEAD_SPONSORED_BY"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            },
+            "sponsor": {
+              "agency_class": "OTHER",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Baylor College of Medicine",
+              "normalized_name": "baylor college of medicine",
+              "source_table": "sponsors.txt",
+              "sponsor_id": "sponsor:64f999d92d1b73893f9b"
+            }
+          },
+          {
+            "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+            "condition": {
+              "condition_id": "condition:629e3a1901f0194c01ec",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure",
+              "normalized_name": "heart failure",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "intervention": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+              "intervention_type": "DRUG",
+              "name": "Spironolactone",
+              "normalized_intervention_type": "drug",
+              "normalized_name": "spironolactone",
+              "source_table": "interventions.txt"
+            },
+            "nct_id": "NCT00206232",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "",
+              "measure": "Six minute walk distance",
+              "nct_id": "NCT00206232",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1426534673",
+              "population": "",
+              "source_record_id": "1426534673",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "Baseline, then 3 and 6 months after randomization"
+            },
+            "relationship_path": {
+              "condition": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "conditions.txt"
+                },
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "intervention": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392379839",
+                  "source_table": "interventions.txt"
+                },
+                "type": "HAS_INTERVENTION"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426534673",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sponsor": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381715287",
+                  "source_table": "sponsors.txt"
+                },
+                "type": "LEAD_SPONSORED_BY"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            },
+            "sponsor": {
+              "agency_class": "OTHER",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Baylor College of Medicine",
+              "normalized_name": "baylor college of medicine",
+              "source_table": "sponsors.txt",
+              "sponsor_id": "sponsor:64f999d92d1b73893f9b"
+            }
+          },
+          {
+            "brief_title": "Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone",
+            "condition": {
+              "condition_id": "condition:629e3a1901f0194c01ec",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure",
+              "normalized_name": "heart failure",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "intervention": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+              "intervention_type": "DRUG",
+              "name": "Spironolactone",
+              "normalized_intervention_type": "drug",
+              "normalized_name": "spironolactone",
+              "source_table": "interventions.txt"
+            },
+            "nct_id": "NCT00391846",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "Number of deaths",
+              "measure": "Number of CV Deaths",
+              "nct_id": "NCT00391846",
+              "outcome_type": "secondary",
+              "planned_outcome_id": "planned_outcome:1427333625",
+              "population": "",
+              "source_record_id": "1427333625",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "9 months"
+            },
+            "relationship_path": {
+              "condition": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "conditions.txt"
+                },
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "intervention": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392598879",
+                  "source_table": "interventions.txt"
+                },
+                "type": "HAS_INTERVENTION"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1427333625",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sponsor": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381921083",
+                  "source_table": "sponsors.txt"
+                },
+                "type": "LEAD_SPONSORED_BY"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            },
+            "sponsor": {
+              "agency_class": "INDUSTRY",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "AstraZeneca",
+              "normalized_name": "astrazeneca",
+              "source_table": "sponsors.txt",
+              "sponsor_id": "sponsor:73f028fcb1012cf7d1e8"
+            }
+          },
+          {
+            "brief_title": "Evaluation of Heart Failure Treatment Guided by N-terminal Pro B-type Natriuretic Peptide (NTproBNP) vs Clinical Symptoms and Signs Alone",
+            "condition": {
+              "condition_id": "condition:629e3a1901f0194c01ec",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure",
+              "normalized_name": "heart failure",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "intervention": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+              "intervention_type": "DRUG",
+              "name": "Spironolactone",
+              "normalized_intervention_type": "drug",
+              "normalized_name": "spironolactone",
+              "source_table": "interventions.txt"
+            },
+            "nct_id": "NCT00391846",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "The non-parametric scale is constructed from 3 variables, modified after Cleland. Each patient receives a rank score from 1 to 246 (246-number of patients in the study). The lowest score receive patients who die (due to CV event), next patients still alive at end-of-study with the worst composite score, the best alive patients with 0 days in hospital and the largest improvement in the KCCQ (self-administered by patient symptom score, where the higher score reflect better health status). Scores will be summarized using non-parametric calculations. The mean of non-parametric scores is presented",
+              "measure": "Composite Value of 3 Variables After 9 Months: Cardiovascular Death (Days Alive), Cardiovascular Hospitalization (Days Out of Hospital), Heart Failure Symptoms (Symptom Score Subset of the Kansas City Cardiomyopathy Questionnaire - Questions 3,5,7,9)",
+              "nct_id": "NCT00391846",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1427335324",
+              "population": "",
+              "source_record_id": "1427335324",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "9 months"
+            },
+            "relationship_path": {
+              "condition": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "conditions.txt"
+                },
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "intervention": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392598879",
+                  "source_table": "interventions.txt"
+                },
+                "type": "HAS_INTERVENTION"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1427335324",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sponsor": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381921083",
+                  "source_table": "sponsors.txt"
+                },
+                "type": "LEAD_SPONSORED_BY"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            },
+            "sponsor": {
+              "agency_class": "INDUSTRY",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "AstraZeneca",
+              "normalized_name": "astrazeneca",
+              "source_table": "sponsors.txt",
+              "sponsor_id": "sponsor:73f028fcb1012cf7d1e8"
+            }
+          },
+          {
+            "brief_title": "Effect of Aldosterone on Energy Starvation in Heart Failure",
+            "condition": {
+              "condition_id": "condition:629e3a1901f0194c01ec",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure",
+              "normalized_name": "heart failure",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "intervention": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+              "intervention_type": "DRUG",
+              "name": "Spironolactone",
+              "normalized_intervention_type": "drug",
+              "normalized_name": "spironolactone",
+              "source_table": "interventions.txt"
+            },
+            "nct_id": "NCT00574119",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "WMI=\\[left ventricular stroke work/decay rate of 11C-acetate\\]",
+              "measure": "Left Ventricular Work-metabolic Index (WMI) at Baseline",
+              "nct_id": "NCT00574119",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1428445987",
+              "population": "",
+              "source_record_id": "1428445987",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "baseline"
+            },
+            "relationship_path": {
+              "condition": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "conditions.txt"
+                },
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "intervention": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392894341",
+                  "source_table": "interventions.txt"
+                },
+                "type": "HAS_INTERVENTION"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1428445987",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sponsor": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "382201825",
+                  "source_table": "sponsors.txt"
+                },
+                "type": "LEAD_SPONSORED_BY"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            },
+            "sponsor": {
+              "agency_class": "OTHER",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Vanderbilt University",
+              "normalized_name": "vanderbilt university",
+              "source_table": "sponsors.txt",
+              "sponsor_id": "sponsor:59216acbedf193ccee74"
+            }
+          },
+          {
+            "brief_title": "Effect of Aldosterone on Energy Starvation in Heart Failure",
+            "condition": {
+              "condition_id": "condition:629e3a1901f0194c01ec",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure",
+              "normalized_name": "heart failure",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "intervention": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+              "intervention_type": "DRUG",
+              "name": "Spironolactone",
+              "normalized_intervention_type": "drug",
+              "normalized_name": "spironolactone",
+              "source_table": "interventions.txt"
+            },
+            "nct_id": "NCT00574119",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "WMI=\\[left ventricular stroke work/decay rate of 11C-acetate\\]",
+              "measure": "Left Ventricular Work-metabolic Index (WMI) at 6 Months",
+              "nct_id": "NCT00574119",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1428445988",
+              "population": "",
+              "source_record_id": "1428445988",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "6 months"
+            },
+            "relationship_path": {
+              "condition": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "conditions.txt"
+                },
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "intervention": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392894341",
+                  "source_table": "interventions.txt"
+                },
+                "type": "HAS_INTERVENTION"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1428445988",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sponsor": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "382201825",
+                  "source_table": "sponsors.txt"
+                },
+                "type": "LEAD_SPONSORED_BY"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            },
+            "sponsor": {
+              "agency_class": "OTHER",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Vanderbilt University",
+              "normalized_name": "vanderbilt university",
+              "source_table": "sponsors.txt",
+              "sponsor_id": "sponsor:59216acbedf193ccee74"
+            }
+          },
+          {
+            "brief_title": "SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)",
+            "condition": {
+              "condition_id": "condition:629e3a1901f0194c01ec",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure",
+              "normalized_name": "heart failure",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "intervention": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+              "intervention_type": "DRUG",
+              "name": "Spironolactone",
+              "normalized_intervention_type": "drug",
+              "normalized_name": "spironolactone",
+              "source_table": "interventions.txt"
+            },
+            "nct_id": "NCT00604006",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "",
+              "measure": "Effectiveness of Spironolactone in preventing heart failure",
+              "nct_id": "NCT00604006",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1427315147",
+              "population": "",
+              "source_record_id": "1427315147",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "1 year and 3 year"
+            },
+            "relationship_path": {
+              "condition": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "conditions.txt"
+                },
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "intervention": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392593447",
+                  "source_table": "interventions.txt"
+                },
+                "type": "HAS_INTERVENTION"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1427315147",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sponsor": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381915737",
+                  "source_table": "sponsors.txt"
+                },
+                "type": "LEAD_SPONSORED_BY"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            },
+            "sponsor": {
+              "agency_class": "OTHER",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Monash University",
+              "normalized_name": "monash university",
+              "source_table": "sponsors.txt",
+              "sponsor_id": "sponsor:b946f114ca1bd09f372c"
+            }
+          },
+          {
+            "brief_title": "SCREEN-HFI (SCReening Evaluation of the Evolution of New Heart Failure Intervention Study)",
+            "condition": {
+              "condition_id": "condition:629e3a1901f0194c01ec",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure",
+              "normalized_name": "heart failure",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "intervention": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+              "intervention_type": "DRUG",
+              "name": "Spironolactone",
+              "normalized_intervention_type": "drug",
+              "normalized_name": "spironolactone",
+              "source_table": "interventions.txt"
+            },
+            "nct_id": "NCT00604006",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "",
+              "measure": "Cost effectiveness of Spironolactone prevention",
+              "nct_id": "NCT00604006",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1427315148",
+              "population": "",
+              "source_record_id": "1427315148",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "3 years"
+            },
+            "relationship_path": {
+              "condition": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "conditions.txt"
+                },
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "intervention": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392593447",
+                  "source_table": "interventions.txt"
+                },
+                "type": "HAS_INTERVENTION"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1427315148",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sponsor": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381915737",
+                  "source_table": "sponsors.txt"
+                },
+                "type": "LEAD_SPONSORED_BY"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            },
+            "sponsor": {
+              "agency_class": "OTHER",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Monash University",
+              "normalized_name": "monash university",
+              "source_table": "sponsors.txt",
+              "sponsor_id": "sponsor:b946f114ca1bd09f372c"
+            }
+          },
+          {
+            "brief_title": "Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease",
+            "condition": {
+              "condition_id": "condition:629e3a1901f0194c01ec",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure",
+              "normalized_name": "heart failure",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "intervention": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+              "intervention_type": "DRUG",
+              "name": "Spironolactone",
+              "normalized_intervention_type": "drug",
+              "normalized_name": "spironolactone",
+              "source_table": "interventions.txt"
+            },
+            "nct_id": "NCT01130597",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "",
+              "measure": "Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at Week 4",
+              "nct_id": "NCT01130597",
+              "outcome_type": "secondary",
+              "planned_outcome_id": "planned_outcome:1425435516",
+              "population": "",
+              "source_record_id": "1425435516",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "28 Days"
+            },
+            "relationship_path": {
+              "condition": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "conditions.txt"
+                },
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "intervention": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392083486",
+                  "source_table": "interventions.txt"
+                },
+                "type": "HAS_INTERVENTION"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1425435516",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sponsor": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381436330",
+                  "source_table": "sponsors.txt"
+                },
+                "type": "LEAD_SPONSORED_BY"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            },
+            "sponsor": {
+              "agency_class": "INDUSTRY",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Relypsa, Inc.",
+              "normalized_name": "relypsa, inc.",
+              "source_table": "sponsors.txt",
+              "sponsor_id": "sponsor:e2299c0be1c8d388bf8e"
+            }
+          },
+          {
+            "brief_title": "Evaluation of Patiromer Titration in Heart Failure Patients With Chronic Kidney Disease",
+            "condition": {
+              "condition_id": "condition:629e3a1901f0194c01ec",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure",
+              "normalized_name": "heart failure",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "intervention": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+              "intervention_type": "DRUG",
+              "name": "Spironolactone",
+              "normalized_intervention_type": "drug",
+              "normalized_name": "spironolactone",
+              "source_table": "interventions.txt"
+            },
+            "nct_id": "NCT01130597",
+            "planned_outcome": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "description": "",
+              "measure": "Percentage of Participants With Serum Potassium in the Range of 3.5 - 5.5 mEq/L at the End of Treatment",
+              "nct_id": "NCT01130597",
+              "outcome_type": "primary",
+              "planned_outcome_id": "planned_outcome:1425436986",
+              "population": "",
+              "source_record_id": "1425436986",
+              "source_table": "design_outcomes.txt",
+              "time_frame": "56 days"
+            },
+            "relationship_path": {
+              "condition": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "conditions.txt"
+                },
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "dataset": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "type": "MEMBER_OF_DATASET"
+              },
+              "intervention": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392083486",
+                  "source_table": "interventions.txt"
+                },
+                "type": "HAS_INTERVENTION"
+              },
+              "planned_outcome": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1425436986",
+                  "source_table": "design_outcomes.txt"
+                },
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sponsor": {
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381436330",
+                  "source_table": "sponsors.txt"
+                },
+                "type": "LEAD_SPONSORED_BY"
+              }
+            },
+            "source_dataset": {
+              "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+              "archive_size_bytes": 2526451724,
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            },
+            "sponsor": {
+              "agency_class": "INDUSTRY",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Relypsa, Inc.",
+              "normalized_name": "relypsa, inc.",
+              "source_table": "sponsors.txt",
+              "sponsor_id": "sponsor:e2299c0be1c8d388bf8e"
+            }
+          }
+        ],
+        "graph_version": "HTT-KG-AACT-20260905-v1",
+        "parameters": {
+          "condition_normalized": "heart failure",
+          "dataset_version": "HTT-P1-AACT-20260905",
+          "intervention_normalized": "spironolactone"
+        },
+        "question": "Which sponsors are associated with heart-failure trials investigating spironolactone, and what planned outcomes did those trials register?",
+        "question_id": "2",
+        "retrieved_utc": "2026-10-15T00:55:06.021556+00:00",
+        "row_count": 10,
+        "safeguards": {
+          "no_llm_generation": true,
+          "planned_outcomes": "Registered planned outcome — not a clinical result.",
+          "read_only_retrieval": true,
+          "snapshot": "Evidence comes from the pinned September 5, 2026 snapshot and may include later amendments; it is not asserted to be the original registration record."
+        }
+      },
+      "question": "Which sponsors are associated with heart-failure trials investigating spironolactone, and what planned outcomes did those trials register?",
+      "question_id": "2",
+      "retrieval_latency_ms": 118.729
+    }
+  ],
+  "started_utc": "2026-10-15T00:55:04.202199+00:00",
+  "total_latency_ms": 117180.693,
+  "trace_schema_version": "HTT-GRAPHRAG-DEMO-v1"
+}

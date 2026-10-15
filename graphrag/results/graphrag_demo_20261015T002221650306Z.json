@@ -1,0 +1,947 @@
+{
+  "completed_utc": "2026-10-15T00:22:21.647351+00:00",
+  "configuration": {
+    "api_key_configured": false,
+    "credentials_required": false,
+    "database": "57aa5fa3",
+    "env_source": "artifacts/knowledge_graph/.env",
+    "llm_model": "qwen2.5:1.5b",
+    "llm_provider": "ollama",
+    "uri_scheme": "neo4j+s",
+    "username_configured": "true"
+  },
+  "connection": {
+    "connected": true,
+    "database": "57aa5fa3",
+    "dataset_version": "HTT-P1-AACT-20260905",
+    "graph_version": "HTT-KG-AACT-20260905-v1",
+    "node_count": 26,
+    "relationship_count": 65,
+    "snapshot_date": "2026-09-05"
+  },
+  "phase": "Neo4j retrieval plus grounded LLM answer generation",
+  "provider_status": {
+    "available": true,
+    "base_url": "http://localhost:11434",
+    "installed_models": [
+      "qwen2.5:1.5b",
+      "qwen3:4b"
+    ],
+    "model": "qwen2.5:1.5b"
+  },
+  "results": [
+    {
+      "generation": {
+        "answer": "ABSTAIN: The generated explanation contained claims that could not be verified against the retrieved KG evidence.",
+        "attempts": [
+          {
+            "attempt": 1,
+            "done_reason": "length",
+            "eval_count": 400,
+            "generated_evidence_section": "Evidence and provenance (deterministically constructed from retrieved KG evidence):\n- NCT IDs: NCT00206232\n- Source-record citations: [source_record_id: 1426533443], [source_record_id: 1426534673], [source_record_id: 381715287], [source_record_id: 392379839]\n- Dataset version: HTT-P1-AACT-20260905\n- Snapshot date: 2026-09-05\nRegistered planned outcomes are not observed clinical results.",
+            "grounding_validation": {
+              "errors": [
+                "claim_10:unsupported_numeric_value:256",
+                "claim_14:unsupported_outcome_measure_assertion",
+                "claim_15:unsupported_outcome_measure_assertion",
+                "claim_17:unsupported_outcome_measure_assertion",
+                "claim_18:unsupported_outcome_measure_assertion",
+                "claim_19:unsupported_outcome_measure_assertion",
+                "claim_20:unsupported_outcome_measure_assertion"
+              ],
+              "evidence_identifiers": {
+                "dataset_versions": [
+                  "HTT-P1-AACT-20260905"
+                ],
+                "nct_ids": [
+                  "NCT00206232"
+                ],
+                "snapshot_dates": [
+                  "2026-09-05"
+                ],
+                "source_record_ids": [
+                  "1426533443",
+                  "1426534673",
+                  "381715287",
+                  "392379839"
+                ]
+              },
+              "passed": false,
+              "status": "blocked_unsupported_claims"
+            },
+            "latency_ms": 100653.487,
+            "ollama_total_duration_ms": 100634.789,
+            "prompt_eval_count": 1274,
+            "provenance_construction": {
+              "construction": "deterministic_from_retrieved_kg_evidence",
+              "errors": [],
+              "identifiers": {
+                "dataset_versions": [
+                  "HTT-P1-AACT-20260905"
+                ],
+                "nct_ids": [
+                  "NCT00206232"
+                ],
+                "snapshot_dates": [
+                  "2026-09-05"
+                ],
+                "source_record_ids": [
+                  "1426533443",
+                  "1426534673",
+                  "381715287",
+                  "392379839"
+                ]
+              },
+              "planned_outcome_safeguard_appended": true,
+              "ready": true,
+              "text": "Evidence and provenance (deterministically constructed from retrieved KG evidence):\n- NCT IDs: NCT00206232\n- Source-record citations: [source_record_id: 1426533443], [source_record_id: 1426534673], [source_record_id: 381715287], [source_record_id: 392379839]\n- Dataset version: HTT-P1-AACT-20260905\n- Snapshot date: 2026-09-05\nRegistered planned outcomes are not observed clinical results."
+            },
+            "raw_model_output": "The clinical trial NCT00206232 is registered with the following information:\n\n- **Trial Title**: Novel Treatment for Diastolic Heart Failure in Women\n- **Study Type**: INTERVENTIONAL\n- **Phase**: PHASE4\n- **Study First Submitted Date**: 2005-09-12\n- **Sponsor**: Baylor College of Medicine\n\nThe trial is registered with the following datasets and sources:\n\n- **Source Dataset**: HTT-P1-AACT-20260905\n- **Graph Version**: HTT-KG-AACT-20260905-v1\n- **Pinned Manifest SHA256**: 5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab\n- **Snapshot Date**: 2026-09-05\n- **Snapshot File**: 20260905_export_ctgov.zip\n- **Source Dataset ID**: HTT-P1-AACT-20260905\n\nThe trial is registered with the following planned outcomes:\n\n- **Planned Outcome ID**: planned_outcome:1426533443\n- **Planned Outcome Measure**: Echocardiography parameters of diastolic function\n- **Planned Outcome NCT ID**: NCT00206232\n- **Planned Outcome Time Frame**: Baseline, then 3 and 6 months after randomization\n- **Planned Outcome Outcome Type**: secondary\n\n- **Planned Outcome ID**: planned_outcome:1426534673\n- **Planned Outcome Measure**: Six minute walk distance",
+            "substantive_claim_validation": {
+              "claim_checks": [
+                {
+                  "claim_index": 1,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "nct00206232"
+                  ],
+                  "supported": true,
+                  "text": "The clinical trial NCT00206232 is registered with the following information:",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 2,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "heartfailure",
+                    "noveltreatmentfordiastolicheartfailureinwomen"
+                  ],
+                  "supported": true,
+                  "text": "**Trial Title**: Novel Treatment for Diastolic Heart Failure in Women",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 3,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "intervention",
+                    "interventional"
+                  ],
+                  "supported": true,
+                  "text": "**Study Type**: INTERVENTIONAL",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 4,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "phase4"
+                  ],
+                  "supported": true,
+                  "text": "**Phase**: PHASE4",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 5,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "2005",
+                    "20050912",
+                    "submitted"
+                  ],
+                  "supported": true,
+                  "text": "**Study First Submitted Date**: 2005-09-12",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 6,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "baylorcollegeofmedicine",
+                    "sponsor"
+                  ],
+                  "supported": true,
+                  "text": "**Sponsor**: Baylor College of Medicine",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 7,
+                  "errors": [],
+                  "evidence_value_anchors": [],
+                  "supported": true,
+                  "text": "The trial is registered with the following datasets and sources:",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 8,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "20260905",
+                    "http1aact20260905",
+                    "sourcedataset"
+                  ],
+                  "supported": true,
+                  "text": "**Source Dataset**: HTT-P1-AACT-20260905",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 9,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "20260905",
+                    "httkgaact20260905v1"
+                  ],
+                  "supported": true,
+                  "text": "**Graph Version**: HTT-KG-AACT-20260905-v1",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 10,
+                  "errors": [
+                    "unsupported_numeric_value:256"
+                  ],
+                  "evidence_value_anchors": [
+                    "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab"
+                  ],
+                  "supported": false,
+                  "text": "**Pinned Manifest SHA256**: 5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+                  "unknown_numbers": [
+                    "256"
+                  ]
+                },
+                {
+                  "claim_index": 11,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "20260905"
+                  ],
+                  "supported": true,
+                  "text": "**Snapshot Date**: 2026-09-05",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 12,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "20260905",
+                    "20260905exportctgovzip"
+                  ],
+                  "supported": true,
+                  "text": "**Snapshot File**: 20260905_export_ctgov.zip",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 13,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "20260905",
+                    "http1aact20260905",
+                    "sourcedataset"
+                  ],
+                  "supported": true,
+                  "text": "**Source Dataset ID**: HTT-P1-AACT-20260905",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 14,
+                  "errors": [
+                    "unsupported_outcome_measure_assertion"
+                  ],
+                  "evidence_value_anchors": [
+                    "plannedoutcome"
+                  ],
+                  "supported": false,
+                  "text": "The trial is registered with the following planned outcomes:",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 15,
+                  "errors": [
+                    "unsupported_outcome_measure_assertion"
+                  ],
+                  "evidence_value_anchors": [
+                    "1426533443",
+                    "plannedoutcome",
+                    "plannedoutcome1426533443"
+                  ],
+                  "supported": false,
+                  "text": "**Planned Outcome ID**: planned_outcome:1426533443",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 16,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "echocardiographyparametersofdiastolicfunction",
+                    "plannedoutcome"
+                  ],
+                  "supported": true,
+                  "text": "**Planned Outcome Measure**: Echocardiography parameters of diastolic function",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 17,
+                  "errors": [
+                    "unsupported_outcome_measure_assertion"
+                  ],
+                  "evidence_value_anchors": [
+                    "nct00206232",
+                    "plannedoutcome"
+                  ],
+                  "supported": false,
+                  "text": "**Planned Outcome NCT ID**: NCT00206232",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 18,
+                  "errors": [
+                    "unsupported_outcome_measure_assertion"
+                  ],
+                  "evidence_value_anchors": [
+                    "baselinethen3and6monthsafterrandomization",
+                    "plannedoutcome"
+                  ],
+                  "supported": false,
+                  "text": "**Planned Outcome Time Frame**: Baseline, then 3 and 6 months after randomization",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 19,
+                  "errors": [
+                    "unsupported_outcome_measure_assertion"
+                  ],
+                  "evidence_value_anchors": [
+                    "plannedoutcome",
+                    "secondary"
+                  ],
+                  "supported": false,
+                  "text": "**Planned Outcome Outcome Type**: secondary",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 20,
+                  "errors": [
+                    "unsupported_outcome_measure_assertion"
+                  ],
+                  "evidence_value_anchors": [
+                    "1426534673",
+                    "plannedoutcome",
+                    "plannedoutcome1426534673"
+                  ],
+                  "supported": false,
+                  "text": "**Planned Outcome ID**: planned_outcome:1426534673",
+                  "unknown_numbers": []
+                },
+                {
+                  "claim_index": 21,
+                  "errors": [],
+                  "evidence_value_anchors": [
+                    "plannedoutcome",
+                    "sixminutewalkdistance"
+                  ],
+                  "supported": true,
+                  "text": "**Planned Outcome Measure**: Six minute walk distance",
+                  "unknown_numbers": []
+                }
+              ],
+              "errors": [
+                "claim_10:unsupported_numeric_value:256",
+                "claim_14:unsupported_outcome_measure_assertion",
+                "claim_15:unsupported_outcome_measure_assertion",
+                "claim_17:unsupported_outcome_measure_assertion",
+                "claim_18:unsupported_outcome_measure_assertion",
+                "claim_19:unsupported_outcome_measure_assertion",
+                "claim_20:unsupported_outcome_measure_assertion"
+              ],
+              "limitations": "Normalized identifier, named-entity, numeric, and high-risk scientific-claim checks; not a general semantic-entailment model.",
+              "method": "normalized_identifier_entity_and_safety_validation",
+              "passed": false,
+              "status": "unsupported_claims"
+            }
+          }
+        ],
+        "completed_utc": "2026-10-15T00:22:21.640537+00:00",
+        "generated_evidence_section": "Evidence and provenance (deterministically constructed from retrieved KG evidence):\n- NCT IDs: NCT00206232\n- Source-record citations: [source_record_id: 1426533443], [source_record_id: 1426534673], [source_record_id: 381715287], [source_record_id: 392379839]\n- Dataset version: HTT-P1-AACT-20260905\n- Snapshot date: 2026-09-05\nRegistered planned outcomes are not observed clinical results.",
+        "generation_parameters": {
+          "api": "ollama_generate",
+          "base_url": "http://localhost:11434",
+          "keep_alive": "5m",
+          "maximum_grounding_attempts": 1,
+          "num_ctx": 8192,
+          "num_predict": 400,
+          "request_timeout_seconds": 180.0,
+          "stream": false,
+          "temperature": 0.0
+        },
+        "grounding_validation": {
+          "errors": [
+            "claim_10:unsupported_numeric_value:256",
+            "claim_14:unsupported_outcome_measure_assertion",
+            "claim_15:unsupported_outcome_measure_assertion",
+            "claim_17:unsupported_outcome_measure_assertion",
+            "claim_18:unsupported_outcome_measure_assertion",
+            "claim_19:unsupported_outcome_measure_assertion",
+            "claim_20:unsupported_outcome_measure_assertion"
+          ],
+          "evidence_identifiers": {
+            "dataset_versions": [
+              "HTT-P1-AACT-20260905"
+            ],
+            "nct_ids": [
+              "NCT00206232"
+            ],
+            "snapshot_dates": [
+              "2026-09-05"
+            ],
+            "source_record_ids": [
+              "1426533443",
+              "1426534673",
+              "381715287",
+              "392379839"
+            ]
+          },
+          "passed": false,
+          "status": "blocked_unsupported_claims"
+        },
+        "latency_ms": 100664.189,
+        "prompt_audit": {
+          "compaction_ratio": 0.4979,
+          "factual_context_fields": [
+            "user_question",
+            "retrieved_kg_evidence"
+          ],
+          "instructions_sha256": "c0719f54a724fbb742769483b9fd66c632952717b669eafd882f393406a63603",
+          "model_input_characters": 3075,
+          "model_input_sha256": "f8f8e26c390bdec72f2df3483f9a805489a5c5e5adcba352d789d4f39eb21764",
+          "raw_evidence_characters": 6176
+        },
+        "provenance_construction": {
+          "construction": "deterministic_from_retrieved_kg_evidence",
+          "errors": [],
+          "identifiers": {
+            "dataset_versions": [
+              "HTT-P1-AACT-20260905"
+            ],
+            "nct_ids": [
+              "NCT00206232"
+            ],
+            "snapshot_dates": [
+              "2026-09-05"
+            ],
+            "source_record_ids": [
+              "1426533443",
+              "1426534673",
+              "381715287",
+              "392379839"
+            ]
+          },
+          "planned_outcome_safeguard_appended": true,
+          "ready": true,
+          "text": "Evidence and provenance (deterministically constructed from retrieved KG evidence):\n- NCT IDs: NCT00206232\n- Source-record citations: [source_record_id: 1426533443], [source_record_id: 1426534673], [source_record_id: 381715287], [source_record_id: 392379839]\n- Dataset version: HTT-P1-AACT-20260905\n- Snapshot date: 2026-09-05\nRegistered planned outcomes are not observed clinical results."
+        },
+        "provider": "ollama",
+        "provider_reported_total_duration_ms": 100634.789,
+        "raw_model_output": "The clinical trial NCT00206232 is registered with the following information:\n\n- **Trial Title**: Novel Treatment for Diastolic Heart Failure in Women\n- **Study Type**: INTERVENTIONAL\n- **Phase**: PHASE4\n- **Study First Submitted Date**: 2005-09-12\n- **Sponsor**: Baylor College of Medicine\n\nThe trial is registered with the following datasets and sources:\n\n- **Source Dataset**: HTT-P1-AACT-20260905\n- **Graph Version**: HTT-KG-AACT-20260905-v1\n- **Pinned Manifest SHA256**: 5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab\n- **Snapshot Date**: 2026-09-05\n- **Snapshot File**: 20260905_export_ctgov.zip\n- **Source Dataset ID**: HTT-P1-AACT-20260905\n\nThe trial is registered with the following planned outcomes:\n\n- **Planned Outcome ID**: planned_outcome:1426533443\n- **Planned Outcome Measure**: Echocardiography parameters of diastolic function\n- **Planned Outcome NCT ID**: NCT00206232\n- **Planned Outcome Time Frame**: Baseline, then 3 and 6 months after randomization\n- **Planned Outcome Outcome Type**: secondary\n\n- **Planned Outcome ID**: planned_outcome:1426534673\n- **Planned Outcome Measure**: Six minute walk distance",
+        "requested_model": "qwen2.5:1.5b",
+        "response_id": "",
+        "response_model": "qwen2.5:1.5b",
+        "started_utc": "2026-10-15T00:20:40.973226+00:00",
+        "status": "blocked_unsupported_claims",
+        "substantive_claim_validation": {
+          "claim_checks": [
+            {
+              "claim_index": 1,
+              "errors": [],
+              "evidence_value_anchors": [
+                "nct00206232"
+              ],
+              "supported": true,
+              "text": "The clinical trial NCT00206232 is registered with the following information:",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 2,
+              "errors": [],
+              "evidence_value_anchors": [
+                "heartfailure",
+                "noveltreatmentfordiastolicheartfailureinwomen"
+              ],
+              "supported": true,
+              "text": "**Trial Title**: Novel Treatment for Diastolic Heart Failure in Women",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 3,
+              "errors": [],
+              "evidence_value_anchors": [
+                "intervention",
+                "interventional"
+              ],
+              "supported": true,
+              "text": "**Study Type**: INTERVENTIONAL",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 4,
+              "errors": [],
+              "evidence_value_anchors": [
+                "phase4"
+              ],
+              "supported": true,
+              "text": "**Phase**: PHASE4",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 5,
+              "errors": [],
+              "evidence_value_anchors": [
+                "2005",
+                "20050912",
+                "submitted"
+              ],
+              "supported": true,
+              "text": "**Study First Submitted Date**: 2005-09-12",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 6,
+              "errors": [],
+              "evidence_value_anchors": [
+                "baylorcollegeofmedicine",
+                "sponsor"
+              ],
+              "supported": true,
+              "text": "**Sponsor**: Baylor College of Medicine",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 7,
+              "errors": [],
+              "evidence_value_anchors": [],
+              "supported": true,
+              "text": "The trial is registered with the following datasets and sources:",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 8,
+              "errors": [],
+              "evidence_value_anchors": [
+                "20260905",
+                "http1aact20260905",
+                "sourcedataset"
+              ],
+              "supported": true,
+              "text": "**Source Dataset**: HTT-P1-AACT-20260905",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 9,
+              "errors": [],
+              "evidence_value_anchors": [
+                "20260905",
+                "httkgaact20260905v1"
+              ],
+              "supported": true,
+              "text": "**Graph Version**: HTT-KG-AACT-20260905-v1",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 10,
+              "errors": [
+                "unsupported_numeric_value:256"
+              ],
+              "evidence_value_anchors": [
+                "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab"
+              ],
+              "supported": false,
+              "text": "**Pinned Manifest SHA256**: 5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "unknown_numbers": [
+                "256"
+              ]
+            },
+            {
+              "claim_index": 11,
+              "errors": [],
+              "evidence_value_anchors": [
+                "20260905"
+              ],
+              "supported": true,
+              "text": "**Snapshot Date**: 2026-09-05",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 12,
+              "errors": [],
+              "evidence_value_anchors": [
+                "20260905",
+                "20260905exportctgovzip"
+              ],
+              "supported": true,
+              "text": "**Snapshot File**: 20260905_export_ctgov.zip",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 13,
+              "errors": [],
+              "evidence_value_anchors": [
+                "20260905",
+                "http1aact20260905",
+                "sourcedataset"
+              ],
+              "supported": true,
+              "text": "**Source Dataset ID**: HTT-P1-AACT-20260905",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 14,
+              "errors": [
+                "unsupported_outcome_measure_assertion"
+              ],
+              "evidence_value_anchors": [
+                "plannedoutcome"
+              ],
+              "supported": false,
+              "text": "The trial is registered with the following planned outcomes:",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 15,
+              "errors": [
+                "unsupported_outcome_measure_assertion"
+              ],
+              "evidence_value_anchors": [
+                "1426533443",
+                "plannedoutcome",
+                "plannedoutcome1426533443"
+              ],
+              "supported": false,
+              "text": "**Planned Outcome ID**: planned_outcome:1426533443",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 16,
+              "errors": [],
+              "evidence_value_anchors": [
+                "echocardiographyparametersofdiastolicfunction",
+                "plannedoutcome"
+              ],
+              "supported": true,
+              "text": "**Planned Outcome Measure**: Echocardiography parameters of diastolic function",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 17,
+              "errors": [
+                "unsupported_outcome_measure_assertion"
+              ],
+              "evidence_value_anchors": [
+                "nct00206232",
+                "plannedoutcome"
+              ],
+              "supported": false,
+              "text": "**Planned Outcome NCT ID**: NCT00206232",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 18,
+              "errors": [
+                "unsupported_outcome_measure_assertion"
+              ],
+              "evidence_value_anchors": [
+                "baselinethen3and6monthsafterrandomization",
+                "plannedoutcome"
+              ],
+              "supported": false,
+              "text": "**Planned Outcome Time Frame**: Baseline, then 3 and 6 months after randomization",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 19,
+              "errors": [
+                "unsupported_outcome_measure_assertion"
+              ],
+              "evidence_value_anchors": [
+                "plannedoutcome",
+                "secondary"
+              ],
+              "supported": false,
+              "text": "**Planned Outcome Outcome Type**: secondary",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 20,
+              "errors": [
+                "unsupported_outcome_measure_assertion"
+              ],
+              "evidence_value_anchors": [
+                "1426534673",
+                "plannedoutcome",
+                "plannedoutcome1426534673"
+              ],
+              "supported": false,
+              "text": "**Planned Outcome ID**: planned_outcome:1426534673",
+              "unknown_numbers": []
+            },
+            {
+              "claim_index": 21,
+              "errors": [],
+              "evidence_value_anchors": [
+                "plannedoutcome",
+                "sixminutewalkdistance"
+              ],
+              "supported": true,
+              "text": "**Planned Outcome Measure**: Six minute walk distance",
+              "unknown_numbers": []
+            }
+          ],
+          "errors": [
+            "claim_10:unsupported_numeric_value:256",
+            "claim_14:unsupported_outcome_measure_assertion",
+            "claim_15:unsupported_outcome_measure_assertion",
+            "claim_17:unsupported_outcome_measure_assertion",
+            "claim_18:unsupported_outcome_measure_assertion",
+            "claim_19:unsupported_outcome_measure_assertion",
+            "claim_20:unsupported_outcome_measure_assertion"
+          ],
+          "limitations": "Normalized identifier, named-entity, numeric, and high-risk scientific-claim checks; not a general semantic-entailment model.",
+          "method": "normalized_identifier_entity_and_safety_validation",
+          "passed": false,
+          "status": "unsupported_claims"
+        },
+        "usage": {
+          "eval_count": 400,
+          "prompt_eval_count": 1274
+        }
+      },
+      "kg_evidence": {
+        "dataset_version": "HTT-P1-AACT-20260905",
+        "evidence": [
+          {
+            "evidence_paths": [
+              {
+                "evidence_labels": [
+                  "ConditionTerm"
+                ],
+                "evidence_properties": {
+                  "condition_id": "condition:6414c5b8adecc13a3786",
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "name": "Cardiovascular Diseases",
+                  "normalized_name": "cardiovascular diseases",
+                  "source_kind": "browse",
+                  "source_table": "browse_conditions.txt"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "browse_conditions.txt"
+                },
+                "relationship_type": "HAS_BROWSE_CONDITION"
+              },
+              {
+                "evidence_labels": [
+                  "ConditionTerm"
+                ],
+                "evidence_properties": {
+                  "condition_id": "condition:76106621b8d52df0409b",
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "name": "Heart Diseases",
+                  "normalized_name": "heart diseases",
+                  "source_kind": "browse",
+                  "source_table": "browse_conditions.txt"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "browse_conditions.txt"
+                },
+                "relationship_type": "HAS_BROWSE_CONDITION"
+              },
+              {
+                "evidence_labels": [
+                  "ConditionTerm"
+                ],
+                "evidence_properties": {
+                  "condition_id": "condition:220601b84d713b61467c",
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "name": "Heart Failure",
+                  "normalized_name": "heart failure",
+                  "source_kind": "browse",
+                  "source_table": "browse_conditions.txt"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "browse_conditions.txt"
+                },
+                "relationship_type": "HAS_BROWSE_CONDITION"
+              },
+              {
+                "evidence_labels": [
+                  "Intervention"
+                ],
+                "evidence_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+                  "intervention_type": "DRUG",
+                  "name": "Spironolactone",
+                  "normalized_intervention_type": "drug",
+                  "normalized_name": "spironolactone",
+                  "source_table": "interventions.txt"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392379839",
+                  "source_table": "interventions.txt"
+                },
+                "relationship_type": "HAS_INTERVENTION"
+              },
+              {
+                "evidence_labels": [
+                  "PlannedOutcome"
+                ],
+                "evidence_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "description": "",
+                  "measure": "Echocardiography parameters of diastolic function",
+                  "nct_id": "NCT00206232",
+                  "outcome_type": "secondary",
+                  "planned_outcome_id": "planned_outcome:1426533443",
+                  "population": "",
+                  "source_record_id": "1426533443",
+                  "source_table": "design_outcomes.txt",
+                  "time_frame": "Baseline, then 3 and 6 months after randomization"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426533443",
+                  "source_table": "design_outcomes.txt"
+                },
+                "relationship_type": "HAS_PLANNED_OUTCOME"
+              },
+              {
+                "evidence_labels": [
+                  "PlannedOutcome"
+                ],
+                "evidence_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "description": "",
+                  "measure": "Six minute walk distance",
+                  "nct_id": "NCT00206232",
+                  "outcome_type": "primary",
+                  "planned_outcome_id": "planned_outcome:1426534673",
+                  "population": "",
+                  "source_record_id": "1426534673",
+                  "source_table": "design_outcomes.txt",
+                  "time_frame": "Baseline, then 3 and 6 months after randomization"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426534673",
+                  "source_table": "design_outcomes.txt"
+                },
+                "relationship_type": "HAS_PLANNED_OUTCOME"
+              },
+              {
+                "evidence_labels": [
+                  "ConditionTerm"
+                ],
+                "evidence_properties": {
+                  "condition_id": "condition:629e3a1901f0194c01ec",
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "name": "Heart Failure",
+                  "normalized_name": "heart failure",
+                  "source_kind": "submitted",
+                  "source_table": "conditions.txt"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "",
+                  "source_record_id_status": "not_retained_in_step2_extract",
+                  "source_table": "conditions.txt"
+                },
+                "relationship_type": "HAS_SUBMITTED_CONDITION"
+              },
+              {
+                "evidence_labels": [
+                  "Sponsor"
+                ],
+                "evidence_properties": {
+                  "agency_class": "OTHER",
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "name": "Baylor College of Medicine",
+                  "normalized_name": "baylor college of medicine",
+                  "source_table": "sponsors.txt",
+                  "sponsor_id": "sponsor:64f999d92d1b73893f9b"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381715287",
+                  "source_table": "sponsors.txt"
+                },
+                "relationship_type": "LEAD_SPONSORED_BY"
+              },
+              {
+                "evidence_labels": [
+                  "SourceDataset"
+                ],
+                "evidence_properties": {
+                  "archive_etag": "99e62b3f8ae5838b36bc0c2277ad2714",
+                  "archive_last_modified": "Sat, 05 Sep 2026 05:19:09 GMT",
+                  "archive_size_bytes": 2526451724,
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "graph_version": "HTT-KG-AACT-20260905-v1",
+                  "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+                  "snapshot_date": "2026-09-05",
+                  "snapshot_file": "20260905_export_ctgov.zip",
+                  "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+                  "source_dataset_id": "HTT-P1-AACT-20260905"
+                },
+                "relationship_properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "relationship_type": "MEMBER_OF_DATASET"
+              }
+            ],
+            "trial": {
+              "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+              "completion_date": "2010-07-31",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "enrollment": "48",
+              "nct_id": "NCT00206232",
+              "phase": "PHASE4",
+              "start_date": "2004-07-31",
+              "study_first_submitted_date": "2005-09-12",
+              "study_type": "INTERVENTIONAL",
+              "submission_year": 2005,
+              "temporal_group": "Development (1999-2017)",
+              "trial_id": "NCT00206232"
+            }
+          }
+        ],
+        "graph_version": "HTT-KG-AACT-20260905-v1",
+        "parameters": {
+          "nct_id": "NCT00206232"
+        },
+        "question": "What information is registered for clinical trial NCT00206232?",
+        "question_id": "1",
+        "retrieved_utc": "2026-10-15T00:20:40.972247+00:00",
+        "row_count": 1,
+        "safeguards": {
+          "no_llm_generation": true,
+          "planned_outcomes": "Registered planned outcome — not a clinical result.",
+          "read_only_retrieval": true,
+          "snapshot": "Evidence comes from the pinned September 5, 2026 snapshot and may include later amendments; it is not asserted to be the original registration record."
+        }
+      },
+      "question": "What information is registered for clinical trial NCT00206232?",
+      "question_id": "1",
+      "retrieval_latency_ms": 81.842
+    }
+  ],
+  "started_utc": "2026-10-15T00:20:39.706274+00:00",
+  "total_latency_ms": 101937.341,
+  "trace_schema_version": "HTT-GRAPHRAG-DEMO-v1"
+}
