@@ -1,0 +1,11 @@
+{
+  "files_sha256": {
+    "01_sponsor.json": "e16ff47e33f5b3063706e0bf974eeea43dfdc2843c0dbb74474cd0b077f1f7b5",
+    "02_intervention.json": "02d28e838c7138ed7a7f4224a6d8202f4b38bead92d1848ebdda22974f09a73f",
+    "03_outcomes.json": "c48966909d1eda95481709d8188a67c154b0a7a663fb5e23527599c508c4eeab",
+    "04_discovery.json": "7ec0035fdc1f5b29b411289b993ee9cbf879c51800b71b9844503169644c1c7b",
+    "plan.json": "e7ec03c9ad5fe52acc7a775cf6311a42ba28fe274b474d8bbd1de53c575f2864",
+    "services.json": "09b26b443e4f734c40c330a9433eb9b93eb7e89ff18697411051027c1afb6636",
+    "summary.json": "e98354b7c8aa392b3a0a8e29399be87e329845ae23c8197222b4b7017e2e0873"
+  }
+}

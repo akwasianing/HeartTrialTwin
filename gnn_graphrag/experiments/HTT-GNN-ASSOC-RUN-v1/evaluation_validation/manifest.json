@@ -1,0 +1,28 @@
+{
+  "authorization_sha256": "2bea5b0305bc7e1f77e45fd04ac2759198b24a8be85b446121abc22a11167235",
+  "code_sha256": {
+    "full_cohort_access.py": "6ad22216972bfa8f3316f28c05cfebca685348761abbcbe403635751da02276d",
+    "full_cohort_experiment.py": "b72c6c5cef7350ef919b206ca2d3d0a55beb4f4f90b4fba8fdd31784e99662c1",
+    "full_cohort_features.py": "61c44fbcf1f9761fbe2a601b93f8ddd196e614d30de4d00576679ed191c733b5",
+    "full_cohort_ranking.py": "15bcc7ce6c67cf081b48e063a9274f5f1fa534731b4ce26aa53376ede294e6e0"
+  },
+  "config_sha256": "e6e74d1b9e822810ecf1aa4f210610137397f897220c39a0f0216fc99185bf12",
+  "context_manifest_sha256": "e2f167b01b2e83aef1f11ef6e4dba673d741246927a43f30936888beecf99a17",
+  "feature_manifest_sha256": "3a6b5e11c68046c46c37e66a48c1bd7bcff48f7195f9c2307f2279aeb304616c",
+  "files_sha256": {
+    "context_pooling_rankings.jsonl": "f533890b183afd63bd597438f4d8c2466c626e2243493bf99c60b9ae2cfe833b",
+    "minilm_rankings.jsonl": "77a3e91921c979f8e12aaa4f9e7d0c60aee1f504e619cf175624d8f8d03aa14a",
+    "ranking_comparison.svg": "dde0601240e293a5fede3eedc0a12b07eda58100ca167512e73be9557c12faa4",
+    "results.json": "5a267ac3d460c0c6e15e080624aaacfcb9f09b023a63f5a3797e8f3a3f01ba56",
+    "tfidf_fit_provenance.json": "7e61ef2ed5a7583757212d36d55dd9aaa164e5abb0658e68b752f32b29268d15",
+    "tfidf_rankings.jsonl": "cff5e30bdafbd76bba4b5309d23cecb5388ae4724b883f4277c39575cfa22c4d",
+    "tfidf_vectorizer.joblib": "c55c14c18f80393c69e4021731408673a199a8a1357ba2e4219044ccd634b626",
+    "trained_graphsage_rankings.jsonl": "0691e909671bb13f10b651e383ec2276d7c3990e4fbc3ed3bacd846ce23c712b",
+    "untrained_graphsage_rankings.jsonl": "8ee0138816937e7df5aa56bb16a0bf76b880a9d5ad8793420df7acf2e9ee3fa2"
+  },
+  "protocol_sha256": "b13d662390b687b62a08cc1fb81bd3413f2c9d1fbb3b6ec86438b1a6854cd95b",
+  "schema_version": "HTT-GNN-EVALUATION-v1",
+  "selection_sha256": "2990391889d2ce2de5ca4a30a9c307ba4e0552d1f6bb87a1e095800c0e13cb5f",
+  "split": "validation",
+  "test_evaluations_in_this_bundle": 0
+}

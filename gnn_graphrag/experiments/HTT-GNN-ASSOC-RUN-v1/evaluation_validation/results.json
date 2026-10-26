@@ -1,0 +1,413 @@
+{
+  "candidate_count": 2824,
+  "checkpoint_sha256": "58bac20f20d15349063ef36079d204714052b48bb4332c6622e68c43d0d7b936",
+  "eligible_queries": 2068,
+  "environment": {
+    "deterministic_algorithms": true,
+    "machine": "x86_64",
+    "packages": {
+      "joblib": "1.6.0",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.17.1",
+      "sentence-transformers": "5.1.2",
+      "torch": "2.2.2"
+    },
+    "platform": "macOS-14.8.3-x86_64-i386-64bit",
+    "python": "3.12.14 (main, Aug 12 2026, 13:57:54) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "torch_interop_threads": 1,
+    "torch_threads": 1
+  },
+  "formal_evaluation_status": "COMPLETE",
+  "methods": {
+    "context_pooling": {
+      "candidate_count": 2824,
+      "coverage": 1.0,
+      "family_macro": {
+        "Hit@1": 0.07276536896271701,
+        "Hit@10": 0.15833967483114053,
+        "Hit@5": 0.13342510110077732,
+        "MRR": 0.10552010852246312,
+        "Recall@1": 0.07276536896271701,
+        "Recall@10": 0.15833967483114053,
+        "Recall@5": 0.13342510110077732
+      },
+      "family_macro_MRR_bootstrap_95CI": [
+        0.08432987783641202,
+        0.12773010585357858
+      ],
+      "informative_query_coverage": 1.0,
+      "latency": {
+        "ranking": {
+          "median_seconds": 0.0003643375002866378,
+          "p95_seconds": 0.0012473368001792546,
+          "total_seconds": 1.180411963016013
+        },
+        "scoring": {
+          "median_seconds": 0.0003480984996713232,
+          "p95_seconds": 0.0010986098001922059,
+          "total_seconds": 1.188084020003771
+        },
+        "scoring_plus_ranking": {
+          "median_seconds": 0.0007369034992734669,
+          "p95_seconds": 0.0024092757496873662,
+          "total_seconds": 2.368495983019784
+        }
+      },
+      "method": "context_pooling",
+      "nonzero_candidate_vectors": 2824,
+      "nonzero_query_vectors": 2068,
+      "one_time_representation_preparation_seconds": 0.3681383980001556,
+      "owner_strata": {
+        "multi_owner": {
+          "MRR": 0.013623387621052698,
+          "queries": 15
+        },
+        "single_owner": {
+          "MRR": 0.07982801307398067,
+          "queries": 2053
+        }
+      },
+      "owner_trial_macro": {
+        "Hit@1": 0.07219540523716049,
+        "Hit@10": 0.15758897241731956,
+        "Hit@5": 0.132543181248813,
+        "MRR": 0.10485221739893578,
+        "Recall@1": 0.07219540523716049,
+        "Recall@10": 0.15758897241731956,
+        "Recall@5": 0.132543181248813
+      },
+      "paired_trained_minus_baseline_family_MRR_95CI": [
+        -0.10312745039122836,
+        -0.06399976975834745
+      ],
+      "queries_scored": 2068,
+      "query_micro": {
+        "Hit@1": 0.05319148936170213,
+        "Hit@10": 0.12669245647969052,
+        "Hit@5": 0.09912959381044488,
+        "MRR": 0.07934780544255227,
+        "Recall@1": 0.05319148936170213,
+        "Recall@10": 0.12669245647969052,
+        "Recall@5": 0.09912959381044488
+      },
+      "represented_families": 380,
+      "represented_trials": 383,
+      "zero_vector_policy": "rank_all_candidates_with_the_same_NCT_tie_break; not silently omitted"
+    },
+    "minilm": {
+      "candidate_count": 2824,
+      "coverage": 1.0,
+      "family_macro": {
+        "Hit@1": 0.07317107071710298,
+        "Hit@10": 0.15721434183080754,
+        "Hit@5": 0.13339116208657517,
+        "MRR": 0.10600137536209199,
+        "Recall@1": 0.07317107071710298,
+        "Recall@10": 0.15721434183080754,
+        "Recall@5": 0.13339116208657517
+      },
+      "family_macro_MRR_bootstrap_95CI": [
+        0.08472083413516791,
+        0.12857638241122707
+      ],
+      "informative_query_coverage": 1.0,
+      "latency": {
+        "ranking": {
+          "median_seconds": 0.0003517785003168683,
+          "p95_seconds": 0.0009167541998522209,
+          "total_seconds": 1.0633767299950705
+        },
+        "scoring": {
+          "median_seconds": 0.00032488850001755054,
+          "p95_seconds": 0.0007368401499661557,
+          "total_seconds": 0.9181418089938234
+        },
+        "scoring_plus_ranking": {
+          "median_seconds": 0.0006972980004320561,
+          "p95_seconds": 0.0019178991001353991,
+          "total_seconds": 1.9815185389888939
+        }
+      },
+      "method": "minilm",
+      "nonzero_candidate_vectors": 2824,
+      "nonzero_query_vectors": 2068,
+      "one_time_representation_preparation_seconds": 0.000860922999891045,
+      "owner_strata": {
+        "multi_owner": {
+          "MRR": 0.012998758360362265,
+          "queries": 15
+        },
+        "single_owner": {
+          "MRR": 0.08164530251049287,
+          "queries": 2053
+        }
+      },
+      "owner_trial_macro": {
+        "Hit@1": 0.07259792917101601,
+        "Hit@10": 0.15630926865719805,
+        "Hit@5": 0.13234632269686306,
+        "MRR": 0.10528721878894116,
+        "Recall@1": 0.07259792917101601,
+        "Recall@10": 0.15630926865719805,
+        "Recall@5": 0.13234632269686306
+      },
+      "paired_trained_minus_baseline_family_MRR_95CI": [
+        -0.10485841572576467,
+        -0.0635524182525097
+      ],
+      "queries_scored": 2068,
+      "query_micro": {
+        "Hit@1": 0.054642166344294,
+        "Hit@10": 0.12572533849129594,
+        "Hit@5": 0.10251450676982592,
+        "MRR": 0.08114738270282752,
+        "Recall@1": 0.054642166344294,
+        "Recall@10": 0.12572533849129594,
+        "Recall@5": 0.10251450676982592
+      },
+      "represented_families": 380,
+      "represented_trials": 383,
+      "zero_vector_policy": "rank_all_candidates_with_the_same_NCT_tie_break; not silently omitted"
+    },
+    "tfidf": {
+      "candidate_count": 2824,
+      "coverage": 1.0,
+      "family_macro": {
+        "Hit@1": 0.08399644202622042,
+        "Hit@10": 0.15597208871355442,
+        "Hit@5": 0.13295201925772646,
+        "MRR": 0.11022468390380455,
+        "Recall@1": 0.08399644202622042,
+        "Recall@10": 0.15597208871355442,
+        "Recall@5": 0.13295201925772646
+      },
+      "family_macro_MRR_bootstrap_95CI": [
+        0.08896803502028905,
+        0.13195469690907083
+      ],
+      "informative_query_coverage": 0.996615087040619,
+      "latency": {
+        "ranking": {
+          "median_seconds": 0.0002598859996396641,
+          "p95_seconds": 0.0005091717499908552,
+          "total_seconds": 0.6482906919773086
+        },
+        "scoring": {
+          "median_seconds": 0.0012327219997132488,
+          "p95_seconds": 0.0030466392496236935,
+          "total_seconds": 3.3607715499811093
+        },
+        "scoring_plus_ranking": {
+          "median_seconds": 0.0015010270003585902,
+          "p95_seconds": 0.0035563042988997037,
+          "total_seconds": 4.009062241958418
+        }
+      },
+      "method": "tfidf",
+      "nonzero_candidate_vectors": 2824,
+      "nonzero_query_vectors": 2061,
+      "one_time_representation_preparation_seconds": 4.916137005000564,
+      "owner_strata": {
+        "multi_owner": {
+          "MRR": 0.026240404665769837,
+          "queries": 15
+        },
+        "single_owner": {
+          "MRR": 0.08562084101179863,
+          "queries": 2053
+        }
+      },
+      "owner_trial_macro": {
+        "Hit@1": 0.08333850644899153,
+        "Hit@10": 0.15576212457219496,
+        "Hit@5": 0.13279182067346226,
+        "MRR": 0.10969198253158217,
+        "Recall@1": 0.08333850644899153,
+        "Recall@10": 0.15576212457219496,
+        "Recall@5": 0.13279182067346226
+      },
+      "paired_trained_minus_baseline_family_MRR_95CI": [
+        -0.10765573522946596,
+        -0.06681187003631539
+      ],
+      "queries_scored": 2068,
+      "query_micro": {
+        "Hit@1": 0.05899419729206963,
+        "Hit@10": 0.12572533849129594,
+        "Hit@5": 0.109284332688588,
+        "MRR": 0.0851901318506814,
+        "Recall@1": 0.05899419729206963,
+        "Recall@10": 0.12572533849129594,
+        "Recall@5": 0.109284332688588
+      },
+      "represented_families": 380,
+      "represented_trials": 383,
+      "zero_vector_policy": "rank_all_candidates_with_the_same_NCT_tie_break; not silently omitted"
+    },
+    "trained_graphsage": {
+      "candidate_count": 2824,
+      "coverage": 1.0,
+      "family_macro": {
+        "Hit@1": 0.008771929824561403,
+        "Hit@10": 0.043396258318655255,
+        "Hit@5": 0.020512187331072778,
+        "MRR": 0.022704675644639457,
+        "Recall@1": 0.008771929824561403,
+        "Recall@10": 0.043396258318655255,
+        "Recall@5": 0.020512187331072778
+      },
+      "family_macro_MRR_bootstrap_95CI": [
+        0.015385998948372179,
+        0.03160122736683336
+      ],
+      "informative_query_coverage": 1.0,
+      "latency": {
+        "ranking": {
+          "median_seconds": 0.00031389749983645743,
+          "p95_seconds": 0.0006312335500297192,
+          "total_seconds": 0.894201142982638
+        },
+        "scoring": {
+          "median_seconds": 3.8344000131473877e-05,
+          "p95_seconds": 9.95521499589811e-05,
+          "total_seconds": 0.1162868530373089
+        },
+        "scoring_plus_ranking": {
+          "median_seconds": 0.00035688499974639853,
+          "p95_seconds": 0.0007311921000564319,
+          "total_seconds": 1.0104879960199469
+        }
+      },
+      "method": "trained_graphsage",
+      "nonzero_candidate_vectors": 2824,
+      "nonzero_query_vectors": 2068,
+      "one_time_representation_preparation_seconds": 0.4569075110002814,
+      "owner_strata": {
+        "multi_owner": {
+          "MRR": 0.01872335582108234,
+          "queries": 15
+        },
+        "single_owner": {
+          "MRR": 0.02182528271706727,
+          "queries": 2053
+        }
+      },
+      "owner_trial_macro": {
+        "Hit@1": 0.008703220191470844,
+        "Hit@10": 0.04344798475480156,
+        "Hit@5": 0.02048206575928892,
+        "MRR": 0.022692577604552396,
+        "Recall@1": 0.008703220191470844,
+        "Recall@10": 0.04344798475480156,
+        "Recall@5": 0.02048206575928892
+      },
+      "queries_scored": 2068,
+      "query_micro": {
+        "Hit@1": 0.007253384912959381,
+        "Hit@10": 0.043036750483559,
+        "Hit@5": 0.021760154738878143,
+        "MRR": 0.021802783247318835,
+        "Recall@1": 0.007253384912959381,
+        "Recall@10": 0.043036750483559,
+        "Recall@5": 0.021760154738878143
+      },
+      "represented_families": 380,
+      "represented_trials": 383,
+      "zero_vector_policy": "rank_all_candidates_with_the_same_NCT_tie_break; not silently omitted"
+    },
+    "untrained_graphsage": {
+      "candidate_count": 2824,
+      "coverage": 1.0,
+      "family_macro": {
+        "Hit@1": 0.0007518796992481202,
+        "Hit@10": 0.002819548872180451,
+        "Hit@5": 0.0011278195488721803,
+        "MRR": 0.0028908127052640533,
+        "Recall@1": 0.0007518796992481202,
+        "Recall@10": 0.002368421052631579,
+        "Recall@5": 0.0011278195488721803
+      },
+      "family_macro_MRR_bootstrap_95CI": [
+        0.0017350771854647293,
+        0.005025664268326542
+      ],
+      "informative_query_coverage": 1.0,
+      "latency": {
+        "ranking": {
+          "median_seconds": 0.00035023849977733335,
+          "p95_seconds": 0.0013154262495845607,
+          "total_seconds": 1.2801765609656286
+        },
+        "scoring": {
+          "median_seconds": 5.487850012286799e-05,
+          "p95_seconds": 0.00014443145037148497,
+          "total_seconds": 0.23556094798459526
+        },
+        "scoring_plus_ranking": {
+          "median_seconds": 0.0004125825003029604,
+          "p95_seconds": 0.0017044567001448737,
+          "total_seconds": 1.5157375089502239
+        }
+      },
+      "method": "untrained_graphsage",
+      "nonzero_candidate_vectors": 2824,
+      "nonzero_query_vectors": 2068,
+      "one_time_representation_preparation_seconds": 0.9741229710007246,
+      "owner_strata": {
+        "multi_owner": {
+          "MRR": 0.010852265099547169,
+          "queries": 15
+        },
+        "single_owner": {
+          "MRR": 0.0030150779409383777,
+          "queries": 2053
+        }
+      },
+      "owner_trial_macro": {
+        "Hit@1": 0.0007459903021260723,
+        "Hit@10": 0.002797463632972772,
+        "Hit@5": 0.0011189854531891085,
+        "MRR": 0.0028883902831465676,
+        "Recall@1": 0.0007459903021260723,
+        "Recall@10": 0.002349869451697128,
+        "Recall@5": 0.0011189854531891085
+      },
+      "paired_trained_minus_baseline_family_MRR_95CI": [
+        0.01212362238204509,
+        0.029121161729544407
+      ],
+      "queries_scored": 2068,
+      "query_micro": {
+        "Hit@1": 0.0009671179883945841,
+        "Hit@10": 0.0029013539651837525,
+        "Hit@5": 0.0014506769825918763,
+        "MRR": 0.0030719240760346696,
+        "Recall@1": 0.0009671179883945841,
+        "Recall@10": 0.0026595744680851063,
+        "Recall@5": 0.0014506769825918763
+      },
+      "represented_families": 380,
+      "represented_trials": 383,
+      "zero_vector_policy": "rank_all_candidates_with_the_same_NCT_tie_break; not silently omitted"
+    }
+  },
+  "model_selection_using_this_evaluation": false,
+  "queries_before_embargo": 2651,
+  "query_encoding": {
+    "amortized_encoding_seconds_per_row": 0.02325458474468185,
+    "canonical_matrix_sha256": "88cd59df8b4ba5a6cf6be517f158deac10dd44b7328a61799ec32f61431d4ba2",
+    "first_encoding_seconds": 48.090481252002064,
+    "repeat_max_absolute_difference": 0.0,
+    "repeat_sha256": "88cd59df8b4ba5a6cf6be517f158deac10dd44b7328a61799ec32f61431d4ba2",
+    "tokenization": {
+      "maximum_tokens_including_specials": 80,
+      "rows": 2068,
+      "truncated_rows": 0
+    }
+  },
+  "schema_version": "HTT-GNN-FORMAL-RANKING-v1",
+  "scope": "Observed-graph registered-association ranking; not unseen-trial induction or clinical prediction",
+  "selected_epoch": 60,
+  "split": "validation"
+}

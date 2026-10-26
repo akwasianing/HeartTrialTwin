@@ -1,0 +1,13 @@
+{
+  "schema_version": "HTT-GNN-ASSOC-RUN-v1",
+  "protocol_sha256": "b13d662390b687b62a08cc1fb81bd3413f2c9d1fbb3b6ec86438b1a6854cd95b",
+  "seed": 20261023,
+  "device": "cpu",
+  "threads": 1,
+  "model": {"input_dimension": 390, "hidden_dimension": 128, "output_dimension": 64, "query_dimension": 384, "dropout": 0.0, "query_projection": "linear_384_to_64", "scoring": "L2_normalized_cosine", "trial_layers": "mean_GraphSAGE_ReLU_each_layer"},
+  "optimization": {"optimizer": "Adam", "learning_rate": 0.001, "weight_decay": 0.0001, "epochs": 80, "gradient_clip_norm": 1.0, "temperature": 0.1, "loss": "negative_log_probability_mass_of_all_known_training_positives", "negative_count": 64, "negative_distribution": "uniform_without_replacement", "hard_negative_fraction": 0.0, "negative_seed": "seed_plus_epoch", "updates_per_epoch": 1, "query_loss_weighting": "equal_normalized_queries", "graph_batch": "full_masked_observed_context"},
+  "selection": {"split": "validation", "metric": "MRR", "direction": "maximize", "evaluate_every_epochs": 5, "patience_evaluations": 5, "minimum_absolute_improvement": 0.0001, "tie_break": "earlier_checkpoint", "initial_checkpoint_eligible": true},
+  "features": {"model": "sentence-transformers/all-MiniLM-L6-v2", "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41", "snapshot_sha256": "fa4e0ce8c98e7af6762dcc8d1930113fab9c487f5c59ba80c5e9d3e098b0f8b2", "max_seq_length": 256, "batch_size": 16, "normalized": true, "dtype": "float32", "repeat_byte_identical": true, "node_type_order": ["Trial", "ConditionTerm", "Intervention", "Sponsor", "PlannedOutcome", "SourceDataset"]},
+  "baselines": {"tfidf": {"fit": "training_trial_texts_and_training_queries_only", "ngram_range": [1, 2], "min_df": 1, "sublinear_tf": true, "norm": "l2"}, "minilm": "query_384_vs_trial_384_cosine", "context_pooling": "L2_normalize(0.5*self_semantic+0.5*mean_all_permitted_incoming_neighbor_semantics); isolates_self", "untrained_graphsage": "same_initial_state_and_query_projection_as_training; no_target_edges"},
+  "evaluation": {"candidate_count": 2824, "candidate_order": "ascending_NCT_ID", "score_tie_break": "ascending_NCT_ID", "ks": [1, 5, 10], "query_batch_size": 128, "bootstrap_replicates": 1000, "bootstrap_seed": 20261023, "bootstrap_unit": "family", "primary_uncertainty_metric": "family_macro_MRR", "test": "single_frozen_checkpoint_once_after_selection", "coverage": "eligible_queries_scored_over_frozen_eligible_queries; report_embargo_population_separately"}
+}

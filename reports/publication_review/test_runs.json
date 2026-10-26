@@ -1,0 +1,44 @@
+[
+  {
+    "suite": "full_cohort",
+    "returncode": 0,
+    "seconds": 38.334,
+    "log": "reports/publication_review/full_cohort_tests.txt"
+  },
+  {
+    "suite": "integration_demo",
+    "returncode": 0,
+    "seconds": 10.797,
+    "log": "reports/publication_review/integration_demo_tests.txt"
+  },
+  {
+    "suite": "streamlit_ui",
+    "returncode": 0,
+    "seconds": 10.285,
+    "log": "reports/publication_review/streamlit_ui_tests.txt"
+  },
+  {
+    "suite": "ranking_gnn",
+    "returncode": 0,
+    "seconds": 63.492,
+    "log": "reports/publication_review/ranking_gnn_tests.txt"
+  },
+  {
+    "suite": "protocol",
+    "returncode": 0,
+    "seconds": 57.143,
+    "log": "reports/publication_review/protocol_tests.txt"
+  },
+  {
+    "suite": "challenge2",
+    "returncode": 124,
+    "seconds": 240.094,
+    "log": "reports/publication_review/challenge2_tests.txt"
+  },
+  {
+    "suite": "prior_full_system",
+    "returncode": 0,
+    "seconds": 50.629,
+    "log": "reports/publication_review/prior_full_system_tests.txt"
+  }
+]

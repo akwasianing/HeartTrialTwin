@@ -1,0 +1,988 @@
+{
+  "checkpoint_sha256": "58bac20f20d15349063ef36079d204714052b48bb4332c6622e68c43d0d7b936",
+  "elapsed_seconds": 100.09283521600446,
+  "features": {
+    "context_shape": [
+      9036,
+      390
+    ],
+    "edge_count": 61218,
+    "encoder": {
+      "batch_size": 16,
+      "device": "cpu",
+      "files": {
+        "1_Pooling/config.json": {
+          "bytes": 190,
+          "sha256": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23"
+        },
+        "README.md": {
+          "bytes": 10502,
+          "sha256": "dcd602d2fd35c203a247304a06fec6654a12f7941b739f9221a064fe8dc3b7f0"
+        },
+        "config.json": {
+          "bytes": 612,
+          "sha256": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41"
+        },
+        "config_sentence_transformers.json": {
+          "bytes": 116,
+          "sha256": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3"
+        },
+        "model.safetensors": {
+          "bytes": 90868376,
+          "sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db"
+        },
+        "modules.json": {
+          "bytes": 349,
+          "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+        },
+        "sentence_bert_config.json": {
+          "bytes": 53,
+          "sha256": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7"
+        },
+        "special_tokens_map.json": {
+          "bytes": 112,
+          "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3"
+        },
+        "tokenizer.json": {
+          "bytes": 466247,
+          "sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037"
+        },
+        "tokenizer_config.json": {
+          "bytes": 350,
+          "sha256": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b"
+        },
+        "vocab.txt": {
+          "bytes": 231508,
+          "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+        }
+      },
+      "max_seq_length": 256,
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "packages": {
+        "huggingface-hub": "0.36.2",
+        "numpy": "1.26.4",
+        "safetensors": "0.8.0",
+        "sentence-transformers": "5.1.2",
+        "tokenizers": "0.22.2",
+        "torch": "2.2.2",
+        "transformers": "4.57.1"
+      },
+      "pooling": "attention_mask_mean_then_L2_normalization",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "snapshot_sha256": "fa4e0ce8c98e7af6762dcc8d1930113fab9c487f5c59ba80c5e9d3e098b0f8b2",
+      "threads": 1
+    },
+    "query_shape": [
+      11712,
+      384
+    ]
+  },
+  "graph_counts": {
+    "checks": {
+      "all_available_source_records_linked": true,
+      "all_outcomes_preserved_without_cap": true,
+      "connected_via_provenance": true,
+      "exact_2824_unique_frozen_membership": true,
+      "missing_evidence_and_fields_verified": true,
+      "outcome_values_and_source_ids_exact": true,
+      "prohibited_fields_excluded": true,
+      "unique_node_ids": true,
+      "unique_relationship_triples": true,
+      "valid_endpoints_and_versions": true
+    },
+    "node_counts": {
+      "ConditionTerm": 1743,
+      "Intervention": 3417,
+      "PlannedOutcome": 19740,
+      "SourceDataset": 1,
+      "Sponsor": 1052,
+      "Trial": 2824
+    },
+    "relationship_counts": {
+      "HAS_BROWSE_CONDITION": 17587,
+      "HAS_INTERVENTION": 4716,
+      "HAS_PLANNED_OUTCOME": 19740,
+      "HAS_SUBMITTED_CONDITION": 5482,
+      "LEAD_SPONSORED_BY": 2824,
+      "MEMBER_OF_DATASET": 2824,
+      "SOURCED_FROM": 25952
+    },
+    "source_missing_field_counts": {
+      "browse_conditions.txt": {
+        "mesh_term": 0,
+        "mesh_type": 0
+      },
+      "conditions.txt": {
+        "name": 0
+      },
+      "design_outcomes.txt": {
+        "description": 4482,
+        "measure": 0,
+        "outcome_type": 0,
+        "population": 19740,
+        "time_frame": 528
+      },
+      "interventions.txt": {
+        "description": 554,
+        "intervention_type": 0,
+        "name": 0
+      },
+      "sponsors.txt": {
+        "agency_class": 0,
+        "lead_or_collaborator": 0,
+        "name": 0
+      },
+      "studies.txt": {
+        "brief_title": 0,
+        "phase": 0,
+        "study_type": 0
+      }
+    },
+    "source_missing_trial_ids": {
+      "browse_conditions.txt": [
+        "NCT00012818",
+        "NCT00057356",
+        "NCT00149409",
+        "NCT00214513",
+        "NCT00294086",
+        "NCT00343902",
+        "NCT00348504",
+        "NCT00355017",
+        "NCT00417222",
+        "NCT00449423",
+        "NCT00477789",
+        "NCT00488410",
+        "NCT00501514",
+        "NCT00512759",
+        "NCT00514241",
+        "NCT00524433",
+        "NCT00525707",
+        "NCT00534703",
+        "NCT00543881",
+        "NCT00620308",
+        "NCT00679484",
+        "NCT00699712",
+        "NCT00739687",
+        "NCT00751972",
+        "NCT00839007",
+        "NCT00846001",
+        "NCT00853658",
+        "NCT00904488",
+        "NCT00933621",
+        "NCT01023438",
+        "NCT01035255",
+        "NCT01104558",
+        "NCT01127945",
+        "NCT01131637",
+        "NCT01132846",
+        "NCT01138683",
+        "NCT01140399",
+        "NCT01162707",
+        "NCT01166347",
+        "NCT01214096",
+        "NCT01264159",
+        "NCT01292902",
+        "NCT01301313",
+        "NCT01365325",
+        "NCT01408875",
+        "NCT01439789",
+        "NCT01439893",
+        "NCT01457053",
+        "NCT01549158",
+        "NCT01606553",
+        "NCT01618981",
+        "NCT01619891",
+        "NCT01661634",
+        "NCT01696890",
+        "NCT01739686",
+        "NCT01787682",
+        "NCT01800968",
+        "NCT01829607",
+        "NCT01834833",
+        "NCT01863511",
+        "NCT01868880",
+        "NCT01870778",
+        "NCT01876433",
+        "NCT01878630",
+        "NCT01900600",
+        "NCT01919918",
+        "NCT01939236",
+        "NCT01966458",
+        "NCT01966601",
+        "NCT01981655",
+        "NCT02000479",
+        "NCT02007720",
+        "NCT02046707",
+        "NCT02113033",
+        "NCT02135835",
+        "NCT02151383",
+        "NCT02188784",
+        "NCT02196922",
+        "NCT02205359",
+        "NCT02219451",
+        "NCT02226770",
+        "NCT02248441",
+        "NCT02248974",
+        "NCT02258516",
+        "NCT02263482",
+        "NCT02268500",
+        "NCT02293252",
+        "NCT02304705",
+        "NCT02352285",
+        "NCT02413151",
+        "NCT02441218",
+        "NCT02467387",
+        "NCT02468232",
+        "NCT02511912",
+        "NCT02617446",
+        "NCT02625922",
+        "NCT02638961",
+        "NCT02652676",
+        "NCT02661217",
+        "NCT02678312",
+        "NCT02679690",
+        "NCT02696967",
+        "NCT02721511",
+        "NCT02767024",
+        "NCT02877095",
+        "NCT02923609",
+        "NCT02964650",
+        "NCT03005184",
+        "NCT03125720",
+        "NCT03128528",
+        "NCT03136029",
+        "NCT03146754",
+        "NCT03153111",
+        "NCT03160625",
+        "NCT03170219",
+        "NCT03198585",
+        "NCT03234647",
+        "NCT03320655",
+        "NCT03340233",
+        "NCT03342833",
+        "NCT03380156",
+        "NCT03424265",
+        "NCT03440970",
+        "NCT03484780",
+        "NCT03491423",
+        "NCT03491969",
+        "NCT03494933",
+        "NCT03525379",
+        "NCT03547583",
+        "NCT03580759",
+        "NCT03592836",
+        "NCT03597646",
+        "NCT03603743",
+        "NCT03619213",
+        "NCT03624010",
+        "NCT03631654",
+        "NCT03667989",
+        "NCT03714815",
+        "NCT03715543",
+        "NCT03728075",
+        "NCT03759392",
+        "NCT03791593",
+        "NCT03803826",
+        "NCT03837470",
+        "NCT03871803",
+        "NCT03877224",
+        "NCT03877237",
+        "NCT03909295",
+        "NCT03924102",
+        "NCT03926754",
+        "NCT03945058",
+        "NCT03988634",
+        "NCT04049045",
+        "NCT04063579",
+        "NCT04110431",
+        "NCT04128891",
+        "NCT04158674",
+        "NCT04197635",
+        "NCT04232345",
+        "NCT04235699",
+        "NCT04325594",
+        "NCT04327596",
+        "NCT04332536",
+        "NCT04334018",
+        "NCT04371731",
+        "NCT04424914",
+        "NCT04464525",
+        "NCT04468529",
+        "NCT04471610",
+        "NCT04507347",
+        "NCT04514458",
+        "NCT04515290",
+        "NCT04587947",
+        "NCT04606927",
+        "NCT04632160",
+        "NCT04633460",
+        "NCT04703855",
+        "NCT04730947",
+        "NCT04793880",
+        "NCT04814134",
+        "NCT04839211",
+        "NCT04878263",
+        "NCT04903717",
+        "NCT04905433",
+        "NCT04915924",
+        "NCT04917159",
+        "NCT04944706",
+        "NCT04951999",
+        "NCT04983043",
+        "NCT05002075",
+        "NCT05021419",
+        "NCT05089279",
+        "NCT05093933",
+        "NCT05102266",
+        "NCT05102903",
+        "NCT05126836",
+        "NCT05129722",
+        "NCT05139615",
+        "NCT05152940",
+        "NCT05174312",
+        "NCT05206422",
+        "NCT05213546",
+        "NCT05277415",
+        "NCT05278962",
+        "NCT05284617",
+        "NCT05313438",
+        "NCT05338437",
+        "NCT05346653",
+        "NCT05406505",
+        "NCT05492058",
+        "NCT05532046",
+        "NCT05553314",
+        "NCT05562063",
+        "NCT05575336",
+        "NCT05602454",
+        "NCT05633758",
+        "NCT05637398",
+        "NCT05642507",
+        "NCT05649787",
+        "NCT05658458",
+        "NCT05672134",
+        "NCT05676684",
+        "NCT05789147",
+        "NCT05806970",
+        "NCT05835063",
+        "NCT05876078",
+        "NCT05928273",
+        "NCT05943275",
+        "NCT05949801",
+        "NCT05952089",
+        "NCT05985395",
+        "NCT05986773",
+        "NCT05989503",
+        "NCT05991284",
+        "NCT06012279",
+        "NCT06024889",
+        "NCT06068166",
+        "NCT06181968",
+        "NCT06195930",
+        "NCT06278792",
+        "NCT06299826",
+        "NCT06362668",
+        "NCT06398964",
+        "NCT06400784",
+        "NCT06450522",
+        "NCT06481657",
+        "NCT06506994",
+        "NCT06521281",
+        "NCT06533124",
+        "NCT06536309",
+        "NCT06567925",
+        "NCT06632561",
+        "NCT06779227"
+      ],
+      "conditions.txt": [],
+      "design_outcomes.txt": [
+        "NCT00000475",
+        "NCT00000476",
+        "NCT00000516",
+        "NCT00000542",
+        "NCT00000547",
+        "NCT00000560",
+        "NCT00000609",
+        "NCT00000619",
+        "NCT00001402",
+        "NCT00001628",
+        "NCT00001629",
+        "NCT00012818",
+        "NCT00012870",
+        "NCT00012883",
+        "NCT00013026",
+        "NCT00013039",
+        "NCT00013221",
+        "NCT00032422",
+        "NCT00032643",
+        "NCT00038077",
+        "NCT00041431",
+        "NCT00043758",
+        "NCT00043771",
+        "NCT00043836",
+        "NCT00047775",
+        "NCT00057057",
+        "NCT00057200",
+        "NCT00063687",
+        "NCT00064727",
+        "NCT00071331",
+        "NCT00105846",
+        "NCT00108147",
+        "NCT00138398",
+        "NCT00149409",
+        "NCT00160134",
+        "NCT00309868",
+        "NCT00344734",
+        "NCT00482937",
+        "NCT00802230",
+        "NCT01160939",
+        "NCT01618981"
+      ],
+      "interventions.txt": [],
+      "sponsors.txt": [],
+      "studies.txt": []
+    },
+    "source_record_counts": {
+      "browse_conditions.txt": 17587,
+      "conditions.txt": 5482,
+      "design_outcomes.txt": 19740,
+      "interventions.txt": 4836,
+      "sponsors.txt": 4908,
+      "studies.txt": 2824
+    },
+    "total_nodes": 28777,
+    "total_relationships": 79125
+  },
+  "preservation": {
+    "existing_live_files_unchanged": 28,
+    "existing_semantic_files_unchanged": 12,
+    "research_files_unchanged": 51
+  },
+  "protocol": {
+    "counts": {
+      "cross_trial_query_groups": 1049,
+      "cross_trial_query_source_records": 3881,
+      "description_audit_rows": 328,
+      "description_kinds": {
+        "ADJACENT_LEXICAL_CANDIDATE": 59,
+        "EXACT_NORMALIZED_DESCRIPTION": 221,
+        "PUNCTUATION_CANDIDATE": 48
+      },
+      "distinct_normalized_queries": 16290,
+      "exact_cross_partition_query_groups": 624,
+      "family_group_classifications": {
+        "CONFIRMED_ONLY": 5,
+        "SINGLETON": 2767,
+        "UNRESOLVED_GROUP": 23
+      },
+      "family_pair_classifications": {
+        "CONFIRMED_RELATED": 5,
+        "REJECTED": 0,
+        "UNRESOLVED": 62
+      },
+      "family_pair_strengths": {
+        "STRONG": 30,
+        "WEAK": 37
+      },
+      "largest_family": 3,
+      "near_query_candidates": 791,
+      "near_query_cross_partition_candidates": 188,
+      "positive_associations": 19740,
+      "removed_target_message_edges": 39480,
+      "retained_message_edges": 61218,
+      "split_counts": {
+        "test": {
+          "novel_evaluation_positive_records": 2325,
+          "novel_evaluation_queries": 2219,
+          "positive_associations": 2959,
+          "queries_before_embargo": 2652,
+          "trials": 424,
+          "trials_after_embargo": 401,
+          "trials_with_outcomes": 418
+        },
+        "train": {
+          "novel_evaluation_positive_records": 0,
+          "novel_evaluation_queries": 0,
+          "positive_associations": 13819,
+          "queries_before_embargo": 11712,
+          "trials": 1976,
+          "trials_after_embargo": 0,
+          "trials_with_outcomes": 1947
+        },
+        "validation": {
+          "novel_evaluation_positive_records": 2191,
+          "novel_evaluation_queries": 2068,
+          "positive_associations": 2962,
+          "queries_before_embargo": 2651,
+          "trials": 424,
+          "trials_after_embargo": 383,
+          "trials_with_outcomes": 418
+        }
+      },
+      "trials": 2824,
+      "trials_with_outcomes": 2783,
+      "trials_without_outcomes": 41,
+      "weak_family_quarantined_trials": 69
+    },
+    "manifest_sha256": "b13d662390b687b62a08cc1fb81bd3413f2c9d1fbb3b6ec86438b1a6854cd95b",
+    "status": "PROVISIONAL_FAMILY_AUDIT_REVIEW_REQUIRED",
+    "training_permitted": false
+  },
+  "python_syntax_files": 49,
+  "regression_runs": [
+    {
+      "exit_code": 0,
+      "log": "full_cohort_tests.txt",
+      "suite": "full_cohort",
+      "tests_run": 102
+    },
+    {
+      "exit_code": 0,
+      "log": "integration_demo_tests.txt",
+      "suite": "integration_demo",
+      "tests_run": 39
+    },
+    {
+      "exit_code": 0,
+      "log": "streamlit_ui_tests.txt",
+      "suite": "streamlit_ui",
+      "tests_run": 4
+    },
+    {
+      "exit_code": 0,
+      "log": "ranking_gnn_tests.txt",
+      "suite": "ranking_gnn",
+      "tests_run": 44
+    }
+  ],
+  "saved_benchmark_metrics": {
+    "test": {
+      "eligible_queries": 2219,
+      "methods": {
+        "context_pooling": {
+          "coverage": 1.0,
+          "family_macro_MRR_bootstrap_95CI": [
+            0.0711556333429054,
+            0.11224634846864048
+          ],
+          "latency": {
+            "ranking": {
+              "median_seconds": 0.0005101149999973131,
+              "p95_seconds": 0.0028449805002310306,
+              "total_seconds": 4.213950335994014
+            },
+            "scoring": {
+              "median_seconds": 0.00046416499935730826,
+              "p95_seconds": 0.0019335699003022449,
+              "total_seconds": 2.3725826890140524
+            },
+            "scoring_plus_ranking": {
+              "median_seconds": 0.0010085630001412937,
+              "p95_seconds": 0.004986510100297891,
+              "total_seconds": 6.586533025008066
+            }
+          },
+          "query_micro": {
+            "Hit@1": 0.054078413699864804,
+            "Hit@10": 0.12122577737719693,
+            "Hit@5": 0.09553853086976115,
+            "MRR": 0.07841330581986106,
+            "Recall@1": 0.05385308697611537,
+            "Recall@10": 0.1210004506534475,
+            "Recall@5": 0.09553853086976115
+          }
+        },
+        "minilm": {
+          "coverage": 1.0,
+          "family_macro_MRR_bootstrap_95CI": [
+            0.06910050740950295,
+            0.10711617347255702
+          ],
+          "latency": {
+            "ranking": {
+              "median_seconds": 0.00032829300016601337,
+              "p95_seconds": 0.0006031248000908816,
+              "total_seconds": 0.9905430780008828
+            },
+            "scoring": {
+              "median_seconds": 0.0002912579993790132,
+              "p95_seconds": 0.0005672436002896574,
+              "total_seconds": 0.773909069012916
+            },
+            "scoring_plus_ranking": {
+              "median_seconds": 0.0006341449998217286,
+              "p95_seconds": 0.0011962117996517918,
+              "total_seconds": 1.7644521470137988
+            }
+          },
+          "query_micro": {
+            "Hit@1": 0.05227579990986931,
+            "Hit@10": 0.12077512392969807,
+            "Hit@5": 0.09283461018476791,
+            "MRR": 0.07619208552301325,
+            "Recall@1": 0.052050473186119876,
+            "Recall@10": 0.12077512392969807,
+            "Recall@5": 0.09283461018476791
+          }
+        },
+        "tfidf": {
+          "coverage": 1.0,
+          "family_macro_MRR_bootstrap_95CI": [
+            0.06220186848140603,
+            0.09981491844154487
+          ],
+          "latency": {
+            "ranking": {
+              "median_seconds": 0.00026524999975663377,
+              "p95_seconds": 0.0005857502997969273,
+              "total_seconds": 0.6951800189954156
+            },
+            "scoring": {
+              "median_seconds": 0.0012867440000263741,
+              "p95_seconds": 0.0036235589002899357,
+              "total_seconds": 3.841424444985023
+            },
+            "scoring_plus_ranking": {
+              "median_seconds": 0.001560937000249396,
+              "p95_seconds": 0.004154885299885791,
+              "total_seconds": 4.536604463980439
+            }
+          },
+          "query_micro": {
+            "Hit@1": 0.047769265434880574,
+            "Hit@10": 0.1149166291122127,
+            "Hit@5": 0.09013068949977468,
+            "MRR": 0.07074148212817187,
+            "Recall@1": 0.04754393871113114,
+            "Recall@10": 0.1149166291122127,
+            "Recall@5": 0.08990536277602523
+          }
+        },
+        "trained_graphsage": {
+          "coverage": 1.0,
+          "family_macro_MRR_bootstrap_95CI": [
+            0.008509367646579469,
+            0.01336431749810873
+          ],
+          "latency": {
+            "ranking": {
+              "median_seconds": 0.0003010970003742841,
+              "p95_seconds": 0.0004742873004033754,
+              "total_seconds": 0.7323694820015589
+            },
+            "scoring": {
+              "median_seconds": 3.4204000257886946e-05,
+              "p95_seconds": 8.502909986418668e-05,
+              "total_seconds": 0.1019428340223385
+            },
+            "scoring_plus_ranking": {
+              "median_seconds": 0.00033934299881366314,
+              "p95_seconds": 0.0005449267996482375,
+              "total_seconds": 0.8343123160238974
+            }
+          },
+          "query_micro": {
+            "Hit@1": 0.0,
+            "Hit@10": 0.022082018927444796,
+            "Hit@5": 0.01216764308246958,
+            "MRR": 0.011238956054150798,
+            "Recall@1": 0.0,
+            "Recall@10": 0.022082018927444796,
+            "Recall@5": 0.01216764308246958
+          }
+        },
+        "untrained_graphsage": {
+          "coverage": 1.0,
+          "family_macro_MRR_bootstrap_95CI": [
+            0.0019052687203980616,
+            0.004707903506128065
+          ],
+          "latency": {
+            "ranking": {
+              "median_seconds": 0.0003852989993902156,
+              "p95_seconds": 0.0009671427997091085,
+              "total_seconds": 1.266136606024702
+            },
+            "scoring": {
+              "median_seconds": 6.59219995213789e-05,
+              "p95_seconds": 0.00018085590036207561,
+              "total_seconds": 0.1999046180080768
+            },
+            "scoring_plus_ranking": {
+              "median_seconds": 0.0004644700002245372,
+              "p95_seconds": 0.0011810029000116624,
+              "total_seconds": 1.4660412240327787
+            }
+          },
+          "query_micro": {
+            "Hit@1": 0.0,
+            "Hit@10": 0.003605227579990987,
+            "Hit@5": 0.0018026137899954935,
+            "MRR": 0.0026628634078158047,
+            "Recall@1": 0.0,
+            "Recall@10": 0.003605227579990987,
+            "Recall@5": 0.0018026137899954935
+          }
+        }
+      },
+      "queries_before_embargo": 2652
+    },
+    "validation": {
+      "eligible_queries": 2068,
+      "methods": {
+        "context_pooling": {
+          "coverage": 1.0,
+          "family_macro_MRR_bootstrap_95CI": [
+            0.08432987783641202,
+            0.12773010585357858
+          ],
+          "latency": {
+            "ranking": {
+              "median_seconds": 0.0003643375002866378,
+              "p95_seconds": 0.0012473368001792546,
+              "total_seconds": 1.180411963016013
+            },
+            "scoring": {
+              "median_seconds": 0.0003480984996713232,
+              "p95_seconds": 0.0010986098001922059,
+              "total_seconds": 1.188084020003771
+            },
+            "scoring_plus_ranking": {
+              "median_seconds": 0.0007369034992734669,
+              "p95_seconds": 0.0024092757496873662,
+              "total_seconds": 2.368495983019784
+            }
+          },
+          "query_micro": {
+            "Hit@1": 0.05319148936170213,
+            "Hit@10": 0.12669245647969052,
+            "Hit@5": 0.09912959381044488,
+            "MRR": 0.07934780544255227,
+            "Recall@1": 0.05319148936170213,
+            "Recall@10": 0.12669245647969052,
+            "Recall@5": 0.09912959381044488
+          }
+        },
+        "minilm": {
+          "coverage": 1.0,
+          "family_macro_MRR_bootstrap_95CI": [
+            0.08472083413516791,
+            0.12857638241122707
+          ],
+          "latency": {
+            "ranking": {
+              "median_seconds": 0.0003517785003168683,
+              "p95_seconds": 0.0009167541998522209,
+              "total_seconds": 1.0633767299950705
+            },
+            "scoring": {
+              "median_seconds": 0.00032488850001755054,
+              "p95_seconds": 0.0007368401499661557,
+              "total_seconds": 0.9181418089938234
+            },
+            "scoring_plus_ranking": {
+              "median_seconds": 0.0006972980004320561,
+              "p95_seconds": 0.0019178991001353991,
+              "total_seconds": 1.9815185389888939
+            }
+          },
+          "query_micro": {
+            "Hit@1": 0.054642166344294,
+            "Hit@10": 0.12572533849129594,
+            "Hit@5": 0.10251450676982592,
+            "MRR": 0.08114738270282752,
+            "Recall@1": 0.054642166344294,
+            "Recall@10": 0.12572533849129594,
+            "Recall@5": 0.10251450676982592
+          }
+        },
+        "tfidf": {
+          "coverage": 1.0,
+          "family_macro_MRR_bootstrap_95CI": [
+            0.08896803502028905,
+            0.13195469690907083
+          ],
+          "latency": {
+            "ranking": {
+              "median_seconds": 0.0002598859996396641,
+              "p95_seconds": 0.0005091717499908552,
+              "total_seconds": 0.6482906919773086
+            },
+            "scoring": {
+              "median_seconds": 0.0012327219997132488,
+              "p95_seconds": 0.0030466392496236935,
+              "total_seconds": 3.3607715499811093
+            },
+            "scoring_plus_ranking": {
+              "median_seconds": 0.0015010270003585902,
+              "p95_seconds": 0.0035563042988997037,
+              "total_seconds": 4.009062241958418
+            }
+          },
+          "query_micro": {
+            "Hit@1": 0.05899419729206963,
+            "Hit@10": 0.12572533849129594,
+            "Hit@5": 0.109284332688588,
+            "MRR": 0.0851901318506814,
+            "Recall@1": 0.05899419729206963,
+            "Recall@10": 0.12572533849129594,
+            "Recall@5": 0.109284332688588
+          }
+        },
+        "trained_graphsage": {
+          "coverage": 1.0,
+          "family_macro_MRR_bootstrap_95CI": [
+            0.015385998948372179,
+            0.03160122736683336
+          ],
+          "latency": {
+            "ranking": {
+              "median_seconds": 0.00031389749983645743,
+              "p95_seconds": 0.0006312335500297192,
+              "total_seconds": 0.894201142982638
+            },
+            "scoring": {
+              "median_seconds": 3.8344000131473877e-05,
+              "p95_seconds": 9.95521499589811e-05,
+              "total_seconds": 0.1162868530373089
+            },
+            "scoring_plus_ranking": {
+              "median_seconds": 0.00035688499974639853,
+              "p95_seconds": 0.0007311921000564319,
+              "total_seconds": 1.0104879960199469
+            }
+          },
+          "query_micro": {
+            "Hit@1": 0.007253384912959381,
+            "Hit@10": 0.043036750483559,
+            "Hit@5": 0.021760154738878143,
+            "MRR": 0.021802783247318835,
+            "Recall@1": 0.007253384912959381,
+            "Recall@10": 0.043036750483559,
+            "Recall@5": 0.021760154738878143
+          }
+        },
+        "untrained_graphsage": {
+          "coverage": 1.0,
+          "family_macro_MRR_bootstrap_95CI": [
+            0.0017350771854647293,
+            0.005025664268326542
+          ],
+          "latency": {
+            "ranking": {
+              "median_seconds": 0.00035023849977733335,
+              "p95_seconds": 0.0013154262495845607,
+              "total_seconds": 1.2801765609656286
+            },
+            "scoring": {
+              "median_seconds": 5.487850012286799e-05,
+              "p95_seconds": 0.00014443145037148497,
+              "total_seconds": 0.23556094798459526
+            },
+            "scoring_plus_ranking": {
+              "median_seconds": 0.0004125825003029604,
+              "p95_seconds": 0.0017044567001448737,
+              "total_seconds": 1.5157375089502239
+            }
+          },
+          "query_micro": {
+            "Hit@1": 0.0009671179883945841,
+            "Hit@10": 0.0029013539651837525,
+            "Hit@5": 0.0014506769825918763,
+            "MRR": 0.0030719240760346696,
+            "Recall@1": 0.0009671179883945841,
+            "Recall@10": 0.0026595744680851063,
+            "Recall@5": 0.0014506769825918763
+          }
+        }
+      },
+      "queries_before_embargo": 2651
+    }
+  },
+  "scope": "Read-only saved-result reconciliation; no model inference or model selection",
+  "security": {
+    "example_files": [
+      "artifacts/knowledge_graph/.env.example",
+      "cohort_scaling/.env.example",
+      "full_cohort_graphrag/.env.example",
+      "graphrag/.env.example"
+    ],
+    "files_considered": 531,
+    "findings": [
+      {
+        "kind": "REVIEW_EXAMPLE_SECRET_ASSIGNMENT",
+        "line": 5,
+        "path": "cohort_scaling/.env.example",
+        "value": "REDACTED"
+      },
+      {
+        "kind": "REVIEW_EXAMPLE_SECRET_ASSIGNMENT",
+        "line": 13,
+        "path": "graphrag/.env.example",
+        "value": "REDACTED"
+      }
+    ],
+    "large_files": [],
+    "limitation": "Not an exhaustive secret/history/binary scan. Do not publish unreviewed untracked directories.",
+    "scope": "Tracked and nonignored untracked text <=5 MiB, excluding course week folders; exact known private passwords/API keys and limited key patterns",
+    "text_scan_exclusions": [
+      {
+        "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/design_outcomes.jsonl",
+        "reason": "Text exceeds bounded 5 MiB credential scan"
+      },
+      {
+        "path": "gnn_graphrag/protocols/HTT-GNN-ASSOC-PROTOCOL-v1/query_catalog.jsonl",
+        "reason": "Text exceeds bounded 5 MiB credential scan"
+      },
+      {
+        "path": "gnn_graphrag/protocols/HTT-GNN-ASSOC-PROTOCOL-v1/truth/train.jsonl",
+        "reason": "Text exceeds bounded 5 MiB credential scan"
+      },
+      {
+        "path": "gnn_graphrag/protocols/HTT-GNN-ASSOC-PROTOCOL-v2/query_catalog.jsonl",
+        "reason": "Text exceeds bounded 5 MiB credential scan"
+      },
+      {
+        "path": "gnn_graphrag/protocols/HTT-GNN-ASSOC-PROTOCOL-v2/truth/train.jsonl",
+        "reason": "Text exceeds bounded 5 MiB credential scan"
+      }
+    ]
+  },
+  "source_coverage": {
+    "browse_conditions.txt": {
+      "cohort_nct_coverage": 2571,
+      "cohort_rows": 17587
+    },
+    "conditions.txt": {
+      "cohort_nct_coverage": 2824,
+      "cohort_rows": 5482
+    },
+    "design_outcomes.txt": {
+      "cohort_nct_coverage": 2783,
+      "cohort_rows": 19740
+    },
+    "interventions.txt": {
+      "cohort_nct_coverage": 2824,
+      "cohort_rows": 4836
+    },
+    "sponsors.txt": {
+      "cohort_nct_coverage": 2824,
+      "cohort_rows": 4908
+    },
+    "studies.txt": {
+      "cohort_nct_coverage": 2824,
+      "cohort_rows": 2824
+    }
+  },
+  "verified_hash_entries": {
+    "gnn_graphrag/experiments/HTT-GNN-ASSOC-RUN-v1/evaluation_test": 9,
+    "gnn_graphrag/experiments/HTT-GNN-ASSOC-RUN-v1/evaluation_validation": 9,
+    "gnn_graphrag/experiments/HTT-GNN-ASSOC-RUN-v1/training": 6,
+    "gnn_graphrag/feature_artifacts/HTT-GNN-ASSOC-FEATURES-v1": 6,
+    "gnn_graphrag/feature_artifacts/HTT-GNN-EVAL-FEATURES-test-v1": 3,
+    "gnn_graphrag/feature_artifacts/HTT-GNN-EVAL-FEATURES-validation-v1": 3,
+    "graph_files": 26,
+    "protocol_files": 23,
+    "protocol_sources": 35
+  }
+}

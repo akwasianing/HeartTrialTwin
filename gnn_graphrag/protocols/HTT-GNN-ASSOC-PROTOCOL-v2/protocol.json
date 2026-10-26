@@ -1,0 +1,106 @@
+{
+  "allocation": {
+    "algorithm": "Family groups ordered by seeded SHA-256 hash of seed and family ID. Greedy allocation minimizes summed squared relative deviations in total trials, eligible trials, and positive associations; split-order tie-break.",
+    "performance_used": false,
+    "target_ratios": {
+      "test": 0.15,
+      "train": 0.7,
+      "validation": 0.15
+    }
+  },
+  "dataset_version": "HTT-P1-AACT-20260905",
+  "evaluation": {
+    "aggregation": "query micro, owner-trial macro (within owner then equal trials), and family macro (within family then equal families); report single/multi-owner strata",
+    "baselines": [
+      "training-fitted TF-IDF",
+      "pinned MiniLM cosine",
+      "deterministic non-target neighbor pooling",
+      "untrained GraphSAGE",
+      "trained GraphSAGE"
+    ],
+    "candidate_count": 2824,
+    "candidate_order": "ascending NCT ID",
+    "latency": "separate query encoding and ranking; report one-time candidate preparation; no LLM/Neo4j time mixed into ranking",
+    "metrics": [
+      "Recall@1",
+      "Recall@5",
+      "Recall@10",
+      "Hit@1",
+      "Hit@5",
+      "Hit@10",
+      "MRR",
+      "coverage",
+      "median latency",
+      "p95 latency"
+    ],
+    "model_selection": "validation only, frozen test once; no model selection performed",
+    "recall": "Known registered owners in top-k divided by all known owners; distinct from Hit@k",
+    "tie_break": "descending score then ascending NCT ID",
+    "uncertainty": "Paired family-cluster bootstrap; 1000 replicates, fixed seed; identical sampled families for methods; not run"
+  },
+  "family_screen": {
+    "all_trials_screened": 2824,
+    "exact_strong": "Exact punctuation-normalized title >=30 characters and >=5 words",
+    "near": "Shared non-generic title token >=4 characters occurring in 2..80 trials; title length ratio>=0.8; SequenceMatcher>=0.90",
+    "near_strong": "Similarity>=0.95 plus a shared lead sponsor or non-generic intervention; still UNRESOLVED",
+    "not_evidence_of_identity": "Generic condition, sponsor or outcome strings alone are never family proof",
+    "rejected": "Prior explicit REJECTED classifications are preserved, never inferred from differing sponsors",
+    "status": "PROVISIONAL_NOT_EXHAUSTIVE",
+    "weak": "Unresolved weak endpoints and their grouped families are quarantined from held-out evaluation"
+  },
+  "formal_evaluation_status": "NOT_RUN",
+  "graph_policy": {
+    "all_target_edges_masked": true,
+    "computational_reverses_also_masked": true,
+    "detached_measure_queries": true,
+    "heldout_trial_non_target_context_visible": true,
+    "no_trainable_id_embeddings": true,
+    "provenance_excluded_from_messages": true,
+    "regime": "Trial-disjoint supervision within an observed non-target graph; NOT unseen-trial inductive evaluation",
+    "retained_message_edges": 61218,
+    "source_graph_unchanged": true,
+    "target_type": "HAS_PLANNED_OUTCOME"
+  },
+  "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+  "limitations": [
+    "Full-cohort protocol/secondary identifiers unavailable in this extraction; family screen is not exhaustive.",
+    "New automated family and near-query candidates are not human-reviewed clinical equivalences.",
+    "Snapshot may include amendments; no original-registration or prospective clinical claims.",
+    "Training-loader isolation is an API boundary, not operating-system access control.",
+    "No embeddings, message passing, training or ranking evaluation performed."
+  ],
+  "negative_policy": {
+    "caution": "Unlinked does not imply clinically irrelevant; no held-out truth is consulted by the loader",
+    "exclude": [
+      "all known training owners of exact query",
+      "grouped owner families",
+      "training owners of screened near queries"
+    ],
+    "pool": "training trials only",
+    "sampling": "Future fixed-seed uniform/hard mixture must be declared before training; no negatives sampled in this stage"
+  },
+  "query_policy": {
+    "audit_only": [
+      "outcome type",
+      "time frame",
+      "owner NCT ID",
+      "source ID",
+      "description",
+      "evidence ID"
+    ],
+    "description_screen": "Exact normalized groups and bounded near screen (max 2000 chars); audit only because descriptions are not model inputs",
+    "embargo": "Exact cross-partition query groups, cross-partition near candidates, or weak-family quarantine; no clinical equivalence inferred",
+    "near_screen": "Punctuation-key groups plus adjacent lexically sorted strings, 30..800 chars, length ratio>=0.9 and SequenceMatcher>=0.95; non-exhaustive",
+    "normalization": "Unicode NFKC, casefold, whitespace collapse only",
+    "positives": "All exact-normalized registered owners, not clinical-equivalence labels",
+    "semantic_inputs": [
+      "normalized measure text only"
+    ]
+  },
+  "schema_version": "HTT-GNN-ASSOC-PROTOCOL-v2",
+  "seed": 20261023,
+  "snapshot_date": "2026-09-05",
+  "status": "PROVISIONAL_FAMILY_AUDIT_REVIEW_REQUIRED",
+  "task": "Registered planned-outcome measure-to-trial association ranking; not clinical outcome prediction",
+  "training_permitted": false
+}

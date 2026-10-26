@@ -1,0 +1,37 @@
+{
+  "actual_status": "ABSTAIN",
+  "checked_fact_count": 0,
+  "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+  "elapsed_seconds": 0.5220461230019282,
+  "errors": [
+    "Verified evidence is unavailable or insufficient: NOT_FOUND"
+  ],
+  "evidence_counts": {
+    "NCT99999999": 0
+  },
+  "execution_type": "LIVE_SERVICES",
+  "expected_status": "ABSTAIN",
+  "id": "07_unknown",
+  "model_attempts": 0,
+  "question": "What planned outcomes were registered for NCT99999999?",
+  "result": "PASS",
+  "retrieval_method": "EXACT_NCT",
+  "retrieved_trial_ids": [
+    "NCT99999999"
+  ],
+  "source_completeness": {
+    "NCT99999999": {
+      "complete_evidence": false,
+      "missing_source_records": [],
+      "not_found_nct_ids": [
+        "NCT99999999"
+      ],
+      "optional_blank_fields_preserved": true,
+      "pagination_limited": false,
+      "prepared_all_supplied_evidence": true,
+      "retrieval_scope_complete": true,
+      "source_categories_complete": false
+    }
+  },
+  "trace_file": "07_unknown.json"
+}

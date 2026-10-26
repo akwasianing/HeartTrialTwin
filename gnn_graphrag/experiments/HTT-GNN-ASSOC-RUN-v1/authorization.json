@@ -1,0 +1,10 @@
+{
+  "schema_version": "HTT-GNN-EXTERNAL-AUTH-v1",
+  "authority": "project_owner_explicit_instruction_in_this_conversation",
+  "request_title": "HeartTrialTwin — Steps 66D–66F: Generate Features, Train and Evaluate GraphSAGE",
+  "recorded_date": "2026-10-24",
+  "protocol_version": "HTT-GNN-ASSOC-PROTOCOL-v2",
+  "protocol_sha256": "b13d662390b687b62a08cc1fb81bd3413f2c9d1fbb3b6ec86438b1a6854cd95b",
+  "permissions": ["context_train_features", "validation_features", "training", "validation_evaluation", "test_features_after_selection", "test_evaluation_after_selection"],
+  "constraints": ["frozen_artifacts_and_default_loader_unchanged", "training_only_association_optimization", "observed_graph_association_ranking_only", "no_database_changes", "no_commits_or_pushes"]
+}

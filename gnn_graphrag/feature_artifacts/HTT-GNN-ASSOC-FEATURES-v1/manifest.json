@@ -1,0 +1,101 @@
+{
+  "access_implementation_sha256": "6ad22216972bfa8f3316f28c05cfebca685348761abbcbe403635751da02276d",
+  "authorization_sha256": "2bea5b0305bc7e1f77e45fd04ac2759198b24a8be85b446121abc22a11167235",
+  "candidate_count": 2824,
+  "config_sha256": "e6e74d1b9e822810ecf1aa4f210610137397f897220c39a0f0216fc99185bf12",
+  "context_matrix_sha256": "35532f7fc88af6d97e58b3dd74f2c7b8963be1b7ef92cc12672c893647e20195",
+  "context_shape": [
+    9036,
+    390
+  ],
+  "edge_count": 61218,
+  "encoder": {
+    "batch_size": 16,
+    "device": "cpu",
+    "files": {
+      "1_Pooling/config.json": {
+        "bytes": 190,
+        "sha256": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23"
+      },
+      "README.md": {
+        "bytes": 10502,
+        "sha256": "dcd602d2fd35c203a247304a06fec6654a12f7941b739f9221a064fe8dc3b7f0"
+      },
+      "config.json": {
+        "bytes": 612,
+        "sha256": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41"
+      },
+      "config_sentence_transformers.json": {
+        "bytes": 116,
+        "sha256": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3"
+      },
+      "model.safetensors": {
+        "bytes": 90868376,
+        "sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db"
+      },
+      "modules.json": {
+        "bytes": 349,
+        "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+      },
+      "sentence_bert_config.json": {
+        "bytes": 53,
+        "sha256": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7"
+      },
+      "special_tokens_map.json": {
+        "bytes": 112,
+        "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3"
+      },
+      "tokenizer.json": {
+        "bytes": 466247,
+        "sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037"
+      },
+      "tokenizer_config.json": {
+        "bytes": 350,
+        "sha256": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b"
+      },
+      "vocab.txt": {
+        "bytes": 231508,
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    },
+    "max_seq_length": 256,
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "packages": {
+      "huggingface-hub": "0.36.2",
+      "numpy": "1.26.4",
+      "safetensors": "0.8.0",
+      "sentence-transformers": "5.1.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.2.2",
+      "transformers": "4.57.1"
+    },
+    "pooling": "attention_mask_mean_then_L2_normalization",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "snapshot_sha256": "fa4e0ce8c98e7af6762dcc8d1930113fab9c487f5c59ba80c5e9d3e098b0f8b2",
+    "threads": 1
+  },
+  "files_sha256": {
+    "context_features.npy": "477a4b7ec0a3f2177e08761dcd22f8ada867fd9ff4f13be69f55c40c4367f494",
+    "context_index.csv": "e517c4582225d83a879a1ac293dbe3924829431004e1cdc6ac4661f1a827853b",
+    "feature_policy.json": "9c9fcf34ed475d35595fba06fa0c35ab30ab01cb271111cc73945cd49768d12a",
+    "tokenization_audit.json": "9a51ec145edfda76e379c00c8add91f09f6e11f3388a92d190ce3d08f8d2cd44",
+    "train_query_index.csv": "0e1dc9e6b587b9b5a6c5380bea2e7ca38286dc727d1f1fe6df40e69fc2eeccac",
+    "train_query_semantic.npy": "372241d3f24c44676570f5dbb5ee0189b6016db58785b486d9e7971afb677ee7"
+  },
+  "implementation_sha256": "61c44fbcf1f9761fbe2a601b93f8ddd196e614d30de4d00576679ed191c733b5",
+  "input_sha256": {
+    "candidate_trials.csv": "d7878be290494d4cb54e2dc07d4c4019575ff598048b2797aff4cb1a20654931",
+    "training/context_nodes.jsonl": "a057e12c61dcb259291239602a287f4ad4917ad14df83aedd0ccf7784073fb13",
+    "training/manifest.json": "671d03688dfa3a8794fb6d1cc710a64f7cf91dd799eca90f4f5757fa4fdaf3fb",
+    "training/message_edges.csv": "1e397a5547bce72ea02c937b0d297a2e282eb78a5b83f0bcc8e8d1637ad66d12",
+    "training/queries.jsonl": "b75e4c4fc8ba8af590b73fb505fc4660adb850fdf1c8b088651879249590f0ea"
+  },
+  "policy_sha256": "2a7617a87c8fb60c083311825fe745503c4d793daa91258020f4c694778faabd",
+  "protocol_sha256": "b13d662390b687b62a08cc1fb81bd3413f2c9d1fbb3b6ec86438b1a6854cd95b",
+  "query_matrix_sha256": "bc91e82d871c9700d80e5622aeabf75959cee79486421f17f8936d9753e7bff7",
+  "query_shape": [
+    11712,
+    384
+  ],
+  "schema_version": "HTT-GNN-ASSOC-FEATURES-v1"
+}

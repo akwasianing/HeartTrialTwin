@@ -1,0 +1,10 @@
+# Reproducible Vector RAG environment for Python 3.12 on this Intel macOS host.
+# sentence-transformers 6.1.0 requires Transformers 5, whose supported PyTorch
+# version is unavailable for Intel macOS. This compatible stack preserves the
+# selected model and exact pinned model revision used by the index.
+chromadb==1.5.9
+sentence-transformers==5.1.2
+transformers==4.57.1
+torch==2.2.2
+numpy==1.26.4
+huggingface-hub==0.36.2

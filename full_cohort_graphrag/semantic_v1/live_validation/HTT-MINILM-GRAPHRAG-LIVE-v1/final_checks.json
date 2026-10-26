@@ -1,0 +1,28 @@
+{
+  "case_artifact_checksums_verified": true,
+  "credential_values_found": false,
+  "intervention_check_scope": "Verified source facts from actual live retrieval; not an LLM answer or successful generation retry",
+  "intervention_source_only_check": [
+    {
+      "fact": {
+        "citation_ids": [
+          "cite:21f56031bbf8289fe76bfdcb"
+        ],
+        "evidence_id": "NCT00206232|HAS_INTERVENTION|intervention:eb4e562ee31fac7ede8a",
+        "field": "intervention",
+        "nct_id": "NCT00206232",
+        "value": "Spironolactone"
+      },
+      "fact_id": "F005",
+      "sentence": "For NCT00206232, the registered intervention is \"Spironolactone\" [cite:21f56031bbf8289fe76bfdcb]."
+    }
+  ],
+  "prohibited_evidence_keys_found": [],
+  "protected_files_unchanged": 51,
+  "regression_tests": {
+    "failed": 0,
+    "passed": 17,
+    "seconds": 4.579,
+    "suite": "full_cohort_graphrag.semantic_v1.test_pipeline"
+  }
+}

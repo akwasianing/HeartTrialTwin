@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-10-25T13:54:59.406225+00:00",
+  "page_count": 20,
+  "required_sections": 8,
+  "tables": 9,
+  "figures": 9,
+  "verified_live_cases": 5,
+  "all_pages_visually_reviewed": true,
+  "rendering": "Bundled LibreOffice via document skill render_docx.py",
+  "rubric_coverage": "Six coverage rows in report Table 9; eight required sections",
+  "source_hash_checks": {
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+    "gnn_graphrag/protocols/HTT-GNN-ASSOC-PROTOCOL-v2/split_manifest.json": "b13d662390b687b62a08cc1fb81bd3413f2c9d1fbb3b6ec86438b1a6854cd95b",
+    "gnn_graphrag/experiments/HTT-GNN-ASSOC-RUN-v1/training/selected_model.pt": "58bac20f20d15349063ef36079d204714052b48bb4332c6622e68c43d0d7b936"
+  },
+  "citations_checked": [
+    "[cite:21f56031bbf8289fe76bfdcb]",
+    "[cite:3db774038cf4618ff9294543]",
+    "[cite:85602b5dbe212bf4ce959041]"
+  ],
+  "source_outcomes_verified": 7,
+  "model_calls_for_report": 0,
+  "training_runs_for_report": 0,
+  "tests": "Reused verified 220-pass final-audit logs; no costly suite repeated for document authoring",
+  "github_remote": "https://github.com/akwasianing/HeartTrialTwin.git",
+  "remote_http_availability_rechecked": false,
+  "security_scan": "No credential patterns in new report text; rotation still pending owner confirmation",
+  "publication": "No commit or push; full-cohort extensions not claimed published",
+  "outputs": {
+    "HeartTrialTwin_Challenge3_Final_Report.docx": "b930637c34adafa4a66794134a02e7f46861a9476b5a5d3a08b3ffb912c0ad1d",
+    "HeartTrialTwin_Challenge3_Final_Report.pdf": "d4cd989c852bcc9946378b420355dc1754ca698275d9b3edad56a8ba8302c711",
+    "HeartTrialTwin_Challenge3_Final_Report.md": "8afa33b7f47770802ada0df7394116cc524bc0cd554a83e161de49e669eaa014",
+    "HeartTrialTwin_Challenge3_Final_Presentation.pptx": "1312f18462759fd7357420fa0185e392a61ceadc3c2239cb0a46449c6f8d1972"
+  },
+  "optional_presentation": {
+    "slides": 12,
+    "sha256": "1312f18462759fd7357420fa0185e392a61ceadc3c2239cb0a46449c6f8d1972",
+    "package_layout_import_chart_checks": "PASS",
+    "all_slides_visually_reviewed": true,
+    "additional_render": "Bundled LibreOffice plus Poppler",
+    "native_PowerPoint_execution": false
+  }
+}

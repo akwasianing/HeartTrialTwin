@@ -1,0 +1,7 @@
+{"event": "reuse_successful_recovery_verification", "record_sha256": "bfbcd9ec58b79173dfb4d9c83e80b38c682e88369104b8bed85e7e761bf93f01", "maximum_difference": 0.0}
+{"event": "recovered_context_verified", "rows": 2, "seconds": 0.000500808993820101, "maximum_difference": 0.0}
+{"event": "first_encoding_complete", "rows": 1, "seconds": 1.3913988368585706e-05}
+----------------------------------------------------------------------
+Ran 44 tests in 14.693s
+
+OK

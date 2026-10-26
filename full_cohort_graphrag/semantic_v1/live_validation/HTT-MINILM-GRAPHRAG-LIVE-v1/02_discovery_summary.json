@@ -1,0 +1,54 @@
+{
+  "actual_status": "ABSTAIN",
+  "checked_fact_count": 2,
+  "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+  "elapsed_seconds": 23.080771464001373,
+  "errors": [
+    "Verified evidence is unavailable or insufficient: MISSING_SOURCE_RECORDS"
+  ],
+  "evidence_counts": {
+    "NCT00012870": 6,
+    "NCT00939146": 28
+  },
+  "execution_type": "LIVE_SERVICES",
+  "expected_status": "GROUNDED_CANDIDATE_EVIDENCE",
+  "id": "02_discovery",
+  "model_attempts": 0,
+  "question": "Find trials with registered planned outcomes about quality of life.",
+  "result": "FAIL",
+  "retrieval_method": "SEMANTIC_CANDIDATES",
+  "retrieved_trial_ids": [
+    "NCT00939146",
+    "NCT00012870"
+  ],
+  "source_completeness": {
+    "NCT00012870": {
+      "complete_evidence": false,
+      "missing_source_records": [
+        {
+          "categories": [
+            "planned_outcomes"
+          ],
+          "nct_id": "NCT00012870"
+        }
+      ],
+      "not_found_nct_ids": [],
+      "optional_blank_fields_preserved": true,
+      "pagination_limited": false,
+      "prepared_all_supplied_evidence": true,
+      "retrieval_scope_complete": true,
+      "source_categories_complete": false
+    },
+    "NCT00939146": {
+      "complete_evidence": true,
+      "missing_source_records": [],
+      "not_found_nct_ids": [],
+      "optional_blank_fields_preserved": true,
+      "pagination_limited": false,
+      "prepared_all_supplied_evidence": true,
+      "retrieval_scope_complete": true,
+      "source_categories_complete": true
+    }
+  },
+  "trace_file": "02_discovery.json"
+}

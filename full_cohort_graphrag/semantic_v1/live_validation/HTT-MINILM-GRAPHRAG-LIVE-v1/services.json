@@ -1,0 +1,131 @@
+{
+  "neo4j": {
+    "connected": true,
+    "identity": {
+      "database": "hearttrialtwin-full2824",
+      "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+      "node_counts": {
+        "ConditionTerm": 1743,
+        "Intervention": 3417,
+        "PlannedOutcome": 19740,
+        "SourceDataset": 1,
+        "Sponsor": 1052,
+        "Trial": 2824
+      },
+      "relationship_counts": {
+        "HAS_BROWSE_CONDITION": 17587,
+        "HAS_INTERVENTION": 4716,
+        "HAS_PLANNED_OUTCOME": 19740,
+        "HAS_SUBMITTED_CONDITION": 5482,
+        "LEAD_SPONSORED_BY": 2824,
+        "MEMBER_OF_DATASET": 2824,
+        "SOURCED_FROM": 25952
+      },
+      "source_dataset": {
+        "archive_md5": "99e62b3f8ae5838b36bc0c2277ad2714",
+        "archive_sha256": "215365a46dd8119ef4bdee62cd11a08910c9be0855edf246b92f31cdcc2d1023",
+        "dataset_version": "HTT-P1-AACT-20260905",
+        "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+        "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+        "snapshot_date": "2026-09-05",
+        "snapshot_file": "20260905_export_ctgov.zip",
+        "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+        "source_dataset_id": "HTT-P1-AACT-20260905"
+      },
+      "verified": true
+    },
+    "method": "SHOW USER PRIVILEGES; explicit global/target node and relationship write denials; no elevated write/admin grants; no write probe",
+    "privilege_inspection": [
+      {
+        "access": "GRANTED",
+        "action": "load",
+        "graph": "*",
+        "resource": "file",
+        "segment": "ALL DATA"
+      },
+      {
+        "access": "GRANTED",
+        "action": "execute",
+        "graph": "*",
+        "resource": "database",
+        "segment": "FUNCTION(*)"
+      },
+      {
+        "access": "GRANTED",
+        "action": "execute",
+        "graph": "*",
+        "resource": "database",
+        "segment": "PROCEDURE(*)"
+      },
+      {
+        "access": "GRANTED",
+        "action": "access",
+        "graph": "HOME",
+        "resource": "database",
+        "segment": "database"
+      },
+      {
+        "access": "DENIED",
+        "action": "write",
+        "graph": "*",
+        "resource": "graph",
+        "segment": "NODE(*)"
+      },
+      {
+        "access": "GRANTED",
+        "action": "execute",
+        "graph": "*",
+        "resource": "database",
+        "segment": "PROCEDURE(db.info)"
+      },
+      {
+        "access": "DENIED",
+        "action": "write",
+        "graph": "*",
+        "resource": "graph",
+        "segment": "RELATIONSHIP(*)"
+      },
+      {
+        "access": "GRANTED",
+        "action": "match",
+        "graph": "hearttrialtwin-full2824",
+        "resource": "all_properties",
+        "segment": "NODE(*)"
+      },
+      {
+        "access": "GRANTED",
+        "action": "match",
+        "graph": "hearttrialtwin-full2824",
+        "resource": "all_properties",
+        "segment": "RELATIONSHIP(*)"
+      },
+      {
+        "access": "GRANTED",
+        "action": "access",
+        "graph": "hearttrialtwin-full2824",
+        "resource": "database",
+        "segment": "database"
+      },
+      {
+        "access": "DENIED",
+        "action": "access",
+        "graph": "neo4j",
+        "resource": "database",
+        "segment": "database"
+      }
+    ],
+    "read_only_verified": true
+  },
+  "ollama": {
+    "configured_model": "qwen2.5:1.5b",
+    "matching_models": [
+      {
+        "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+        "name": "qwen2.5:1.5b",
+        "size": 986061892
+      }
+    ],
+    "model_installed": true,
+    "reachable": true
+  }
+}

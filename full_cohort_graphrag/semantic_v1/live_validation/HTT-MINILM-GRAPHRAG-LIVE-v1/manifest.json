@@ -1,0 +1,31 @@
+{
+  "files_sha256": {
+    "01_profile.json": "f88cc3e22ace5859d328780c1545d4db63acc96de4fc452ffbb601f53ba9ba63",
+    "01_profile_summary.json": "fed339435d8ed703aee60a59621defaac346b20707a8818fbdd3fd0d7004db05",
+    "02_discovery.json": "78acec8d90b02755debc76adaf04568f974f0020b03b3099e5da0f6aec5fefda",
+    "02_discovery_summary.json": "98d0d76a20da9efcd264891a969722655d3f8426e41a042d696585c4772488a8",
+    "03_sponsor.json": "42dc353897148381fce5af6d5de9aedb95f8cb55a85fc5f3fe78e283828c4355",
+    "03_sponsor_summary.json": "2716f9d7d01be1de9f5ebcbc9661161a52d77daba4efb227150e578adf66c897",
+    "04_intervention.json": "4709d1b7cc4144d9ccd73d3b3318d3fc6996a3d3ca8ee1e1f598c8e300f3a6cd",
+    "04_intervention_summary.json": "6ce542594e277d8a3046ad4ab686b1460d2a926e33d14bac11b36c6db446b15d",
+    "05_outcomes.json": "84d92d0dc0ce8c80778994aefff3b3e552a00eb0d6a888f01669a8c93bdaf1b8",
+    "05_outcomes_summary.json": "d73ab9f916fbc53a78bb141298ae0fbd1a98949faa4fc9abcc7e97257dc0f119",
+    "06_effectiveness.json": "eb47f775b05bc1d94aec0dc717dcdb0e114dc4449f9c5224fc65227a49092599",
+    "06_effectiveness_summary.json": "6c38ed02acd6f87d6aa732ec0c101db44ce0168eeb1146d22992c9bf8ca16887",
+    "07_unknown.json": "d80c416643ab5c3a76366c036ae7082ff764f54e06abb01fbe4c13965c7ea67c",
+    "07_unknown_summary.json": "1d5be381961a06a37734083caf79a3c4a385fa5b5ef28bec8ca6ccdeafde90c8",
+    "08_invalid.json": "1d428e1791f961b9a40ae0db43a2008166b23f63779df4daf40ff1f04f47e024",
+    "08_invalid_summary.json": "1388820c44c01a3af6fa6e5a29d0e0ea659b7b5ab5981535b23ad03256500140",
+    "09_missing_evidence.json": "e2c0175bdfa114af8e0b1cb0c54e4f3898ed550a2a63e2e14eb1ea7a421353ee",
+    "09_missing_evidence_summary.json": "ee3b7d05ee356d51558eeaafd2114df9444774278cc58ca54131485b4ec4bfeb",
+    "10_neo4j_fault.json": "608b8c695952da8da56a9bc2f632eeb2f360418ccb38e0a2a8690305cf17d401",
+    "10_neo4j_fault_summary.json": "21898d10182aff4d5778fb0f9aa2badb2029bb1887fb1296cce16989c4f3f59c",
+    "11_ollama_fault.json": "20334aab47cf4f3bb47d4c44326bbfb9956d57d985363c1d7d2b5a7015c70de1",
+    "11_ollama_fault_summary.json": "6a708eaaf269fc4caa96d610ea77dbe73eb5cd88ae57e0996028d5b851ca9482",
+    "plan.json": "bc30d1c432758beb385064977a960e76bef9e8ab4e5258e5c44da795c9e0bada",
+    "services.json": "09b26b443e4f734c40c330a9433eb9b93eb7e89ff18697411051027c1afb6636",
+    "summary.json": "a69ab539bfee4048dc7427aecbf6b1dd6688eed75f6c386b606663c7f1798c80"
+  },
+  "runner_sha256": "d6054cfd5df607c92819f9fc5a6f120a0b147986b3f0667cbcd38b1f1345edfe",
+  "version": "HTT-MINILM-GRAPHRAG-LIVE-v1"
+}

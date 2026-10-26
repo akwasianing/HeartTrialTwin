@@ -1,0 +1,32 @@
+{
+  "audit_date": "2026-10-25",
+  "external_low_risk_changes": {
+    ".gitignore": "9a9c81fabcaedc94b6d38cd6a29bf3be6adc27d31fc5b44d5d66a1ea1f58fee0",
+    "full_cohort_graphrag/.env.example": "d0fb4c8adcceb3594dc46f18d92e9276dcb478dd2cd3425048118120f241c372"
+  },
+  "files_sha256": {
+    "CHALLENGE_3_REPORT_EVIDENCE.md": "661ffdef3aff80fab587fa81e80cdae73d820fc20d5dcd3f7541b7a90fef2223",
+    "FINAL_PROJECT_AUDIT.md": "dfd0a81345361ae6faf40cf388a71137b0e9a0d806575305f94d71811f2a75b3",
+    "FINAL_PROJECT_SUMMARY.md": "7cf1e4910ee1584fa4f99c26c6d6fdffff3164b0ce7a608a8467bbd4de3276df",
+    "FINAL_QA.json": "61d5515c5da0f1e12c7029700d368c52875fd725d92e8e826613e509b82ef8b6",
+    "REPRODUCIBILITY_GUIDE.md": "49fee1e3e19d767b46b946488ac9ac4d778b774ad7cb247f83ad7ed6960cd432",
+    "audit_checks.py": "20042976f63c66ebf19b2b2207f167f326c7cd1fcd7f3392b7a72ac91107e0a9",
+    "current_services.json": "09b26b443e4f734c40c330a9433eb9b93eb7e89ff18697411051027c1afb6636",
+    "evidence_audit.json": "f7aa940f75b64bd389260ed8aedb02567e4a30c0416801c6da3c767d8f1c4cbf",
+    "full_cohort_tests.txt": "32b75a994a1403bf5f1ad7b9ea32f88e0e624dc9849f2178d41e96488eb8ee41",
+    "integration_demo_tests.txt": "98ecbeb97a87f6a764d315eed2fdb855ef3c5f5ecce24d648bd5c1a986a414d2",
+    "integrity_final.json": "a91268a000bcdd00b890e2df443a1475019b17c8a404eeb65724ab6691ed4114",
+    "protocol_checks.py": "9479763a323fd19a093976612c75ec86a0173464a893159dd860e37d09f0188c",
+    "protocol_tests.txt": "ec408b65cfb87dde0ce6e0225a8963c5923aed3141e1f47ae183553ec1e1d75a",
+    "ranking_gnn_tests.txt": "c944a0b3f1680e428f7d501aa7ce21c763e83ecb2d111d17a92bb421813b178b",
+    "screenshots/01_live_title.jpg": "fed4969a0d47aad14b59c87e6d8939cee36ea2d7e488fe6427d3dbd4fa2d3987",
+    "screenshots/02_live_title_answer.jpg": "68dec4e99ef8d7912dcec3fa18ac0e7af3ee8edf37bb7f265a028c2acbcd55f1",
+    "streamlit_ui_tests.txt": "6d9607966462b19a76e297b78d59123e2e2fd277fff6337b0defe926e124b1ad"
+  },
+  "limitations": [
+    "Package identity is not independent clinical validation.",
+    "Credential rotation remains a human action.",
+    "No commit or publication is implied."
+  ],
+  "schema_version": "HTT-FINAL-EVIDENCE-PACKAGE-v1"
+}

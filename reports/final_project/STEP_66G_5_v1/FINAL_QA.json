@@ -1,0 +1,120 @@
+{
+  "audit_date": "2026-10-25",
+  "base_commit": "4c5d187ea18845b46f655910b0935ef559da2ba6",
+  "branch": "main",
+  "committed": false,
+  "credential_exposure": {
+    "private_env_unchanged": true,
+    "rotation": "REQUIRES_OWNER_ACTION",
+    "template_sanitized": true
+  },
+  "documentation": {
+    "broken_links": [],
+    "local_links_checked": 66,
+    "whitespace_issues": []
+  },
+  "live": {
+    "browser_observation": {
+      "citation": "cite:85602b5dbe212bf4ce959041",
+      "displayed_elapsed_seconds": 6.36,
+      "model_requests": 0,
+      "question": "What title is registered for NCT00206232?",
+      "status": "GROUNDED"
+    },
+    "database_identity_verified": true,
+    "model_installed": true,
+    "new_model_generation_requests": 0,
+    "ollama_available": true,
+    "read_only_privileges_verified": true,
+    "screenshots": [
+      {
+        "format": "JPEG",
+        "height": 726,
+        "path": "screenshots/01_live_title.jpg",
+        "sha256": "fed4969a0d47aad14b59c87e6d8939cee36ea2d7e488fe6427d3dbd4fa2d3987",
+        "width": 319
+      },
+      {
+        "format": "JPEG",
+        "height": 726,
+        "path": "screenshots/02_live_title_answer.jpg",
+        "sha256": "68dec4e99ef8d7912dcec3fa18ac0e7af3ee8edf37bb7f265a028c2acbcd55f1",
+        "width": 319
+      }
+    ]
+  },
+  "neo4j_writes": false,
+  "new_benchmark_inference": false,
+  "new_training": false,
+  "preservation": {
+    "existing_live_files_unchanged": 28,
+    "existing_semantic_files_unchanged": 12,
+    "research_files_unchanged": 51
+  },
+  "protocol_trees": {
+    "HTT-GNN-ASSOC-PROTOCOL-v1": {
+      "files": 25,
+      "sha256": "e6ac09b346e48ed82c03cb86d51b505e03f1adf723a120345f91d0b22c39d077"
+    },
+    "HTT-GNN-ASSOC-PROTOCOL-v2": {
+      "files": 25,
+      "sha256": "b566d47014dd7023006777f8d6fe72494a2be8b4bd1974680434bd69524a46d6"
+    }
+  },
+  "pushed": false,
+  "readiness": {
+    "publication": "BLOCKED_CREDENTIAL_ROTATION_AND_SELECTIVE_REVIEW_REQUIRED",
+    "report_authoring": "READY_WITH_DOCUMENTED_LIMITATIONS"
+  },
+  "regressions": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 220,
+    "protocol_mutation_methods_not_selected": 8,
+    "skipped": 0,
+    "suite_counts": {
+      "full_cohort": 102,
+      "integration_demo": 39,
+      "protocol": 31,
+      "ranking_gnn": 44,
+      "streamlit_ui": 4
+    }
+  },
+  "schema_version": "HTT-FINAL-PROJECT-AUDIT-v1",
+  "security_inventory": {
+    "example_files": [
+      "artifacts/knowledge_graph/.env.example",
+      "cohort_scaling/.env.example",
+      "full_cohort_graphrag/.env.example",
+      "graphrag/.env.example"
+    ],
+    "files_considered": 496,
+    "findings": [],
+    "large_files": [],
+    "limitation": "Not an exhaustive secret/history/binary scan. Do not publish unreviewed untracked directories.",
+    "scope": "Tracked and nonignored untracked text <=5 MiB, excluding course week folders; exact known private passwords/API keys and limited key patterns",
+    "text_scan_exclusions": [
+      {
+        "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/design_outcomes.jsonl",
+        "reason": "Text exceeds bounded 5 MiB credential scan"
+      },
+      {
+        "path": "gnn_graphrag/protocols/HTT-GNN-ASSOC-PROTOCOL-v1/query_catalog.jsonl",
+        "reason": "Text exceeds bounded 5 MiB credential scan"
+      },
+      {
+        "path": "gnn_graphrag/protocols/HTT-GNN-ASSOC-PROTOCOL-v1/truth/train.jsonl",
+        "reason": "Text exceeds bounded 5 MiB credential scan"
+      },
+      {
+        "path": "gnn_graphrag/protocols/HTT-GNN-ASSOC-PROTOCOL-v2/query_catalog.jsonl",
+        "reason": "Text exceeds bounded 5 MiB credential scan"
+      },
+      {
+        "path": "gnn_graphrag/protocols/HTT-GNN-ASSOC-PROTOCOL-v2/truth/train.jsonl",
+        "reason": "Text exceeds bounded 5 MiB credential scan"
+      }
+    ]
+  },
+  "timezone": "America/Chicago"
+}

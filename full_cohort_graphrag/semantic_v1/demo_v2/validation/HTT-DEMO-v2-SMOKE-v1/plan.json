@@ -1,0 +1,32 @@
+{
+  "attempts_per_case": 1,
+  "authorization": "Project-owner Step 66G-4, bounded live read-only smoke test",
+  "candidate_count": 2,
+  "case_watchdog_seconds": 210,
+  "cases": [
+    [
+      "01_sponsor",
+      "Who is the lead sponsor of NCT00206232?",
+      "GROUNDED"
+    ],
+    [
+      "02_intervention",
+      "What intervention is registered for clinical trial NCT00206232?",
+      "GROUNDED"
+    ],
+    [
+      "03_outcomes",
+      "What planned outcomes were registered for NCT00206232?",
+      "COMPLETE_LISTING"
+    ],
+    [
+      "04_discovery",
+      "Find trials with registered planned outcomes about quality of life.",
+      "GROUNDED_CANDIDATE_EVIDENCE"
+    ]
+  ],
+  "formal_benchmark": false,
+  "model_generation_requests": 0,
+  "scan_limit": 5,
+  "version": "HTT-DEMO-v2-SMOKE-v1"
+}

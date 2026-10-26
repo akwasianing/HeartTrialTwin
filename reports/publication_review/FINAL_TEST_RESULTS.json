@@ -1,0 +1,53 @@
+{
+  "status": "PASS_IN_COMPONENT_SPECIFIC_ENVIRONMENTS",
+  "distinct_final_passing_tests": 239,
+  "suites": [
+    {
+      "log": "full_cohort_tests.txt",
+      "passed": 102,
+      "skipped": 0,
+      "sha256": "9c5134ddaab5057bd392097b2d11589557c2ead2b9602a656fef46987e3edbea"
+    },
+    {
+      "log": "integration_demo_tests.txt",
+      "passed": 39,
+      "skipped": 0,
+      "sha256": "02136e5342958029ce4044c1f05af497c247e7cdf137eeb3742e66ecb0543edf"
+    },
+    {
+      "log": "streamlit_ui_tests.txt",
+      "passed": 4,
+      "skipped": 0,
+      "sha256": "22065284ac9b6c6b9c28eb4f79ba1c547dd77bbd1082a628a0b0d38c0e772388"
+    },
+    {
+      "log": "ranking_gnn_tests.txt",
+      "passed": 44,
+      "skipped": 0,
+      "sha256": "99a446e6b28875644573a493a6d1b61baf31ea66df1f653d7ae3ae4391584486"
+    },
+    {
+      "log": "protocol_tests.txt",
+      "passed": 31,
+      "skipped": 0,
+      "sha256": "eedce93ec147c42c476815ad050eeb7af05f89ab47b2dab9827fc954fd195cf6"
+    },
+    {
+      "log": "prior_full_system_tests.txt",
+      "passed": 11,
+      "skipped": 0,
+      "sha256": "7323a253f3b1eb28baf55d6bde53cf9d700b0fa3c5b688b716f615bb8fd09f6e"
+    },
+    {
+      "log": "challenge2_correct_environment_tests.txt",
+      "passed": 8,
+      "skipped": 0,
+      "sha256": "2266b2ef2a9497a82ba1a78f8d4549bb321e73dfc857c123ae1923344a2613c4"
+    }
+  ],
+  "prior_attempts": [
+    "Original Challenge 2 invocation timed out after 240 seconds.",
+    "Wrong-environment diagnostic: 7 passed, 1 failed due to sklearn 1.6.1 vs serialized 1.9.1. Correct .venv rerun passed eight unchanged tests."
+  ],
+  "no_training_or_live_services": true
+}

@@ -2,6 +2,143 @@
 
 > **Experimental — not validated for clinical decision-making.**
 
+## Challenge 3: HeartTrialTwin — Human, AI, and Human–AI Co-Design of an Evidence-Grounded Clinical Trial Research System
+
+The later Challenge 3 implementation is a **registered-information retrieval
+system**, separate from the experimental classification applications documented
+below. Human semantic modeling, AI-assisted design and critique, and human-led
+corrections produced a provenance-preserving Neo4j graph, read-only GraphRAG,
+MiniLM semantic discovery, and a local Streamlit research demonstration.
+It does not infer observed treatment effects, patient outcomes, or validated
+clinical predictions from registered planned outcomes.
+
+### Assignment demonstration versus later extensions
+
+The original five-trial assignment graph has **26 nodes and 65 relationships**;
+its evidence and original GraphRAG remain intact. The later full-cohort extension
+uses every member of the frozen `HTT-P1-AACT-20260905` cohort, without selecting
+trials for outcome availability. Both use the **September 5, 2026** AACT snapshot;
+snapshot values may include amendments and are not certified initial-registration
+values. The cohort is terminal-outcome-selected, not all newly registered trials.
+
+| Verified full-cohort component | Result |
+|---|---:|
+| Clinical trials | 2,824 |
+| Neo4j nodes | 28,777 |
+| Original relationships | 79,125 |
+| Registered planned-outcome associations | 19,740 |
+| Offline final-audit tests | 220 passed; 0 failures/errors/skips |
+
+Counts and source identity are recorded in the
+[full-cohort manifest](artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json)
+and [coverage report](artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/COVERAGE_REPORT.md).
+
+The six labels remain `Trial`, `ConditionTerm`, `Intervention`, `Sponsor`,
+`PlannedOutcome`, and `SourceDataset`. Submitted and browse conditions remain
+distinct. Missing source records are explicit: 253 trials lack browse terms and
+41 lack planned-outcome rows; a missing record is not evidence of absence.
+
+### Architecture, evidence, and human review
+
+```text
+Exact NCT lookup ───────────────────────────┐
+Question → pinned MiniLM → ranked trial IDs ┤
+                                           ↓
+                     bounded, read-only Neo4j retrieval
+                                           ↓
+                     validated trial-bound evidence and citations
+                                           ↓
+         deterministic facts / complete planned-outcome listings
+              or optional constrained local Ollama explanation
+                                           ↓
+                     grounded answer or explicit abstention
+                                           ↓
+                              human evidence review
+```
+
+MiniLM ranks all 2,824 candidates using normalized 384-dimensional vectors from
+`sentence-transformers/all-MiniLM-L6-v2`, revision
+`1110a243fdf4706b3f48f1d95db1a4f5529b4d41` (256-token effective limit).
+Similarity is not factual or clinical evidence. Exact-NCT questions bypass
+semantic ranking; bounded discovery retains original ranks and records candidates
+skipped for insufficient evidence. Neo4j supplies the authoritative facts.
+
+Simple factual answers are assembled deterministically with trial-bound citations.
+Complete outcome listing returns all seven verified records for NCT00206232,
+not a model-selected subset. Optional Ollama `qwen2.5:1.5b` selects authorized
+catalog facts in one bounded attempt; invalid citations, incomplete evidence,
+unsupported claims, and clinical-effectiveness questions fail closed.
+Human review drove these corrections after slow or incomplete model responses;
+it is not an independent clinical/scientific validation or a new durable review
+database. Registered planned outcomes are **not observed clinical results**.
+
+### Experimental GraphSAGE: negative comparison retained
+
+The frozen Version 2 experiment ranks registered planned-outcome-to-trial
+associations within an **observed graph**, not previously unseen-trial induction.
+It uses 1,976 training, 424 validation, and 424 test trials; all 2,824 trials
+remain ranking candidates. Target associations and computational reverses are
+masked, leaving **61,218** permitted message edges. Conservative family controls,
+query embargoes, and incomplete screening limitations remain documented.
+
+| Frozen test comparison (descriptive, not new model selection) | MRR | Recall@10 |
+|---|---:|---:|
+| TF-IDF | 0.07074 | 0.11492 |
+| MiniLM | 0.07619 | 0.12078 |
+| Context pooling | 0.07841 | 0.12100 |
+| Trained GraphSAGE | 0.01124 | 0.02208 |
+
+GraphSAGE did **not** outperform semantic baselines and is not the application's
+default ranker. Its frozen checkpoint remains a local research artifact.
+Diagnostics found useful message flow under fixed weights but no confirmed graph
+or loss implementation defect; weak generalization remains the leading
+hypothesis. MiniLM is the practical integration choice, not a claim that it won
+the inspected test comparison. No additional test-guided tuning is authorized.
+
+### Code, evidence, and reproducibility
+
+- [Graph preparation and import](cohort_scaling/FULL_COHORT_PREPARATION.md)
+  and [isolated full-cohort importer](cohort_scaling/import_full_cohort.py).
+- [Full-cohort retrieval](full_cohort_graphrag/README.md),
+  [evidence preparation](full_cohort_graphrag/src/prepare_evidence.py), and
+  [generation safeguards](full_cohort_graphrag/ANSWER_GENERATION.md).
+- [MiniLM integration](full_cohort_graphrag/semantic_v1/README.md) and
+  [final Streamlit demo](full_cohort_graphrag/semantic_v1/demo_v2/README.md).
+- [GraphSAGE experiment](gnn_graphrag/experiments/HTT-GNN-ASSOC-RUN-v1/README.md),
+  [saved results](gnn_graphrag/experiments/HTT-GNN-ASSOC-RUN-v1/RESULTS.md), and
+  [diagnostic findings](gnn_graphrag/reviews/STEP_66G_1_DIAGNOSTIC_REPORT.md).
+- [Final technical audit](reports/final_project/STEP_66G_5_v1/FINAL_PROJECT_AUDIT.md),
+  [reproducibility guide](reports/final_project/STEP_66G_5_v1/REPRODUCIBILITY_GUIDE.md),
+  and [Challenge 3 report](reports/final_project/CHALLENGE_3_FINAL/HeartTrialTwin_Challenge3_Final_Report.pdf).
+
+This is **not a standalone, clone-and-run deployment**. Provision the external
+local Neo4j database `hearttrialtwin-full2824`, a dedicated read-only account,
+checksum-pinned graph/membership and MiniLM feature bundles, and the exact cached
+model revision separately. Large/generated datasets, model weights, private
+configuration, and caches are intentionally excluded from the new publication
+set. Missing pinned assets must fail rather than be silently replaced or rebuilt.
+Follow the guide for the three separate UI/backend/encoder environments; older
+classification dependency pins must not be mixed with the encoder/GNN stack.
+
+After those prerequisites are satisfied, from the repository root:
+
+```bash
+# Create the private file only if absent; do not overwrite existing credentials.
+test -e full_cohort_graphrag/.env || cp full_cohort_graphrag/.env.example full_cohort_graphrag/.env
+.venv-full-system/bin/python -B -m streamlit run full_cohort_graphrag/semantic_v1/demo_v2/app.py --server.address 127.0.0.1 --server.port 8502 --server.headless true --browser.gatherUsageStats false
+
+# Offline backend and integration regressions; no Neo4j/Ollama calls.
+.venv-graphrag/bin/python -B -m unittest discover -s full_cohort_graphrag/tests -p 'test_*.py' -q
+.venv-graphrag/bin/python -B -m unittest full_cohort_graphrag.semantic_v1.test_pipeline full_cohort_graphrag.semantic_v1.demo_v2.test_demo -q
+```
+
+Open <http://127.0.0.1:8502/>. Exact factual lookup and complete outcome listings
+do not require Ollama. The optional explanation path additionally requires the
+existing local Ollama service/model. This new retrieval publication does not
+bundle the Neo4j database, MiniLM/GNN weights, or credentials; existing tracked
+classification artifacts remain preserved. The earlier-challenge documentation
+below is retained for provenance and must not be confused with this retrieval-only application.
+
 HeartTrialTwin is a graduate data-science course project that studies whether a
 heart-failure clinical trial with an observed terminal outcome was completed
 (`0`) or terminated/withdrawn (`1`). Its full-system prototype connects a frozen
@@ -135,7 +272,11 @@ The preserved Challenge 2 workflow and its blocked-release rationale are
 documented in [p1_app/TEST_RESULTS.md](p1_app/TEST_RESULTS.md) and
 [p1_app/feature_audit.md](p1_app/feature_audit.md).
 
-## Challenge 3: AI Design — Knowledge Graph with Neo4j
+## Original Challenge 3 assignment: AI Design — Knowledge Graph with Neo4j
+
+This section preserves the original five-trial assignment scope. The later
+full-cohort implementation is described above; deferrals below refer only to
+that original stage.
 
 ### Objective and data selection
 

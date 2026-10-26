@@ -1,0 +1,20 @@
+{
+  "actual_status": "ABSTAIN",
+  "checked_fact_count": 0,
+  "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+  "elapsed_seconds": 0.0008519920011167414,
+  "errors": [
+    "Invalid NCT identifier; no semantic substitution performed"
+  ],
+  "evidence_counts": {},
+  "execution_type": "LOCAL_POLICY_ONLY",
+  "expected_status": "ABSTAIN",
+  "id": "08_invalid",
+  "model_attempts": 0,
+  "question": "What planned outcomes were registered for NCT0020623?",
+  "result": "PASS",
+  "retrieval_method": "POLICY_REJECTION",
+  "retrieved_trial_ids": [],
+  "source_completeness": {},
+  "trace_file": "08_invalid.json"
+}

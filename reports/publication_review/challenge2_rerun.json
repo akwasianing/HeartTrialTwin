@@ -1,0 +1,7 @@
+{
+  "suite": "challenge2_correct_environment",
+  "returncode": 0,
+  "seconds": 64.329,
+  "log": "reports/publication_review/challenge2_correct_environment_tests.txt",
+  "plugin_autoload_disabled": true
+}

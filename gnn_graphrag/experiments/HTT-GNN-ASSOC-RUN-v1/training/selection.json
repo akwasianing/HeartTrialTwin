@@ -1,0 +1,28 @@
+{
+  "authorization_sha256": "2bea5b0305bc7e1f77e45fd04ac2759198b24a8be85b446121abc22a11167235",
+  "checkpoint_sha256": "58bac20f20d15349063ef36079d204714052b48bb4332c6622e68c43d0d7b936",
+  "code_sha256": {
+    "full_cohort_access.py": "6ad22216972bfa8f3316f28c05cfebca685348761abbcbe403635751da02276d",
+    "full_cohort_experiment.py": "b72c6c5cef7350ef919b206ca2d3d0a55beb4f4f90b4fba8fdd31784e99662c1",
+    "full_cohort_features.py": "61c44fbcf1f9761fbe2a601b93f8ddd196e614d30de4d00576679ed191c733b5",
+    "full_cohort_ranking.py": "15bcc7ce6c67cf081b48e063a9274f5f1fa534731b4ce26aa53376ede294e6e0"
+  },
+  "config_sha256": "e6e74d1b9e822810ecf1aa4f210610137397f897220c39a0f0216fc99185bf12",
+  "epochs_completed": 80,
+  "protocol_sha256": "b13d662390b687b62a08cc1fb81bd3413f2c9d1fbb3b6ec86438b1a6854cd95b",
+  "schema_version": "HTT-GNN-CHECKPOINT-SELECTION-v1",
+  "selected_epoch": 60,
+  "selection_rule": {
+    "direction": "maximize",
+    "evaluate_every_epochs": 5,
+    "initial_checkpoint_eligible": true,
+    "metric": "MRR",
+    "minimum_absolute_improvement": 0.0001,
+    "patience_evaluations": 5,
+    "split": "validation",
+    "tie_break": "earlier_checkpoint"
+  },
+  "test_accessed": false,
+  "training_seconds": 112.3848786059998,
+  "validation_MRR": 0.021802783247318835
+}

@@ -1,0 +1,56 @@
+{
+  "collection": {
+    "collection_name": "htt_kg_20260905_vector_v1",
+    "distance_metric": "cosine",
+    "document_count": 16,
+    "explicit_embeddings": true,
+    "persistent_storage": "vector_rag/chroma_db/"
+  },
+  "documents": {
+    "document_manifest_path": "vector_rag/data/document_manifest.json",
+    "document_manifest_sha256": "b312d7829b959d3135b6d5bd55f1757cecd06706ac04b7bdf594820aaf244cf7",
+    "document_schema_version": "HTT-VECTOR-DOCUMENT-v1",
+    "trial_documents_path": "vector_rag/data/trial_documents.jsonl",
+    "trial_documents_sha256": "a21222c41305b787596ae09b9f3770435c9f9ae933bc019a8881ba29906996ce"
+  },
+  "embedding": {
+    "device": "cpu",
+    "dimension": 384,
+    "embedding_matrix_sha256_float32_little_endian": "ff00171c78e23bbb9bbe85001c07519b918934e025e5b03d89665dc2a94053fc",
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "model_snapshot_sha256": "fa4e0ce8c98e7af6762dcc8d1930113fab9c487f5c59ba80c5e9d3e098b0f8b2",
+    "normalized": true
+  },
+  "index_schema_version": "HTT-VECTOR-INDEX-v1",
+  "packages": {
+    "chromadb": "1.5.9",
+    "huggingface-hub": "0.36.2",
+    "numpy": "1.26.4",
+    "sentence-transformers": "5.1.2",
+    "torch": "2.2.2",
+    "transformers": "4.57.1"
+  },
+  "platform": {
+    "machine": "x86_64",
+    "python_version": "3.12.14",
+    "system": "Darwin"
+  },
+  "provenance": {
+    "authoritative_dataset_version": "HTT-P1-AACT-20260905",
+    "graph_version": "HTT-KG-AACT-20260905-v1",
+    "snapshot_date": "2026-09-05"
+  },
+  "validation": {
+    "collection_count": 16,
+    "collection_created": false,
+    "collection_ids_match": true,
+    "distance_metric": "cosine",
+    "embedding_dimensions_match": true,
+    "embedding_values_match": true,
+    "metadata_match": true,
+    "source_integrity_verified": true,
+    "stored_documents_match": true,
+    "vectors_normalized": true
+  }
+}

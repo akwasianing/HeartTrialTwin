@@ -1,0 +1,15 @@
+{
+  "extraction_manifest_sha256": "3fe45287cc12f4d752545c90c9d63a375370b69d070be47cb04b79398da6b6a3",
+  "files_sha256": {
+    "candidates.csv": "ff7657b0f95133ee5dd724d21c7f4f338a5ddfeb704401c2d78ccad59519f0e6",
+    "context_nodes.jsonl": "a057e12c61dcb259291239602a287f4ad4917ad14df83aedd0ccf7784073fb13",
+    "families.csv": "345ddae941c716c4c9f508210f0b3df49ed12894930bc2789344c33fe72f4ceb",
+    "message_edges.csv": "1e397a5547bce72ea02c937b0d297a2e282eb78a5b83f0bcc8e8d1637ad66d12",
+    "queries.jsonl": "42120b85cb17e357de5d826a51560d6c1d1bf519076f61922320df1492016a9d"
+  },
+  "observed_graph_not_inductive": true,
+  "schema_version": "HTT-GNN-ASSOC-PROTOCOL-v1-TRAIN-INPUTS",
+  "seed": 20261023,
+  "status": "PROVISIONAL_FAMILY_AUDIT_REVIEW_REQUIRED",
+  "training_permitted": false
+}

@@ -1,0 +1,36 @@
+{
+  "combined_vector_renormalized": false,
+  "context_field": "feature_text",
+  "context_order": "original_indices_0_to_9035",
+  "context_shape": [
+    9036,
+    390
+  ],
+  "encoder": {
+    "batch_size": 16,
+    "dtype": "float32",
+    "max_seq_length": 256,
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "node_type_order": [
+      "Trial",
+      "ConditionTerm",
+      "Intervention",
+      "Sponsor",
+      "PlannedOutcome",
+      "SourceDataset"
+    ],
+    "normalized": true,
+    "repeat_byte_identical": true,
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "snapshot_sha256": "fa4e0ce8c98e7af6762dcc8d1930113fab9c487f5c59ba80c5e9d3e098b0f8b2"
+  },
+  "heldout_truth_access": false,
+  "no_id_embeddings": true,
+  "query_field": "query_text",
+  "query_shape": [
+    11712,
+    384
+  ],
+  "schema_version": "HTT-GNN-ASSOC-FEATURES-v1",
+  "training_only_queries": true
+}

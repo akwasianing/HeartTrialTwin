@@ -1,0 +1,49 @@
+{
+  "answer": "ABSTAIN: Retrieval, evidence preparation or generation failed safely; inspect local configuration and source coverage No unsupported answer is published.",
+  "answer_origin": null,
+  "dataset_version": "HTT-P1-AACT-20260905",
+  "elapsed_seconds": 0.0010483280020707753,
+  "errors": [
+    "Retrieval, evidence preparation or generation failed safely; inspect local configuration and source coverage"
+  ],
+  "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+  "independent_live_audit": {
+    "checked_fact_count": 0,
+    "checked_facts": [],
+    "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+    "method": "Exact catalog/fact/record equality, trial-specific citation bindings and live prepared-evidence round-trip; not clinical equivalence validation"
+  },
+  "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+  "notice": "Experimental registered-association retrieval, not clinical advice. Similarity proposes candidates; it does not verify ownership of the query measure or clinical effectiveness.",
+  "question": "What planned outcomes were registered for NCT00206232?",
+  "ranking": null,
+  "route": {
+    "ids": [
+      "NCT00206232"
+    ],
+    "mode": "EXACT_NCT",
+    "relevance": {
+      "classification": "CLASSIFIED",
+      "limitations": "Only declared single-field templates; not general semantic relevance, clinical interpretation or full answer sufficiency",
+      "method": "Anchored whole-question templates; casefold and whitespace normalization; field and NCT checks",
+      "permitted_fields": [
+        "planned outcome measure"
+      ],
+      "requested_nct_ids": [
+        "NCT00206232"
+      ],
+      "rule_id": "FIELD_REGISTERED_FOR",
+      "version": "HTT-FULL-QUESTION-FIELD-RULES-v1"
+    }
+  },
+  "schema_version": "HTT-MINILM-GRAPHRAG-v1",
+  "snapshot_date": "2026-09-05",
+  "started_utc": "2026-10-24T22:30:43.396874+00:00",
+  "status": "ABSTAIN",
+  "trial_results": [],
+  "validation": {
+    "semantic_association_confirmed": false,
+    "source_grounding_passed": false
+  },
+  "validation_execution_type": "FAULT_INJECTION"
+}

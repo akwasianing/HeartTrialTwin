@@ -1,0 +1,42 @@
+{
+  "actual_status": "ABSTAIN",
+  "checked_fact_count": 0,
+  "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+  "elapsed_seconds": 1.3884013269998832,
+  "errors": [
+    "Verified evidence is unavailable or insufficient: MISSING_SOURCE_RECORDS"
+  ],
+  "evidence_counts": {
+    "NCT00000475": 9
+  },
+  "execution_type": "LIVE_SERVICES",
+  "expected_status": "ABSTAIN",
+  "id": "09_missing_evidence",
+  "model_attempts": 0,
+  "question": "What planned outcomes were registered for NCT00000475?",
+  "result": "PASS",
+  "retrieval_method": "EXACT_NCT",
+  "retrieved_trial_ids": [
+    "NCT00000475"
+  ],
+  "source_completeness": {
+    "NCT00000475": {
+      "complete_evidence": false,
+      "missing_source_records": [
+        {
+          "categories": [
+            "planned_outcomes"
+          ],
+          "nct_id": "NCT00000475"
+        }
+      ],
+      "not_found_nct_ids": [],
+      "optional_blank_fields_preserved": true,
+      "pagination_limited": false,
+      "prepared_all_supplied_evidence": true,
+      "retrieval_scope_complete": true,
+      "source_categories_complete": false
+    }
+  },
+  "trace_file": "09_missing_evidence.json"
+}

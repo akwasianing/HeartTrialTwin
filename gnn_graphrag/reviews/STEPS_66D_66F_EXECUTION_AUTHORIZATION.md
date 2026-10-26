@@ -1,0 +1,19 @@
+# Steps 66D–66F — external execution authorization and prespecified experiment
+
+The project owner explicitly authorized MiniLM features, supervised GraphSAGE training and baseline evaluation through the conversation request **“HeartTrialTwin — Steps 66D–66F: Generate Features, Train and Evaluate GraphSAGE”**, recorded October 24, 2026. This records that instruction, not an invented signature or independent scientific endorsement.
+
+Approval binds to Version 2 manifest SHA-256 `b13d662390b687b62a08cc1fb81bd3413f2c9d1fbb3b6ec86438b1a6854cd95b` and the existing [freeze approval](STEP_66C_3U_V2_FREEZE_APPROVAL.md). It authorizes the [MiniLM specification](STEP_66D_1_MINILM_FEATURE_SPECIFICATION.md), a separate gated execution path, and the [prespecified configuration](../experiments/HTT-GNN-ASSOC-RUN-v1/experiment_config.json). Original protocol status, `training_permitted=False`, default loader and all partitions remain untouched. A separate loader will independently enforce all original validation/isolation rules; training must never call the audit-only loader as a permission bypass.
+
+## Prespecification before any new performance evaluation
+
+One seed (20261023), one configuration, no hyperparameter search. Mean GraphSAGE 390→128→64, ReLU after each layer, linear query projection 384→64, cosine scoring. CPU, one thread, fixed MiniLM revision and 256-token limit. Six context type slots are retained, last two inactive. No target edges/reverses or provenance-hub messages. The model is not a clinical predictor or an unseen-trial inductive system.
+
+Adam, learning rate 0.001, weight decay 0.0001; 80 maximum epochs, one full masked-graph update per epoch; gradient clipping at norm 1. Multi-positive sampled-softmax probability-mass loss, equal normalized-query weighting, temperature 0.1. Per query sample 64 uniform training-only candidates without replacement, using seed+epoch. Exclude every known training positive plus the protocol's family/near-query ambiguities; no held-out truth consulted. Unlinked is not confirmed clinically irrelevant. The hard-negative fraction is zero for this bounded first experiment, not an undeclared mixture.
+
+Evaluate validation MRR initially and every five epochs; initial untrained state is eligible. Improvement must exceed 0.0001; patience five evaluations, ties retain earlier checkpoint. This is an optimization stopping rule, not a clinical release threshold. No selection using test. Save selected checkpoint and selection record before opening test-query features or test truth. Test evaluation is one immutable bundle for all five prespecified methods; never tune after it.
+
+Baselines: training-fitted TF-IDF (training trial texts plus training queries, word unigrams/bigrams, sublinear TF), frozen MiniLM cosine, fixed 50/50 self/mean-nontarget-neighbor semantic pooling, and the identical seeded untrained GraphSAGE/query projection. All methods rank the same 2,824 sorted candidates. Report Recall/Hit@1/5/10, MRR, coverage, query/trial/family aggregates, single/multi-owner strata, latency and paired 1,000-replicate family-cluster bootstrap MRR uncertainty. Describe remaining shared-context dependence and embargo population bias.
+
+Features use approved text only, offline CPU float32, batches of 16, repeat-byte checks and no overwriting. Validation/test query encoding is a separate measure-only path. Optimization receives only training labels; validation/test truth is opened by evaluation functions only. Checkpoints bind code, config, external authorization, protocol, features and mask hashes. These API controls are not OS sandboxing.
+
+This authorization supersedes the earlier pending feature/training gates for this bounded execution only. It does not reclassify any of the 62 unresolved family pairs, alter embargoes, approve clinical claims, or authorize Neo4j/GraphRAG changes. Any implementation/runtime failure is reported rather than hidden by model/split changes.

@@ -1,0 +1,2104 @@
+{
+  "answer": "ABSTAIN: Verified evidence is unavailable or insufficient: MISSING_SOURCE_RECORDS No unsupported answer is published.",
+  "answer_origin": null,
+  "dataset_version": "HTT-P1-AACT-20260905",
+  "elapsed_seconds": 1.3811498519971792,
+  "errors": [
+    "Verified evidence is unavailable or insufficient: MISSING_SOURCE_RECORDS"
+  ],
+  "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+  "independent_live_audit": {
+    "checked_fact_count": 0,
+    "checked_facts": [],
+    "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+    "method": "Exact catalog/fact/record equality, trial-specific citation bindings and live prepared-evidence round-trip; not clinical equivalence validation"
+  },
+  "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+  "notice": "Experimental registered-association retrieval, not clinical advice. Similarity proposes candidates; it does not verify ownership of the query measure or clinical effectiveness.",
+  "question": "What planned outcomes were registered for NCT00000475?",
+  "ranking": null,
+  "route": {
+    "ids": [
+      "NCT00000475"
+    ],
+    "mode": "EXACT_NCT",
+    "relevance": {
+      "classification": "CLASSIFIED",
+      "limitations": "Only declared single-field templates; not general semantic relevance, clinical interpretation or full answer sufficiency",
+      "method": "Anchored whole-question templates; casefold and whitespace normalization; field and NCT checks",
+      "permitted_fields": [
+        "planned outcome measure"
+      ],
+      "requested_nct_ids": [
+        "NCT00000475"
+      ],
+      "rule_id": "FIELD_REGISTERED_FOR",
+      "version": "HTT-FULL-QUESTION-FIELD-RULES-v1"
+    }
+  },
+  "schema_version": "HTT-MINILM-GRAPHRAG-v1",
+  "snapshot_date": "2026-09-05",
+  "started_utc": "2026-10-24T22:30:41.866033+00:00",
+  "status": "ABSTAIN",
+  "trial_results": [
+    {
+      "answer_trace": {
+        "answer": "ABSTAIN: The supplied evidence has missing source categories. Verified evidence is retained separately.",
+        "answer_origin": "DETERMINISTIC_VERIFIED_EVIDENCE",
+        "completed_utc": "2026-10-24T22:30:43.244571+00:00",
+        "dataset_version": "HTT-P1-AACT-20260905",
+        "deterministic_evidence_summary": "Verified retrieval evidence — deterministic summary, not an LLM answer.\nDataset: HTT-P1-AACT-20260905; graph: HTT-KG-AACT-20260905-FULL2824-v1; snapshot: 2026-09-05.\nRegistered planned outcomes are not observed clinical results.\nSeptember 5, 2026 snapshot values may include amendments; original-registration availability is not asserted.\nWorkflow: trial_profile; pagination-limited: False; response records/trials: 9/9.\nNCT00000475: title=\"Prevention of Early Readmission in Elderly Congestive Heart Failure Patients\"; study_type=\"INTERVENTIONAL\"; phase=\"PHASE2\". [cite:ffedbca9ba3b1dce14a9eafa]\n  browse_conditions: 3 supplied / 3 linked records.\n    Registered name=\"Heart Failure\"; source_kind=\"browse\"; sources=browse_conditions.txt#1632322742. [cite:7724afa76ee7d86402567f77]\n    Registered name=\"Cardiovascular Diseases\"; source_kind=\"browse\"; sources=browse_conditions.txt#1632322740. [cite:01b6dbf7461b76f3c0af9935]\n    Registered name=\"Heart Diseases\"; source_kind=\"browse\"; sources=browse_conditions.txt#1632322741. [cite:5db413a45ecc51bc3126facc]\n  interventions: 1 supplied / 1 linked records.\n    Registered name=\"health education\"; intervention_type=\"BEHAVIORAL\"; sources=interventions.txt#392802793. [cite:d503711da2e73d289b2a65b3]\n  planned_outcomes: 0 supplied / 0 linked records.\n    No linked record found in the pinned graph; not proof the information never existed.\n  submitted_conditions: 4 supplied / 4 linked records.\n    Registered name=\"Cardiovascular Diseases\"; source_kind=\"submitted\"; sources=conditions.txt#410019880. [cite:170853f697a40783c85c02e3]\n    Registered name=\"Heart Diseases\"; source_kind=\"submitted\"; sources=conditions.txt#410019881. [cite:b08fb7c4a0e919f434c5b8c6]\n    Registered name=\"Heart Failure\"; source_kind=\"submitted\"; sources=conditions.txt#410019883. [cite:0006b00535655f375456fb48]\n    Registered name=\"Heart Failure, Congestive\"; source_kind=\"submitted\"; sources=conditions.txt#410019882. [cite:1bb1384446adf35b1f5e29a3]\n  lead_sponsors: 1 supplied / 1 linked records.\n    Registered name=\"National Heart, Lung, and Blood Institute (NHLBI)\"; agency_class=\"NIH\"; sources=sponsors.txt#382114543. [cite:4bf696fb1697d8dfe13d914b]\n",
+        "generation": {
+          "actual_model": null,
+          "attempts": 0,
+          "eval_count": null,
+          "latency_ms": null,
+          "maximum_attempts": 0,
+          "prompt_eval_count": null,
+          "provider": null,
+          "requested_model": null
+        },
+        "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+        "limits": {
+          "max_answer_bytes": 50000,
+          "max_outcomes": 200,
+          "required_answer_bytes": null
+        },
+        "listed_outcomes": [],
+        "listing_policy_version": "HTT-FULL-COMPLETE-OUTCOME-LISTING-v1",
+        "model_generated": false,
+        "prepared_evidence_sha256": "edab389c1cee964a1356757f411ffc00b644bfbea88e0da0cb8f1b056727a0cc",
+        "question": "What planned outcomes were registered for NCT00000475?",
+        "raw_model_output": null,
+        "safeguards": [
+          "Registered planned outcomes are not observed clinical results.",
+          "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted."
+        ],
+        "schema_version": "HTT-FULL-DETERMINISTIC-OUTCOMES-v1",
+        "scope": {
+          "pagination": {
+            "all_evidence_returned": true,
+            "has_more": false,
+            "limit": 200,
+            "next_offset": null,
+            "offset": 0,
+            "returned": 9,
+            "total": 9
+          },
+          "pagination_unit": "evidence_paths",
+          "selected_nct_ids": [
+            "NCT00000475"
+          ]
+        },
+        "snapshot_date": "2026-09-05",
+        "source_references": [
+          {
+            "citation_id": "cite:0006b00535655f375456fb48",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:629e3a1901f0194c01ec",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "410019883",
+                "source_table": "conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "410019883",
+            "source_table": "conditions.txt"
+          },
+          {
+            "citation_id": "cite:01b6dbf7461b76f3c0af9935",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:6414c5b8adecc13a3786",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "1632322740",
+                "source_table": "browse_conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_BROWSE_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1632322740",
+            "source_table": "browse_conditions.txt"
+          },
+          {
+            "citation_id": "cite:170853f697a40783c85c02e3",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:2927f7658bcfd780d089",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:2927f7658bcfd780d089",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "410019880",
+                "source_table": "conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "410019880",
+            "source_table": "conditions.txt"
+          },
+          {
+            "citation_id": "cite:1bb1384446adf35b1f5e29a3",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:db7e3ce62d7cde0008d6",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:db7e3ce62d7cde0008d6",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "410019882",
+                "source_table": "conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "410019882",
+            "source_table": "conditions.txt"
+          },
+          {
+            "citation_id": "cite:4bf696fb1697d8dfe13d914b",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|LEAD_SPONSORED_BY|sponsor:cffb26aa0577fbefc573",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "sponsor:cffb26aa0577fbefc573",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "382114543",
+                "source_table": "sponsors.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "LEAD_SPONSORED_BY"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "382114543",
+            "source_table": "sponsors.txt"
+          },
+          {
+            "citation_id": "cite:5db413a45ecc51bc3126facc",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:76106621b8d52df0409b",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "1632322741",
+                "source_table": "browse_conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_BROWSE_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1632322741",
+            "source_table": "browse_conditions.txt"
+          },
+          {
+            "citation_id": "cite:7724afa76ee7d86402567f77",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:220601b84d713b61467c",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "1632322742",
+                "source_table": "browse_conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_BROWSE_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1632322742",
+            "source_table": "browse_conditions.txt"
+          },
+          {
+            "citation_id": "cite:b08fb7c4a0e919f434c5b8c6",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:44791bddffac03ac87a9",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:44791bddffac03ac87a9",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "410019881",
+                "source_table": "conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "410019881",
+            "source_table": "conditions.txt"
+          },
+          {
+            "citation_id": "cite:d503711da2e73d289b2a65b3",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_INTERVENTION|intervention:cf32865d9378e5f3595c",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "intervention:cf32865d9378e5f3595c",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392802793",
+                "source_table": "interventions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_INTERVENTION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "392802793",
+            "source_table": "interventions.txt"
+          },
+          {
+            "citation_id": "cite:ffedbca9ba3b1dce14a9eafa",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": null,
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "HTT-P1-AACT-20260905",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "start_id": "NCT00000475",
+              "type": "MEMBER_OF_DATASET"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "NCT00000475",
+            "source_table": "studies.txt"
+          }
+        ],
+        "started_utc": "2026-10-24T22:30:43.239958+00:00",
+        "status": "ABSTAIN",
+        "summary_sha256": "bcd2cec7ee4cfe6d78bd94833932c1394bbf15f2819dd46ae944050001b5a400",
+        "total_latency_ms": 7.189,
+        "validation": {
+          "citation_ids": [],
+          "complete_source_set": false,
+          "errors": [
+            "MISSING_SOURCE_RECORDS"
+          ],
+          "expected_evidence_ids": [],
+          "listed_evidence_ids": [],
+          "listed_fact_ids": [],
+          "passed": false,
+          "relevance": {
+            "classification": "CLASSIFIED",
+            "general_semantic_relevance_checked": false,
+            "limitations": "Only declared single-field templates; not general semantic relevance, clinical interpretation or full answer sufficiency",
+            "method": "Anchored whole-question templates; casefold and whitespace normalization; field and NCT checks",
+            "permitted_fields": [
+              "planned outcome measure"
+            ],
+            "requested_nct_ids": [
+              "NCT00000475"
+            ],
+            "rule_id": "FIELD_REGISTERED_FOR",
+            "status": "NOT_ESTABLISHED",
+            "version": "HTT-FULL-QUESTION-FIELD-RULES-v1"
+          }
+        },
+        "verified_evidence": {
+          "citations": [
+            {
+              "citation_id": "cite:0006b00535655f375456fb48",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00000475",
+              "relationship": {
+                "end_id": "condition:629e3a1901f0194c01ec",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "410019883",
+                  "source_table": "conditions.txt"
+                },
+                "start_id": "NCT00000475",
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "410019883",
+              "source_table": "conditions.txt"
+            },
+            {
+              "citation_id": "cite:01b6dbf7461b76f3c0af9935",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00000475",
+              "relationship": {
+                "end_id": "condition:6414c5b8adecc13a3786",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1632322740",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00000475",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1632322740",
+              "source_table": "browse_conditions.txt"
+            },
+            {
+              "citation_id": "cite:170853f697a40783c85c02e3",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:2927f7658bcfd780d089",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00000475",
+              "relationship": {
+                "end_id": "condition:2927f7658bcfd780d089",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "410019880",
+                  "source_table": "conditions.txt"
+                },
+                "start_id": "NCT00000475",
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "410019880",
+              "source_table": "conditions.txt"
+            },
+            {
+              "citation_id": "cite:1bb1384446adf35b1f5e29a3",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:db7e3ce62d7cde0008d6",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00000475",
+              "relationship": {
+                "end_id": "condition:db7e3ce62d7cde0008d6",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "410019882",
+                  "source_table": "conditions.txt"
+                },
+                "start_id": "NCT00000475",
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "410019882",
+              "source_table": "conditions.txt"
+            },
+            {
+              "citation_id": "cite:4bf696fb1697d8dfe13d914b",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00000475|LEAD_SPONSORED_BY|sponsor:cffb26aa0577fbefc573",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00000475",
+              "relationship": {
+                "end_id": "sponsor:cffb26aa0577fbefc573",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "382114543",
+                  "source_table": "sponsors.txt"
+                },
+                "start_id": "NCT00000475",
+                "type": "LEAD_SPONSORED_BY"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "382114543",
+              "source_table": "sponsors.txt"
+            },
+            {
+              "citation_id": "cite:5db413a45ecc51bc3126facc",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00000475",
+              "relationship": {
+                "end_id": "condition:76106621b8d52df0409b",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1632322741",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00000475",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1632322741",
+              "source_table": "browse_conditions.txt"
+            },
+            {
+              "citation_id": "cite:7724afa76ee7d86402567f77",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00000475",
+              "relationship": {
+                "end_id": "condition:220601b84d713b61467c",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1632322742",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00000475",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1632322742",
+              "source_table": "browse_conditions.txt"
+            },
+            {
+              "citation_id": "cite:b08fb7c4a0e919f434c5b8c6",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:44791bddffac03ac87a9",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00000475",
+              "relationship": {
+                "end_id": "condition:44791bddffac03ac87a9",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "410019881",
+                  "source_table": "conditions.txt"
+                },
+                "start_id": "NCT00000475",
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "410019881",
+              "source_table": "conditions.txt"
+            },
+            {
+              "citation_id": "cite:d503711da2e73d289b2a65b3",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00000475|HAS_INTERVENTION|intervention:cf32865d9378e5f3595c",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00000475",
+              "relationship": {
+                "end_id": "intervention:cf32865d9378e5f3595c",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392802793",
+                  "source_table": "interventions.txt"
+                },
+                "start_id": "NCT00000475",
+                "type": "HAS_INTERVENTION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "392802793",
+              "source_table": "interventions.txt"
+            },
+            {
+              "citation_id": "cite:ffedbca9ba3b1dce14a9eafa",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": null,
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00000475",
+              "relationship": {
+                "end_id": "HTT-P1-AACT-20260905",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "start_id": "NCT00000475",
+                "type": "MEMBER_OF_DATASET"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "NCT00000475",
+              "source_table": "studies.txt"
+            }
+          ],
+          "completeness": {
+            "complete_evidence": false,
+            "missing_source_records": [
+              {
+                "categories": [
+                  "planned_outcomes"
+                ],
+                "nct_id": "NCT00000475"
+              }
+            ],
+            "not_found_nct_ids": [],
+            "optional_blank_fields_preserved": true,
+            "pagination_limited": false,
+            "prepared_all_supplied_evidence": true,
+            "retrieval_scope_complete": true,
+            "source_categories_complete": false
+          },
+          "dataset_version": "HTT-P1-AACT-20260905",
+          "evidence_record_count": 9,
+          "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+          "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+          "no_llm_answer": true,
+          "retrieval_status": "PARTIAL",
+          "safeguards": {
+            "no_answer_generation": true,
+            "planned_outcomes": "Registered planned outcomes are not observed clinical results.",
+            "read_only": true,
+            "snapshot": "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted."
+          },
+          "schema_version": "HTT-FULL-EVIDENCE-PREPARATION-v1",
+          "scope": {
+            "pagination": {
+              "all_evidence_returned": true,
+              "has_more": false,
+              "limit": 200,
+              "next_offset": null,
+              "offset": 0,
+              "returned": 9,
+              "total": 9
+            },
+            "pagination_unit": "evidence_paths",
+            "selected_nct_ids": [
+              "NCT00000475"
+            ]
+          },
+          "snapshot_date": "2026-09-05",
+          "source_dataset": {
+            "archive_md5": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_sha256": "215365a46dd8119ef4bdee62cd11a08910c9be0855edf246b92f31cdcc2d1023",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "summary": "Verified retrieval evidence — deterministic summary, not an LLM answer.\nDataset: HTT-P1-AACT-20260905; graph: HTT-KG-AACT-20260905-FULL2824-v1; snapshot: 2026-09-05.\nRegistered planned outcomes are not observed clinical results.\nSeptember 5, 2026 snapshot values may include amendments; original-registration availability is not asserted.\nWorkflow: trial_profile; pagination-limited: False; response records/trials: 9/9.\nNCT00000475: title=\"Prevention of Early Readmission in Elderly Congestive Heart Failure Patients\"; study_type=\"INTERVENTIONAL\"; phase=\"PHASE2\". [cite:ffedbca9ba3b1dce14a9eafa]\n  browse_conditions: 3 supplied / 3 linked records.\n    Registered name=\"Heart Failure\"; source_kind=\"browse\"; sources=browse_conditions.txt#1632322742. [cite:7724afa76ee7d86402567f77]\n    Registered name=\"Cardiovascular Diseases\"; source_kind=\"browse\"; sources=browse_conditions.txt#1632322740. [cite:01b6dbf7461b76f3c0af9935]\n    Registered name=\"Heart Diseases\"; source_kind=\"browse\"; sources=browse_conditions.txt#1632322741. [cite:5db413a45ecc51bc3126facc]\n  interventions: 1 supplied / 1 linked records.\n    Registered name=\"health education\"; intervention_type=\"BEHAVIORAL\"; sources=interventions.txt#392802793. [cite:d503711da2e73d289b2a65b3]\n  planned_outcomes: 0 supplied / 0 linked records.\n    No linked record found in the pinned graph; not proof the information never existed.\n  submitted_conditions: 4 supplied / 4 linked records.\n    Registered name=\"Cardiovascular Diseases\"; source_kind=\"submitted\"; sources=conditions.txt#410019880. [cite:170853f697a40783c85c02e3]\n    Registered name=\"Heart Diseases\"; source_kind=\"submitted\"; sources=conditions.txt#410019881. [cite:b08fb7c4a0e919f434c5b8c6]\n    Registered name=\"Heart Failure\"; source_kind=\"submitted\"; sources=conditions.txt#410019883. [cite:0006b00535655f375456fb48]\n    Registered name=\"Heart Failure, Congestive\"; source_kind=\"submitted\"; sources=conditions.txt#410019882. [cite:1bb1384446adf35b1f5e29a3]\n  lead_sponsors: 1 supplied / 1 linked records.\n    Registered name=\"National Heart, Lung, and Blood Institute (NHLBI)\"; agency_class=\"NIH\"; sources=sponsors.txt#382114543. [cite:4bf696fb1697d8dfe13d914b]\n",
+          "summary_field_policy": "Registered names/types; planned measures, outcome types and time frames. All supplied approved properties remain structured; descriptions/population are not repeated in prose.",
+          "summary_sha256": "bcd2cec7ee4cfe6d78bd94833932c1394bbf15f2819dd46ae944050001b5a400",
+          "trials": [
+            {
+              "categories": {
+                "browse_conditions": [
+                  {
+                    "absent_fields": [],
+                    "category": "browse_conditions",
+                    "citation_ids": [
+                      "cite:7724afa76ee7d86402567f77"
+                    ],
+                    "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+                    "missing_fields": [],
+                    "nct_id": "NCT00000475",
+                    "node_id": "condition:220601b84d713b61467c",
+                    "node_label": "ConditionTerm",
+                    "properties": {
+                      "condition_id": "condition:220601b84d713b61467c",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Heart Failure",
+                      "normalized_name": "heart failure",
+                      "source_kind": "browse",
+                      "source_table": "browse_conditions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "condition:220601b84d713b61467c",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "1632322742",
+                        "source_table": "browse_conditions.txt"
+                      },
+                      "start_id": "NCT00000475",
+                      "type": "HAS_BROWSE_CONDITION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00000475",
+                        "source_record_id": "1632322742",
+                        "source_table": "browse_conditions.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "browse_conditions",
+                    "citation_ids": [
+                      "cite:01b6dbf7461b76f3c0af9935"
+                    ],
+                    "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+                    "missing_fields": [],
+                    "nct_id": "NCT00000475",
+                    "node_id": "condition:6414c5b8adecc13a3786",
+                    "node_label": "ConditionTerm",
+                    "properties": {
+                      "condition_id": "condition:6414c5b8adecc13a3786",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Cardiovascular Diseases",
+                      "normalized_name": "cardiovascular diseases",
+                      "source_kind": "browse",
+                      "source_table": "browse_conditions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "condition:6414c5b8adecc13a3786",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "1632322740",
+                        "source_table": "browse_conditions.txt"
+                      },
+                      "start_id": "NCT00000475",
+                      "type": "HAS_BROWSE_CONDITION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00000475",
+                        "source_record_id": "1632322740",
+                        "source_table": "browse_conditions.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "browse_conditions",
+                    "citation_ids": [
+                      "cite:5db413a45ecc51bc3126facc"
+                    ],
+                    "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+                    "missing_fields": [],
+                    "nct_id": "NCT00000475",
+                    "node_id": "condition:76106621b8d52df0409b",
+                    "node_label": "ConditionTerm",
+                    "properties": {
+                      "condition_id": "condition:76106621b8d52df0409b",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Heart Diseases",
+                      "normalized_name": "heart diseases",
+                      "source_kind": "browse",
+                      "source_table": "browse_conditions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "condition:76106621b8d52df0409b",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "1632322741",
+                        "source_table": "browse_conditions.txt"
+                      },
+                      "start_id": "NCT00000475",
+                      "type": "HAS_BROWSE_CONDITION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00000475",
+                        "source_record_id": "1632322741",
+                        "source_table": "browse_conditions.txt"
+                      }
+                    ]
+                  }
+                ],
+                "interventions": [
+                  {
+                    "absent_fields": [],
+                    "category": "interventions",
+                    "citation_ids": [
+                      "cite:d503711da2e73d289b2a65b3"
+                    ],
+                    "evidence_id": "NCT00000475|HAS_INTERVENTION|intervention:cf32865d9378e5f3595c",
+                    "missing_fields": [],
+                    "nct_id": "NCT00000475",
+                    "node_id": "intervention:cf32865d9378e5f3595c",
+                    "node_label": "Intervention",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "intervention_id": "intervention:cf32865d9378e5f3595c",
+                      "intervention_type": "BEHAVIORAL",
+                      "name": "health education",
+                      "normalized_name": "health education",
+                      "source_table": "interventions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "intervention:cf32865d9378e5f3595c",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "392802793",
+                        "source_table": "interventions.txt"
+                      },
+                      "start_id": "NCT00000475",
+                      "type": "HAS_INTERVENTION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00000475",
+                        "source_record_id": "392802793",
+                        "source_table": "interventions.txt"
+                      }
+                    ]
+                  }
+                ],
+                "lead_sponsors": [
+                  {
+                    "absent_fields": [],
+                    "category": "lead_sponsors",
+                    "citation_ids": [
+                      "cite:4bf696fb1697d8dfe13d914b"
+                    ],
+                    "evidence_id": "NCT00000475|LEAD_SPONSORED_BY|sponsor:cffb26aa0577fbefc573",
+                    "missing_fields": [],
+                    "nct_id": "NCT00000475",
+                    "node_id": "sponsor:cffb26aa0577fbefc573",
+                    "node_label": "Sponsor",
+                    "properties": {
+                      "agency_class": "NIH",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "National Heart, Lung, and Blood Institute (NHLBI)",
+                      "normalized_name": "national heart, lung, and blood institute (nhlbi)",
+                      "source_table": "sponsors.txt",
+                      "sponsor_id": "sponsor:cffb26aa0577fbefc573"
+                    },
+                    "relationship": {
+                      "end_id": "sponsor:cffb26aa0577fbefc573",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "382114543",
+                        "source_table": "sponsors.txt"
+                      },
+                      "start_id": "NCT00000475",
+                      "type": "LEAD_SPONSORED_BY"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00000475",
+                        "source_record_id": "382114543",
+                        "source_table": "sponsors.txt"
+                      }
+                    ]
+                  }
+                ],
+                "planned_outcomes": [],
+                "submitted_conditions": [
+                  {
+                    "absent_fields": [],
+                    "category": "submitted_conditions",
+                    "citation_ids": [
+                      "cite:170853f697a40783c85c02e3"
+                    ],
+                    "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:2927f7658bcfd780d089",
+                    "missing_fields": [],
+                    "nct_id": "NCT00000475",
+                    "node_id": "condition:2927f7658bcfd780d089",
+                    "node_label": "ConditionTerm",
+                    "properties": {
+                      "condition_id": "condition:2927f7658bcfd780d089",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Cardiovascular Diseases",
+                      "normalized_name": "cardiovascular diseases",
+                      "source_kind": "submitted",
+                      "source_table": "conditions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "condition:2927f7658bcfd780d089",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "410019880",
+                        "source_table": "conditions.txt"
+                      },
+                      "start_id": "NCT00000475",
+                      "type": "HAS_SUBMITTED_CONDITION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00000475",
+                        "source_record_id": "410019880",
+                        "source_table": "conditions.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "submitted_conditions",
+                    "citation_ids": [
+                      "cite:b08fb7c4a0e919f434c5b8c6"
+                    ],
+                    "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:44791bddffac03ac87a9",
+                    "missing_fields": [],
+                    "nct_id": "NCT00000475",
+                    "node_id": "condition:44791bddffac03ac87a9",
+                    "node_label": "ConditionTerm",
+                    "properties": {
+                      "condition_id": "condition:44791bddffac03ac87a9",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Heart Diseases",
+                      "normalized_name": "heart diseases",
+                      "source_kind": "submitted",
+                      "source_table": "conditions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "condition:44791bddffac03ac87a9",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "410019881",
+                        "source_table": "conditions.txt"
+                      },
+                      "start_id": "NCT00000475",
+                      "type": "HAS_SUBMITTED_CONDITION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00000475",
+                        "source_record_id": "410019881",
+                        "source_table": "conditions.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "submitted_conditions",
+                    "citation_ids": [
+                      "cite:0006b00535655f375456fb48"
+                    ],
+                    "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+                    "missing_fields": [],
+                    "nct_id": "NCT00000475",
+                    "node_id": "condition:629e3a1901f0194c01ec",
+                    "node_label": "ConditionTerm",
+                    "properties": {
+                      "condition_id": "condition:629e3a1901f0194c01ec",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Heart Failure",
+                      "normalized_name": "heart failure",
+                      "source_kind": "submitted",
+                      "source_table": "conditions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "condition:629e3a1901f0194c01ec",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "410019883",
+                        "source_table": "conditions.txt"
+                      },
+                      "start_id": "NCT00000475",
+                      "type": "HAS_SUBMITTED_CONDITION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00000475",
+                        "source_record_id": "410019883",
+                        "source_table": "conditions.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "submitted_conditions",
+                    "citation_ids": [
+                      "cite:1bb1384446adf35b1f5e29a3"
+                    ],
+                    "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:db7e3ce62d7cde0008d6",
+                    "missing_fields": [],
+                    "nct_id": "NCT00000475",
+                    "node_id": "condition:db7e3ce62d7cde0008d6",
+                    "node_label": "ConditionTerm",
+                    "properties": {
+                      "condition_id": "condition:db7e3ce62d7cde0008d6",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Heart Failure, Congestive",
+                      "normalized_name": "heart failure, congestive",
+                      "source_kind": "submitted",
+                      "source_table": "conditions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "condition:db7e3ce62d7cde0008d6",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "410019882",
+                        "source_table": "conditions.txt"
+                      },
+                      "start_id": "NCT00000475",
+                      "type": "HAS_SUBMITTED_CONDITION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00000475",
+                        "source_record_id": "410019882",
+                        "source_table": "conditions.txt"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "coverage": {
+                "browse_conditions": {
+                  "all_evidence_returned": true,
+                  "returned": 3,
+                  "source_status": "AVAILABLE",
+                  "total": 3
+                },
+                "interventions": {
+                  "all_evidence_returned": true,
+                  "returned": 1,
+                  "source_status": "AVAILABLE",
+                  "total": 1
+                },
+                "lead_sponsors": {
+                  "all_evidence_returned": true,
+                  "returned": 1,
+                  "source_status": "AVAILABLE",
+                  "total": 1
+                },
+                "planned_outcomes": {
+                  "all_evidence_returned": true,
+                  "returned": 0,
+                  "source_status": "NO_LINKED_RECORD_IN_PINNED_GRAPH",
+                  "total": 0
+                },
+                "submitted_conditions": {
+                  "all_evidence_returned": true,
+                  "returned": 4,
+                  "source_status": "AVAILABLE",
+                  "total": 4
+                }
+              },
+              "dataset_relationship": {
+                "end_id": "HTT-P1-AACT-20260905",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "start_id": "NCT00000475",
+                "type": "MEMBER_OF_DATASET"
+              },
+              "nct_id": "NCT00000475",
+              "retrieval_status": "PARTIAL",
+              "state": {
+                "available_record_count": 9,
+                "missing_source_categories": [
+                  "planned_outcomes"
+                ],
+                "not_found": false,
+                "pagination_limited": false,
+                "prepared_record_count": 9
+              },
+              "trial": {
+                "brief_title": "Prevention of Early Readmission in Elderly Congestive Heart Failure Patients",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "nct_id": "NCT00000475",
+                "phase": "PHASE2",
+                "source_evidence_status": "PRESENT",
+                "source_record_id": "NCT00000475",
+                "source_table": "studies.txt",
+                "study_type": "INTERVENTIONAL",
+                "trial_id": "NCT00000475"
+              },
+              "trial_citation_ids": [
+                "cite:ffedbca9ba3b1dce14a9eafa"
+              ]
+            }
+          ],
+          "workflow": "trial_profile"
+        }
+      },
+      "evidence_question": "What planned outcomes were registered for NCT00000475?",
+      "evidence_question_is_derived": false,
+      "nct_id": "NCT00000475",
+      "prepared_evidence": {
+        "citations": [
+          {
+            "citation_id": "cite:0006b00535655f375456fb48",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:629e3a1901f0194c01ec",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "410019883",
+                "source_table": "conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "410019883",
+            "source_table": "conditions.txt"
+          },
+          {
+            "citation_id": "cite:01b6dbf7461b76f3c0af9935",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:6414c5b8adecc13a3786",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "1632322740",
+                "source_table": "browse_conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_BROWSE_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1632322740",
+            "source_table": "browse_conditions.txt"
+          },
+          {
+            "citation_id": "cite:170853f697a40783c85c02e3",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:2927f7658bcfd780d089",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:2927f7658bcfd780d089",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "410019880",
+                "source_table": "conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "410019880",
+            "source_table": "conditions.txt"
+          },
+          {
+            "citation_id": "cite:1bb1384446adf35b1f5e29a3",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:db7e3ce62d7cde0008d6",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:db7e3ce62d7cde0008d6",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "410019882",
+                "source_table": "conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "410019882",
+            "source_table": "conditions.txt"
+          },
+          {
+            "citation_id": "cite:4bf696fb1697d8dfe13d914b",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|LEAD_SPONSORED_BY|sponsor:cffb26aa0577fbefc573",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "sponsor:cffb26aa0577fbefc573",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "382114543",
+                "source_table": "sponsors.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "LEAD_SPONSORED_BY"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "382114543",
+            "source_table": "sponsors.txt"
+          },
+          {
+            "citation_id": "cite:5db413a45ecc51bc3126facc",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:76106621b8d52df0409b",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "1632322741",
+                "source_table": "browse_conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_BROWSE_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1632322741",
+            "source_table": "browse_conditions.txt"
+          },
+          {
+            "citation_id": "cite:7724afa76ee7d86402567f77",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:220601b84d713b61467c",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "1632322742",
+                "source_table": "browse_conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_BROWSE_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1632322742",
+            "source_table": "browse_conditions.txt"
+          },
+          {
+            "citation_id": "cite:b08fb7c4a0e919f434c5b8c6",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:44791bddffac03ac87a9",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "condition:44791bddffac03ac87a9",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "410019881",
+                "source_table": "conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "410019881",
+            "source_table": "conditions.txt"
+          },
+          {
+            "citation_id": "cite:d503711da2e73d289b2a65b3",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00000475|HAS_INTERVENTION|intervention:cf32865d9378e5f3595c",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "intervention:cf32865d9378e5f3595c",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392802793",
+                "source_table": "interventions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_INTERVENTION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "392802793",
+            "source_table": "interventions.txt"
+          },
+          {
+            "citation_id": "cite:ffedbca9ba3b1dce14a9eafa",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": null,
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00000475",
+            "relationship": {
+              "end_id": "HTT-P1-AACT-20260905",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "start_id": "NCT00000475",
+              "type": "MEMBER_OF_DATASET"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "NCT00000475",
+            "source_table": "studies.txt"
+          }
+        ],
+        "completeness": {
+          "complete_evidence": false,
+          "missing_source_records": [
+            {
+              "categories": [
+                "planned_outcomes"
+              ],
+              "nct_id": "NCT00000475"
+            }
+          ],
+          "not_found_nct_ids": [],
+          "optional_blank_fields_preserved": true,
+          "pagination_limited": false,
+          "prepared_all_supplied_evidence": true,
+          "retrieval_scope_complete": true,
+          "source_categories_complete": false
+        },
+        "dataset_version": "HTT-P1-AACT-20260905",
+        "evidence_record_count": 9,
+        "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+        "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+        "no_llm_answer": true,
+        "retrieval_status": "PARTIAL",
+        "safeguards": {
+          "no_answer_generation": true,
+          "planned_outcomes": "Registered planned outcomes are not observed clinical results.",
+          "read_only": true,
+          "snapshot": "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted."
+        },
+        "schema_version": "HTT-FULL-EVIDENCE-PREPARATION-v1",
+        "scope": {
+          "pagination": {
+            "all_evidence_returned": true,
+            "has_more": false,
+            "limit": 200,
+            "next_offset": null,
+            "offset": 0,
+            "returned": 9,
+            "total": 9
+          },
+          "pagination_unit": "evidence_paths",
+          "selected_nct_ids": [
+            "NCT00000475"
+          ]
+        },
+        "snapshot_date": "2026-09-05",
+        "source_dataset": {
+          "archive_md5": "99e62b3f8ae5838b36bc0c2277ad2714",
+          "archive_sha256": "215365a46dd8119ef4bdee62cd11a08910c9be0855edf246b92f31cdcc2d1023",
+          "dataset_version": "HTT-P1-AACT-20260905",
+          "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+          "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+          "snapshot_date": "2026-09-05",
+          "snapshot_file": "20260905_export_ctgov.zip",
+          "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+          "source_dataset_id": "HTT-P1-AACT-20260905"
+        },
+        "summary": "Verified retrieval evidence — deterministic summary, not an LLM answer.\nDataset: HTT-P1-AACT-20260905; graph: HTT-KG-AACT-20260905-FULL2824-v1; snapshot: 2026-09-05.\nRegistered planned outcomes are not observed clinical results.\nSeptember 5, 2026 snapshot values may include amendments; original-registration availability is not asserted.\nWorkflow: trial_profile; pagination-limited: False; response records/trials: 9/9.\nNCT00000475: title=\"Prevention of Early Readmission in Elderly Congestive Heart Failure Patients\"; study_type=\"INTERVENTIONAL\"; phase=\"PHASE2\". [cite:ffedbca9ba3b1dce14a9eafa]\n  browse_conditions: 3 supplied / 3 linked records.\n    Registered name=\"Heart Failure\"; source_kind=\"browse\"; sources=browse_conditions.txt#1632322742. [cite:7724afa76ee7d86402567f77]\n    Registered name=\"Cardiovascular Diseases\"; source_kind=\"browse\"; sources=browse_conditions.txt#1632322740. [cite:01b6dbf7461b76f3c0af9935]\n    Registered name=\"Heart Diseases\"; source_kind=\"browse\"; sources=browse_conditions.txt#1632322741. [cite:5db413a45ecc51bc3126facc]\n  interventions: 1 supplied / 1 linked records.\n    Registered name=\"health education\"; intervention_type=\"BEHAVIORAL\"; sources=interventions.txt#392802793. [cite:d503711da2e73d289b2a65b3]\n  planned_outcomes: 0 supplied / 0 linked records.\n    No linked record found in the pinned graph; not proof the information never existed.\n  submitted_conditions: 4 supplied / 4 linked records.\n    Registered name=\"Cardiovascular Diseases\"; source_kind=\"submitted\"; sources=conditions.txt#410019880. [cite:170853f697a40783c85c02e3]\n    Registered name=\"Heart Diseases\"; source_kind=\"submitted\"; sources=conditions.txt#410019881. [cite:b08fb7c4a0e919f434c5b8c6]\n    Registered name=\"Heart Failure\"; source_kind=\"submitted\"; sources=conditions.txt#410019883. [cite:0006b00535655f375456fb48]\n    Registered name=\"Heart Failure, Congestive\"; source_kind=\"submitted\"; sources=conditions.txt#410019882. [cite:1bb1384446adf35b1f5e29a3]\n  lead_sponsors: 1 supplied / 1 linked records.\n    Registered name=\"National Heart, Lung, and Blood Institute (NHLBI)\"; agency_class=\"NIH\"; sources=sponsors.txt#382114543. [cite:4bf696fb1697d8dfe13d914b]\n",
+        "summary_field_policy": "Registered names/types; planned measures, outcome types and time frames. All supplied approved properties remain structured; descriptions/population are not repeated in prose.",
+        "summary_sha256": "bcd2cec7ee4cfe6d78bd94833932c1394bbf15f2819dd46ae944050001b5a400",
+        "trials": [
+          {
+            "categories": {
+              "browse_conditions": [
+                {
+                  "absent_fields": [],
+                  "category": "browse_conditions",
+                  "citation_ids": [
+                    "cite:7724afa76ee7d86402567f77"
+                  ],
+                  "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+                  "missing_fields": [],
+                  "nct_id": "NCT00000475",
+                  "node_id": "condition:220601b84d713b61467c",
+                  "node_label": "ConditionTerm",
+                  "properties": {
+                    "condition_id": "condition:220601b84d713b61467c",
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "name": "Heart Failure",
+                    "normalized_name": "heart failure",
+                    "source_kind": "browse",
+                    "source_table": "browse_conditions.txt"
+                  },
+                  "relationship": {
+                    "end_id": "condition:220601b84d713b61467c",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "source_record_ids": "1632322742",
+                      "source_table": "browse_conditions.txt"
+                    },
+                    "start_id": "NCT00000475",
+                    "type": "HAS_BROWSE_CONDITION"
+                  },
+                  "source_references": [
+                    {
+                      "nct_id": "NCT00000475",
+                      "source_record_id": "1632322742",
+                      "source_table": "browse_conditions.txt"
+                    }
+                  ]
+                },
+                {
+                  "absent_fields": [],
+                  "category": "browse_conditions",
+                  "citation_ids": [
+                    "cite:01b6dbf7461b76f3c0af9935"
+                  ],
+                  "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+                  "missing_fields": [],
+                  "nct_id": "NCT00000475",
+                  "node_id": "condition:6414c5b8adecc13a3786",
+                  "node_label": "ConditionTerm",
+                  "properties": {
+                    "condition_id": "condition:6414c5b8adecc13a3786",
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "name": "Cardiovascular Diseases",
+                    "normalized_name": "cardiovascular diseases",
+                    "source_kind": "browse",
+                    "source_table": "browse_conditions.txt"
+                  },
+                  "relationship": {
+                    "end_id": "condition:6414c5b8adecc13a3786",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "source_record_ids": "1632322740",
+                      "source_table": "browse_conditions.txt"
+                    },
+                    "start_id": "NCT00000475",
+                    "type": "HAS_BROWSE_CONDITION"
+                  },
+                  "source_references": [
+                    {
+                      "nct_id": "NCT00000475",
+                      "source_record_id": "1632322740",
+                      "source_table": "browse_conditions.txt"
+                    }
+                  ]
+                },
+                {
+                  "absent_fields": [],
+                  "category": "browse_conditions",
+                  "citation_ids": [
+                    "cite:5db413a45ecc51bc3126facc"
+                  ],
+                  "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+                  "missing_fields": [],
+                  "nct_id": "NCT00000475",
+                  "node_id": "condition:76106621b8d52df0409b",
+                  "node_label": "ConditionTerm",
+                  "properties": {
+                    "condition_id": "condition:76106621b8d52df0409b",
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "name": "Heart Diseases",
+                    "normalized_name": "heart diseases",
+                    "source_kind": "browse",
+                    "source_table": "browse_conditions.txt"
+                  },
+                  "relationship": {
+                    "end_id": "condition:76106621b8d52df0409b",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "source_record_ids": "1632322741",
+                      "source_table": "browse_conditions.txt"
+                    },
+                    "start_id": "NCT00000475",
+                    "type": "HAS_BROWSE_CONDITION"
+                  },
+                  "source_references": [
+                    {
+                      "nct_id": "NCT00000475",
+                      "source_record_id": "1632322741",
+                      "source_table": "browse_conditions.txt"
+                    }
+                  ]
+                }
+              ],
+              "interventions": [
+                {
+                  "absent_fields": [],
+                  "category": "interventions",
+                  "citation_ids": [
+                    "cite:d503711da2e73d289b2a65b3"
+                  ],
+                  "evidence_id": "NCT00000475|HAS_INTERVENTION|intervention:cf32865d9378e5f3595c",
+                  "missing_fields": [],
+                  "nct_id": "NCT00000475",
+                  "node_id": "intervention:cf32865d9378e5f3595c",
+                  "node_label": "Intervention",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "intervention_id": "intervention:cf32865d9378e5f3595c",
+                    "intervention_type": "BEHAVIORAL",
+                    "name": "health education",
+                    "normalized_name": "health education",
+                    "source_table": "interventions.txt"
+                  },
+                  "relationship": {
+                    "end_id": "intervention:cf32865d9378e5f3595c",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "source_record_ids": "392802793",
+                      "source_table": "interventions.txt"
+                    },
+                    "start_id": "NCT00000475",
+                    "type": "HAS_INTERVENTION"
+                  },
+                  "source_references": [
+                    {
+                      "nct_id": "NCT00000475",
+                      "source_record_id": "392802793",
+                      "source_table": "interventions.txt"
+                    }
+                  ]
+                }
+              ],
+              "lead_sponsors": [
+                {
+                  "absent_fields": [],
+                  "category": "lead_sponsors",
+                  "citation_ids": [
+                    "cite:4bf696fb1697d8dfe13d914b"
+                  ],
+                  "evidence_id": "NCT00000475|LEAD_SPONSORED_BY|sponsor:cffb26aa0577fbefc573",
+                  "missing_fields": [],
+                  "nct_id": "NCT00000475",
+                  "node_id": "sponsor:cffb26aa0577fbefc573",
+                  "node_label": "Sponsor",
+                  "properties": {
+                    "agency_class": "NIH",
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "name": "National Heart, Lung, and Blood Institute (NHLBI)",
+                    "normalized_name": "national heart, lung, and blood institute (nhlbi)",
+                    "source_table": "sponsors.txt",
+                    "sponsor_id": "sponsor:cffb26aa0577fbefc573"
+                  },
+                  "relationship": {
+                    "end_id": "sponsor:cffb26aa0577fbefc573",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "source_record_ids": "382114543",
+                      "source_table": "sponsors.txt"
+                    },
+                    "start_id": "NCT00000475",
+                    "type": "LEAD_SPONSORED_BY"
+                  },
+                  "source_references": [
+                    {
+                      "nct_id": "NCT00000475",
+                      "source_record_id": "382114543",
+                      "source_table": "sponsors.txt"
+                    }
+                  ]
+                }
+              ],
+              "planned_outcomes": [],
+              "submitted_conditions": [
+                {
+                  "absent_fields": [],
+                  "category": "submitted_conditions",
+                  "citation_ids": [
+                    "cite:170853f697a40783c85c02e3"
+                  ],
+                  "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:2927f7658bcfd780d089",
+                  "missing_fields": [],
+                  "nct_id": "NCT00000475",
+                  "node_id": "condition:2927f7658bcfd780d089",
+                  "node_label": "ConditionTerm",
+                  "properties": {
+                    "condition_id": "condition:2927f7658bcfd780d089",
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "name": "Cardiovascular Diseases",
+                    "normalized_name": "cardiovascular diseases",
+                    "source_kind": "submitted",
+                    "source_table": "conditions.txt"
+                  },
+                  "relationship": {
+                    "end_id": "condition:2927f7658bcfd780d089",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "source_record_ids": "410019880",
+                      "source_table": "conditions.txt"
+                    },
+                    "start_id": "NCT00000475",
+                    "type": "HAS_SUBMITTED_CONDITION"
+                  },
+                  "source_references": [
+                    {
+                      "nct_id": "NCT00000475",
+                      "source_record_id": "410019880",
+                      "source_table": "conditions.txt"
+                    }
+                  ]
+                },
+                {
+                  "absent_fields": [],
+                  "category": "submitted_conditions",
+                  "citation_ids": [
+                    "cite:b08fb7c4a0e919f434c5b8c6"
+                  ],
+                  "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:44791bddffac03ac87a9",
+                  "missing_fields": [],
+                  "nct_id": "NCT00000475",
+                  "node_id": "condition:44791bddffac03ac87a9",
+                  "node_label": "ConditionTerm",
+                  "properties": {
+                    "condition_id": "condition:44791bddffac03ac87a9",
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "name": "Heart Diseases",
+                    "normalized_name": "heart diseases",
+                    "source_kind": "submitted",
+                    "source_table": "conditions.txt"
+                  },
+                  "relationship": {
+                    "end_id": "condition:44791bddffac03ac87a9",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "source_record_ids": "410019881",
+                      "source_table": "conditions.txt"
+                    },
+                    "start_id": "NCT00000475",
+                    "type": "HAS_SUBMITTED_CONDITION"
+                  },
+                  "source_references": [
+                    {
+                      "nct_id": "NCT00000475",
+                      "source_record_id": "410019881",
+                      "source_table": "conditions.txt"
+                    }
+                  ]
+                },
+                {
+                  "absent_fields": [],
+                  "category": "submitted_conditions",
+                  "citation_ids": [
+                    "cite:0006b00535655f375456fb48"
+                  ],
+                  "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+                  "missing_fields": [],
+                  "nct_id": "NCT00000475",
+                  "node_id": "condition:629e3a1901f0194c01ec",
+                  "node_label": "ConditionTerm",
+                  "properties": {
+                    "condition_id": "condition:629e3a1901f0194c01ec",
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "name": "Heart Failure",
+                    "normalized_name": "heart failure",
+                    "source_kind": "submitted",
+                    "source_table": "conditions.txt"
+                  },
+                  "relationship": {
+                    "end_id": "condition:629e3a1901f0194c01ec",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "source_record_ids": "410019883",
+                      "source_table": "conditions.txt"
+                    },
+                    "start_id": "NCT00000475",
+                    "type": "HAS_SUBMITTED_CONDITION"
+                  },
+                  "source_references": [
+                    {
+                      "nct_id": "NCT00000475",
+                      "source_record_id": "410019883",
+                      "source_table": "conditions.txt"
+                    }
+                  ]
+                },
+                {
+                  "absent_fields": [],
+                  "category": "submitted_conditions",
+                  "citation_ids": [
+                    "cite:1bb1384446adf35b1f5e29a3"
+                  ],
+                  "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:db7e3ce62d7cde0008d6",
+                  "missing_fields": [],
+                  "nct_id": "NCT00000475",
+                  "node_id": "condition:db7e3ce62d7cde0008d6",
+                  "node_label": "ConditionTerm",
+                  "properties": {
+                    "condition_id": "condition:db7e3ce62d7cde0008d6",
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "name": "Heart Failure, Congestive",
+                    "normalized_name": "heart failure, congestive",
+                    "source_kind": "submitted",
+                    "source_table": "conditions.txt"
+                  },
+                  "relationship": {
+                    "end_id": "condition:db7e3ce62d7cde0008d6",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "source_record_ids": "410019882",
+                      "source_table": "conditions.txt"
+                    },
+                    "start_id": "NCT00000475",
+                    "type": "HAS_SUBMITTED_CONDITION"
+                  },
+                  "source_references": [
+                    {
+                      "nct_id": "NCT00000475",
+                      "source_record_id": "410019882",
+                      "source_table": "conditions.txt"
+                    }
+                  ]
+                }
+              ]
+            },
+            "coverage": {
+              "browse_conditions": {
+                "all_evidence_returned": true,
+                "returned": 3,
+                "source_status": "AVAILABLE",
+                "total": 3
+              },
+              "interventions": {
+                "all_evidence_returned": true,
+                "returned": 1,
+                "source_status": "AVAILABLE",
+                "total": 1
+              },
+              "lead_sponsors": {
+                "all_evidence_returned": true,
+                "returned": 1,
+                "source_status": "AVAILABLE",
+                "total": 1
+              },
+              "planned_outcomes": {
+                "all_evidence_returned": true,
+                "returned": 0,
+                "source_status": "NO_LINKED_RECORD_IN_PINNED_GRAPH",
+                "total": 0
+              },
+              "submitted_conditions": {
+                "all_evidence_returned": true,
+                "returned": 4,
+                "source_status": "AVAILABLE",
+                "total": 4
+              }
+            },
+            "dataset_relationship": {
+              "end_id": "HTT-P1-AACT-20260905",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905"
+              },
+              "start_id": "NCT00000475",
+              "type": "MEMBER_OF_DATASET"
+            },
+            "nct_id": "NCT00000475",
+            "retrieval_status": "PARTIAL",
+            "state": {
+              "available_record_count": 9,
+              "missing_source_categories": [
+                "planned_outcomes"
+              ],
+              "not_found": false,
+              "pagination_limited": false,
+              "prepared_record_count": 9
+            },
+            "trial": {
+              "brief_title": "Prevention of Early Readmission in Elderly Congestive Heart Failure Patients",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "nct_id": "NCT00000475",
+              "phase": "PHASE2",
+              "source_evidence_status": "PRESENT",
+              "source_record_id": "NCT00000475",
+              "source_table": "studies.txt",
+              "study_type": "INTERVENTIONAL",
+              "trial_id": "NCT00000475"
+            },
+            "trial_citation_ids": [
+              "cite:ffedbca9ba3b1dce14a9eafa"
+            ]
+          }
+        ],
+        "workflow": "trial_profile"
+      },
+      "raw_retrieval": {
+        "coverage": {
+          "browse_conditions": {
+            "all_evidence_returned": true,
+            "returned": 3,
+            "source_status": "AVAILABLE",
+            "total": 3
+          },
+          "interventions": {
+            "all_evidence_returned": true,
+            "returned": 1,
+            "source_status": "AVAILABLE",
+            "total": 1
+          },
+          "lead_sponsors": {
+            "all_evidence_returned": true,
+            "returned": 1,
+            "source_status": "AVAILABLE",
+            "total": 1
+          },
+          "planned_outcomes": {
+            "all_evidence_returned": true,
+            "returned": 0,
+            "source_status": "NO_LINKED_RECORD_IN_PINNED_GRAPH",
+            "total": 0
+          },
+          "submitted_conditions": {
+            "all_evidence_returned": true,
+            "returned": 4,
+            "source_status": "AVAILABLE",
+            "total": 4
+          }
+        },
+        "dataset_relationship": {
+          "end_id": "HTT-P1-AACT-20260905",
+          "properties": {
+            "dataset_version": "HTT-P1-AACT-20260905"
+          },
+          "start_id": "NCT00000475",
+          "type": "MEMBER_OF_DATASET"
+        },
+        "dataset_version": "HTT-P1-AACT-20260905",
+        "evidence": [
+          {
+            "category": "browse_conditions",
+            "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+            "missing_fields": [],
+            "nct_id": "NCT00000475",
+            "node_id": "condition:220601b84d713b61467c",
+            "node_label": "ConditionTerm",
+            "properties": {
+              "condition_id": "condition:220601b84d713b61467c",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure",
+              "normalized_name": "heart failure",
+              "source_kind": "browse",
+              "source_table": "browse_conditions.txt"
+            },
+            "relationship": {
+              "end_id": "condition:220601b84d713b61467c",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "1632322742",
+                "source_table": "browse_conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_BROWSE_CONDITION"
+            },
+            "source_references": [
+              {
+                "nct_id": "NCT00000475",
+                "source_record_id": "1632322742",
+                "source_table": "browse_conditions.txt"
+              }
+            ]
+          },
+          {
+            "category": "browse_conditions",
+            "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+            "missing_fields": [],
+            "nct_id": "NCT00000475",
+            "node_id": "condition:6414c5b8adecc13a3786",
+            "node_label": "ConditionTerm",
+            "properties": {
+              "condition_id": "condition:6414c5b8adecc13a3786",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Cardiovascular Diseases",
+              "normalized_name": "cardiovascular diseases",
+              "source_kind": "browse",
+              "source_table": "browse_conditions.txt"
+            },
+            "relationship": {
+              "end_id": "condition:6414c5b8adecc13a3786",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "1632322740",
+                "source_table": "browse_conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_BROWSE_CONDITION"
+            },
+            "source_references": [
+              {
+                "nct_id": "NCT00000475",
+                "source_record_id": "1632322740",
+                "source_table": "browse_conditions.txt"
+              }
+            ]
+          },
+          {
+            "category": "browse_conditions",
+            "evidence_id": "NCT00000475|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+            "missing_fields": [],
+            "nct_id": "NCT00000475",
+            "node_id": "condition:76106621b8d52df0409b",
+            "node_label": "ConditionTerm",
+            "properties": {
+              "condition_id": "condition:76106621b8d52df0409b",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Diseases",
+              "normalized_name": "heart diseases",
+              "source_kind": "browse",
+              "source_table": "browse_conditions.txt"
+            },
+            "relationship": {
+              "end_id": "condition:76106621b8d52df0409b",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "1632322741",
+                "source_table": "browse_conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_BROWSE_CONDITION"
+            },
+            "source_references": [
+              {
+                "nct_id": "NCT00000475",
+                "source_record_id": "1632322741",
+                "source_table": "browse_conditions.txt"
+              }
+            ]
+          },
+          {
+            "category": "interventions",
+            "evidence_id": "NCT00000475|HAS_INTERVENTION|intervention:cf32865d9378e5f3595c",
+            "missing_fields": [],
+            "nct_id": "NCT00000475",
+            "node_id": "intervention:cf32865d9378e5f3595c",
+            "node_label": "Intervention",
+            "properties": {
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "intervention_id": "intervention:cf32865d9378e5f3595c",
+              "intervention_type": "BEHAVIORAL",
+              "name": "health education",
+              "normalized_name": "health education",
+              "source_table": "interventions.txt"
+            },
+            "relationship": {
+              "end_id": "intervention:cf32865d9378e5f3595c",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392802793",
+                "source_table": "interventions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_INTERVENTION"
+            },
+            "source_references": [
+              {
+                "nct_id": "NCT00000475",
+                "source_record_id": "392802793",
+                "source_table": "interventions.txt"
+              }
+            ]
+          },
+          {
+            "category": "submitted_conditions",
+            "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:2927f7658bcfd780d089",
+            "missing_fields": [],
+            "nct_id": "NCT00000475",
+            "node_id": "condition:2927f7658bcfd780d089",
+            "node_label": "ConditionTerm",
+            "properties": {
+              "condition_id": "condition:2927f7658bcfd780d089",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Cardiovascular Diseases",
+              "normalized_name": "cardiovascular diseases",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "relationship": {
+              "end_id": "condition:2927f7658bcfd780d089",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "410019880",
+                "source_table": "conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "source_references": [
+              {
+                "nct_id": "NCT00000475",
+                "source_record_id": "410019880",
+                "source_table": "conditions.txt"
+              }
+            ]
+          },
+          {
+            "category": "submitted_conditions",
+            "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:44791bddffac03ac87a9",
+            "missing_fields": [],
+            "nct_id": "NCT00000475",
+            "node_id": "condition:44791bddffac03ac87a9",
+            "node_label": "ConditionTerm",
+            "properties": {
+              "condition_id": "condition:44791bddffac03ac87a9",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Diseases",
+              "normalized_name": "heart diseases",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "relationship": {
+              "end_id": "condition:44791bddffac03ac87a9",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "410019881",
+                "source_table": "conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "source_references": [
+              {
+                "nct_id": "NCT00000475",
+                "source_record_id": "410019881",
+                "source_table": "conditions.txt"
+              }
+            ]
+          },
+          {
+            "category": "submitted_conditions",
+            "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+            "missing_fields": [],
+            "nct_id": "NCT00000475",
+            "node_id": "condition:629e3a1901f0194c01ec",
+            "node_label": "ConditionTerm",
+            "properties": {
+              "condition_id": "condition:629e3a1901f0194c01ec",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure",
+              "normalized_name": "heart failure",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "relationship": {
+              "end_id": "condition:629e3a1901f0194c01ec",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "410019883",
+                "source_table": "conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "source_references": [
+              {
+                "nct_id": "NCT00000475",
+                "source_record_id": "410019883",
+                "source_table": "conditions.txt"
+              }
+            ]
+          },
+          {
+            "category": "submitted_conditions",
+            "evidence_id": "NCT00000475|HAS_SUBMITTED_CONDITION|condition:db7e3ce62d7cde0008d6",
+            "missing_fields": [],
+            "nct_id": "NCT00000475",
+            "node_id": "condition:db7e3ce62d7cde0008d6",
+            "node_label": "ConditionTerm",
+            "properties": {
+              "condition_id": "condition:db7e3ce62d7cde0008d6",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "Heart Failure, Congestive",
+              "normalized_name": "heart failure, congestive",
+              "source_kind": "submitted",
+              "source_table": "conditions.txt"
+            },
+            "relationship": {
+              "end_id": "condition:db7e3ce62d7cde0008d6",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "410019882",
+                "source_table": "conditions.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "HAS_SUBMITTED_CONDITION"
+            },
+            "source_references": [
+              {
+                "nct_id": "NCT00000475",
+                "source_record_id": "410019882",
+                "source_table": "conditions.txt"
+              }
+            ]
+          },
+          {
+            "category": "lead_sponsors",
+            "evidence_id": "NCT00000475|LEAD_SPONSORED_BY|sponsor:cffb26aa0577fbefc573",
+            "missing_fields": [],
+            "nct_id": "NCT00000475",
+            "node_id": "sponsor:cffb26aa0577fbefc573",
+            "node_label": "Sponsor",
+            "properties": {
+              "agency_class": "NIH",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "name": "National Heart, Lung, and Blood Institute (NHLBI)",
+              "normalized_name": "national heart, lung, and blood institute (nhlbi)",
+              "source_table": "sponsors.txt",
+              "sponsor_id": "sponsor:cffb26aa0577fbefc573"
+            },
+            "relationship": {
+              "end_id": "sponsor:cffb26aa0577fbefc573",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "382114543",
+                "source_table": "sponsors.txt"
+              },
+              "start_id": "NCT00000475",
+              "type": "LEAD_SPONSORED_BY"
+            },
+            "source_references": [
+              {
+                "nct_id": "NCT00000475",
+                "source_record_id": "382114543",
+                "source_table": "sponsors.txt"
+              }
+            ]
+          }
+        ],
+        "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+        "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+        "nct_id": "NCT00000475",
+        "pagination": {
+          "all_evidence_returned": true,
+          "has_more": false,
+          "limit": 200,
+          "next_offset": null,
+          "offset": 0,
+          "returned": 9,
+          "total": 9
+        },
+        "retrieved_utc": "2026-10-24T22:30:43.025484+00:00",
+        "safeguards": {
+          "no_answer_generation": true,
+          "planned_outcomes": "Registered planned outcomes are not observed clinical results.",
+          "read_only": true,
+          "snapshot": "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted."
+        },
+        "schema_version": "HTT-FULL-STATIC-RETRIEVAL-v1",
+        "snapshot_date": "2026-09-05",
+        "source_dataset": {
+          "archive_md5": "99e62b3f8ae5838b36bc0c2277ad2714",
+          "archive_sha256": "215365a46dd8119ef4bdee62cd11a08910c9be0855edf246b92f31cdcc2d1023",
+          "dataset_version": "HTT-P1-AACT-20260905",
+          "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+          "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+          "snapshot_date": "2026-09-05",
+          "snapshot_file": "20260905_export_ctgov.zip",
+          "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+          "source_dataset_id": "HTT-P1-AACT-20260905"
+        },
+        "status": "PARTIAL",
+        "trial": {
+          "brief_title": "Prevention of Early Readmission in Elderly Congestive Heart Failure Patients",
+          "dataset_version": "HTT-P1-AACT-20260905",
+          "nct_id": "NCT00000475",
+          "phase": "PHASE2",
+          "source_evidence_status": "PRESENT",
+          "source_record_id": "NCT00000475",
+          "source_table": "studies.txt",
+          "study_type": "INTERVENTIONAL",
+          "trial_id": "NCT00000475"
+        },
+        "workflow": "trial_profile"
+      }
+    }
+  ],
+  "validation": {
+    "semantic_association_confirmed": false,
+    "source_grounding_passed": false
+  },
+  "validation_execution_type": "LIVE_SERVICES"
+}

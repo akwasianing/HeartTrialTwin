@@ -1,0 +1,374 @@
+{
+  "cases": [
+    {
+      "actual_status": "GROUNDED",
+      "checked_fact_count": 1,
+      "citation_validity": "PASS",
+      "elapsed_seconds": 167.58988650899846,
+      "errors": [],
+      "evidence_counts": {
+        "NCT00206232": 14
+      },
+      "execution_type": "LIVE_SERVICES",
+      "expected_status": "GROUNDED",
+      "id": "01_profile",
+      "model_attempts": 1,
+      "question": "What title is registered for clinical trial NCT00206232?",
+      "result": "PASS",
+      "retrieval_method": "EXACT_NCT",
+      "retrieved_trial_ids": [
+        "NCT00206232"
+      ],
+      "source_completeness": {
+        "NCT00206232": {
+          "complete_evidence": true,
+          "missing_source_records": [],
+          "not_found_nct_ids": [],
+          "optional_blank_fields_preserved": true,
+          "pagination_limited": false,
+          "prepared_all_supplied_evidence": true,
+          "retrieval_scope_complete": true,
+          "source_categories_complete": true
+        }
+      },
+      "trace_file": "01_profile.json"
+    },
+    {
+      "actual_status": "ABSTAIN",
+      "checked_fact_count": 2,
+      "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+      "elapsed_seconds": 23.080771464001373,
+      "errors": [
+        "Verified evidence is unavailable or insufficient: MISSING_SOURCE_RECORDS"
+      ],
+      "evidence_counts": {
+        "NCT00012870": 6,
+        "NCT00939146": 28
+      },
+      "execution_type": "LIVE_SERVICES",
+      "expected_status": "GROUNDED_CANDIDATE_EVIDENCE",
+      "id": "02_discovery",
+      "model_attempts": 0,
+      "question": "Find trials with registered planned outcomes about quality of life.",
+      "result": "FAIL",
+      "retrieval_method": "SEMANTIC_CANDIDATES",
+      "retrieved_trial_ids": [
+        "NCT00939146",
+        "NCT00012870"
+      ],
+      "source_completeness": {
+        "NCT00012870": {
+          "complete_evidence": false,
+          "missing_source_records": [
+            {
+              "categories": [
+                "planned_outcomes"
+              ],
+              "nct_id": "NCT00012870"
+            }
+          ],
+          "not_found_nct_ids": [],
+          "optional_blank_fields_preserved": true,
+          "pagination_limited": false,
+          "prepared_all_supplied_evidence": true,
+          "retrieval_scope_complete": true,
+          "source_categories_complete": false
+        },
+        "NCT00939146": {
+          "complete_evidence": true,
+          "missing_source_records": [],
+          "not_found_nct_ids": [],
+          "optional_blank_fields_preserved": true,
+          "pagination_limited": false,
+          "prepared_all_supplied_evidence": true,
+          "retrieval_scope_complete": true,
+          "source_categories_complete": true
+        }
+      },
+      "trace_file": "02_discovery.json"
+    },
+    {
+      "actual_status": "GROUNDED",
+      "checked_fact_count": 1,
+      "citation_validity": "PASS",
+      "elapsed_seconds": 137.6002012429999,
+      "errors": [],
+      "evidence_counts": {
+        "NCT00206232": 14
+      },
+      "execution_type": "LIVE_SERVICES",
+      "expected_status": "GROUNDED",
+      "id": "03_sponsor",
+      "model_attempts": 1,
+      "question": "Who is the lead sponsor of NCT00206232?",
+      "result": "PASS",
+      "retrieval_method": "EXACT_NCT",
+      "retrieved_trial_ids": [
+        "NCT00206232"
+      ],
+      "source_completeness": {
+        "NCT00206232": {
+          "complete_evidence": true,
+          "missing_source_records": [],
+          "not_found_nct_ids": [],
+          "optional_blank_fields_preserved": true,
+          "pagination_limited": false,
+          "prepared_all_supplied_evidence": true,
+          "retrieval_scope_complete": true,
+          "source_categories_complete": true
+        }
+      },
+      "trace_file": "03_sponsor.json"
+    },
+    {
+      "actual_status": "ABSTAIN",
+      "checked_fact_count": 0,
+      "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+      "elapsed_seconds": 181.15252661700106,
+      "errors": [
+        "Verified evidence is unavailable or insufficient: OLLAMA_CONNECTION_OR_TIMEOUT_FAILURE"
+      ],
+      "evidence_counts": {
+        "NCT00206232": 14
+      },
+      "execution_type": "LIVE_SERVICES",
+      "expected_status": "GROUNDED",
+      "id": "04_intervention",
+      "model_attempts": 1,
+      "question": "What intervention is registered for clinical trial NCT00206232?",
+      "result": "FAIL",
+      "retrieval_method": "EXACT_NCT",
+      "retrieved_trial_ids": [
+        "NCT00206232"
+      ],
+      "source_completeness": {
+        "NCT00206232": {
+          "complete_evidence": true,
+          "missing_source_records": [],
+          "not_found_nct_ids": [],
+          "optional_blank_fields_preserved": true,
+          "pagination_limited": false,
+          "prepared_all_supplied_evidence": true,
+          "retrieval_scope_complete": true,
+          "source_categories_complete": true
+        }
+      },
+      "trace_file": "04_intervention.json"
+    },
+    {
+      "actual_status": "COMPLETE_LISTING",
+      "checked_fact_count": 7,
+      "citation_validity": "PASS",
+      "elapsed_seconds": 1.9524133049999364,
+      "errors": [],
+      "evidence_counts": {
+        "NCT00206232": 14
+      },
+      "execution_type": "LIVE_SERVICES",
+      "expected_status": "COMPLETE_LISTING",
+      "id": "05_outcomes",
+      "model_attempts": 0,
+      "question": "What planned outcomes were registered for NCT00206232?",
+      "result": "PASS",
+      "retrieval_method": "EXACT_NCT",
+      "retrieved_trial_ids": [
+        "NCT00206232"
+      ],
+      "source_completeness": {
+        "NCT00206232": {
+          "complete_evidence": true,
+          "missing_source_records": [],
+          "not_found_nct_ids": [],
+          "optional_blank_fields_preserved": true,
+          "pagination_limited": false,
+          "prepared_all_supplied_evidence": true,
+          "retrieval_scope_complete": true,
+          "source_categories_complete": true
+        }
+      },
+      "trace_file": "05_outcomes.json"
+    },
+    {
+      "actual_status": "ABSTAIN",
+      "checked_fact_count": 0,
+      "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+      "elapsed_seconds": 0.0009711870006867684,
+      "errors": [
+        "Unsupported question: only declared registered-fact fields are available, not clinical results or termination reasons"
+      ],
+      "evidence_counts": {},
+      "execution_type": "LOCAL_POLICY_ONLY",
+      "expected_status": "ABSTAIN",
+      "id": "06_effectiveness",
+      "model_attempts": 0,
+      "question": "Did spironolactone improve survival in NCT00206232?",
+      "result": "PASS",
+      "retrieval_method": "POLICY_REJECTION",
+      "retrieved_trial_ids": [],
+      "source_completeness": {},
+      "trace_file": "06_effectiveness.json"
+    },
+    {
+      "actual_status": "ABSTAIN",
+      "checked_fact_count": 0,
+      "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+      "elapsed_seconds": 0.5220461230019282,
+      "errors": [
+        "Verified evidence is unavailable or insufficient: NOT_FOUND"
+      ],
+      "evidence_counts": {
+        "NCT99999999": 0
+      },
+      "execution_type": "LIVE_SERVICES",
+      "expected_status": "ABSTAIN",
+      "id": "07_unknown",
+      "model_attempts": 0,
+      "question": "What planned outcomes were registered for NCT99999999?",
+      "result": "PASS",
+      "retrieval_method": "EXACT_NCT",
+      "retrieved_trial_ids": [
+        "NCT99999999"
+      ],
+      "source_completeness": {
+        "NCT99999999": {
+          "complete_evidence": false,
+          "missing_source_records": [],
+          "not_found_nct_ids": [
+            "NCT99999999"
+          ],
+          "optional_blank_fields_preserved": true,
+          "pagination_limited": false,
+          "prepared_all_supplied_evidence": true,
+          "retrieval_scope_complete": true,
+          "source_categories_complete": false
+        }
+      },
+      "trace_file": "07_unknown.json"
+    },
+    {
+      "actual_status": "ABSTAIN",
+      "checked_fact_count": 0,
+      "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+      "elapsed_seconds": 0.0008519920011167414,
+      "errors": [
+        "Invalid NCT identifier; no semantic substitution performed"
+      ],
+      "evidence_counts": {},
+      "execution_type": "LOCAL_POLICY_ONLY",
+      "expected_status": "ABSTAIN",
+      "id": "08_invalid",
+      "model_attempts": 0,
+      "question": "What planned outcomes were registered for NCT0020623?",
+      "result": "PASS",
+      "retrieval_method": "POLICY_REJECTION",
+      "retrieved_trial_ids": [],
+      "source_completeness": {},
+      "trace_file": "08_invalid.json"
+    },
+    {
+      "actual_status": "ABSTAIN",
+      "checked_fact_count": 0,
+      "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+      "elapsed_seconds": 1.3884013269998832,
+      "errors": [
+        "Verified evidence is unavailable or insufficient: MISSING_SOURCE_RECORDS"
+      ],
+      "evidence_counts": {
+        "NCT00000475": 9
+      },
+      "execution_type": "LIVE_SERVICES",
+      "expected_status": "ABSTAIN",
+      "id": "09_missing_evidence",
+      "model_attempts": 0,
+      "question": "What planned outcomes were registered for NCT00000475?",
+      "result": "PASS",
+      "retrieval_method": "EXACT_NCT",
+      "retrieved_trial_ids": [
+        "NCT00000475"
+      ],
+      "source_completeness": {
+        "NCT00000475": {
+          "complete_evidence": false,
+          "missing_source_records": [
+            {
+              "categories": [
+                "planned_outcomes"
+              ],
+              "nct_id": "NCT00000475"
+            }
+          ],
+          "not_found_nct_ids": [],
+          "optional_blank_fields_preserved": true,
+          "pagination_limited": false,
+          "prepared_all_supplied_evidence": true,
+          "retrieval_scope_complete": true,
+          "source_categories_complete": false
+        }
+      },
+      "trace_file": "09_missing_evidence.json"
+    },
+    {
+      "actual_status": "ABSTAIN",
+      "checked_fact_count": 0,
+      "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+      "elapsed_seconds": 0.0816456520005886,
+      "errors": [
+        "Retrieval, evidence preparation or generation failed safely; inspect local configuration and source coverage"
+      ],
+      "evidence_counts": {},
+      "execution_type": "FAULT_INJECTION",
+      "expected_status": "ABSTAIN",
+      "id": "10_neo4j_fault",
+      "model_attempts": 0,
+      "question": "What planned outcomes were registered for NCT00206232?",
+      "result": "PASS",
+      "retrieval_method": "EXACT_NCT",
+      "retrieved_trial_ids": [],
+      "source_completeness": {},
+      "trace_file": "10_neo4j_fault.json"
+    },
+    {
+      "actual_status": "ABSTAIN",
+      "checked_fact_count": 0,
+      "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+      "elapsed_seconds": 0.8328856459993403,
+      "errors": [
+        "Verified evidence is unavailable or insufficient: OLLAMA_CONNECTION_OR_TIMEOUT_FAILURE"
+      ],
+      "evidence_counts": {
+        "NCT00206232": 14
+      },
+      "execution_type": "FAULT_INJECTION",
+      "expected_status": "ABSTAIN",
+      "id": "11_ollama_fault",
+      "model_attempts": 1,
+      "question": "What title is registered for clinical trial NCT00206232?",
+      "result": "PASS",
+      "retrieval_method": "EXACT_NCT",
+      "retrieved_trial_ids": [
+        "NCT00206232"
+      ],
+      "source_completeness": {
+        "NCT00206232": {
+          "complete_evidence": true,
+          "missing_source_records": [],
+          "not_found_nct_ids": [],
+          "optional_blank_fields_preserved": true,
+          "pagination_limited": false,
+          "prepared_all_supplied_evidence": true,
+          "retrieval_scope_complete": true,
+          "source_categories_complete": true
+        }
+      },
+      "trace_file": "11_ollama_fault.json"
+    }
+  ],
+  "fail_count": 2,
+  "not_run_count": 0,
+  "pass_count": 9,
+  "production_code_modified": false,
+  "protected_files_unchanged": 51,
+  "service_checks": "services.json",
+  "test_benchmark_run": false,
+  "version": "HTT-MINILM-GRAPHRAG-LIVE-v1"
+}

@@ -1,0 +1,30 @@
+{
+  "answer": "ABSTAIN: Invalid NCT identifier; no semantic substitution performed No unsupported answer is published.",
+  "answer_origin": null,
+  "dataset_version": "HTT-P1-AACT-20260905",
+  "elapsed_seconds": 0.0002072060015052557,
+  "errors": [
+    "Invalid NCT identifier; no semantic substitution performed"
+  ],
+  "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+  "independent_live_audit": {
+    "checked_fact_count": 0,
+    "checked_facts": [],
+    "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+    "method": "Exact catalog/fact/record equality, trial-specific citation bindings and live prepared-evidence round-trip; not clinical equivalence validation"
+  },
+  "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+  "notice": "Experimental registered-association retrieval, not clinical advice. Similarity proposes candidates; it does not verify ownership of the query measure or clinical effectiveness.",
+  "question": "What planned outcomes were registered for NCT0020623?",
+  "ranking": null,
+  "schema_version": "HTT-MINILM-GRAPHRAG-v1",
+  "snapshot_date": "2026-09-05",
+  "started_utc": "2026-10-24T22:30:41.855340+00:00",
+  "status": "ABSTAIN",
+  "trial_results": [],
+  "validation": {
+    "semantic_association_confirmed": false,
+    "source_grounding_passed": false
+  },
+  "validation_execution_type": "LOCAL_POLICY_ONLY"
+}

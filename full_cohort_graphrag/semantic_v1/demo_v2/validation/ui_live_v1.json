@@ -1,0 +1,3694 @@
+{
+  "execution": "Actual AppTest UI -> existing Neo4j environment subprocess -> live read-only Neo4j",
+  "streamlit_health": "ok",
+  "trace": {
+    "answer": "Deterministically assembled from verified evidence — not model-generated.\nNCT00206232: complete registered planned-outcome listing (7 source records).\n1. For NCT00206232, the registered planned outcome measure is \"Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide\" (type: \"other\"; time frame: \"Baseline then 3 and 6 months after randomization\") [cite:0b1654c7b32dcf6c84b359b6].\n2. For NCT00206232, the registered planned outcome measure is \"Electrolytes, blood urea nitrogen, creatinine\" (type: \"other\"; time frame: \"Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization\") [cite:7cc2203163d432f20b1f0dc9].\n3. For NCT00206232, the registered planned outcome measure is \"Quality of Life Questionaire\" (type: \"other\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:c39166004f6b4ec2880630ce].\n4. For NCT00206232, the registered planned outcome measure is \"New York Heart Association Classification\" (type: \"other\"; time frame: \"Baseline then 3 and 6 months after randomization\") [cite:afc21d2763ef61bb371ab945].\n5. For NCT00206232, the registered planned outcome measure is \"Number of participants with adverse events\" (type: \"other\"; time frame: \"From randomization until trial completion at 6 months.\") [cite:7b224cc3bc6196fe295bdb64].\n6. For NCT00206232, the registered planned outcome measure is \"Echocardiography parameters of diastolic function\" (type: \"secondary\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:5f7801d0898b5b5096a9fef4].\n7. For NCT00206232, the registered planned outcome measure is \"Six minute walk distance\" (type: \"primary\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:59a973a72a79cfe5535af0c7].\nRegistered planned outcomes are not observed clinical results.\nSeptember 5, 2026 snapshot values may include amendments; original-registration availability is not asserted.\nDataset: HTT-P1-AACT-20260905; graph: HTT-KG-AACT-20260905-FULL2824-v1; snapshot: 2026-09-05.\nExperimental registered-association retrieval, not clinical advice. Similarity proposes candidates; it does not verify ownership of the query measure or clinical effectiveness.",
+    "answer_mode": "deterministic",
+    "client_elapsed_seconds": 1.299269,
+    "dataset_version": "HTT-P1-AACT-20260905",
+    "elapsed_seconds": 0.39673,
+    "errors": [],
+    "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+    "model_attempts": 0,
+    "notice": "Experimental registered-association retrieval, not clinical advice. Similarity proposes candidates; it does not verify ownership of the query measure or clinical effectiveness.",
+    "question": "What planned outcomes were registered for NCT00206232?",
+    "ranking": null,
+    "route": {
+      "ids": [
+        "NCT00206232"
+      ],
+      "mode": "EXACT_NCT",
+      "relevance": {
+        "classification": "CLASSIFIED",
+        "limitations": "Only declared single-field templates; not general semantic relevance, clinical interpretation or full answer sufficiency",
+        "method": "Anchored whole-question templates; casefold and whitespace normalization; field and NCT checks",
+        "permitted_fields": [
+          "planned outcome measure"
+        ],
+        "requested_nct_ids": [
+          "NCT00206232"
+        ],
+        "rule_id": "FIELD_REGISTERED_FOR",
+        "version": "HTT-FULL-QUESTION-FIELD-RULES-v1"
+      }
+    },
+    "schema_version": "HTT-MINILM-GRAPHRAG-DEMO-v2",
+    "selected_nct_ids": [
+      "NCT00206232"
+    ],
+    "selection": {
+      "candidate_universe": 2824,
+      "examined": 1,
+      "rank_order_changed": false,
+      "requested": 2,
+      "scan_limit": 5,
+      "unexamined_ranked_candidates": 0
+    },
+    "skipped_candidates": [],
+    "snapshot_date": "2026-09-05",
+    "started_utc": "2026-10-25T05:37:18.322471+00:00",
+    "status": "COMPLETE_LISTING",
+    "trial_results": [
+      {
+        "answer_trace": {
+          "answer": "Deterministically assembled from verified evidence — not model-generated.\nNCT00206232: complete registered planned-outcome listing (7 source records).\n1. For NCT00206232, the registered planned outcome measure is \"Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide\" (type: \"other\"; time frame: \"Baseline then 3 and 6 months after randomization\") [cite:0b1654c7b32dcf6c84b359b6].\n2. For NCT00206232, the registered planned outcome measure is \"Electrolytes, blood urea nitrogen, creatinine\" (type: \"other\"; time frame: \"Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization\") [cite:7cc2203163d432f20b1f0dc9].\n3. For NCT00206232, the registered planned outcome measure is \"Quality of Life Questionaire\" (type: \"other\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:c39166004f6b4ec2880630ce].\n4. For NCT00206232, the registered planned outcome measure is \"New York Heart Association Classification\" (type: \"other\"; time frame: \"Baseline then 3 and 6 months after randomization\") [cite:afc21d2763ef61bb371ab945].\n5. For NCT00206232, the registered planned outcome measure is \"Number of participants with adverse events\" (type: \"other\"; time frame: \"From randomization until trial completion at 6 months.\") [cite:7b224cc3bc6196fe295bdb64].\n6. For NCT00206232, the registered planned outcome measure is \"Echocardiography parameters of diastolic function\" (type: \"secondary\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:5f7801d0898b5b5096a9fef4].\n7. For NCT00206232, the registered planned outcome measure is \"Six minute walk distance\" (type: \"primary\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:59a973a72a79cfe5535af0c7].\nRegistered planned outcomes are not observed clinical results.\nSeptember 5, 2026 snapshot values may include amendments; original-registration availability is not asserted.\nDataset: HTT-P1-AACT-20260905; graph: HTT-KG-AACT-20260905-FULL2824-v1; snapshot: 2026-09-05.",
+          "answer_origin": "DETERMINISTIC_VERIFIED_EVIDENCE",
+          "completed_utc": "2026-10-25T05:37:18.718298+00:00",
+          "dataset_version": "HTT-P1-AACT-20260905",
+          "deterministic_evidence_summary": "Verified retrieval evidence — deterministic summary, not an LLM answer.\nDataset: HTT-P1-AACT-20260905; graph: HTT-KG-AACT-20260905-FULL2824-v1; snapshot: 2026-09-05.\nRegistered planned outcomes are not observed clinical results.\nSeptember 5, 2026 snapshot values may include amendments; original-registration availability is not asserted.\nWorkflow: trial_profile; pagination-limited: False; response records/trials: 14/14.\nNCT00206232: title=\"Novel Treatment for Diastolic Heart Failure in Women\"; study_type=\"INTERVENTIONAL\"; phase=\"PHASE4\". [cite:85602b5dbe212bf4ce959041]\n  browse_conditions: 4 supplied / 4 linked records.\n    Registered name=\"Heart Failure\"; source_kind=\"browse\"; sources=browse_conditions.txt#1630505425. [cite:f4ad5c77d61e06f3407a4641]\n    Registered name=\"Heart Failure, Diastolic\"; source_kind=\"browse\"; sources=browse_conditions.txt#1630505426. [cite:0a95366a5bdfde3489ca24a8]\n    Registered name=\"Cardiovascular Diseases\"; source_kind=\"browse\"; sources=browse_conditions.txt#1630504027. [cite:d45eddea5ee21e2c08dd8ea6]\n    Registered name=\"Heart Diseases\"; source_kind=\"browse\"; sources=browse_conditions.txt#1630504026. [cite:d64af7e5d961c7b600372faf]\n  interventions: 1 supplied / 1 linked records.\n    Registered name=\"Spironolactone\"; intervention_type=\"DRUG\"; sources=interventions.txt#392379839. [cite:21f56031bbf8289fe76bfdcb]\n  planned_outcomes: 7 supplied / 7 linked records.\n    Registered planned measure=\"Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide\"; type=\"other\"; time_frame=\"Baseline then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426532164. [cite:0b1654c7b32dcf6c84b359b6]\n    Registered planned measure=\"Electrolytes, blood urea nitrogen, creatinine\"; type=\"other\"; time_frame=\"Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization\"; sources=design_outcomes.txt#1426532165. [cite:7cc2203163d432f20b1f0dc9]\n    Registered planned measure=\"Quality of Life Questionaire\"; type=\"other\"; time_frame=\"Baseline, then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426532166. [cite:c39166004f6b4ec2880630ce]\n    Registered planned measure=\"New York Heart Association Classification\"; type=\"other\"; time_frame=\"Baseline then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426532167. [cite:afc21d2763ef61bb371ab945]\n    Registered planned measure=\"Number of participants with adverse events\"; type=\"other\"; time_frame=\"From randomization until trial completion at 6 months.\"; sources=design_outcomes.txt#1426532168. [cite:7b224cc3bc6196fe295bdb64]\n    Registered planned measure=\"Echocardiography parameters of diastolic function\"; type=\"secondary\"; time_frame=\"Baseline, then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426533443. [cite:5f7801d0898b5b5096a9fef4]\n    Registered planned measure=\"Six minute walk distance\"; type=\"primary\"; time_frame=\"Baseline, then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426534673. [cite:59a973a72a79cfe5535af0c7]\n  submitted_conditions: 1 supplied / 1 linked records.\n    Registered name=\"Heart Failure\"; source_kind=\"submitted\"; sources=conditions.txt#409567152. [cite:4cbce2c7e0ea70108a1e3fb7]\n  lead_sponsors: 1 supplied / 1 linked records.\n    Registered name=\"Baylor College of Medicine\"; agency_class=\"OTHER\"; sources=sponsors.txt#381715287. [cite:3db774038cf4618ff9294543]\n",
+          "fact_catalog": {
+            "entries": {
+              "F001": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:d45eddea5ee21e2c08dd8ea6"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+                  "field": "browse condition",
+                  "nct_id": "NCT00206232",
+                  "value": "Cardiovascular Diseases"
+                },
+                "sentence": "For NCT00206232, the registered browse condition is \"Cardiovascular Diseases\" [cite:d45eddea5ee21e2c08dd8ea6]."
+              },
+              "F002": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:d64af7e5d961c7b600372faf"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+                  "field": "browse condition",
+                  "nct_id": "NCT00206232",
+                  "value": "Heart Diseases"
+                },
+                "sentence": "For NCT00206232, the registered browse condition is \"Heart Diseases\" [cite:d64af7e5d961c7b600372faf]."
+              },
+              "F003": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:f4ad5c77d61e06f3407a4641"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+                  "field": "browse condition",
+                  "nct_id": "NCT00206232",
+                  "value": "Heart Failure"
+                },
+                "sentence": "For NCT00206232, the registered browse condition is \"Heart Failure\" [cite:f4ad5c77d61e06f3407a4641]."
+              },
+              "F004": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:0a95366a5bdfde3489ca24a8"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:44d369206d3963d51196",
+                  "field": "browse condition",
+                  "nct_id": "NCT00206232",
+                  "value": "Heart Failure, Diastolic"
+                },
+                "sentence": "For NCT00206232, the registered browse condition is \"Heart Failure, Diastolic\" [cite:0a95366a5bdfde3489ca24a8]."
+              },
+              "F005": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:21f56031bbf8289fe76bfdcb"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_INTERVENTION|intervention:eb4e562ee31fac7ede8a",
+                  "field": "intervention",
+                  "nct_id": "NCT00206232",
+                  "value": "Spironolactone"
+                },
+                "sentence": "For NCT00206232, the registered intervention is \"Spironolactone\" [cite:21f56031bbf8289fe76bfdcb]."
+              },
+              "F006": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:3db774038cf4618ff9294543"
+                  ],
+                  "evidence_id": "NCT00206232|LEAD_SPONSORED_BY|sponsor:64f999d92d1b73893f9b",
+                  "field": "lead sponsor",
+                  "nct_id": "NCT00206232",
+                  "value": "Baylor College of Medicine"
+                },
+                "sentence": "For NCT00206232, the registered lead sponsor is \"Baylor College of Medicine\" [cite:3db774038cf4618ff9294543]."
+              },
+              "F007": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:85602b5dbe212bf4ce959041"
+                  ],
+                  "evidence_id": null,
+                  "field": "phase",
+                  "nct_id": "NCT00206232",
+                  "value": "PHASE4"
+                },
+                "sentence": "For NCT00206232, the registered phase is \"PHASE4\" [cite:85602b5dbe212bf4ce959041]."
+              },
+              "F008": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:5f7801d0898b5b5096a9fef4"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426533443",
+                  "field": "planned outcome measure",
+                  "nct_id": "NCT00206232",
+                  "value": "Echocardiography parameters of diastolic function"
+                },
+                "sentence": "For NCT00206232, the registered planned outcome measure is \"Echocardiography parameters of diastolic function\" (type: \"secondary\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:5f7801d0898b5b5096a9fef4]."
+              },
+              "F009": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:7cc2203163d432f20b1f0dc9"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532165",
+                  "field": "planned outcome measure",
+                  "nct_id": "NCT00206232",
+                  "value": "Electrolytes, blood urea nitrogen, creatinine"
+                },
+                "sentence": "For NCT00206232, the registered planned outcome measure is \"Electrolytes, blood urea nitrogen, creatinine\" (type: \"other\"; time frame: \"Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization\") [cite:7cc2203163d432f20b1f0dc9]."
+              },
+              "F010": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:afc21d2763ef61bb371ab945"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532167",
+                  "field": "planned outcome measure",
+                  "nct_id": "NCT00206232",
+                  "value": "New York Heart Association Classification"
+                },
+                "sentence": "For NCT00206232, the registered planned outcome measure is \"New York Heart Association Classification\" (type: \"other\"; time frame: \"Baseline then 3 and 6 months after randomization\") [cite:afc21d2763ef61bb371ab945]."
+              },
+              "F011": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:7b224cc3bc6196fe295bdb64"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532168",
+                  "field": "planned outcome measure",
+                  "nct_id": "NCT00206232",
+                  "value": "Number of participants with adverse events"
+                },
+                "sentence": "For NCT00206232, the registered planned outcome measure is \"Number of participants with adverse events\" (type: \"other\"; time frame: \"From randomization until trial completion at 6 months.\") [cite:7b224cc3bc6196fe295bdb64]."
+              },
+              "F012": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:0b1654c7b32dcf6c84b359b6"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532164",
+                  "field": "planned outcome measure",
+                  "nct_id": "NCT00206232",
+                  "value": "Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide"
+                },
+                "sentence": "For NCT00206232, the registered planned outcome measure is \"Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide\" (type: \"other\"; time frame: \"Baseline then 3 and 6 months after randomization\") [cite:0b1654c7b32dcf6c84b359b6]."
+              },
+              "F013": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:c39166004f6b4ec2880630ce"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532166",
+                  "field": "planned outcome measure",
+                  "nct_id": "NCT00206232",
+                  "value": "Quality of Life Questionaire"
+                },
+                "sentence": "For NCT00206232, the registered planned outcome measure is \"Quality of Life Questionaire\" (type: \"other\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:c39166004f6b4ec2880630ce]."
+              },
+              "F014": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:59a973a72a79cfe5535af0c7"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426534673",
+                  "field": "planned outcome measure",
+                  "nct_id": "NCT00206232",
+                  "value": "Six minute walk distance"
+                },
+                "sentence": "For NCT00206232, the registered planned outcome measure is \"Six minute walk distance\" (type: \"primary\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:59a973a72a79cfe5535af0c7]."
+              },
+              "F015": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:85602b5dbe212bf4ce959041"
+                  ],
+                  "evidence_id": null,
+                  "field": "study type",
+                  "nct_id": "NCT00206232",
+                  "value": "INTERVENTIONAL"
+                },
+                "sentence": "For NCT00206232, the registered study type is \"INTERVENTIONAL\" [cite:85602b5dbe212bf4ce959041]."
+              },
+              "F016": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:4cbce2c7e0ea70108a1e3fb7"
+                  ],
+                  "evidence_id": "NCT00206232|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+                  "field": "submitted condition",
+                  "nct_id": "NCT00206232",
+                  "value": "Heart Failure"
+                },
+                "sentence": "For NCT00206232, the registered submitted condition is \"Heart Failure\" [cite:4cbce2c7e0ea70108a1e3fb7]."
+              },
+              "F017": {
+                "fact": {
+                  "citation_ids": [
+                    "cite:85602b5dbe212bf4ce959041"
+                  ],
+                  "evidence_id": null,
+                  "field": "title",
+                  "nct_id": "NCT00206232",
+                  "value": "Novel Treatment for Diastolic Heart Failure in Women"
+                },
+                "sentence": "For NCT00206232, the registered title is \"Novel Treatment for Diastolic Heart Failure in Women\" [cite:85602b5dbe212bf4ce959041]."
+              }
+            },
+            "schema_version": "HTT-FULL-FACT-ID-CATALOG-v1",
+            "sha256": "0fa91d1e798d2c8d365b301f981c4ed8efb3764509b832e14b745b4219edfaea"
+          },
+          "generation": {
+            "actual_model": null,
+            "attempts": 0,
+            "eval_count": null,
+            "latency_ms": null,
+            "maximum_attempts": 0,
+            "prompt_eval_count": null,
+            "provider": null,
+            "requested_model": null
+          },
+          "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+          "limits": {
+            "max_answer_bytes": 50000,
+            "max_outcomes": 200,
+            "required_answer_bytes": 2049
+          },
+          "listed_outcomes": [
+            {
+              "absent_fields": [],
+              "category": "planned_outcomes",
+              "citation_ids": [
+                "cite:0b1654c7b32dcf6c84b359b6"
+              ],
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532164",
+              "fact_id": "F012",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "missing_optional_values": [],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426532164",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide",
+                "nct_id": "NCT00206232",
+                "outcome_type": "other",
+                "planned_outcome_id": "planned_outcome:1426532164",
+                "population": "",
+                "source_record_id": "1426532164",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Baseline then 3 and 6 months after randomization"
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426532164",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532164",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sentence": "For NCT00206232, the registered planned outcome measure is \"Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide\" (type: \"other\"; time frame: \"Baseline then 3 and 6 months after randomization\") [cite:0b1654c7b32dcf6c84b359b6].",
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426532164",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "absent_fields": [],
+              "category": "planned_outcomes",
+              "citation_ids": [
+                "cite:7cc2203163d432f20b1f0dc9"
+              ],
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532165",
+              "fact_id": "F009",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "missing_optional_values": [],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426532165",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "Electrolytes, blood urea nitrogen, creatinine",
+                "nct_id": "NCT00206232",
+                "outcome_type": "other",
+                "planned_outcome_id": "planned_outcome:1426532165",
+                "population": "",
+                "source_record_id": "1426532165",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization"
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426532165",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532165",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sentence": "For NCT00206232, the registered planned outcome measure is \"Electrolytes, blood urea nitrogen, creatinine\" (type: \"other\"; time frame: \"Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization\") [cite:7cc2203163d432f20b1f0dc9].",
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426532165",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "absent_fields": [],
+              "category": "planned_outcomes",
+              "citation_ids": [
+                "cite:c39166004f6b4ec2880630ce"
+              ],
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532166",
+              "fact_id": "F013",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "missing_optional_values": [],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426532166",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "Quality of Life Questionaire",
+                "nct_id": "NCT00206232",
+                "outcome_type": "other",
+                "planned_outcome_id": "planned_outcome:1426532166",
+                "population": "",
+                "source_record_id": "1426532166",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Baseline, then 3 and 6 months after randomization"
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426532166",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532166",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sentence": "For NCT00206232, the registered planned outcome measure is \"Quality of Life Questionaire\" (type: \"other\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:c39166004f6b4ec2880630ce].",
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426532166",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "absent_fields": [],
+              "category": "planned_outcomes",
+              "citation_ids": [
+                "cite:afc21d2763ef61bb371ab945"
+              ],
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532167",
+              "fact_id": "F010",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "missing_optional_values": [],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426532167",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "New York Heart Association Classification",
+                "nct_id": "NCT00206232",
+                "outcome_type": "other",
+                "planned_outcome_id": "planned_outcome:1426532167",
+                "population": "",
+                "source_record_id": "1426532167",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Baseline then 3 and 6 months after randomization"
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426532167",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532167",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sentence": "For NCT00206232, the registered planned outcome measure is \"New York Heart Association Classification\" (type: \"other\"; time frame: \"Baseline then 3 and 6 months after randomization\") [cite:afc21d2763ef61bb371ab945].",
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426532167",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "absent_fields": [],
+              "category": "planned_outcomes",
+              "citation_ids": [
+                "cite:7b224cc3bc6196fe295bdb64"
+              ],
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532168",
+              "fact_id": "F011",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "missing_optional_values": [],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426532168",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "Number of participants with adverse events",
+                "nct_id": "NCT00206232",
+                "outcome_type": "other",
+                "planned_outcome_id": "planned_outcome:1426532168",
+                "population": "",
+                "source_record_id": "1426532168",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "From randomization until trial completion at 6 months."
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426532168",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532168",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sentence": "For NCT00206232, the registered planned outcome measure is \"Number of participants with adverse events\" (type: \"other\"; time frame: \"From randomization until trial completion at 6 months.\") [cite:7b224cc3bc6196fe295bdb64].",
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426532168",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "absent_fields": [],
+              "category": "planned_outcomes",
+              "citation_ids": [
+                "cite:5f7801d0898b5b5096a9fef4"
+              ],
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426533443",
+              "fact_id": "F008",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "missing_optional_values": [],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426533443",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "Echocardiography parameters of diastolic function",
+                "nct_id": "NCT00206232",
+                "outcome_type": "secondary",
+                "planned_outcome_id": "planned_outcome:1426533443",
+                "population": "",
+                "source_record_id": "1426533443",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Baseline, then 3 and 6 months after randomization"
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426533443",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426533443",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sentence": "For NCT00206232, the registered planned outcome measure is \"Echocardiography parameters of diastolic function\" (type: \"secondary\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:5f7801d0898b5b5096a9fef4].",
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426533443",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "absent_fields": [],
+              "category": "planned_outcomes",
+              "citation_ids": [
+                "cite:59a973a72a79cfe5535af0c7"
+              ],
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426534673",
+              "fact_id": "F014",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "missing_optional_values": [],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426534673",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "Six minute walk distance",
+                "nct_id": "NCT00206232",
+                "outcome_type": "primary",
+                "planned_outcome_id": "planned_outcome:1426534673",
+                "population": "",
+                "source_record_id": "1426534673",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Baseline, then 3 and 6 months after randomization"
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426534673",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426534673",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "sentence": "For NCT00206232, the registered planned outcome measure is \"Six minute walk distance\" (type: \"primary\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:59a973a72a79cfe5535af0c7].",
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426534673",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            }
+          ],
+          "listing_policy_version": "HTT-FULL-COMPLETE-OUTCOME-LISTING-v1",
+          "model_generated": false,
+          "prepared_evidence_sha256": "69a6fb0ba71223def5873b190eb17ebfbcff02e9cbdba5e567dd6df18c5012db",
+          "question": "What planned outcomes were registered for NCT00206232?",
+          "raw_model_output": null,
+          "safeguards": [
+            "Registered planned outcomes are not observed clinical results.",
+            "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted."
+          ],
+          "schema_version": "HTT-FULL-DETERMINISTIC-OUTCOMES-v1",
+          "scope": {
+            "pagination": {
+              "all_evidence_returned": true,
+              "has_more": false,
+              "limit": 200,
+              "next_offset": null,
+              "offset": 0,
+              "returned": 14,
+              "total": 14
+            },
+            "pagination_unit": "evidence_paths",
+            "selected_nct_ids": [
+              "NCT00206232"
+            ]
+          },
+          "snapshot_date": "2026-09-05",
+          "source_references": [
+            {
+              "citation_id": "cite:0a95366a5bdfde3489ca24a8",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:44d369206d3963d51196",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "condition:44d369206d3963d51196",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1630505426",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1630505426",
+              "source_table": "browse_conditions.txt"
+            },
+            {
+              "citation_id": "cite:0b1654c7b32dcf6c84b359b6",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532164",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426532164",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532164",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426532164",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:21f56031bbf8289fe76bfdcb",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_INTERVENTION|intervention:eb4e562ee31fac7ede8a",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "intervention:eb4e562ee31fac7ede8a",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392379839",
+                  "source_table": "interventions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_INTERVENTION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "392379839",
+              "source_table": "interventions.txt"
+            },
+            {
+              "citation_id": "cite:3db774038cf4618ff9294543",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|LEAD_SPONSORED_BY|sponsor:64f999d92d1b73893f9b",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "sponsor:64f999d92d1b73893f9b",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381715287",
+                  "source_table": "sponsors.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "LEAD_SPONSORED_BY"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "381715287",
+              "source_table": "sponsors.txt"
+            },
+            {
+              "citation_id": "cite:4cbce2c7e0ea70108a1e3fb7",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "condition:629e3a1901f0194c01ec",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "409567152",
+                  "source_table": "conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "409567152",
+              "source_table": "conditions.txt"
+            },
+            {
+              "citation_id": "cite:59a973a72a79cfe5535af0c7",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426534673",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426534673",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426534673",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426534673",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:5f7801d0898b5b5096a9fef4",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426533443",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426533443",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426533443",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426533443",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:7b224cc3bc6196fe295bdb64",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532168",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426532168",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532168",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426532168",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:7cc2203163d432f20b1f0dc9",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532165",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426532165",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532165",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426532165",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:85602b5dbe212bf4ce959041",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": null,
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "HTT-P1-AACT-20260905",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "start_id": "NCT00206232",
+                "type": "MEMBER_OF_DATASET"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "NCT00206232",
+              "source_table": "studies.txt"
+            },
+            {
+              "citation_id": "cite:afc21d2763ef61bb371ab945",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532167",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426532167",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532167",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426532167",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:c39166004f6b4ec2880630ce",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532166",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426532166",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532166",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426532166",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:d45eddea5ee21e2c08dd8ea6",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "condition:6414c5b8adecc13a3786",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1630504027",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1630504027",
+              "source_table": "browse_conditions.txt"
+            },
+            {
+              "citation_id": "cite:d64af7e5d961c7b600372faf",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "condition:76106621b8d52df0409b",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1630504026",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1630504026",
+              "source_table": "browse_conditions.txt"
+            },
+            {
+              "citation_id": "cite:f4ad5c77d61e06f3407a4641",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "condition:220601b84d713b61467c",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1630505425",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1630505425",
+              "source_table": "browse_conditions.txt"
+            }
+          ],
+          "started_utc": "2026-10-25T05:37:18.716183+00:00",
+          "status": "COMPLETE_LISTING",
+          "summary_sha256": "e65008f2714433329d28583e986e684a2faf44a224a1ce9d501771078b9c2f4c",
+          "total_latency_ms": 2.197,
+          "validation": {
+            "citation_ids": [
+              "cite:0b1654c7b32dcf6c84b359b6",
+              "cite:59a973a72a79cfe5535af0c7",
+              "cite:5f7801d0898b5b5096a9fef4",
+              "cite:7b224cc3bc6196fe295bdb64",
+              "cite:7cc2203163d432f20b1f0dc9",
+              "cite:afc21d2763ef61bb371ab945",
+              "cite:c39166004f6b4ec2880630ce"
+            ],
+            "complete_source_set": true,
+            "errors": [],
+            "expected_evidence_ids": [
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532164",
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532165",
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532166",
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532167",
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532168",
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426533443",
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426534673"
+            ],
+            "listed_evidence_ids": [
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532164",
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532165",
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532166",
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532167",
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532168",
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426533443",
+              "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426534673"
+            ],
+            "listed_fact_ids": [
+              "F012",
+              "F009",
+              "F013",
+              "F010",
+              "F011",
+              "F008",
+              "F014"
+            ],
+            "passed": true,
+            "relevance": {
+              "classification": "CLASSIFIED",
+              "general_semantic_relevance_checked": false,
+              "limitations": "Only declared single-field templates; not general semantic relevance, clinical interpretation or full answer sufficiency",
+              "method": "Anchored whole-question templates; casefold and whitespace normalization; field and NCT checks",
+              "permitted_fields": [
+                "planned outcome measure"
+              ],
+              "requested_nct_ids": [
+                "NCT00206232"
+              ],
+              "rule_id": "FIELD_REGISTERED_FOR",
+              "status": "PASSED_FIELD_SCOPE_CHECKS",
+              "version": "HTT-FULL-QUESTION-FIELD-RULES-v1"
+            }
+          },
+          "verified_evidence": {
+            "citations": [
+              {
+                "citation_id": "cite:0a95366a5bdfde3489ca24a8",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:44d369206d3963d51196",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "condition:44d369206d3963d51196",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_ids": "1630505426",
+                    "source_table": "browse_conditions.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_BROWSE_CONDITION"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "1630505426",
+                "source_table": "browse_conditions.txt"
+              },
+              {
+                "citation_id": "cite:0b1654c7b32dcf6c84b359b6",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532164",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "planned_outcome:1426532164",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_id": "1426532164",
+                    "source_table": "design_outcomes.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_PLANNED_OUTCOME"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "1426532164",
+                "source_table": "design_outcomes.txt"
+              },
+              {
+                "citation_id": "cite:21f56031bbf8289fe76bfdcb",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_INTERVENTION|intervention:eb4e562ee31fac7ede8a",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "intervention:eb4e562ee31fac7ede8a",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_ids": "392379839",
+                    "source_table": "interventions.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_INTERVENTION"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "392379839",
+                "source_table": "interventions.txt"
+              },
+              {
+                "citation_id": "cite:3db774038cf4618ff9294543",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|LEAD_SPONSORED_BY|sponsor:64f999d92d1b73893f9b",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "sponsor:64f999d92d1b73893f9b",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_ids": "381715287",
+                    "source_table": "sponsors.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "LEAD_SPONSORED_BY"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "381715287",
+                "source_table": "sponsors.txt"
+              },
+              {
+                "citation_id": "cite:4cbce2c7e0ea70108a1e3fb7",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "condition:629e3a1901f0194c01ec",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_ids": "409567152",
+                    "source_table": "conditions.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_SUBMITTED_CONDITION"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "409567152",
+                "source_table": "conditions.txt"
+              },
+              {
+                "citation_id": "cite:59a973a72a79cfe5535af0c7",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426534673",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "planned_outcome:1426534673",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_id": "1426534673",
+                    "source_table": "design_outcomes.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_PLANNED_OUTCOME"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "1426534673",
+                "source_table": "design_outcomes.txt"
+              },
+              {
+                "citation_id": "cite:5f7801d0898b5b5096a9fef4",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426533443",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "planned_outcome:1426533443",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_id": "1426533443",
+                    "source_table": "design_outcomes.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_PLANNED_OUTCOME"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "1426533443",
+                "source_table": "design_outcomes.txt"
+              },
+              {
+                "citation_id": "cite:7b224cc3bc6196fe295bdb64",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532168",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "planned_outcome:1426532168",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_id": "1426532168",
+                    "source_table": "design_outcomes.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_PLANNED_OUTCOME"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "1426532168",
+                "source_table": "design_outcomes.txt"
+              },
+              {
+                "citation_id": "cite:7cc2203163d432f20b1f0dc9",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532165",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "planned_outcome:1426532165",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_id": "1426532165",
+                    "source_table": "design_outcomes.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_PLANNED_OUTCOME"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "1426532165",
+                "source_table": "design_outcomes.txt"
+              },
+              {
+                "citation_id": "cite:85602b5dbe212bf4ce959041",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": null,
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "HTT-P1-AACT-20260905",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "MEMBER_OF_DATASET"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "NCT00206232",
+                "source_table": "studies.txt"
+              },
+              {
+                "citation_id": "cite:afc21d2763ef61bb371ab945",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532167",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "planned_outcome:1426532167",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_id": "1426532167",
+                    "source_table": "design_outcomes.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_PLANNED_OUTCOME"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "1426532167",
+                "source_table": "design_outcomes.txt"
+              },
+              {
+                "citation_id": "cite:c39166004f6b4ec2880630ce",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532166",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "planned_outcome:1426532166",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_id": "1426532166",
+                    "source_table": "design_outcomes.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_PLANNED_OUTCOME"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "1426532166",
+                "source_table": "design_outcomes.txt"
+              },
+              {
+                "citation_id": "cite:d45eddea5ee21e2c08dd8ea6",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "condition:6414c5b8adecc13a3786",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_ids": "1630504027",
+                    "source_table": "browse_conditions.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_BROWSE_CONDITION"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "1630504027",
+                "source_table": "browse_conditions.txt"
+              },
+              {
+                "citation_id": "cite:d64af7e5d961c7b600372faf",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "condition:76106621b8d52df0409b",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_ids": "1630504026",
+                    "source_table": "browse_conditions.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_BROWSE_CONDITION"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "1630504026",
+                "source_table": "browse_conditions.txt"
+              },
+              {
+                "citation_id": "cite:f4ad5c77d61e06f3407a4641",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+                "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+                "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+                "nct_id": "NCT00206232",
+                "relationship": {
+                  "end_id": "condition:220601b84d713b61467c",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905",
+                    "source_record_ids": "1630505425",
+                    "source_table": "browse_conditions.txt"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "HAS_BROWSE_CONDITION"
+                },
+                "snapshot_date": "2026-09-05",
+                "source_record_id": "1630505425",
+                "source_table": "browse_conditions.txt"
+              }
+            ],
+            "completeness": {
+              "complete_evidence": true,
+              "missing_source_records": [],
+              "not_found_nct_ids": [],
+              "optional_blank_fields_preserved": true,
+              "pagination_limited": false,
+              "prepared_all_supplied_evidence": true,
+              "retrieval_scope_complete": true,
+              "source_categories_complete": true
+            },
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_record_count": 14,
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "no_llm_answer": true,
+            "retrieval_status": "COMPLETE",
+            "safeguards": {
+              "no_answer_generation": true,
+              "planned_outcomes": "Registered planned outcomes are not observed clinical results.",
+              "read_only": true,
+              "snapshot": "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted."
+            },
+            "schema_version": "HTT-FULL-EVIDENCE-PREPARATION-v1",
+            "scope": {
+              "pagination": {
+                "all_evidence_returned": true,
+                "has_more": false,
+                "limit": 200,
+                "next_offset": null,
+                "offset": 0,
+                "returned": 14,
+                "total": 14
+              },
+              "pagination_unit": "evidence_paths",
+              "selected_nct_ids": [
+                "NCT00206232"
+              ]
+            },
+            "snapshot_date": "2026-09-05",
+            "source_dataset": {
+              "archive_md5": "99e62b3f8ae5838b36bc0c2277ad2714",
+              "archive_sha256": "215365a46dd8119ef4bdee62cd11a08910c9be0855edf246b92f31cdcc2d1023",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+              "snapshot_date": "2026-09-05",
+              "snapshot_file": "20260905_export_ctgov.zip",
+              "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+              "source_dataset_id": "HTT-P1-AACT-20260905"
+            },
+            "summary": "Verified retrieval evidence — deterministic summary, not an LLM answer.\nDataset: HTT-P1-AACT-20260905; graph: HTT-KG-AACT-20260905-FULL2824-v1; snapshot: 2026-09-05.\nRegistered planned outcomes are not observed clinical results.\nSeptember 5, 2026 snapshot values may include amendments; original-registration availability is not asserted.\nWorkflow: trial_profile; pagination-limited: False; response records/trials: 14/14.\nNCT00206232: title=\"Novel Treatment for Diastolic Heart Failure in Women\"; study_type=\"INTERVENTIONAL\"; phase=\"PHASE4\". [cite:85602b5dbe212bf4ce959041]\n  browse_conditions: 4 supplied / 4 linked records.\n    Registered name=\"Heart Failure\"; source_kind=\"browse\"; sources=browse_conditions.txt#1630505425. [cite:f4ad5c77d61e06f3407a4641]\n    Registered name=\"Heart Failure, Diastolic\"; source_kind=\"browse\"; sources=browse_conditions.txt#1630505426. [cite:0a95366a5bdfde3489ca24a8]\n    Registered name=\"Cardiovascular Diseases\"; source_kind=\"browse\"; sources=browse_conditions.txt#1630504027. [cite:d45eddea5ee21e2c08dd8ea6]\n    Registered name=\"Heart Diseases\"; source_kind=\"browse\"; sources=browse_conditions.txt#1630504026. [cite:d64af7e5d961c7b600372faf]\n  interventions: 1 supplied / 1 linked records.\n    Registered name=\"Spironolactone\"; intervention_type=\"DRUG\"; sources=interventions.txt#392379839. [cite:21f56031bbf8289fe76bfdcb]\n  planned_outcomes: 7 supplied / 7 linked records.\n    Registered planned measure=\"Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide\"; type=\"other\"; time_frame=\"Baseline then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426532164. [cite:0b1654c7b32dcf6c84b359b6]\n    Registered planned measure=\"Electrolytes, blood urea nitrogen, creatinine\"; type=\"other\"; time_frame=\"Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization\"; sources=design_outcomes.txt#1426532165. [cite:7cc2203163d432f20b1f0dc9]\n    Registered planned measure=\"Quality of Life Questionaire\"; type=\"other\"; time_frame=\"Baseline, then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426532166. [cite:c39166004f6b4ec2880630ce]\n    Registered planned measure=\"New York Heart Association Classification\"; type=\"other\"; time_frame=\"Baseline then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426532167. [cite:afc21d2763ef61bb371ab945]\n    Registered planned measure=\"Number of participants with adverse events\"; type=\"other\"; time_frame=\"From randomization until trial completion at 6 months.\"; sources=design_outcomes.txt#1426532168. [cite:7b224cc3bc6196fe295bdb64]\n    Registered planned measure=\"Echocardiography parameters of diastolic function\"; type=\"secondary\"; time_frame=\"Baseline, then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426533443. [cite:5f7801d0898b5b5096a9fef4]\n    Registered planned measure=\"Six minute walk distance\"; type=\"primary\"; time_frame=\"Baseline, then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426534673. [cite:59a973a72a79cfe5535af0c7]\n  submitted_conditions: 1 supplied / 1 linked records.\n    Registered name=\"Heart Failure\"; source_kind=\"submitted\"; sources=conditions.txt#409567152. [cite:4cbce2c7e0ea70108a1e3fb7]\n  lead_sponsors: 1 supplied / 1 linked records.\n    Registered name=\"Baylor College of Medicine\"; agency_class=\"OTHER\"; sources=sponsors.txt#381715287. [cite:3db774038cf4618ff9294543]\n",
+            "summary_field_policy": "Registered names/types; planned measures, outcome types and time frames. All supplied approved properties remain structured; descriptions/population are not repeated in prose.",
+            "summary_sha256": "e65008f2714433329d28583e986e684a2faf44a224a1ce9d501771078b9c2f4c",
+            "trials": [
+              {
+                "categories": {
+                  "browse_conditions": [
+                    {
+                      "absent_fields": [],
+                      "category": "browse_conditions",
+                      "citation_ids": [
+                        "cite:f4ad5c77d61e06f3407a4641"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+                      "missing_fields": [],
+                      "nct_id": "NCT00206232",
+                      "node_id": "condition:220601b84d713b61467c",
+                      "node_label": "ConditionTerm",
+                      "properties": {
+                        "condition_id": "condition:220601b84d713b61467c",
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "name": "Heart Failure",
+                        "normalized_name": "heart failure",
+                        "source_kind": "browse",
+                        "source_table": "browse_conditions.txt"
+                      },
+                      "relationship": {
+                        "end_id": "condition:220601b84d713b61467c",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_ids": "1630505425",
+                          "source_table": "browse_conditions.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_BROWSE_CONDITION"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "1630505425",
+                          "source_table": "browse_conditions.txt"
+                        }
+                      ]
+                    },
+                    {
+                      "absent_fields": [],
+                      "category": "browse_conditions",
+                      "citation_ids": [
+                        "cite:0a95366a5bdfde3489ca24a8"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:44d369206d3963d51196",
+                      "missing_fields": [],
+                      "nct_id": "NCT00206232",
+                      "node_id": "condition:44d369206d3963d51196",
+                      "node_label": "ConditionTerm",
+                      "properties": {
+                        "condition_id": "condition:44d369206d3963d51196",
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "name": "Heart Failure, Diastolic",
+                        "normalized_name": "heart failure, diastolic",
+                        "source_kind": "browse",
+                        "source_table": "browse_conditions.txt"
+                      },
+                      "relationship": {
+                        "end_id": "condition:44d369206d3963d51196",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_ids": "1630505426",
+                          "source_table": "browse_conditions.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_BROWSE_CONDITION"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "1630505426",
+                          "source_table": "browse_conditions.txt"
+                        }
+                      ]
+                    },
+                    {
+                      "absent_fields": [],
+                      "category": "browse_conditions",
+                      "citation_ids": [
+                        "cite:d45eddea5ee21e2c08dd8ea6"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+                      "missing_fields": [],
+                      "nct_id": "NCT00206232",
+                      "node_id": "condition:6414c5b8adecc13a3786",
+                      "node_label": "ConditionTerm",
+                      "properties": {
+                        "condition_id": "condition:6414c5b8adecc13a3786",
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "name": "Cardiovascular Diseases",
+                        "normalized_name": "cardiovascular diseases",
+                        "source_kind": "browse",
+                        "source_table": "browse_conditions.txt"
+                      },
+                      "relationship": {
+                        "end_id": "condition:6414c5b8adecc13a3786",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_ids": "1630504027",
+                          "source_table": "browse_conditions.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_BROWSE_CONDITION"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "1630504027",
+                          "source_table": "browse_conditions.txt"
+                        }
+                      ]
+                    },
+                    {
+                      "absent_fields": [],
+                      "category": "browse_conditions",
+                      "citation_ids": [
+                        "cite:d64af7e5d961c7b600372faf"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+                      "missing_fields": [],
+                      "nct_id": "NCT00206232",
+                      "node_id": "condition:76106621b8d52df0409b",
+                      "node_label": "ConditionTerm",
+                      "properties": {
+                        "condition_id": "condition:76106621b8d52df0409b",
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "name": "Heart Diseases",
+                        "normalized_name": "heart diseases",
+                        "source_kind": "browse",
+                        "source_table": "browse_conditions.txt"
+                      },
+                      "relationship": {
+                        "end_id": "condition:76106621b8d52df0409b",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_ids": "1630504026",
+                          "source_table": "browse_conditions.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_BROWSE_CONDITION"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "1630504026",
+                          "source_table": "browse_conditions.txt"
+                        }
+                      ]
+                    }
+                  ],
+                  "interventions": [
+                    {
+                      "absent_fields": [],
+                      "category": "interventions",
+                      "citation_ids": [
+                        "cite:21f56031bbf8289fe76bfdcb"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_INTERVENTION|intervention:eb4e562ee31fac7ede8a",
+                      "missing_fields": [],
+                      "nct_id": "NCT00206232",
+                      "node_id": "intervention:eb4e562ee31fac7ede8a",
+                      "node_label": "Intervention",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+                        "intervention_type": "DRUG",
+                        "name": "Spironolactone",
+                        "normalized_name": "spironolactone",
+                        "source_table": "interventions.txt"
+                      },
+                      "relationship": {
+                        "end_id": "intervention:eb4e562ee31fac7ede8a",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_ids": "392379839",
+                          "source_table": "interventions.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_INTERVENTION"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "392379839",
+                          "source_table": "interventions.txt"
+                        }
+                      ]
+                    }
+                  ],
+                  "lead_sponsors": [
+                    {
+                      "absent_fields": [],
+                      "category": "lead_sponsors",
+                      "citation_ids": [
+                        "cite:3db774038cf4618ff9294543"
+                      ],
+                      "evidence_id": "NCT00206232|LEAD_SPONSORED_BY|sponsor:64f999d92d1b73893f9b",
+                      "missing_fields": [],
+                      "nct_id": "NCT00206232",
+                      "node_id": "sponsor:64f999d92d1b73893f9b",
+                      "node_label": "Sponsor",
+                      "properties": {
+                        "agency_class": "OTHER",
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "name": "Baylor College of Medicine",
+                        "normalized_name": "baylor college of medicine",
+                        "source_table": "sponsors.txt",
+                        "sponsor_id": "sponsor:64f999d92d1b73893f9b"
+                      },
+                      "relationship": {
+                        "end_id": "sponsor:64f999d92d1b73893f9b",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_ids": "381715287",
+                          "source_table": "sponsors.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "LEAD_SPONSORED_BY"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "381715287",
+                          "source_table": "sponsors.txt"
+                        }
+                      ]
+                    }
+                  ],
+                  "planned_outcomes": [
+                    {
+                      "absent_fields": [],
+                      "category": "planned_outcomes",
+                      "citation_ids": [
+                        "cite:0b1654c7b32dcf6c84b359b6"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532164",
+                      "missing_fields": [
+                        "description",
+                        "population"
+                      ],
+                      "nct_id": "NCT00206232",
+                      "node_id": "planned_outcome:1426532164",
+                      "node_label": "PlannedOutcome",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "description": "",
+                        "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                        "measure": "Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide",
+                        "nct_id": "NCT00206232",
+                        "outcome_type": "other",
+                        "planned_outcome_id": "planned_outcome:1426532164",
+                        "population": "",
+                        "source_record_id": "1426532164",
+                        "source_table": "design_outcomes.txt",
+                        "time_frame": "Baseline then 3 and 6 months after randomization"
+                      },
+                      "relationship": {
+                        "end_id": "planned_outcome:1426532164",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_id": "1426532164",
+                          "source_table": "design_outcomes.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_PLANNED_OUTCOME"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "1426532164",
+                          "source_table": "design_outcomes.txt"
+                        }
+                      ]
+                    },
+                    {
+                      "absent_fields": [],
+                      "category": "planned_outcomes",
+                      "citation_ids": [
+                        "cite:7cc2203163d432f20b1f0dc9"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532165",
+                      "missing_fields": [
+                        "description",
+                        "population"
+                      ],
+                      "nct_id": "NCT00206232",
+                      "node_id": "planned_outcome:1426532165",
+                      "node_label": "PlannedOutcome",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "description": "",
+                        "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                        "measure": "Electrolytes, blood urea nitrogen, creatinine",
+                        "nct_id": "NCT00206232",
+                        "outcome_type": "other",
+                        "planned_outcome_id": "planned_outcome:1426532165",
+                        "population": "",
+                        "source_record_id": "1426532165",
+                        "source_table": "design_outcomes.txt",
+                        "time_frame": "Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization"
+                      },
+                      "relationship": {
+                        "end_id": "planned_outcome:1426532165",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_id": "1426532165",
+                          "source_table": "design_outcomes.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_PLANNED_OUTCOME"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "1426532165",
+                          "source_table": "design_outcomes.txt"
+                        }
+                      ]
+                    },
+                    {
+                      "absent_fields": [],
+                      "category": "planned_outcomes",
+                      "citation_ids": [
+                        "cite:c39166004f6b4ec2880630ce"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532166",
+                      "missing_fields": [
+                        "description",
+                        "population"
+                      ],
+                      "nct_id": "NCT00206232",
+                      "node_id": "planned_outcome:1426532166",
+                      "node_label": "PlannedOutcome",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "description": "",
+                        "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                        "measure": "Quality of Life Questionaire",
+                        "nct_id": "NCT00206232",
+                        "outcome_type": "other",
+                        "planned_outcome_id": "planned_outcome:1426532166",
+                        "population": "",
+                        "source_record_id": "1426532166",
+                        "source_table": "design_outcomes.txt",
+                        "time_frame": "Baseline, then 3 and 6 months after randomization"
+                      },
+                      "relationship": {
+                        "end_id": "planned_outcome:1426532166",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_id": "1426532166",
+                          "source_table": "design_outcomes.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_PLANNED_OUTCOME"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "1426532166",
+                          "source_table": "design_outcomes.txt"
+                        }
+                      ]
+                    },
+                    {
+                      "absent_fields": [],
+                      "category": "planned_outcomes",
+                      "citation_ids": [
+                        "cite:afc21d2763ef61bb371ab945"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532167",
+                      "missing_fields": [
+                        "description",
+                        "population"
+                      ],
+                      "nct_id": "NCT00206232",
+                      "node_id": "planned_outcome:1426532167",
+                      "node_label": "PlannedOutcome",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "description": "",
+                        "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                        "measure": "New York Heart Association Classification",
+                        "nct_id": "NCT00206232",
+                        "outcome_type": "other",
+                        "planned_outcome_id": "planned_outcome:1426532167",
+                        "population": "",
+                        "source_record_id": "1426532167",
+                        "source_table": "design_outcomes.txt",
+                        "time_frame": "Baseline then 3 and 6 months after randomization"
+                      },
+                      "relationship": {
+                        "end_id": "planned_outcome:1426532167",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_id": "1426532167",
+                          "source_table": "design_outcomes.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_PLANNED_OUTCOME"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "1426532167",
+                          "source_table": "design_outcomes.txt"
+                        }
+                      ]
+                    },
+                    {
+                      "absent_fields": [],
+                      "category": "planned_outcomes",
+                      "citation_ids": [
+                        "cite:7b224cc3bc6196fe295bdb64"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532168",
+                      "missing_fields": [
+                        "description",
+                        "population"
+                      ],
+                      "nct_id": "NCT00206232",
+                      "node_id": "planned_outcome:1426532168",
+                      "node_label": "PlannedOutcome",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "description": "",
+                        "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                        "measure": "Number of participants with adverse events",
+                        "nct_id": "NCT00206232",
+                        "outcome_type": "other",
+                        "planned_outcome_id": "planned_outcome:1426532168",
+                        "population": "",
+                        "source_record_id": "1426532168",
+                        "source_table": "design_outcomes.txt",
+                        "time_frame": "From randomization until trial completion at 6 months."
+                      },
+                      "relationship": {
+                        "end_id": "planned_outcome:1426532168",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_id": "1426532168",
+                          "source_table": "design_outcomes.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_PLANNED_OUTCOME"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "1426532168",
+                          "source_table": "design_outcomes.txt"
+                        }
+                      ]
+                    },
+                    {
+                      "absent_fields": [],
+                      "category": "planned_outcomes",
+                      "citation_ids": [
+                        "cite:5f7801d0898b5b5096a9fef4"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426533443",
+                      "missing_fields": [
+                        "description",
+                        "population"
+                      ],
+                      "nct_id": "NCT00206232",
+                      "node_id": "planned_outcome:1426533443",
+                      "node_label": "PlannedOutcome",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "description": "",
+                        "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                        "measure": "Echocardiography parameters of diastolic function",
+                        "nct_id": "NCT00206232",
+                        "outcome_type": "secondary",
+                        "planned_outcome_id": "planned_outcome:1426533443",
+                        "population": "",
+                        "source_record_id": "1426533443",
+                        "source_table": "design_outcomes.txt",
+                        "time_frame": "Baseline, then 3 and 6 months after randomization"
+                      },
+                      "relationship": {
+                        "end_id": "planned_outcome:1426533443",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_id": "1426533443",
+                          "source_table": "design_outcomes.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_PLANNED_OUTCOME"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "1426533443",
+                          "source_table": "design_outcomes.txt"
+                        }
+                      ]
+                    },
+                    {
+                      "absent_fields": [],
+                      "category": "planned_outcomes",
+                      "citation_ids": [
+                        "cite:59a973a72a79cfe5535af0c7"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426534673",
+                      "missing_fields": [
+                        "description",
+                        "population"
+                      ],
+                      "nct_id": "NCT00206232",
+                      "node_id": "planned_outcome:1426534673",
+                      "node_label": "PlannedOutcome",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "description": "",
+                        "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                        "measure": "Six minute walk distance",
+                        "nct_id": "NCT00206232",
+                        "outcome_type": "primary",
+                        "planned_outcome_id": "planned_outcome:1426534673",
+                        "population": "",
+                        "source_record_id": "1426534673",
+                        "source_table": "design_outcomes.txt",
+                        "time_frame": "Baseline, then 3 and 6 months after randomization"
+                      },
+                      "relationship": {
+                        "end_id": "planned_outcome:1426534673",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_id": "1426534673",
+                          "source_table": "design_outcomes.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_PLANNED_OUTCOME"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "1426534673",
+                          "source_table": "design_outcomes.txt"
+                        }
+                      ]
+                    }
+                  ],
+                  "submitted_conditions": [
+                    {
+                      "absent_fields": [],
+                      "category": "submitted_conditions",
+                      "citation_ids": [
+                        "cite:4cbce2c7e0ea70108a1e3fb7"
+                      ],
+                      "evidence_id": "NCT00206232|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+                      "missing_fields": [],
+                      "nct_id": "NCT00206232",
+                      "node_id": "condition:629e3a1901f0194c01ec",
+                      "node_label": "ConditionTerm",
+                      "properties": {
+                        "condition_id": "condition:629e3a1901f0194c01ec",
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "name": "Heart Failure",
+                        "normalized_name": "heart failure",
+                        "source_kind": "submitted",
+                        "source_table": "conditions.txt"
+                      },
+                      "relationship": {
+                        "end_id": "condition:629e3a1901f0194c01ec",
+                        "properties": {
+                          "dataset_version": "HTT-P1-AACT-20260905",
+                          "source_record_ids": "409567152",
+                          "source_table": "conditions.txt"
+                        },
+                        "start_id": "NCT00206232",
+                        "type": "HAS_SUBMITTED_CONDITION"
+                      },
+                      "source_references": [
+                        {
+                          "nct_id": "NCT00206232",
+                          "source_record_id": "409567152",
+                          "source_table": "conditions.txt"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "coverage": {
+                  "browse_conditions": {
+                    "all_evidence_returned": true,
+                    "returned": 4,
+                    "source_status": "AVAILABLE",
+                    "total": 4
+                  },
+                  "interventions": {
+                    "all_evidence_returned": true,
+                    "returned": 1,
+                    "source_status": "AVAILABLE",
+                    "total": 1
+                  },
+                  "lead_sponsors": {
+                    "all_evidence_returned": true,
+                    "returned": 1,
+                    "source_status": "AVAILABLE",
+                    "total": 1
+                  },
+                  "planned_outcomes": {
+                    "all_evidence_returned": true,
+                    "returned": 7,
+                    "source_status": "AVAILABLE",
+                    "total": 7
+                  },
+                  "submitted_conditions": {
+                    "all_evidence_returned": true,
+                    "returned": 1,
+                    "source_status": "AVAILABLE",
+                    "total": 1
+                  }
+                },
+                "dataset_relationship": {
+                  "end_id": "HTT-P1-AACT-20260905",
+                  "properties": {
+                    "dataset_version": "HTT-P1-AACT-20260905"
+                  },
+                  "start_id": "NCT00206232",
+                  "type": "MEMBER_OF_DATASET"
+                },
+                "nct_id": "NCT00206232",
+                "retrieval_status": "COMPLETE",
+                "state": {
+                  "available_record_count": 14,
+                  "missing_source_categories": [],
+                  "not_found": false,
+                  "pagination_limited": false,
+                  "prepared_record_count": 14
+                },
+                "trial": {
+                  "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "nct_id": "NCT00206232",
+                  "phase": "PHASE4",
+                  "source_evidence_status": "PRESENT",
+                  "source_record_id": "NCT00206232",
+                  "source_table": "studies.txt",
+                  "study_type": "INTERVENTIONAL",
+                  "trial_id": "NCT00206232"
+                },
+                "trial_citation_ids": [
+                  "cite:85602b5dbe212bf4ce959041"
+                ]
+              }
+            ],
+            "workflow": "trial_profile"
+          }
+        },
+        "evidence_question": "What planned outcomes were registered for NCT00206232?",
+        "nct_id": "NCT00206232",
+        "original_rank": null,
+        "prepared_evidence": {
+          "citations": [
+            {
+              "citation_id": "cite:0a95366a5bdfde3489ca24a8",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:44d369206d3963d51196",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "condition:44d369206d3963d51196",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1630505426",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1630505426",
+              "source_table": "browse_conditions.txt"
+            },
+            {
+              "citation_id": "cite:0b1654c7b32dcf6c84b359b6",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532164",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426532164",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532164",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426532164",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:21f56031bbf8289fe76bfdcb",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_INTERVENTION|intervention:eb4e562ee31fac7ede8a",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "intervention:eb4e562ee31fac7ede8a",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392379839",
+                  "source_table": "interventions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_INTERVENTION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "392379839",
+              "source_table": "interventions.txt"
+            },
+            {
+              "citation_id": "cite:3db774038cf4618ff9294543",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|LEAD_SPONSORED_BY|sponsor:64f999d92d1b73893f9b",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "sponsor:64f999d92d1b73893f9b",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381715287",
+                  "source_table": "sponsors.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "LEAD_SPONSORED_BY"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "381715287",
+              "source_table": "sponsors.txt"
+            },
+            {
+              "citation_id": "cite:4cbce2c7e0ea70108a1e3fb7",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "condition:629e3a1901f0194c01ec",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "409567152",
+                  "source_table": "conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "409567152",
+              "source_table": "conditions.txt"
+            },
+            {
+              "citation_id": "cite:59a973a72a79cfe5535af0c7",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426534673",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426534673",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426534673",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426534673",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:5f7801d0898b5b5096a9fef4",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426533443",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426533443",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426533443",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426533443",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:7b224cc3bc6196fe295bdb64",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532168",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426532168",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532168",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426532168",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:7cc2203163d432f20b1f0dc9",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532165",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426532165",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532165",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426532165",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:85602b5dbe212bf4ce959041",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": null,
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "HTT-P1-AACT-20260905",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "start_id": "NCT00206232",
+                "type": "MEMBER_OF_DATASET"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "NCT00206232",
+              "source_table": "studies.txt"
+            },
+            {
+              "citation_id": "cite:afc21d2763ef61bb371ab945",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532167",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426532167",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532167",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426532167",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:c39166004f6b4ec2880630ce",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532166",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "planned_outcome:1426532166",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532166",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1426532166",
+              "source_table": "design_outcomes.txt"
+            },
+            {
+              "citation_id": "cite:d45eddea5ee21e2c08dd8ea6",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "condition:6414c5b8adecc13a3786",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1630504027",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1630504027",
+              "source_table": "browse_conditions.txt"
+            },
+            {
+              "citation_id": "cite:d64af7e5d961c7b600372faf",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "condition:76106621b8d52df0409b",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1630504026",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1630504026",
+              "source_table": "browse_conditions.txt"
+            },
+            {
+              "citation_id": "cite:f4ad5c77d61e06f3407a4641",
+              "dataset_version": "HTT-P1-AACT-20260905",
+              "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+              "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+              "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+              "nct_id": "NCT00206232",
+              "relationship": {
+                "end_id": "condition:220601b84d713b61467c",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1630505425",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "snapshot_date": "2026-09-05",
+              "source_record_id": "1630505425",
+              "source_table": "browse_conditions.txt"
+            }
+          ],
+          "completeness": {
+            "complete_evidence": true,
+            "missing_source_records": [],
+            "not_found_nct_ids": [],
+            "optional_blank_fields_preserved": true,
+            "pagination_limited": false,
+            "prepared_all_supplied_evidence": true,
+            "retrieval_scope_complete": true,
+            "source_categories_complete": true
+          },
+          "dataset_version": "HTT-P1-AACT-20260905",
+          "evidence_record_count": 14,
+          "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+          "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+          "no_llm_answer": true,
+          "retrieval_status": "COMPLETE",
+          "safeguards": {
+            "no_answer_generation": true,
+            "planned_outcomes": "Registered planned outcomes are not observed clinical results.",
+            "read_only": true,
+            "snapshot": "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted."
+          },
+          "schema_version": "HTT-FULL-EVIDENCE-PREPARATION-v1",
+          "scope": {
+            "pagination": {
+              "all_evidence_returned": true,
+              "has_more": false,
+              "limit": 200,
+              "next_offset": null,
+              "offset": 0,
+              "returned": 14,
+              "total": 14
+            },
+            "pagination_unit": "evidence_paths",
+            "selected_nct_ids": [
+              "NCT00206232"
+            ]
+          },
+          "snapshot_date": "2026-09-05",
+          "source_dataset": {
+            "archive_md5": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_sha256": "215365a46dd8119ef4bdee62cd11a08910c9be0855edf246b92f31cdcc2d1023",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "summary": "Verified retrieval evidence — deterministic summary, not an LLM answer.\nDataset: HTT-P1-AACT-20260905; graph: HTT-KG-AACT-20260905-FULL2824-v1; snapshot: 2026-09-05.\nRegistered planned outcomes are not observed clinical results.\nSeptember 5, 2026 snapshot values may include amendments; original-registration availability is not asserted.\nWorkflow: trial_profile; pagination-limited: False; response records/trials: 14/14.\nNCT00206232: title=\"Novel Treatment for Diastolic Heart Failure in Women\"; study_type=\"INTERVENTIONAL\"; phase=\"PHASE4\". [cite:85602b5dbe212bf4ce959041]\n  browse_conditions: 4 supplied / 4 linked records.\n    Registered name=\"Heart Failure\"; source_kind=\"browse\"; sources=browse_conditions.txt#1630505425. [cite:f4ad5c77d61e06f3407a4641]\n    Registered name=\"Heart Failure, Diastolic\"; source_kind=\"browse\"; sources=browse_conditions.txt#1630505426. [cite:0a95366a5bdfde3489ca24a8]\n    Registered name=\"Cardiovascular Diseases\"; source_kind=\"browse\"; sources=browse_conditions.txt#1630504027. [cite:d45eddea5ee21e2c08dd8ea6]\n    Registered name=\"Heart Diseases\"; source_kind=\"browse\"; sources=browse_conditions.txt#1630504026. [cite:d64af7e5d961c7b600372faf]\n  interventions: 1 supplied / 1 linked records.\n    Registered name=\"Spironolactone\"; intervention_type=\"DRUG\"; sources=interventions.txt#392379839. [cite:21f56031bbf8289fe76bfdcb]\n  planned_outcomes: 7 supplied / 7 linked records.\n    Registered planned measure=\"Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide\"; type=\"other\"; time_frame=\"Baseline then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426532164. [cite:0b1654c7b32dcf6c84b359b6]\n    Registered planned measure=\"Electrolytes, blood urea nitrogen, creatinine\"; type=\"other\"; time_frame=\"Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization\"; sources=design_outcomes.txt#1426532165. [cite:7cc2203163d432f20b1f0dc9]\n    Registered planned measure=\"Quality of Life Questionaire\"; type=\"other\"; time_frame=\"Baseline, then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426532166. [cite:c39166004f6b4ec2880630ce]\n    Registered planned measure=\"New York Heart Association Classification\"; type=\"other\"; time_frame=\"Baseline then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426532167. [cite:afc21d2763ef61bb371ab945]\n    Registered planned measure=\"Number of participants with adverse events\"; type=\"other\"; time_frame=\"From randomization until trial completion at 6 months.\"; sources=design_outcomes.txt#1426532168. [cite:7b224cc3bc6196fe295bdb64]\n    Registered planned measure=\"Echocardiography parameters of diastolic function\"; type=\"secondary\"; time_frame=\"Baseline, then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426533443. [cite:5f7801d0898b5b5096a9fef4]\n    Registered planned measure=\"Six minute walk distance\"; type=\"primary\"; time_frame=\"Baseline, then 3 and 6 months after randomization\"; sources=design_outcomes.txt#1426534673. [cite:59a973a72a79cfe5535af0c7]\n  submitted_conditions: 1 supplied / 1 linked records.\n    Registered name=\"Heart Failure\"; source_kind=\"submitted\"; sources=conditions.txt#409567152. [cite:4cbce2c7e0ea70108a1e3fb7]\n  lead_sponsors: 1 supplied / 1 linked records.\n    Registered name=\"Baylor College of Medicine\"; agency_class=\"OTHER\"; sources=sponsors.txt#381715287. [cite:3db774038cf4618ff9294543]\n",
+          "summary_field_policy": "Registered names/types; planned measures, outcome types and time frames. All supplied approved properties remain structured; descriptions/population are not repeated in prose.",
+          "summary_sha256": "e65008f2714433329d28583e986e684a2faf44a224a1ce9d501771078b9c2f4c",
+          "trials": [
+            {
+              "categories": {
+                "browse_conditions": [
+                  {
+                    "absent_fields": [],
+                    "category": "browse_conditions",
+                    "citation_ids": [
+                      "cite:f4ad5c77d61e06f3407a4641"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+                    "missing_fields": [],
+                    "nct_id": "NCT00206232",
+                    "node_id": "condition:220601b84d713b61467c",
+                    "node_label": "ConditionTerm",
+                    "properties": {
+                      "condition_id": "condition:220601b84d713b61467c",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Heart Failure",
+                      "normalized_name": "heart failure",
+                      "source_kind": "browse",
+                      "source_table": "browse_conditions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "condition:220601b84d713b61467c",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "1630505425",
+                        "source_table": "browse_conditions.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_BROWSE_CONDITION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "1630505425",
+                        "source_table": "browse_conditions.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "browse_conditions",
+                    "citation_ids": [
+                      "cite:0a95366a5bdfde3489ca24a8"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:44d369206d3963d51196",
+                    "missing_fields": [],
+                    "nct_id": "NCT00206232",
+                    "node_id": "condition:44d369206d3963d51196",
+                    "node_label": "ConditionTerm",
+                    "properties": {
+                      "condition_id": "condition:44d369206d3963d51196",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Heart Failure, Diastolic",
+                      "normalized_name": "heart failure, diastolic",
+                      "source_kind": "browse",
+                      "source_table": "browse_conditions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "condition:44d369206d3963d51196",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "1630505426",
+                        "source_table": "browse_conditions.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_BROWSE_CONDITION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "1630505426",
+                        "source_table": "browse_conditions.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "browse_conditions",
+                    "citation_ids": [
+                      "cite:d45eddea5ee21e2c08dd8ea6"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+                    "missing_fields": [],
+                    "nct_id": "NCT00206232",
+                    "node_id": "condition:6414c5b8adecc13a3786",
+                    "node_label": "ConditionTerm",
+                    "properties": {
+                      "condition_id": "condition:6414c5b8adecc13a3786",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Cardiovascular Diseases",
+                      "normalized_name": "cardiovascular diseases",
+                      "source_kind": "browse",
+                      "source_table": "browse_conditions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "condition:6414c5b8adecc13a3786",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "1630504027",
+                        "source_table": "browse_conditions.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_BROWSE_CONDITION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "1630504027",
+                        "source_table": "browse_conditions.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "browse_conditions",
+                    "citation_ids": [
+                      "cite:d64af7e5d961c7b600372faf"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+                    "missing_fields": [],
+                    "nct_id": "NCT00206232",
+                    "node_id": "condition:76106621b8d52df0409b",
+                    "node_label": "ConditionTerm",
+                    "properties": {
+                      "condition_id": "condition:76106621b8d52df0409b",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Heart Diseases",
+                      "normalized_name": "heart diseases",
+                      "source_kind": "browse",
+                      "source_table": "browse_conditions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "condition:76106621b8d52df0409b",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "1630504026",
+                        "source_table": "browse_conditions.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_BROWSE_CONDITION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "1630504026",
+                        "source_table": "browse_conditions.txt"
+                      }
+                    ]
+                  }
+                ],
+                "interventions": [
+                  {
+                    "absent_fields": [],
+                    "category": "interventions",
+                    "citation_ids": [
+                      "cite:21f56031bbf8289fe76bfdcb"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_INTERVENTION|intervention:eb4e562ee31fac7ede8a",
+                    "missing_fields": [],
+                    "nct_id": "NCT00206232",
+                    "node_id": "intervention:eb4e562ee31fac7ede8a",
+                    "node_label": "Intervention",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+                      "intervention_type": "DRUG",
+                      "name": "Spironolactone",
+                      "normalized_name": "spironolactone",
+                      "source_table": "interventions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "intervention:eb4e562ee31fac7ede8a",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "392379839",
+                        "source_table": "interventions.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_INTERVENTION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "392379839",
+                        "source_table": "interventions.txt"
+                      }
+                    ]
+                  }
+                ],
+                "lead_sponsors": [
+                  {
+                    "absent_fields": [],
+                    "category": "lead_sponsors",
+                    "citation_ids": [
+                      "cite:3db774038cf4618ff9294543"
+                    ],
+                    "evidence_id": "NCT00206232|LEAD_SPONSORED_BY|sponsor:64f999d92d1b73893f9b",
+                    "missing_fields": [],
+                    "nct_id": "NCT00206232",
+                    "node_id": "sponsor:64f999d92d1b73893f9b",
+                    "node_label": "Sponsor",
+                    "properties": {
+                      "agency_class": "OTHER",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Baylor College of Medicine",
+                      "normalized_name": "baylor college of medicine",
+                      "source_table": "sponsors.txt",
+                      "sponsor_id": "sponsor:64f999d92d1b73893f9b"
+                    },
+                    "relationship": {
+                      "end_id": "sponsor:64f999d92d1b73893f9b",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "381715287",
+                        "source_table": "sponsors.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "LEAD_SPONSORED_BY"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "381715287",
+                        "source_table": "sponsors.txt"
+                      }
+                    ]
+                  }
+                ],
+                "planned_outcomes": [
+                  {
+                    "absent_fields": [],
+                    "category": "planned_outcomes",
+                    "citation_ids": [
+                      "cite:0b1654c7b32dcf6c84b359b6"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532164",
+                    "missing_fields": [
+                      "description",
+                      "population"
+                    ],
+                    "nct_id": "NCT00206232",
+                    "node_id": "planned_outcome:1426532164",
+                    "node_label": "PlannedOutcome",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "description": "",
+                      "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                      "measure": "Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide",
+                      "nct_id": "NCT00206232",
+                      "outcome_type": "other",
+                      "planned_outcome_id": "planned_outcome:1426532164",
+                      "population": "",
+                      "source_record_id": "1426532164",
+                      "source_table": "design_outcomes.txt",
+                      "time_frame": "Baseline then 3 and 6 months after randomization"
+                    },
+                    "relationship": {
+                      "end_id": "planned_outcome:1426532164",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_id": "1426532164",
+                        "source_table": "design_outcomes.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_PLANNED_OUTCOME"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "1426532164",
+                        "source_table": "design_outcomes.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "planned_outcomes",
+                    "citation_ids": [
+                      "cite:7cc2203163d432f20b1f0dc9"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532165",
+                    "missing_fields": [
+                      "description",
+                      "population"
+                    ],
+                    "nct_id": "NCT00206232",
+                    "node_id": "planned_outcome:1426532165",
+                    "node_label": "PlannedOutcome",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "description": "",
+                      "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                      "measure": "Electrolytes, blood urea nitrogen, creatinine",
+                      "nct_id": "NCT00206232",
+                      "outcome_type": "other",
+                      "planned_outcome_id": "planned_outcome:1426532165",
+                      "population": "",
+                      "source_record_id": "1426532165",
+                      "source_table": "design_outcomes.txt",
+                      "time_frame": "Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization"
+                    },
+                    "relationship": {
+                      "end_id": "planned_outcome:1426532165",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_id": "1426532165",
+                        "source_table": "design_outcomes.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_PLANNED_OUTCOME"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "1426532165",
+                        "source_table": "design_outcomes.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "planned_outcomes",
+                    "citation_ids": [
+                      "cite:c39166004f6b4ec2880630ce"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532166",
+                    "missing_fields": [
+                      "description",
+                      "population"
+                    ],
+                    "nct_id": "NCT00206232",
+                    "node_id": "planned_outcome:1426532166",
+                    "node_label": "PlannedOutcome",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "description": "",
+                      "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                      "measure": "Quality of Life Questionaire",
+                      "nct_id": "NCT00206232",
+                      "outcome_type": "other",
+                      "planned_outcome_id": "planned_outcome:1426532166",
+                      "population": "",
+                      "source_record_id": "1426532166",
+                      "source_table": "design_outcomes.txt",
+                      "time_frame": "Baseline, then 3 and 6 months after randomization"
+                    },
+                    "relationship": {
+                      "end_id": "planned_outcome:1426532166",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_id": "1426532166",
+                        "source_table": "design_outcomes.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_PLANNED_OUTCOME"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "1426532166",
+                        "source_table": "design_outcomes.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "planned_outcomes",
+                    "citation_ids": [
+                      "cite:afc21d2763ef61bb371ab945"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532167",
+                    "missing_fields": [
+                      "description",
+                      "population"
+                    ],
+                    "nct_id": "NCT00206232",
+                    "node_id": "planned_outcome:1426532167",
+                    "node_label": "PlannedOutcome",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "description": "",
+                      "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                      "measure": "New York Heart Association Classification",
+                      "nct_id": "NCT00206232",
+                      "outcome_type": "other",
+                      "planned_outcome_id": "planned_outcome:1426532167",
+                      "population": "",
+                      "source_record_id": "1426532167",
+                      "source_table": "design_outcomes.txt",
+                      "time_frame": "Baseline then 3 and 6 months after randomization"
+                    },
+                    "relationship": {
+                      "end_id": "planned_outcome:1426532167",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_id": "1426532167",
+                        "source_table": "design_outcomes.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_PLANNED_OUTCOME"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "1426532167",
+                        "source_table": "design_outcomes.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "planned_outcomes",
+                    "citation_ids": [
+                      "cite:7b224cc3bc6196fe295bdb64"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532168",
+                    "missing_fields": [
+                      "description",
+                      "population"
+                    ],
+                    "nct_id": "NCT00206232",
+                    "node_id": "planned_outcome:1426532168",
+                    "node_label": "PlannedOutcome",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "description": "",
+                      "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                      "measure": "Number of participants with adverse events",
+                      "nct_id": "NCT00206232",
+                      "outcome_type": "other",
+                      "planned_outcome_id": "planned_outcome:1426532168",
+                      "population": "",
+                      "source_record_id": "1426532168",
+                      "source_table": "design_outcomes.txt",
+                      "time_frame": "From randomization until trial completion at 6 months."
+                    },
+                    "relationship": {
+                      "end_id": "planned_outcome:1426532168",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_id": "1426532168",
+                        "source_table": "design_outcomes.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_PLANNED_OUTCOME"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "1426532168",
+                        "source_table": "design_outcomes.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "planned_outcomes",
+                    "citation_ids": [
+                      "cite:5f7801d0898b5b5096a9fef4"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426533443",
+                    "missing_fields": [
+                      "description",
+                      "population"
+                    ],
+                    "nct_id": "NCT00206232",
+                    "node_id": "planned_outcome:1426533443",
+                    "node_label": "PlannedOutcome",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "description": "",
+                      "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                      "measure": "Echocardiography parameters of diastolic function",
+                      "nct_id": "NCT00206232",
+                      "outcome_type": "secondary",
+                      "planned_outcome_id": "planned_outcome:1426533443",
+                      "population": "",
+                      "source_record_id": "1426533443",
+                      "source_table": "design_outcomes.txt",
+                      "time_frame": "Baseline, then 3 and 6 months after randomization"
+                    },
+                    "relationship": {
+                      "end_id": "planned_outcome:1426533443",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_id": "1426533443",
+                        "source_table": "design_outcomes.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_PLANNED_OUTCOME"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "1426533443",
+                        "source_table": "design_outcomes.txt"
+                      }
+                    ]
+                  },
+                  {
+                    "absent_fields": [],
+                    "category": "planned_outcomes",
+                    "citation_ids": [
+                      "cite:59a973a72a79cfe5535af0c7"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426534673",
+                    "missing_fields": [
+                      "description",
+                      "population"
+                    ],
+                    "nct_id": "NCT00206232",
+                    "node_id": "planned_outcome:1426534673",
+                    "node_label": "PlannedOutcome",
+                    "properties": {
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "description": "",
+                      "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                      "measure": "Six minute walk distance",
+                      "nct_id": "NCT00206232",
+                      "outcome_type": "primary",
+                      "planned_outcome_id": "planned_outcome:1426534673",
+                      "population": "",
+                      "source_record_id": "1426534673",
+                      "source_table": "design_outcomes.txt",
+                      "time_frame": "Baseline, then 3 and 6 months after randomization"
+                    },
+                    "relationship": {
+                      "end_id": "planned_outcome:1426534673",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_id": "1426534673",
+                        "source_table": "design_outcomes.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_PLANNED_OUTCOME"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "1426534673",
+                        "source_table": "design_outcomes.txt"
+                      }
+                    ]
+                  }
+                ],
+                "submitted_conditions": [
+                  {
+                    "absent_fields": [],
+                    "category": "submitted_conditions",
+                    "citation_ids": [
+                      "cite:4cbce2c7e0ea70108a1e3fb7"
+                    ],
+                    "evidence_id": "NCT00206232|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+                    "missing_fields": [],
+                    "nct_id": "NCT00206232",
+                    "node_id": "condition:629e3a1901f0194c01ec",
+                    "node_label": "ConditionTerm",
+                    "properties": {
+                      "condition_id": "condition:629e3a1901f0194c01ec",
+                      "dataset_version": "HTT-P1-AACT-20260905",
+                      "name": "Heart Failure",
+                      "normalized_name": "heart failure",
+                      "source_kind": "submitted",
+                      "source_table": "conditions.txt"
+                    },
+                    "relationship": {
+                      "end_id": "condition:629e3a1901f0194c01ec",
+                      "properties": {
+                        "dataset_version": "HTT-P1-AACT-20260905",
+                        "source_record_ids": "409567152",
+                        "source_table": "conditions.txt"
+                      },
+                      "start_id": "NCT00206232",
+                      "type": "HAS_SUBMITTED_CONDITION"
+                    },
+                    "source_references": [
+                      {
+                        "nct_id": "NCT00206232",
+                        "source_record_id": "409567152",
+                        "source_table": "conditions.txt"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "coverage": {
+                "browse_conditions": {
+                  "all_evidence_returned": true,
+                  "returned": 4,
+                  "source_status": "AVAILABLE",
+                  "total": 4
+                },
+                "interventions": {
+                  "all_evidence_returned": true,
+                  "returned": 1,
+                  "source_status": "AVAILABLE",
+                  "total": 1
+                },
+                "lead_sponsors": {
+                  "all_evidence_returned": true,
+                  "returned": 1,
+                  "source_status": "AVAILABLE",
+                  "total": 1
+                },
+                "planned_outcomes": {
+                  "all_evidence_returned": true,
+                  "returned": 7,
+                  "source_status": "AVAILABLE",
+                  "total": 7
+                },
+                "submitted_conditions": {
+                  "all_evidence_returned": true,
+                  "returned": 1,
+                  "source_status": "AVAILABLE",
+                  "total": 1
+                }
+              },
+              "dataset_relationship": {
+                "end_id": "HTT-P1-AACT-20260905",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905"
+                },
+                "start_id": "NCT00206232",
+                "type": "MEMBER_OF_DATASET"
+              },
+              "nct_id": "NCT00206232",
+              "retrieval_status": "COMPLETE",
+              "state": {
+                "available_record_count": 14,
+                "missing_source_categories": [],
+                "not_found": false,
+                "pagination_limited": false,
+                "prepared_record_count": 14
+              },
+              "trial": {
+                "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "nct_id": "NCT00206232",
+                "phase": "PHASE4",
+                "source_evidence_status": "PRESENT",
+                "source_record_id": "NCT00206232",
+                "source_table": "studies.txt",
+                "study_type": "INTERVENTIONAL",
+                "trial_id": "NCT00206232"
+              },
+              "trial_citation_ids": [
+                "cite:85602b5dbe212bf4ce959041"
+              ]
+            }
+          ],
+          "workflow": "trial_profile"
+        },
+        "published": true,
+        "raw_retrieval": {
+          "coverage": {
+            "browse_conditions": {
+              "all_evidence_returned": true,
+              "returned": 4,
+              "source_status": "AVAILABLE",
+              "total": 4
+            },
+            "interventions": {
+              "all_evidence_returned": true,
+              "returned": 1,
+              "source_status": "AVAILABLE",
+              "total": 1
+            },
+            "lead_sponsors": {
+              "all_evidence_returned": true,
+              "returned": 1,
+              "source_status": "AVAILABLE",
+              "total": 1
+            },
+            "planned_outcomes": {
+              "all_evidence_returned": true,
+              "returned": 7,
+              "source_status": "AVAILABLE",
+              "total": 7
+            },
+            "submitted_conditions": {
+              "all_evidence_returned": true,
+              "returned": 1,
+              "source_status": "AVAILABLE",
+              "total": 1
+            }
+          },
+          "dataset_relationship": {
+            "end_id": "HTT-P1-AACT-20260905",
+            "properties": {
+              "dataset_version": "HTT-P1-AACT-20260905"
+            },
+            "start_id": "NCT00206232",
+            "type": "MEMBER_OF_DATASET"
+          },
+          "dataset_version": "HTT-P1-AACT-20260905",
+          "evidence": [
+            {
+              "category": "browse_conditions",
+              "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:220601b84d713b61467c",
+              "missing_fields": [],
+              "nct_id": "NCT00206232",
+              "node_id": "condition:220601b84d713b61467c",
+              "node_label": "ConditionTerm",
+              "properties": {
+                "condition_id": "condition:220601b84d713b61467c",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "name": "Heart Failure",
+                "normalized_name": "heart failure",
+                "source_kind": "browse",
+                "source_table": "browse_conditions.txt"
+              },
+              "relationship": {
+                "end_id": "condition:220601b84d713b61467c",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1630505425",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1630505425",
+                  "source_table": "browse_conditions.txt"
+                }
+              ]
+            },
+            {
+              "category": "browse_conditions",
+              "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:44d369206d3963d51196",
+              "missing_fields": [],
+              "nct_id": "NCT00206232",
+              "node_id": "condition:44d369206d3963d51196",
+              "node_label": "ConditionTerm",
+              "properties": {
+                "condition_id": "condition:44d369206d3963d51196",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "name": "Heart Failure, Diastolic",
+                "normalized_name": "heart failure, diastolic",
+                "source_kind": "browse",
+                "source_table": "browse_conditions.txt"
+              },
+              "relationship": {
+                "end_id": "condition:44d369206d3963d51196",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1630505426",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1630505426",
+                  "source_table": "browse_conditions.txt"
+                }
+              ]
+            },
+            {
+              "category": "browse_conditions",
+              "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:6414c5b8adecc13a3786",
+              "missing_fields": [],
+              "nct_id": "NCT00206232",
+              "node_id": "condition:6414c5b8adecc13a3786",
+              "node_label": "ConditionTerm",
+              "properties": {
+                "condition_id": "condition:6414c5b8adecc13a3786",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "name": "Cardiovascular Diseases",
+                "normalized_name": "cardiovascular diseases",
+                "source_kind": "browse",
+                "source_table": "browse_conditions.txt"
+              },
+              "relationship": {
+                "end_id": "condition:6414c5b8adecc13a3786",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1630504027",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1630504027",
+                  "source_table": "browse_conditions.txt"
+                }
+              ]
+            },
+            {
+              "category": "browse_conditions",
+              "evidence_id": "NCT00206232|HAS_BROWSE_CONDITION|condition:76106621b8d52df0409b",
+              "missing_fields": [],
+              "nct_id": "NCT00206232",
+              "node_id": "condition:76106621b8d52df0409b",
+              "node_label": "ConditionTerm",
+              "properties": {
+                "condition_id": "condition:76106621b8d52df0409b",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "name": "Heart Diseases",
+                "normalized_name": "heart diseases",
+                "source_kind": "browse",
+                "source_table": "browse_conditions.txt"
+              },
+              "relationship": {
+                "end_id": "condition:76106621b8d52df0409b",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "1630504026",
+                  "source_table": "browse_conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_BROWSE_CONDITION"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1630504026",
+                  "source_table": "browse_conditions.txt"
+                }
+              ]
+            },
+            {
+              "category": "interventions",
+              "evidence_id": "NCT00206232|HAS_INTERVENTION|intervention:eb4e562ee31fac7ede8a",
+              "missing_fields": [],
+              "nct_id": "NCT00206232",
+              "node_id": "intervention:eb4e562ee31fac7ede8a",
+              "node_label": "Intervention",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "intervention_id": "intervention:eb4e562ee31fac7ede8a",
+                "intervention_type": "DRUG",
+                "name": "Spironolactone",
+                "normalized_name": "spironolactone",
+                "source_table": "interventions.txt"
+              },
+              "relationship": {
+                "end_id": "intervention:eb4e562ee31fac7ede8a",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "392379839",
+                  "source_table": "interventions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_INTERVENTION"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "392379839",
+                  "source_table": "interventions.txt"
+                }
+              ]
+            },
+            {
+              "category": "planned_outcomes",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532164",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426532164",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide",
+                "nct_id": "NCT00206232",
+                "outcome_type": "other",
+                "planned_outcome_id": "planned_outcome:1426532164",
+                "population": "",
+                "source_record_id": "1426532164",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Baseline then 3 and 6 months after randomization"
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426532164",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532164",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426532164",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "category": "planned_outcomes",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532165",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426532165",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "Electrolytes, blood urea nitrogen, creatinine",
+                "nct_id": "NCT00206232",
+                "outcome_type": "other",
+                "planned_outcome_id": "planned_outcome:1426532165",
+                "population": "",
+                "source_record_id": "1426532165",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization"
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426532165",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532165",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426532165",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "category": "planned_outcomes",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532166",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426532166",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "Quality of Life Questionaire",
+                "nct_id": "NCT00206232",
+                "outcome_type": "other",
+                "planned_outcome_id": "planned_outcome:1426532166",
+                "population": "",
+                "source_record_id": "1426532166",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Baseline, then 3 and 6 months after randomization"
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426532166",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532166",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426532166",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "category": "planned_outcomes",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532167",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426532167",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "New York Heart Association Classification",
+                "nct_id": "NCT00206232",
+                "outcome_type": "other",
+                "planned_outcome_id": "planned_outcome:1426532167",
+                "population": "",
+                "source_record_id": "1426532167",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Baseline then 3 and 6 months after randomization"
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426532167",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532167",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426532167",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "category": "planned_outcomes",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532168",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426532168",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "Number of participants with adverse events",
+                "nct_id": "NCT00206232",
+                "outcome_type": "other",
+                "planned_outcome_id": "planned_outcome:1426532168",
+                "population": "",
+                "source_record_id": "1426532168",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "From randomization until trial completion at 6 months."
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426532168",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426532168",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426532168",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "category": "planned_outcomes",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426533443",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426533443",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "Echocardiography parameters of diastolic function",
+                "nct_id": "NCT00206232",
+                "outcome_type": "secondary",
+                "planned_outcome_id": "planned_outcome:1426533443",
+                "population": "",
+                "source_record_id": "1426533443",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Baseline, then 3 and 6 months after randomization"
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426533443",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426533443",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426533443",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "category": "planned_outcomes",
+              "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426534673",
+              "missing_fields": [
+                "description",
+                "population"
+              ],
+              "nct_id": "NCT00206232",
+              "node_id": "planned_outcome:1426534673",
+              "node_label": "PlannedOutcome",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "description": "",
+                "evidence_safeguard": "Registered planned outcome — not a clinical result.",
+                "measure": "Six minute walk distance",
+                "nct_id": "NCT00206232",
+                "outcome_type": "primary",
+                "planned_outcome_id": "planned_outcome:1426534673",
+                "population": "",
+                "source_record_id": "1426534673",
+                "source_table": "design_outcomes.txt",
+                "time_frame": "Baseline, then 3 and 6 months after randomization"
+              },
+              "relationship": {
+                "end_id": "planned_outcome:1426534673",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_id": "1426534673",
+                  "source_table": "design_outcomes.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_PLANNED_OUTCOME"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "1426534673",
+                  "source_table": "design_outcomes.txt"
+                }
+              ]
+            },
+            {
+              "category": "submitted_conditions",
+              "evidence_id": "NCT00206232|HAS_SUBMITTED_CONDITION|condition:629e3a1901f0194c01ec",
+              "missing_fields": [],
+              "nct_id": "NCT00206232",
+              "node_id": "condition:629e3a1901f0194c01ec",
+              "node_label": "ConditionTerm",
+              "properties": {
+                "condition_id": "condition:629e3a1901f0194c01ec",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "name": "Heart Failure",
+                "normalized_name": "heart failure",
+                "source_kind": "submitted",
+                "source_table": "conditions.txt"
+              },
+              "relationship": {
+                "end_id": "condition:629e3a1901f0194c01ec",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "409567152",
+                  "source_table": "conditions.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "HAS_SUBMITTED_CONDITION"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "409567152",
+                  "source_table": "conditions.txt"
+                }
+              ]
+            },
+            {
+              "category": "lead_sponsors",
+              "evidence_id": "NCT00206232|LEAD_SPONSORED_BY|sponsor:64f999d92d1b73893f9b",
+              "missing_fields": [],
+              "nct_id": "NCT00206232",
+              "node_id": "sponsor:64f999d92d1b73893f9b",
+              "node_label": "Sponsor",
+              "properties": {
+                "agency_class": "OTHER",
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "name": "Baylor College of Medicine",
+                "normalized_name": "baylor college of medicine",
+                "source_table": "sponsors.txt",
+                "sponsor_id": "sponsor:64f999d92d1b73893f9b"
+              },
+              "relationship": {
+                "end_id": "sponsor:64f999d92d1b73893f9b",
+                "properties": {
+                  "dataset_version": "HTT-P1-AACT-20260905",
+                  "source_record_ids": "381715287",
+                  "source_table": "sponsors.txt"
+                },
+                "start_id": "NCT00206232",
+                "type": "LEAD_SPONSORED_BY"
+              },
+              "source_references": [
+                {
+                  "nct_id": "NCT00206232",
+                  "source_record_id": "381715287",
+                  "source_table": "sponsors.txt"
+                }
+              ]
+            }
+          ],
+          "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+          "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+          "nct_id": "NCT00206232",
+          "pagination": {
+            "all_evidence_returned": true,
+            "has_more": false,
+            "limit": 200,
+            "next_offset": null,
+            "offset": 0,
+            "returned": 14,
+            "total": 14
+          },
+          "retrieved_utc": "2026-10-25T05:37:18.625930+00:00",
+          "safeguards": {
+            "no_answer_generation": true,
+            "planned_outcomes": "Registered planned outcomes are not observed clinical results.",
+            "read_only": true,
+            "snapshot": "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted."
+          },
+          "schema_version": "HTT-FULL-STATIC-RETRIEVAL-v1",
+          "snapshot_date": "2026-09-05",
+          "source_dataset": {
+            "archive_md5": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_sha256": "215365a46dd8119ef4bdee62cd11a08910c9be0855edf246b92f31cdcc2d1023",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "status": "COMPLETE",
+          "trial": {
+            "brief_title": "Novel Treatment for Diastolic Heart Failure in Women",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "nct_id": "NCT00206232",
+            "phase": "PHASE4",
+            "source_evidence_status": "PRESENT",
+            "source_record_id": "NCT00206232",
+            "source_table": "studies.txt",
+            "study_type": "INTERVENTIONAL",
+            "trial_id": "NCT00206232"
+          },
+          "workflow": "trial_profile"
+        },
+        "similarity": null
+      }
+    ],
+    "validation": {
+      "semantic_association_confirmed": false,
+      "source_grounding_passed": true
+    }
+  },
+  "ui_exceptions": 0
+}

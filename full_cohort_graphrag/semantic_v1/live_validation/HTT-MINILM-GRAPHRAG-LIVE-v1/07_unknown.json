@@ -1,0 +1,331 @@
+{
+  "answer": "ABSTAIN: Verified evidence is unavailable or insufficient: NOT_FOUND No unsupported answer is published.",
+  "answer_origin": null,
+  "dataset_version": "HTT-P1-AACT-20260905",
+  "elapsed_seconds": 0.5212959529999353,
+  "errors": [
+    "Verified evidence is unavailable or insufficient: NOT_FOUND"
+  ],
+  "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+  "independent_live_audit": {
+    "checked_fact_count": 0,
+    "checked_facts": [],
+    "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+    "method": "Exact catalog/fact/record equality, trial-specific citation bindings and live prepared-evidence round-trip; not clinical equivalence validation"
+  },
+  "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+  "notice": "Experimental registered-association retrieval, not clinical advice. Similarity proposes candidates; it does not verify ownership of the query measure or clinical effectiveness.",
+  "question": "What planned outcomes were registered for NCT99999999?",
+  "ranking": null,
+  "route": {
+    "ids": [
+      "NCT99999999"
+    ],
+    "mode": "EXACT_NCT",
+    "relevance": {
+      "classification": "CLASSIFIED",
+      "limitations": "Only declared single-field templates; not general semantic relevance, clinical interpretation or full answer sufficiency",
+      "method": "Anchored whole-question templates; casefold and whitespace normalization; field and NCT checks",
+      "permitted_fields": [
+        "planned outcome measure"
+      ],
+      "requested_nct_ids": [
+        "NCT99999999"
+      ],
+      "rule_id": "FIELD_REGISTERED_FOR",
+      "version": "HTT-FULL-QUESTION-FIELD-RULES-v1"
+    }
+  },
+  "schema_version": "HTT-MINILM-GRAPHRAG-v1",
+  "snapshot_date": "2026-09-05",
+  "started_utc": "2026-10-24T22:30:41.322344+00:00",
+  "status": "ABSTAIN",
+  "trial_results": [
+    {
+      "answer_trace": {
+        "answer": "ABSTAIN: Requested trial evidence was not found in the pinned graph. Verified evidence is retained separately.",
+        "answer_origin": "DETERMINISTIC_VERIFIED_EVIDENCE",
+        "completed_utc": "2026-10-24T22:30:41.843450+00:00",
+        "dataset_version": "HTT-P1-AACT-20260905",
+        "deterministic_evidence_summary": "Verified retrieval evidence — deterministic summary, not an LLM answer.\nDataset: HTT-P1-AACT-20260905; graph: HTT-KG-AACT-20260905-FULL2824-v1; snapshot: 2026-09-05.\nRegistered planned outcomes are not observed clinical results.\nSeptember 5, 2026 snapshot values may include amendments; original-registration availability is not asserted.\nWorkflow: trial_profile; pagination-limited: False; response records/trials: 0/0.\nNCT99999999: NOT_FOUND in the pinned cohort; no trial facts asserted.\n",
+        "generation": {
+          "actual_model": null,
+          "attempts": 0,
+          "eval_count": null,
+          "latency_ms": null,
+          "maximum_attempts": 0,
+          "prompt_eval_count": null,
+          "provider": null,
+          "requested_model": null
+        },
+        "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+        "limits": {
+          "max_answer_bytes": 50000,
+          "max_outcomes": 200,
+          "required_answer_bytes": null
+        },
+        "listed_outcomes": [],
+        "listing_policy_version": "HTT-FULL-COMPLETE-OUTCOME-LISTING-v1",
+        "model_generated": false,
+        "prepared_evidence_sha256": "e6d64693ac202f729560645c2540a5f29d23e3bfb990505a6bed76ddf0d97608",
+        "question": "What planned outcomes were registered for NCT99999999?",
+        "raw_model_output": null,
+        "safeguards": [
+          "Registered planned outcomes are not observed clinical results.",
+          "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted."
+        ],
+        "schema_version": "HTT-FULL-DETERMINISTIC-OUTCOMES-v1",
+        "scope": {
+          "pagination": {
+            "all_evidence_returned": true,
+            "has_more": false,
+            "limit": 200,
+            "next_offset": null,
+            "offset": 0,
+            "returned": 0,
+            "total": 0
+          },
+          "pagination_unit": "evidence_paths",
+          "selected_nct_ids": [
+            "NCT99999999"
+          ]
+        },
+        "snapshot_date": "2026-09-05",
+        "source_references": [],
+        "started_utc": "2026-10-24T22:30:41.842015+00:00",
+        "status": "ABSTAIN",
+        "summary_sha256": "413b6464e9bc0b23966fa42a6f9627bcef3adeb6e773086c2a1ece10bd6c0aeb",
+        "total_latency_ms": 1.631,
+        "validation": {
+          "citation_ids": [],
+          "complete_source_set": false,
+          "errors": [
+            "NOT_FOUND"
+          ],
+          "expected_evidence_ids": [],
+          "listed_evidence_ids": [],
+          "listed_fact_ids": [],
+          "passed": false,
+          "relevance": {
+            "classification": "CLASSIFIED",
+            "general_semantic_relevance_checked": false,
+            "limitations": "Only declared single-field templates; not general semantic relevance, clinical interpretation or full answer sufficiency",
+            "method": "Anchored whole-question templates; casefold and whitespace normalization; field and NCT checks",
+            "permitted_fields": [
+              "planned outcome measure"
+            ],
+            "requested_nct_ids": [
+              "NCT99999999"
+            ],
+            "rule_id": "FIELD_REGISTERED_FOR",
+            "status": "NOT_ESTABLISHED",
+            "version": "HTT-FULL-QUESTION-FIELD-RULES-v1"
+          }
+        },
+        "verified_evidence": {
+          "citations": [],
+          "completeness": {
+            "complete_evidence": false,
+            "missing_source_records": [],
+            "not_found_nct_ids": [
+              "NCT99999999"
+            ],
+            "optional_blank_fields_preserved": true,
+            "pagination_limited": false,
+            "prepared_all_supplied_evidence": true,
+            "retrieval_scope_complete": true,
+            "source_categories_complete": false
+          },
+          "dataset_version": "HTT-P1-AACT-20260905",
+          "evidence_record_count": 0,
+          "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+          "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+          "no_llm_answer": true,
+          "retrieval_status": "NOT_FOUND",
+          "safeguards": {
+            "no_answer_generation": true,
+            "planned_outcomes": "Registered planned outcomes are not observed clinical results.",
+            "read_only": true,
+            "snapshot": "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted."
+          },
+          "schema_version": "HTT-FULL-EVIDENCE-PREPARATION-v1",
+          "scope": {
+            "pagination": {
+              "all_evidence_returned": true,
+              "has_more": false,
+              "limit": 200,
+              "next_offset": null,
+              "offset": 0,
+              "returned": 0,
+              "total": 0
+            },
+            "pagination_unit": "evidence_paths",
+            "selected_nct_ids": [
+              "NCT99999999"
+            ]
+          },
+          "snapshot_date": "2026-09-05",
+          "source_dataset": {
+            "archive_md5": "99e62b3f8ae5838b36bc0c2277ad2714",
+            "archive_sha256": "215365a46dd8119ef4bdee62cd11a08910c9be0855edf246b92f31cdcc2d1023",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+            "snapshot_date": "2026-09-05",
+            "snapshot_file": "20260905_export_ctgov.zip",
+            "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+            "source_dataset_id": "HTT-P1-AACT-20260905"
+          },
+          "summary": "Verified retrieval evidence — deterministic summary, not an LLM answer.\nDataset: HTT-P1-AACT-20260905; graph: HTT-KG-AACT-20260905-FULL2824-v1; snapshot: 2026-09-05.\nRegistered planned outcomes are not observed clinical results.\nSeptember 5, 2026 snapshot values may include amendments; original-registration availability is not asserted.\nWorkflow: trial_profile; pagination-limited: False; response records/trials: 0/0.\nNCT99999999: NOT_FOUND in the pinned cohort; no trial facts asserted.\n",
+          "summary_field_policy": "Registered names/types; planned measures, outcome types and time frames. All supplied approved properties remain structured; descriptions/population are not repeated in prose.",
+          "summary_sha256": "413b6464e9bc0b23966fa42a6f9627bcef3adeb6e773086c2a1ece10bd6c0aeb",
+          "trials": [
+            {
+              "categories": {},
+              "coverage": {},
+              "dataset_relationship": null,
+              "nct_id": "NCT99999999",
+              "retrieval_status": "NOT_FOUND",
+              "state": {
+                "available_record_count": 0,
+                "missing_source_categories": [],
+                "not_found": true,
+                "pagination_limited": false,
+                "prepared_record_count": 0
+              },
+              "trial": null,
+              "trial_citation_ids": []
+            }
+          ],
+          "workflow": "trial_profile"
+        }
+      },
+      "evidence_question": "What planned outcomes were registered for NCT99999999?",
+      "evidence_question_is_derived": false,
+      "nct_id": "NCT99999999",
+      "prepared_evidence": {
+        "citations": [],
+        "completeness": {
+          "complete_evidence": false,
+          "missing_source_records": [],
+          "not_found_nct_ids": [
+            "NCT99999999"
+          ],
+          "optional_blank_fields_preserved": true,
+          "pagination_limited": false,
+          "prepared_all_supplied_evidence": true,
+          "retrieval_scope_complete": true,
+          "source_categories_complete": false
+        },
+        "dataset_version": "HTT-P1-AACT-20260905",
+        "evidence_record_count": 0,
+        "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+        "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+        "no_llm_answer": true,
+        "retrieval_status": "NOT_FOUND",
+        "safeguards": {
+          "no_answer_generation": true,
+          "planned_outcomes": "Registered planned outcomes are not observed clinical results.",
+          "read_only": true,
+          "snapshot": "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted."
+        },
+        "schema_version": "HTT-FULL-EVIDENCE-PREPARATION-v1",
+        "scope": {
+          "pagination": {
+            "all_evidence_returned": true,
+            "has_more": false,
+            "limit": 200,
+            "next_offset": null,
+            "offset": 0,
+            "returned": 0,
+            "total": 0
+          },
+          "pagination_unit": "evidence_paths",
+          "selected_nct_ids": [
+            "NCT99999999"
+          ]
+        },
+        "snapshot_date": "2026-09-05",
+        "source_dataset": {
+          "archive_md5": "99e62b3f8ae5838b36bc0c2277ad2714",
+          "archive_sha256": "215365a46dd8119ef4bdee62cd11a08910c9be0855edf246b92f31cdcc2d1023",
+          "dataset_version": "HTT-P1-AACT-20260905",
+          "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+          "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+          "snapshot_date": "2026-09-05",
+          "snapshot_file": "20260905_export_ctgov.zip",
+          "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+          "source_dataset_id": "HTT-P1-AACT-20260905"
+        },
+        "summary": "Verified retrieval evidence — deterministic summary, not an LLM answer.\nDataset: HTT-P1-AACT-20260905; graph: HTT-KG-AACT-20260905-FULL2824-v1; snapshot: 2026-09-05.\nRegistered planned outcomes are not observed clinical results.\nSeptember 5, 2026 snapshot values may include amendments; original-registration availability is not asserted.\nWorkflow: trial_profile; pagination-limited: False; response records/trials: 0/0.\nNCT99999999: NOT_FOUND in the pinned cohort; no trial facts asserted.\n",
+        "summary_field_policy": "Registered names/types; planned measures, outcome types and time frames. All supplied approved properties remain structured; descriptions/population are not repeated in prose.",
+        "summary_sha256": "413b6464e9bc0b23966fa42a6f9627bcef3adeb6e773086c2a1ece10bd6c0aeb",
+        "trials": [
+          {
+            "categories": {},
+            "coverage": {},
+            "dataset_relationship": null,
+            "nct_id": "NCT99999999",
+            "retrieval_status": "NOT_FOUND",
+            "state": {
+              "available_record_count": 0,
+              "missing_source_categories": [],
+              "not_found": true,
+              "pagination_limited": false,
+              "prepared_record_count": 0
+            },
+            "trial": null,
+            "trial_citation_ids": []
+          }
+        ],
+        "workflow": "trial_profile"
+      },
+      "raw_retrieval": {
+        "coverage": {},
+        "dataset_version": "HTT-P1-AACT-20260905",
+        "evidence": [],
+        "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+        "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+        "nct_id": "NCT99999999",
+        "pagination": {
+          "all_evidence_returned": true,
+          "has_more": false,
+          "limit": 200,
+          "next_offset": null,
+          "offset": 0,
+          "returned": 0,
+          "total": 0
+        },
+        "reason": "NCT ID is not in the pinned cohort membership",
+        "retrieved_utc": "2026-10-24T22:30:41.840473+00:00",
+        "safeguards": {
+          "no_answer_generation": true,
+          "planned_outcomes": "Registered planned outcomes are not observed clinical results.",
+          "read_only": true,
+          "snapshot": "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted."
+        },
+        "schema_version": "HTT-FULL-STATIC-RETRIEVAL-v1",
+        "snapshot_date": "2026-09-05",
+        "source_dataset": {
+          "archive_md5": "99e62b3f8ae5838b36bc0c2277ad2714",
+          "archive_sha256": "215365a46dd8119ef4bdee62cd11a08910c9be0855edf246b92f31cdcc2d1023",
+          "dataset_version": "HTT-P1-AACT-20260905",
+          "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+          "pinned_manifest_sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+          "snapshot_date": "2026-09-05",
+          "snapshot_file": "20260905_export_ctgov.zip",
+          "snapshot_url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+          "source_dataset_id": "HTT-P1-AACT-20260905"
+        },
+        "status": "NOT_FOUND",
+        "trial": null,
+        "workflow": "trial_profile"
+      }
+    }
+  ],
+  "validation": {
+    "semantic_association_confirmed": false,
+    "source_grounding_passed": false
+  },
+  "validation_execution_type": "LIVE_SERVICES"
+}

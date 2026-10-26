@@ -1,0 +1,35 @@
+{
+  "actual_status": "ABSTAIN",
+  "checked_fact_count": 0,
+  "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+  "elapsed_seconds": 0.8328856459993403,
+  "errors": [
+    "Verified evidence is unavailable or insufficient: OLLAMA_CONNECTION_OR_TIMEOUT_FAILURE"
+  ],
+  "evidence_counts": {
+    "NCT00206232": 14
+  },
+  "execution_type": "FAULT_INJECTION",
+  "expected_status": "ABSTAIN",
+  "id": "11_ollama_fault",
+  "model_attempts": 1,
+  "question": "What title is registered for clinical trial NCT00206232?",
+  "result": "PASS",
+  "retrieval_method": "EXACT_NCT",
+  "retrieved_trial_ids": [
+    "NCT00206232"
+  ],
+  "source_completeness": {
+    "NCT00206232": {
+      "complete_evidence": true,
+      "missing_source_records": [],
+      "not_found_nct_ids": [],
+      "optional_blank_fields_preserved": true,
+      "pagination_limited": false,
+      "prepared_all_supplied_evidence": true,
+      "retrieval_scope_complete": true,
+      "source_categories_complete": true
+    }
+  },
+  "trace_file": "11_ollama_fault.json"
+}

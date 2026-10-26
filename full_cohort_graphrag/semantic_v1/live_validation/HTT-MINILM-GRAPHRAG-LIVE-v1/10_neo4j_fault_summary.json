@@ -1,0 +1,20 @@
+{
+  "actual_status": "ABSTAIN",
+  "checked_fact_count": 0,
+  "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+  "elapsed_seconds": 0.0816456520005886,
+  "errors": [
+    "Retrieval, evidence preparation or generation failed safely; inspect local configuration and source coverage"
+  ],
+  "evidence_counts": {},
+  "execution_type": "FAULT_INJECTION",
+  "expected_status": "ABSTAIN",
+  "id": "10_neo4j_fault",
+  "model_attempts": 0,
+  "question": "What planned outcomes were registered for NCT00206232?",
+  "result": "PASS",
+  "retrieval_method": "EXACT_NCT",
+  "retrieved_trial_ids": [],
+  "source_completeness": {},
+  "trace_file": "10_neo4j_fault.json"
+}

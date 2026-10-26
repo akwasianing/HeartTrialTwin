@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470"><rect width="1000" height="470" fill="white"/>
+<text x="30" y="35" font-family="sans-serif" font-size="23">Frozen 2,824-candidate association ranking — test</text>
+<text x="20" y="95" font-family="sans-serif" font-size="17">tfidf</text>
+<rect x="240" y="70" width="43.860" height="35" fill="#1865a3"/>
+<text x="293.860" y="95" font-size="18">MRR 0.0707</text>
+<text x="20" y="160" font-family="sans-serif" font-size="17">minilm</text>
+<rect x="240" y="135" width="47.239" height="35" fill="#1865a3"/>
+<text x="297.239" y="160" font-size="18">MRR 0.0762</text>
+<text x="20" y="225" font-family="sans-serif" font-size="17">context_pooling</text>
+<rect x="240" y="200" width="48.616" height="35" fill="#1865a3"/>
+<text x="298.616" y="225" font-size="18">MRR 0.0784</text>
+<text x="20" y="290" font-family="sans-serif" font-size="17">untrained_graphsage</text>
+<rect x="240" y="265" width="1.651" height="35" fill="#1865a3"/>
+<text x="251.651" y="290" font-size="18">MRR 0.0027</text>
+<text x="20" y="355" font-family="sans-serif" font-size="17">trained_graphsage</text>
+<rect x="240" y="330" width="6.968" height="35" fill="#1865a3"/>
+<text x="256.968" y="355" font-size="18">MRR 0.0112</text>
+<text x="30" y="440" font-size="16">Registered measures, not observed clinical results; no inductive or clinical claim.</text></svg>

@@ -1,0 +1,20 @@
+{
+  "actual_status": "ABSTAIN",
+  "checked_fact_count": 0,
+  "citation_validity": "NOT_APPLICABLE_NO_PUBLISHED_FACTS",
+  "elapsed_seconds": 0.0009711870006867684,
+  "errors": [
+    "Unsupported question: only declared registered-fact fields are available, not clinical results or termination reasons"
+  ],
+  "evidence_counts": {},
+  "execution_type": "LOCAL_POLICY_ONLY",
+  "expected_status": "ABSTAIN",
+  "id": "06_effectiveness",
+  "model_attempts": 0,
+  "question": "Did spironolactone improve survival in NCT00206232?",
+  "result": "PASS",
+  "retrieval_method": "POLICY_REJECTION",
+  "retrieved_trial_ids": [],
+  "source_completeness": {},
+  "trace_file": "06_effectiveness.json"
+}

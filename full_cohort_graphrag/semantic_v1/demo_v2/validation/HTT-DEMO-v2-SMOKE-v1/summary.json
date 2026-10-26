@@ -1,0 +1,88 @@
+{
+  "cases": [
+    {
+      "case": "01_sponsor",
+      "checked_facts": 1,
+      "elapsed_seconds": 0.634078,
+      "evidence_counts": {
+        "NCT00206232": 14
+      },
+      "result": "PASS",
+      "selected_nct_ids": [
+        "NCT00206232"
+      ],
+      "skipped_candidates": [],
+      "status": "GROUNDED"
+    },
+    {
+      "case": "02_intervention",
+      "checked_facts": 1,
+      "elapsed_seconds": 0.757853,
+      "evidence_counts": {
+        "NCT00206232": 14
+      },
+      "result": "PASS",
+      "selected_nct_ids": [
+        "NCT00206232"
+      ],
+      "skipped_candidates": [],
+      "status": "GROUNDED"
+    },
+    {
+      "case": "03_outcomes",
+      "checked_facts": 7,
+      "elapsed_seconds": 2.27971,
+      "evidence_counts": {
+        "NCT00206232": 14
+      },
+      "result": "PASS",
+      "selected_nct_ids": [
+        "NCT00206232"
+      ],
+      "skipped_candidates": [],
+      "status": "COMPLETE_LISTING"
+    },
+    {
+      "case": "04_discovery",
+      "checked_facts": 6,
+      "elapsed_seconds": 25.092864,
+      "evidence_counts": {
+        "NCT00012870": 6,
+        "NCT00939146": 28,
+        "NCT04715490": 11
+      },
+      "result": "PASS",
+      "selected_nct_ids": [
+        "NCT00939146",
+        "NCT04715490"
+      ],
+      "skipped_candidates": [
+        {
+          "meaning": "Evidence unavailable/incomplete for this listing, not proof of no registered measure or clinical relevance.",
+          "nct_id": "NCT00012870",
+          "original_rank": 2,
+          "reasons": [
+            "MISSING_SOURCE_RECORDS"
+          ],
+          "similarity": 0.390091210603714
+        }
+      ],
+      "status": "GROUNDED_CANDIDATE_EVIDENCE"
+    }
+  ],
+  "model_generation_requests": 0,
+  "preservation_after": {
+    "existing_live_files_unchanged": 28,
+    "existing_semantic_files_unchanged": 12,
+    "research_files_unchanged": 51
+  },
+  "preservation_before": {
+    "existing_live_files_unchanged": 28,
+    "existing_semantic_files_unchanged": 12,
+    "research_files_unchanged": 51
+  },
+  "services": {
+    "neo4j_read_only_verified": true,
+    "ollama_installed": true
+  }
+}

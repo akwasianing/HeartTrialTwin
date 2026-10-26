@@ -1,0 +1,26 @@
+{
+  "authorization_sha256": "2bea5b0305bc7e1f77e45fd04ac2759198b24a8be85b446121abc22a11167235",
+  "code_sha256": {
+    "full_cohort_access.py": "6ad22216972bfa8f3316f28c05cfebca685348761abbcbe403635751da02276d",
+    "full_cohort_experiment.py": "b72c6c5cef7350ef919b206ca2d3d0a55beb4f4f90b4fba8fdd31784e99662c1",
+    "full_cohort_features.py": "61c44fbcf1f9761fbe2a601b93f8ddd196e614d30de4d00576679ed191c733b5",
+    "full_cohort_ranking.py": "15bcc7ce6c67cf081b48e063a9274f5f1fa534731b4ce26aa53376ede294e6e0"
+  },
+  "config_sha256": "e6e74d1b9e822810ecf1aa4f210610137397f897220c39a0f0216fc99185bf12",
+  "feature_manifest_sha256": "e2f167b01b2e83aef1f11ef6e4dba673d741246927a43f30936888beecf99a17",
+  "files_sha256": {
+    "history.json": "cdb6cf53f89cf06cede51fc33ba556af4cdc39acbdffccfc9795639baf6b4ed9",
+    "last_model.pt": "c062c55819b61e18195fc777316abd34fe979ce6444d8ee35be29fa067afe9da",
+    "selected_model.pt": "58bac20f20d15349063ef36079d204714052b48bb4332c6622e68c43d0d7b936",
+    "selection.json": "2990391889d2ce2de5ca4a30a9c307ba4e0552d1f6bb87a1e095800c0e13cb5f",
+    "training_curves.svg": "6c059501d5ff7ab9517363a7bd582c1a8c7d2a3406794a97a77e1681ea8365c5",
+    "untrained_model.pt": "c94d6411386eefcf77b2e726b55b19be549b510ff279e0b38720fd6e91244a4e"
+  },
+  "mask_sha256": "1e397a5547bce72ea02c937b0d297a2e282eb78a5b83f0bcc8e8d1637ad66d12",
+  "protocol_sha256": "b13d662390b687b62a08cc1fb81bd3413f2c9d1fbb3b6ec86438b1a6854cd95b",
+  "schema_version": "HTT-GNN-TRAINING-v1",
+  "training_candidates": 1976,
+  "training_permitted_in_frozen_artifacts": false,
+  "training_queries": 11712,
+  "validation_queries": 2068
+}

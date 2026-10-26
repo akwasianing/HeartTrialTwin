@@ -1,0 +1,13 @@
+{
+  "authorization_sha256": "2bea5b0305bc7e1f77e45fd04ac2759198b24a8be85b446121abc22a11167235",
+  "config_sha256": "e6e74d1b9e822810ecf1aa4f210610137397f897220c39a0f0216fc99185bf12",
+  "diagnostic_code_sha256": "1666e4ee75acc7cc04dd928a468f296cc636b92297aa6f4fa447235b504b7a91",
+  "files_sha256": {
+    "diagnostic_plan.json": "b9caa0ef5c7f3550a5c43d73ef1b76f6c71b8dc1f276024398fc5125c0faec35",
+    "diagnostic_results.json": "27388c9787eb02af7bc4e41c0815141455f8897229aad85030fbf5c6519713b1"
+  },
+  "no_production_modules_modified": true,
+  "protocol_sha256": "b13d662390b687b62a08cc1fb81bd3413f2c9d1fbb3b6ec86438b1a6854cd95b",
+  "schema_version": "HTT-GNN-DIAG-66G1-v1",
+  "test_accessed": false
+}

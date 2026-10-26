@@ -1,0 +1,81 @@
+{
+  "attempts_per_case": 1,
+  "authorization": "Project-owner Step 66G-3",
+  "case_watchdog_seconds": 240,
+  "cases": [
+    {
+      "execution_type": "ollama",
+      "expected_status": "GROUNDED",
+      "id": "01_profile",
+      "question": "What title is registered for clinical trial NCT00206232?"
+    },
+    {
+      "execution_type": "semantic",
+      "expected_status": "GROUNDED_CANDIDATE_EVIDENCE",
+      "id": "02_discovery",
+      "question": "Find trials with registered planned outcomes about quality of life."
+    },
+    {
+      "execution_type": "ollama",
+      "expected_status": "GROUNDED",
+      "id": "03_sponsor",
+      "question": "Who is the lead sponsor of NCT00206232?"
+    },
+    {
+      "execution_type": "ollama",
+      "expected_status": "GROUNDED",
+      "id": "04_intervention",
+      "question": "What intervention is registered for clinical trial NCT00206232?"
+    },
+    {
+      "execution_type": "neo4j",
+      "expected_status": "COMPLETE_LISTING",
+      "id": "05_outcomes",
+      "question": "What planned outcomes were registered for NCT00206232?"
+    },
+    {
+      "execution_type": "offline",
+      "expected_status": "ABSTAIN",
+      "id": "06_effectiveness",
+      "question": "Did spironolactone improve survival in NCT00206232?"
+    },
+    {
+      "execution_type": "neo4j",
+      "expected_status": "ABSTAIN",
+      "id": "07_unknown",
+      "question": "What planned outcomes were registered for NCT99999999?"
+    },
+    {
+      "execution_type": "offline",
+      "expected_status": "ABSTAIN",
+      "id": "08_invalid",
+      "question": "What planned outcomes were registered for NCT0020623?"
+    },
+    {
+      "execution_type": "neo4j",
+      "expected_status": "ABSTAIN",
+      "id": "09_missing_evidence",
+      "question": "What planned outcomes were registered for NCT00000475?"
+    },
+    {
+      "execution_type": "injected_neo4j",
+      "expected_status": "ABSTAIN",
+      "id": "10_neo4j_fault",
+      "question": "What planned outcomes were registered for NCT00206232?"
+    },
+    {
+      "execution_type": "injected_ollama",
+      "expected_status": "ABSTAIN",
+      "id": "11_ollama_fault",
+      "question": "What title is registered for clinical trial NCT00206232?"
+    }
+  ],
+  "failure_injections_are_simulations": true,
+  "llm_timeout_seconds": 180,
+  "max_live_model_attempts": 3,
+  "neo4j_query_timeout_seconds": 30,
+  "retries": 0,
+  "semantic_top_k": 2,
+  "test_benchmark": false,
+  "version": "HTT-MINILM-GRAPHRAG-LIVE-v1"
+}

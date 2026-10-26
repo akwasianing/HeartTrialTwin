@@ -26,6 +26,7 @@ vector_rag/.cache/
 !.env.example
 
 # Local build and validation workspaces
+.codex-ppt-build/
 .codex-finalizer/
 .pptx_build/
 .pptx_render*/
@@ -49,3 +50,35 @@ DEVELOPMENT_HANDOFF.md
 
 # One-off local screenshot automation; captured evidence is retained.
 p1_app/capture_app_screenshots.mjs
+
+# Challenge 3: external runtime/research payloads stay local. Existing tracked
+# Challenge 1/2 artifacts are unaffected by these new, scoped exclusions.
+.venv*/
+artifacts/cohort_scaling/*/source_cache/
+artifacts/cohort_scaling/*/nodes_*.csv
+artifacts/cohort_scaling/*/relationships_*.csv
+gnn_graphrag/data/HTT-GNN-FULL2824-EXTRACT-v1/*.csv
+gnn_graphrag/feature_artifacts/**/*.npy
+gnn_graphrag/feature_artifacts/.HTT-*/
+gnn_graphrag/experiments/**/*.pt
+gnn_graphrag/experiments/**/*.joblib
+gnn_graphrag/experiments/**/*.pkl
+gnn_graphrag/protocols/**/*.jsonl
+gnn_graphrag/protocols/**/*.csv
+!gnn_graphrag/protocols/HTT-GNN-ASSOC-PROTOCOL-v2/candidate_trials.csv
+gnn_graphrag/**/*.lock
+full_cohort_graphrag/src/*.backup_*
+reports/final_project/CHALLENGE_3_FINAL/_build/
+reports/final_project/.challenge3-pptx-qa/
+
+# Local forensic details and publication receipts are not public source assets.
+reports/publication_review/scan_results.json
+reports/publication_review/targeted_checks_*.json
+reports/publication_review/publication_receipt.json
+
+# Unrelated local course originals; preserve them on disk.
+week 6/
+week 7/
+week 8/
+week 9/
+week 10/

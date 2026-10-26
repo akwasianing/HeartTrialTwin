@@ -1,0 +1,143 @@
+{
+  "actual_counts": {
+    "cross_trial_query_groups": 1049,
+    "cross_trial_query_source_records": 3881,
+    "description_audit_rows": 328,
+    "description_kinds": {
+      "ADJACENT_LEXICAL_CANDIDATE": 59,
+      "EXACT_NORMALIZED_DESCRIPTION": 221,
+      "PUNCTUATION_CANDIDATE": 48
+    },
+    "distinct_normalized_queries": 16290,
+    "exact_cross_partition_query_groups": 691,
+    "family_group_classifications": {
+      "CONFIRMED_ONLY": 5,
+      "SINGLETON": 2767,
+      "UNRESOLVED_GROUP": 23
+    },
+    "family_pair_classifications": {
+      "CONFIRMED_RELATED": 5,
+      "REJECTED": 0,
+      "UNRESOLVED": 62
+    },
+    "family_pair_strengths": {
+      "STRONG": 30,
+      "WEAK": 37
+    },
+    "largest_family": 3,
+    "near_query_candidates": 791,
+    "near_query_cross_partition_candidates": 208,
+    "positive_associations": 19740,
+    "removed_target_message_edges": 39480,
+    "retained_message_edges": 61218,
+    "split_counts": {
+      "test": {
+        "novel_evaluation_positive_records": 3823,
+        "novel_evaluation_queries": 3561,
+        "positive_associations": 4786,
+        "queries_before_embargo": 4230,
+        "trials": 421,
+        "trials_after_embargo": 373,
+        "trials_with_outcomes": 401
+      },
+      "train": {
+        "novel_evaluation_positive_records": 0,
+        "novel_evaluation_queries": 0,
+        "positive_associations": 10180,
+        "queries_before_embargo": 8717,
+        "trials": 1981,
+        "trials_after_embargo": 0,
+        "trials_with_outcomes": 1981
+      },
+      "validation": {
+        "novel_evaluation_positive_records": 3707,
+        "novel_evaluation_queries": 3401,
+        "positive_associations": 4774,
+        "queries_before_embargo": 4168,
+        "trials": 422,
+        "trials_after_embargo": 372,
+        "trials_with_outcomes": 401
+      }
+    },
+    "trials": 2824,
+    "trials_with_outcomes": 2783,
+    "trials_without_outcomes": 41,
+    "weak_family_quarantined_trials": 69
+  },
+  "code_sha256": {
+    "association_training_data.py": "77caf91ea28f5d79c0b2f0012a0f4f83cab39236c708f4dc08523a07e420f0d6",
+    "prepare_association_protocol.py": "0f3652526168a1dbe06d00b868537f58c743f2b8a48430950c31953bbc682e36"
+  },
+  "created_utc": null,
+  "files_sha256": {
+    "candidate_trials.csv": "d7878be290494d4cb54e2dc07d4c4019575ff598048b2797aff4cb1a20654931",
+    "duplicate_description_audit.csv": "803abf96ec5f80c54af0e35075a4e4ff5bff898240c364300f2692211164587b",
+    "evaluation/test_queries.jsonl": "927a8a3dbc2f115a628cc0944a9cc6e4f27efab419a822e8825ab7135e735c9c",
+    "evaluation/validation_queries.jsonl": "4fbae26e7681c342f10e2d529fbe8fbdb56287a9f6ccb2698a602a0e6fd4f596",
+    "family_groups.csv": "0ef59678af15a3a51a7c7323d9d2a7b5f2b224b007998a7a3a6bc92150a3b507",
+    "family_pairs.csv": "e7a5b5a91bd2f9001dad7c69910f73a67111e1a74c705175c3ee238028d679f4",
+    "message_edge_mask.csv": "0233345a1a6366a483984f504a1c050ecd1b5b1a11e30d137ed51eb08f588323",
+    "near_query_candidates.csv": "4d3327f8436878a98ed4c5a35da5dcc8022ef383157cf9091adc75083e9b10ee",
+    "positive_associations.csv": "62d820042d1bbe87b0e7264ff7ddb45d6caab716b53e79cb9fbeb93354f76f1a",
+    "protocol.json": "995d509228a4b7c15858c1a10a982aaaf70575553aefd6bed5033aad1e79b955",
+    "query_catalog.jsonl": "7abfbc6626f91567b0b4410d325db0c552b96a4edd091a90f7c97a1681442f4f",
+    "query_overlap_audit.csv": "0452f1a39f6771c8c7282f8950d7978f8ed22328d6b22d258b40c6361c1b14d9",
+    "source_audit.json": "11b9a92f2fc225396a9409477204b34374adb4603e31c02ee65a377ff7f20d01",
+    "training/candidates.csv": "ff7657b0f95133ee5dd724d21c7f4f338a5ddfeb704401c2d78ccad59519f0e6",
+    "training/context_nodes.jsonl": "a057e12c61dcb259291239602a287f4ad4917ad14df83aedd0ccf7784073fb13",
+    "training/families.csv": "345ddae941c716c4c9f508210f0b3df49ed12894930bc2789344c33fe72f4ceb",
+    "training/manifest.json": "ed811a52e14fb6ed2767bd227fb9086a784201feb55338a9306cb803c7f12cf1",
+    "training/message_edges.csv": "1e397a5547bce72ea02c937b0d297a2e282eb78a5b83f0bcc8e8d1637ad66d12",
+    "training/queries.jsonl": "42120b85cb17e357de5d826a51560d6c1d1bf519076f61922320df1492016a9d",
+    "trial_splits.csv": "19a462274c7ab342b43c803ebca8c6c9c1fb083eca0d9b3fbd4a45838ea5fbcf",
+    "truth/test.jsonl": "369f1c7956d2ec95644cd1aa1c60571499e19f5daed79959d14fb5a66a7ef2be",
+    "truth/train.jsonl": "7fbf5eb18e4dc00ad0e7d7eaddf26a492e941c0258d19d388b2ad2babc7b0094",
+    "truth/validation.jsonl": "102d49ff4532acc79211084778afcadb657da4969a5dcd8e797b061c67c89b72"
+  },
+  "schema_version": "HTT-GNN-ASSOC-PROTOCOL-v1",
+  "seed": 20261023,
+  "source_sha256": {
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/COVERAGE_REPORT.md": "13e1cffb264b390dd129a1d5fb58a4106591ba6787bbaa4991a5e8966b4dd1dc",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/VALIDATION_REPORT.md": "c68877f48fd2ca990dfefbca00b7624683822a033037058ea207192be6722ca7",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/cohort_membership.csv": "b245d627e261dad74314c15bbbd1d3a5fdb42d73d872add555de13956ab4f027",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_condition_term.csv": "ccfac2a32cfd5f578735e75b0df01261226ce3c19df3d6e9fab3591509f38828",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_intervention.csv": "4b58e929708a39049d5bafc55584049d4ef30f22879c75b81fb7a8c0670b39d7",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_planned_outcome.csv": "7e101b17b25f8c4ddefd5ee45b97d3f64ded09f8eda320eb32b8e453f25b7d42",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_source_dataset.csv": "921cb0b107e4a3c000edd168ffc0a0341e06f190213a6784583e92bbadd6665e",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_sponsor.csv": "6d8e89bc99fbe438259775faedc3690cfb12cf66c5d08ae8aa83fe9622879465",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_trial.csv": "0e69762d763141eadde037449bc425aa4a1ea3db4876d535d596b7db8736e723",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_condition_term_source_dataset.csv": "4b9c61189f226a04ee897a7f94b2c62921fdeb3cf276dcb71ba63f5b2b2584cf",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_intervention_source_dataset.csv": "51a805aacacb7fd792142b3beea202e4784344af7834bad379f0a9217c9cd2fc",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_planned_outcome_source_dataset.csv": "daa30f70419418b3df2a4baa423b7689014b6c897e09925e74c1ccdf4e13e8cf",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_sponsor_source_dataset.csv": "89fc286330587d616b9c6fc498b5bdb2ed57bfbaf33417cdee2a12da63534975",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_browse_condition.csv": "f916e376c09c4522f729d792d9b4a4c05d1e90bff1c13c008fb6963f902883d7",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_intervention.csv": "8ec179b53ba17c0d8f814c8e52f845dcc5416958887a23cfa6efdaad6e8245f2",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_planned_outcome.csv": "16aa1185f340315701131eaf5333f353adb7cbb9acc826251f0b7679b434d4b5",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_source_dataset.csv": "f41ec5d2f26b916f5ae540e6c313fdc701ec84417d5959c06ce2e10d9daed144",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_sponsor.csv": "8f589557849227fd120cc6bc8e8018a35ad6016c34cf3c4e1f6928293df6fdad",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_submitted_condition.csv": "6d28180ca5eba2fff4f4be231781e781527c2de99080f459016c20fb09ed00dd",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/browse_conditions.jsonl": "0faf29a21b037ad55caef9860711f5b91d974bed4f4f13d3a4689b794495933d",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/conditions.jsonl": "5ed95a0660a929c06e3f797a6b57310ac918dea12f2db06497a863cefe3abd06",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/design_outcomes.jsonl": "f6d6a63f74205222bf6de2099f990a49344f97c5d7217310af666b1b810a22af",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/interventions.jsonl": "23470ad02ec92b0661d95555d3994647fb43b92fdf089612aaaa8a9f124b8b40",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/sponsors.jsonl": "a4ef2f045bbd0472ba96ac7e09390d98d3fda6d016023db60ee848b12001aec4",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/studies.jsonl": "68cb408ad31a56c9c1a23dbe138e7c5bc07767f9040f81346c78d92a7780c970",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_coverage.csv": "5157e0889383e3ecf32f02be0cb0138b56838298fb301ac6761addfa0609ef3b",
+    "full_system_feasibility/related_study_metadata.jsonl": "2caab289080d5a5deb7dfbf1dea578d1924922b6952c7aea676182bc815377eb",
+    "full_system_feasibility/related_study_resolution.csv": "8765fca979fa8943d049c97856e9445c2e2749ad50317f2eeacdbf286794d7c7",
+    "gnn_graphrag/data/HTT-GNN-FULL2824-EXTRACT-v1/SHA256SUMS": "b1380f067039cf6e84edf0966839b6007b67c9a87dd68f5f4f2b69ce1592c121",
+    "gnn_graphrag/data/HTT-GNN-FULL2824-EXTRACT-v1/extraction_manifest.json": "3fe45287cc12f4d752545c90c9d63a375370b69d070be47cb04b79398da6b6a3",
+    "gnn_graphrag/data/HTT-GNN-FULL2824-EXTRACT-v1/message_edges_semantic.csv": "eb8d2e0505224c32b499dd9447db18fad5e22979ad539cefee0320cc629f8635",
+    "gnn_graphrag/data/HTT-GNN-FULL2824-EXTRACT-v1/nodes.csv": "05fa737833cfee7816273b1204e681af8981abf73ea9057d709cfc0c7c79ecd0",
+    "gnn_graphrag/data/HTT-GNN-FULL2824-EXTRACT-v1/relationships.csv": "08dba8572ff4d81894a31e306b24c269819eb6a2e16bbc74383309a0f6c78ebf",
+    "step3_manifest/HeartTrialTwin_first_p1_cohort_manifest_HTT-P1-AACT-20260905.csv": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab"
+  },
+  "status": "PROVISIONAL_FAMILY_AUDIT_REVIEW_REQUIRED",
+  "target_ratios": {
+    "test": 0.15,
+    "train": 0.7,
+    "validation": 0.15
+  },
+  "training_permitted": false
+}
