@@ -1,0 +1,33 @@
+{
+  "version": "HTT-INTEGRATED-RESEARCH-v1",
+  "source_package_manifest_sha256": "29c54f92e4720271d6d103ddce0c7bf44abaf724a88703c59092c902c36f4c0a",
+  "all_trials": 2824,
+  "phase_applicable_trials": 1319,
+  "na_trials": 1505,
+  "cells": 88,
+  "minimum_display_cell_n": 20,
+  "factor_rows": 13,
+  "descriptive_only": true,
+  "model_refits": 0,
+  "new_risk_models": 0,
+  "risk_dimensions": {
+    "premature_termination": "EXPLORATORY_CONDITIONAL_CLASSIFIER_NOT_VALIDATED_FORECAST",
+    "withdrawal": "DESCRIPTIVE_SEPARATE_NOT_PRIMARY_MODEL_TARGET",
+    "recruitment": "SOURCE_TEXT_CUES_NOT_MODELED",
+    "safety": "NOT_MODELED",
+    "efficacy": "NOT_MODELED",
+    "delay": "NOT_MODELED",
+    "phase_transition": "NOT_MODELED"
+  },
+  "outputs_sha256": {
+    "data/factor_comparisons.csv": "eb7107928756e99ecab96099175694602c7a8f148fcdce2fed4e6ebbb11fd7cc",
+    "data/factor_membership.json": "ae3eb78d79cfaf2959f07d055f0da4d0f35e999c4bc88ea880718e217d1ef2f9",
+    "data/phase_intervention_cells.csv": "0eeab4f9ab4dea353a1d107e0f4e9b7ea654e96e795596336e009f011fba367f",
+    "figures/factor_comparison_heatmap.png": "f9df2d87d8e18f08b8572a548aac5b4adbbf57172d1aa46d2a1cd2bbe27f2d96",
+    "figures/factor_comparison_heatmap.svg": "aefab4d270a3a0f7ad1fa6157a2e661ec5b9e0a7766b9e63043ab90100f8627b",
+    "figures/model_performance_comparison.png": "3bc62f1ca877118b309c4b9ab999aa587cdfcc920dd4e3ae817f4bd8c7b34d85",
+    "figures/model_performance_comparison.svg": "daba393f675b94c10af74333827b30482a5a425a1895f844fb55715184f06edd",
+    "figures/phase_intervention_heatmap.png": "db8d756075e64aaa5d6744a9bdbdae1cb9c39e6d6e2fa0305f1d71c5c73a1e88",
+    "figures/phase_intervention_heatmap.svg": "b57ffcb1ef13c568590ff3a7684a1ec428c70694bf34c61eaeb4d1dd7f868dae"
+  }
+}

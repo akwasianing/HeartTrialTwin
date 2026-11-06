@@ -1,0 +1,478 @@
+{
+  "schema_version": "HTT-V6-FINAL-SOURCE-PUBLICATION-v1",
+  "base_commit": "be520bcd40748abfc03e4ff9b64bf244650c5367",
+  "branch": "codex/v6-submission-readiness",
+  "authorization": "Owner final-submission prompt November 6 2026: exact cleared source/docs only; private runtime not authorized for publication",
+  "status": "SOURCE_CONTENT_REVIEW_ONLY_ACCOUNT_AND_RUNTIME_CLEARANCE_NOT_IMPLIED",
+  "credentials_rotated_or_revoked": "UNCONFIRMED_NO_USE",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 2352,
+      "sha256": "8a2406102266b56605da659dcb01162a5120150ad2da95065e2a671d20f905b1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 27485,
+      "sha256": "2b98ada847403dd4ce816c7028fa9729af5a523374aa8a77a4a116d14deddc9b"
+    },
+    {
+      "path": "V1_INDEPENDENT_EVALUATION_REPORT.md",
+      "bytes": 5341,
+      "sha256": "35613a8c4f87e8b45530e698a0d2af4be77760cd9e1d9450f4e5c136b86d25ab"
+    },
+    {
+      "path": "figures and charts /HeartTrialTwin_V20.pptx",
+      "bytes": 97585,
+      "sha256": "de6d7bf2a25f5ea7c8cb91eac22285843bb4c6310a2c9433a18cbb580b83b120"
+    },
+    {
+      "path": "full_cohort_graphrag/semantic_v1/demo_v2/facts.py",
+      "bytes": 5927,
+      "sha256": "59b898d6b67afd21b3faa167c86b613d716f4fbb673cd5541bbfef5955f0694f"
+    },
+    {
+      "path": "full_cohort_graphrag/src/generate_answer.py",
+      "bytes": 32080,
+      "sha256": "742d7a29d850da273d49b56ecdb030f1be19f93c7f2c09cf1b28a8d8dc8f75dc"
+    },
+    {
+      "path": "full_cohort_graphrag/src/list_planned_outcomes.py",
+      "bytes": 10361,
+      "sha256": "a533cf8a599d5c620c4f034db6b8d7f02b1426a87ddacde1b147fccdd9ddbfe4"
+    },
+    {
+      "path": "full_cohort_graphrag/src/prepare_evidence.py",
+      "bytes": 24142,
+      "sha256": "5590d9e9baa3c9847137608c7219f7d0e914d4f881b1aadb2e9b967630d0890d"
+    },
+    {
+      "path": "full_cohort_graphrag/src/queries.py",
+      "bytes": 3895,
+      "sha256": "a2cd6b7519c02343f8b89013f4556b5db8b5430befc720f04433cbff4486c53e"
+    },
+    {
+      "path": "full_cohort_graphrag/src/retrieve.py",
+      "bytes": 25363,
+      "sha256": "ac77b3211d166fc5c823b0898b08822d2f9b0dffb90b51202faff79055abba43"
+    },
+    {
+      "path": "reports/challenge4/ai_design/pilot_v1/run_pilot.py",
+      "bytes": 30855,
+      "sha256": "cb0e6f404678a19ce783cceed414348cf7e627e8716cda97fee0153b39fb4f41"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/full_cohort_results/community_exploration_v1/manifest.json",
+      "bytes": 3137,
+      "sha256": "157253cdbf001284c6ac430d1d27e3eae3468b922d158769095b5d62db3ce09e"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/full_cohort_results/community_sensitivity_v2.json",
+      "bytes": 788884,
+      "sha256": "b6fef8b50c71cdfea5906c64f321fc1e3db79c5d2e9f0027c92c4b99883d2bcb"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/full_cohort_results/community_stability_v1.json",
+      "bytes": 2335,
+      "sha256": "e2db6f0b16e607c858e82eb29cc325785dd543148e4bbd4e8de4a3ffe3188f59"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/full_cohort_results/louvain_full_cohort_v1.json",
+      "bytes": 924760,
+      "sha256": "b401f8766ba407c627489835517c96cf71b4ed433d3a0d0ea1d10ac7b69dc868"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v4/app.py",
+      "bytes": 32666,
+      "sha256": "4c0ded84455417aa2019ad2011470b392e68c769f24b530da002925a0aad7431"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v4/community_graph_v4.py",
+      "bytes": 4863,
+      "sha256": "dbb1cf99dacbc2ce1e01affa59df6a832037336645081bf79d03078f349f0d63"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/PROVISIONING.md",
+      "bytes": 7550,
+      "sha256": "7b90e7422b81677a80999ce8f52fb64004a1209dadf308dafccee9dad0a48c07"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/README.md",
+      "bytes": 6283,
+      "sha256": "aae9e7abe6d20da9cf481ab4da11c68a7d9a962263db5c77f9ffacce74b06e96"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/VALIDATION_PHASE2.md",
+      "bytes": 10601,
+      "sha256": "329f768d43473a49b90158d5a03b3141c55c0a0cc33a49bdf8e5c5cb55ce1f47"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/app.py",
+      "bytes": 5155,
+      "sha256": "4ad1df40c580c037fb775bca31c4b504f3b9acadf52ade54fc1b573a0f277583"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/community_page.py",
+      "bytes": 6415,
+      "sha256": "28d3aa2760cff874963864b5a43b0b08fac26603296b10d5d1bd64eff169c274"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/integrity.py",
+      "bytes": 4292,
+      "sha256": "5ddd0a6887280edb774ce42793c0e04ffd82f4e7fbb93f3b3ceca2ea7a9cbc63"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/provision.py",
+      "bytes": 3635,
+      "sha256": "2f1e7664a39562a50b3de8f6e6998b446f0d25404dae84099551cbdadc8790e6"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/requirements-ui.txt",
+      "bytes": 178,
+      "sha256": "4f5d7b96150012fc7254163f820031d44e4d7de3aa39d4aac8eb6456f1f6d079"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/requirements-worker.txt",
+      "bytes": 234,
+      "sha256": "02e2cddfc6b1ee260785ccd2e8f821c973c126b6a075cb2f760e60bdfd30201d"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/runtime_integrity_v1.json",
+      "bytes": 74502,
+      "sha256": "958f09f86117ee7cdad8315ffa7d1f1ffdcf8d2ce931d58293654fa70e846655"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/tests/test_app.py",
+      "bytes": 9187,
+      "sha256": "583b7e3d6f0a8c360128375a6d1dc2d121eef265eb99b929be7c659309355f59"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/tests/test_integrity.py",
+      "bytes": 4767,
+      "sha256": "e948b158301470c8cff1148db34f4dee7b0612dd2617fe3d936164960264af98"
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/trial_intelligence_v5.py",
+      "bytes": 9147,
+      "sha256": "f157b0f847283aed685db37a6ef6680cb537ef30b8b047dd4e1feb4538a0fe8b"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/common.py",
+      "bytes": 6700,
+      "sha256": "a7834a5c8347f37ab0b86ebcd1374fd12159bac84c2beed335ccd61fdc96699c"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/complete_evidence.py",
+      "bytes": 9084,
+      "sha256": "6dba2c24afe20bed6235f0116ca2a14cd99f766281b2d400041112b72b3840d1"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/results.json",
+      "bytes": 2728,
+      "sha256": "8ac3b3cb6e679828e05ed82ac3e468259c98a4be2622f130aa0628d2a8874fa6"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/run_analysis.py",
+      "bytes": 16736,
+      "sha256": "e2507ec5192fd730802291f434e62d3718dae43b2cbfc20a514e600780943ecc"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/app.py",
+      "bytes": 4731,
+      "sha256": "c272746859a3f0a5b52baa767d48eaad00275341a11cf74dcaa65ef4a7fcf1b8"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/phase_explorer.py",
+      "bytes": 4166,
+      "sha256": "a9c87e378b7ed4610e0439373f11fe880b181f10a22cac8faa2dfc992024761b"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/record_demo.py",
+      "bytes": 1715,
+      "sha256": "e55c71e90f5481ce3fdd000cc6893730f4094a7442ef982e4d6b8555938edb27"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/test_app.py",
+      "bytes": 2051,
+      "sha256": "8f0629c00e68d9ae2629faed987ab1f2f16b7f1e56e1f0a3911c41ff76e5d306"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/prepare_cohort.py",
+      "bytes": 8038,
+      "sha256": "deb0a12b00bcfdc4485882edb132c17170e9312b748f1ef911cb6e86ed4d49a5"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/build_poster.py",
+      "bytes": 12524,
+      "sha256": "59b7092996d63bb15b5e1deb302cda44dd412765f914c87b097fb17f84d313ee"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/qa_figures.py",
+      "bytes": 670,
+      "sha256": "f71c7952239f061cd28f50fabed282492bbb89220efffa1a0ad9843477dfd691"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/test_final_package.py",
+      "bytes": 8912,
+      "sha256": "cbff17594d887c17618259358ef068264d79706a9da1bb997264b3eb9e5b1b63"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/validate_package.py",
+      "bytes": 5952,
+      "sha256": "a1ffd30bd08ac6eb9d74ea1b4952273c5957302300885c72f4c845efb9c6dce7"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/results/dashboard_manifest.json",
+      "bytes": 1758,
+      "sha256": "b36edb3233245aa699eff013306a42367d69a629c017296e276b2f7107903ea7"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/client.py",
+      "bytes": 1301,
+      "sha256": "4a7e4be7fc3a3d90e04076c8e462f4d2849431420c739e15a4deccf4ba49f90f"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/identity.py",
+      "bytes": 2185,
+      "sha256": "1f67040c480cf74d969412e7d97166511eacf7a6cb02ac6d63e5392b2683b843"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/inference.py",
+      "bytes": 9344,
+      "sha256": "b4a898b407538b8c8514a081d1f4ce807537e906204ff967cb5708d95b4f9297"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/pages.py",
+      "bytes": 9669,
+      "sha256": "457ff9544a815fe991f683f1684aaa3e5e5bf429db3aa8e0acbeef6d1d68d851"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/risk_dashboard_refined.py",
+      "bytes": 14685,
+      "sha256": "24c9715142ff37242ab325dc9a58f3fb645601efd7058ce9686abee7d279a6a1"
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/worker.py",
+      "bytes": 2912,
+      "sha256": "ae38ffdb607184f9c19745253a3208e0f2a5dd380cb32e03c77d28c1eac8e988"
+    },
+    {
+      "path": "reports/project_review/historical_label_feature_qualification_v1/qualify_historical.py",
+      "bytes": 28277,
+      "sha256": "812924f979395cbbe576537117f773ffc19d2cbce34f9f13e713c4810466d643"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/COMMANDS.md",
+      "bytes": 7624,
+      "sha256": "86d4156234701759cff0fd56ee99056bc3b6ed08313968fb0ecc3e2d8b864f3a"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/ENVIRONMENTS.json",
+      "bytes": 2156,
+      "sha256": "049f6ab00b0bad33abc61f4a8b05c34816471d2b00b4209701715d27ed9dd01e"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/EVIDENCE_SOURCES.json",
+      "bytes": 1328,
+      "sha256": "9ead729ec7fe488af1166f5d1a734922eb77bfb114fffa8d470632f22103a96f"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/EXECUTION_RESULTS.json",
+      "bytes": 2531,
+      "sha256": "0f1d3b20d76612fffa982cc7c2082a61a0a01a9861420e890c231ce0fe71c0dd"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/PHASE2_PRESERVATION.json",
+      "bytes": 2335,
+      "sha256": "7470ebf2b8baf83f8804406ca8fbaaf1dc0a701d9ea5e8f2cda08325286ae410"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/PHASE3_REPORT.md",
+      "bytes": 11674,
+      "sha256": "b1020238ebe275809ebcaa90ed66b58bcd03a121a7fd515c79ef2209c149a277"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/PUBLICATION_ALLOWLIST.json",
+      "bytes": 15264,
+      "sha256": "3e1af27f6523bac0d34685a96aaff7f75b6351ae3a032307335ccf9730fba604"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/PUBLICATION_FILES.txt",
+      "bytes": 5271,
+      "sha256": "f603065a883e3b4ed4c7e93a023009f2eeb23971b45fe1b996eed730c6b4a9bc"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/RESULTS_INDEX.md",
+      "bytes": 6189,
+      "sha256": "c7b4b3f94b9af67192ea6d3784ee45832c904c0d94f4649009dae26f58f1c087"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/RUNTIME_ASSETS.json",
+      "bytes": 92321,
+      "sha256": "5a06766aa1188ebb5d69397b1e0684b67da102e59f53d5dc57cc0297286844e6"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/SECURITY_AND_SCOPE.md",
+      "bytes": 2660,
+      "sha256": "614b446c58aa52a3af8dcf7c721db990e125e78d0813dd71a38d03842f642aa7"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/SETUP.md",
+      "bytes": 6904,
+      "sha256": "8f700fe0daf7ff9775d917b12ae3cd1750a4b8d14fd3671daa0ffe1c01a06e6a"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/VALIDATION_CHECKS.json",
+      "bytes": 1609,
+      "sha256": "ca20b5b3b32787247486708414988492f0e75a3200090e955ee99c5a54324f66"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/evidence/cohort_results.json",
+      "bytes": 2728,
+      "sha256": "8ac3b3cb6e679828e05ed82ac3e468259c98a4be2622f130aa0628d2a8874fa6"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/evidence/independent_evaluation_v1.json",
+      "bytes": 2393,
+      "sha256": "8c9e382d54ffb25491a3bc5f7aebda5da2e6d31e861663effc0ee3a0567e398b"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/evidence/longitudinal_summary.json",
+      "bytes": 1522,
+      "sha256": "81018bbcd84be65705b6e3e5ffaeee7ee7c4d15335539b7a2a1251649b784f33"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/prepare_workspace.py",
+      "bytes": 5361,
+      "sha256": "b535d17185c2a0dcc5e5393c05be48e23dc7d2dfde6a1a0f2529b9f621cbf38b"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/requirements-ui-observed.txt",
+      "bytes": 846,
+      "sha256": "ab736b6feddba7a6f3ef47a8a919408f872dcddc5897874aeefa3ccddcb7d8a3"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/requirements-worker-observed.txt",
+      "bytes": 340,
+      "sha256": "8dbe574550a02d61166f5d98871bb4bb33d5022c4c4202362a8363b8c20c41ce"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/tests/test_handoff.py",
+      "bytes": 3899,
+      "sha256": "7066083e715c0f186fe6d15c8756cc6524bfdff4261cf0737af59a05e6a906f9"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/ASSET_DISTRIBUTION_REVIEW.json",
+      "bytes": 276568,
+      "sha256": "d67abd6489bbf0b87dc9cbd0e1b7d8cf37f8dda1ed22e418c0efa9bb4ac6d76b"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/BUNDLE_RECEIPT.json",
+      "bytes": 1374,
+      "sha256": "495fef1756d58ad54626140fd84f110a3d0fa47dfd5f29a831424b11e4e454d6"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/COMMANDS.md",
+      "bytes": 4404,
+      "sha256": "a2dead0cf4f011bde0f46561c6d199c2402014fad3138a4571ed938f1823343d"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/DISTRIBUTION_DECISIONS.md",
+      "bytes": 7380,
+      "sha256": "224e198e3f6a86aaab07cdda90c7dcfd52253597c6fb54055ab56ac6ac3d3f7e"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/EXECUTION_RESULTS.json",
+      "bytes": 8518,
+      "sha256": "96c9c69e320bd31e4588fd9e2da37d1934c22c480093c8af8b8f3633ca1ed904"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/PHASE4_REPORT.md",
+      "bytes": 8616,
+      "sha256": "e8460ef6d01580846a43e486808054e3e84951fe1b570c23f8205a7bbca9e7ea"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/POSTER_REVIEW.json",
+      "bytes": 501,
+      "sha256": "abc0dc36caaa1cee0f019c250044492423326528f9d570bf10c4925e8c7e55e6"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/PRESERVATION.json",
+      "bytes": 808,
+      "sha256": "1a63881b5938cf05af4f375ce14989556de741882f12dc8fa5a9ec13defeeab1"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/RUNTIME_SECURITY_SCAN.json",
+      "bytes": 64907,
+      "sha256": "bf302fef32c70c1b92bd85a698ebe76f387c943155c3362911fb8e1d6678a653"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/SCENARIO_DIAGNOSIS.md",
+      "bytes": 3147,
+      "sha256": "aa7e042815834671aff1f9dbc231b96e72edbe74719952660e7045634d094c31"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/SERVER_SMOKE.json",
+      "bytes": 811,
+      "sha256": "115d0d0a9d2d9118fcf982750b45b6164f8733f923884782aa3ff9dcdfb0b848"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/SETUP.md",
+      "bytes": 7603,
+      "sha256": "9dee344d12185b8a62c710a8eb75d0e4c5b22ccff4b2b41b480a429cb8a7f051"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/SUBMISSION_PR.md",
+      "bytes": 2594,
+      "sha256": "5ea93bd163039043d0495514ba5a11b7daf83fe6ad13b14147eae831ef1ad809"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/audit_assets.py",
+      "bytes": 7400,
+      "sha256": "36a97a717214c00e734400f8af9649ecca189c6feb4d72efdd2e0263a53ab7e5"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/finalize_publication.py",
+      "bytes": 9765,
+      "sha256": "ac43c2f328d3fd827968680bd9da19ae703b15b135d73126122168c4a6dfc047"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/prepare_workspace.py",
+      "bytes": 3101,
+      "sha256": "4f5cb0cbe59a651daaf57f4a16024d359a167d693c12725959dcd39d05793c3d"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/run_handoff.py",
+      "bytes": 7556,
+      "sha256": "f9ea68bc0018924396ecd002bb77255e7564db543ea65590505a115310184d1d"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/runtime_bundle.py",
+      "bytes": 7977,
+      "sha256": "e3317c851b317e66691207848730d7b0552a9ffb05f6c49b187f82f47b89ee94"
+    },
+    {
+      "path": "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/tests/test_bundle.py",
+      "bytes": 5177,
+      "sha256": "db944ae7318bada482c27c61f76c79ec4d72b3ed4d47c8525f198f40fe99618c"
+    }
+  ],
+  "review_metadata_paths": [
+    "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/PUBLICATION_ALLOWLIST.json",
+    "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/PUBLICATION_FILES.txt",
+    "reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/PUBLICATION_CHECKS.json"
+  ],
+  "runtime_bundle_included": false,
+  "excluded": "No new model weights, raw datasets, private config, .env, databases, backups, environments, caches or unrelated working files. Already tracked prior-challenge files are unchanged.",
+  "publication_holds": [
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/train_exploratory.py",
+      "reason": "Preserved legacy training main references a private local authorization attachment. Required unchanged inference helper is external-only in this proposal."
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/REPRODUCIBILITY.md",
+      "reason": "Preserved external-only historical private path"
+    }
+  ],
+  "review_metadata_note": "Self-referential metadata are not self-hashed; exact staged bytes and final Git commit bind them."
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "HTT-V6-PHASE4-PRESERVATION-v1",
+  "date": "2026-11-06",
+  "checks": {
+    "phase4": {
+      "checked": 260,
+      "changed": []
+    },
+    "earlier": {
+      "checked": 288,
+      "changed": []
+    },
+    "phase2": {
+      "checked": 13,
+      "changed": []
+    }
+  },
+  "scope": "260 runtime/Phase3/protocol files, 288 earlier protected files and 13 Phase2 files; groups overlap and are not additive",
+  "graph_manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+  "protocol_v2_manifest_sha256": "b13d662390b687b62a08cc1fb81bd3413f2c9d1fbb3b6ec86438b1a6854cd95b",
+  "runtime_receipt_sha256": "958f09f86117ee7cdad8315ffa7d1f1ffdcf8d2ce931d58293654fa70e846655",
+  "research_models_or_results_modified": false,
+  "neo4j_calls": 0,
+  "ollama_calls": 0
+}

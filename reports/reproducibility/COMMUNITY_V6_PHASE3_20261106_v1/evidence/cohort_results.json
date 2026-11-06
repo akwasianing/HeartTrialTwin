@@ -1,0 +1,91 @@
+{
+  "dataset": "HTT-P1-AACT-20260905",
+  "snapshot": "2026-09-05",
+  "n_full": 2824,
+  "n_phase_applicable": 1319,
+  "n_not_applicable": 1505,
+  "all_interventional": true,
+  "status_counts": {
+    "COMPLETED": 2237,
+    "TERMINATED": 393,
+    "WITHDRAWN": 194
+  },
+  "phase_applicable_status": {
+    "COMPLETED": 1015,
+    "TERMINATED": 214,
+    "WITHDRAWN": 90
+  },
+  "na_drug_trials": 115,
+  "na_drug_only": 74,
+  "na_drug_mixed": 41,
+  "na_drug_primary_purposes": {
+    "": 4,
+    "DIAGNOSTIC": 5,
+    "TREATMENT": 82,
+    "HEALTH_SERVICES_RESEARCH": 1,
+    "PREVENTION": 8,
+    "BASIC_SCIENCE": 12,
+    "OTHER": 1,
+    "SUPPORTIVE_CARE": 2
+  },
+  "exercise_cue_trials_all": 152,
+  "exercise_cue_trials_na": 134,
+  "missingness": {
+    "phase": 0,
+    "enrollment": 33,
+    "enrollment_type": 114,
+    "start_month_year": 19,
+    "completion_month_year": 58,
+    "number_of_arms": 210
+  },
+  "designs_missing": 3,
+  "adjusted": {
+    "full2824": {
+      "n": 2824,
+      "positive_composite": 587,
+      "cluster_count": 2795,
+      "design_rank": 14,
+      "parameters": 14,
+      "max_gradient": 9.904042452824058e-08,
+      "numerically_qualified": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "phase_block_likelihood_ratio": 6.094546342898866,
+      "phase_block_df": 7,
+      "phase_block_exploratory_p": 0.5287541289712518,
+      "interpretation": "Current-snapshot conditional cross-sectional association, not prediction or causal adjustment. Actual enrollment and duration excluded."
+    },
+    "phase1319": {
+      "n": 1319,
+      "positive_composite": 304,
+      "cluster_count": 1302,
+      "design_rank": 13,
+      "parameters": 13,
+      "max_gradient": 2.5321430996427807e-07,
+      "numerically_qualified": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "phase_block_likelihood_ratio": 4.350131705839431,
+      "phase_block_df": 6,
+      "phase_block_exploratory_p": 0.6294069780143003,
+      "interpretation": "Current-snapshot conditional cross-sectional association, not prediction or causal adjustment. Actual enrollment and duration excluded."
+    }
+  },
+  "recruitment": {
+    "stopped_total": 587,
+    "nonblank_reasons": 543,
+    "status_code_counts": {
+      "TERMINATED": {
+        "RECRUITMENT_MENTION_REVIEW_REQUIRED": 75,
+        "MISSING_REASON": 31,
+        "OTHER_REASON_NOT_RECRUITMENT_CODED": 188,
+        "EXPLICIT_RECRUITMENT_DIFFICULTY": 99
+      },
+      "WITHDRAWN": {
+        "RECRUITMENT_MENTION_REVIEW_REQUIRED": 40,
+        "OTHER_REASON_NOT_RECRUITMENT_CODED": 118,
+        "EXPLICIT_RECRUITMENT_DIFFICULTY": 23,
+        "MISSING_REASON": 13
+      }
+    }
+  },
+  "no_new_predictive_model_in_this_script": true
+}

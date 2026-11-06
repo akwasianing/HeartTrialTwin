@@ -1,0 +1,26 @@
+{
+  "schema_version": "HTT-PHASE3-EVIDENCE-SOURCES-v1",
+  "sources": [
+    {
+      "copy": "evidence/cohort_results.json",
+      "source_path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/results.json",
+      "source_sha256": "8ac3b3cb6e679828e05ed82ac3e468259c98a4be2622f130aa0628d2a8874fa6",
+      "source_bytes": 2728,
+      "operation": "Exact existing JSON text; no research recomputation. Final newline normalized by patch writer if absent."
+    },
+    {
+      "copy": "evidence/independent_evaluation_v1.json",
+      "source_path": "full_system_feasibility/independent_evaluation_2021_2024_v1/post_unseal_evaluation_results_status_only_v2.json",
+      "source_sha256": "12e82d5fd01ca840f97ec6ed91ce5654fc1e160ab67b158856a22305210dd795",
+      "source_bytes": 2392,
+      "operation": "Exact existing JSON text; no research recomputation. Final newline normalized by patch writer if absent."
+    },
+    {
+      "copy": "evidence/longitudinal_summary.json",
+      "source_path": "reports/longitudinal_pilot_poster_20261105_v1/output/summary.json",
+      "source_sha256": "81018bbcd84be65705b6e3e5ffaeee7ee7c4d15335539b7a2a1251649b784f33",
+      "source_bytes": 1522,
+      "operation": "Exact existing JSON text; no research recomputation. Final newline normalized by patch writer if absent."
+    }
+  ]
+}

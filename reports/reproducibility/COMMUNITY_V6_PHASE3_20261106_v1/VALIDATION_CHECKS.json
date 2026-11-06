@@ -1,0 +1,51 @@
+{
+  "schema_version": "HTT-PHASE3-FINAL-CHECKS-v1",
+  "phase2_files_checked": 13,
+  "phase2_changed": [],
+  "protected_files_checked": 288,
+  "protected_changed": [],
+  "proposed_hashed_files": 68,
+  "hash_mismatches": [],
+  "missing_documentation_links": [],
+  "local_links_not_in_candidate_or_tracked_tree": [],
+  "secret_pattern_review_candidates": [],
+  "developer_absolute_path_occurrences": [],
+  "platform_font_path_occurrences": [
+    [
+      "reports/challenge4/ai_design/pilot_v1/run_pilot.py",
+      345
+    ],
+    [
+      "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/common.py",
+      77
+    ],
+    [
+      "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/build_poster.py",
+      13
+    ],
+    [
+      "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/qa_figures.py",
+      8
+    ]
+  ],
+  "oversized_proposed_files": [],
+  "handoff_tests": {
+    "tests": 7,
+    "passed": 7,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 0.03,
+    "focused_privacy_exclusion_recheck": "1 passed; same method, not an additional distinct test"
+  },
+  "security_limitations": [
+    "Scoped text/size/path inspection only, not a fresh exhaustive historical/binary scan",
+    "Known exposed credential was not read or authenticated with; rotation remains unconfirmed"
+  ],
+  "final_source_only_missing_assets": 144,
+  "publication_holds": [
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/train_exploratory.py",
+      "reason": "Preserved external-only helper; private authorization-file pointer is not proposed for publication."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "HTT-V6-PHASE4-SERVER-SMOKE-v1",
+  "date": "2026-11-06",
+  "workspace": "/private/tmp/hearttrialtwin-phase4-20261106/source",
+  "initial_sandbox_start": "FAILED",
+  "initial_error": "PermissionError: [Errno 1] Operation not permitted at socket bind",
+  "production_code_changed": false,
+  "authorized_localhost_retry": "STARTED",
+  "address": "127.0.0.1",
+  "port": 8512,
+  "health_command": "curl --fail --silent --show-error --max-time 5 http://127.0.0.1:8512/_stcore/health",
+  "health_result": "ok",
+  "health_command_exit_code": 0,
+  "stopped_after_test": true,
+  "shutdown_exit_code": 0,
+  "neo4j_or_ollama_used": false,
+  "note": "EXECUTION_RESULTS.json retains the first sandbox NOT_READY result. This records the explicitly authorized bind/health check, not a second UI suite."
+}
