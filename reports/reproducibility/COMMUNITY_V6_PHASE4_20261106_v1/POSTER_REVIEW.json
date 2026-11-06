@@ -1,0 +1,15 @@
+{
+  "path": "figures and charts /HeartTrialTwin_V20.pptx",
+  "sha256": "de6d7bf2a25f5ea7c8cb91eac22285843bb4c6310a2c9433a18cbb580b83b120",
+  "bytes": 97585,
+  "slides": 1,
+  "inches": [
+    48.0,
+    36.0
+  ],
+  "external_relationships": 0,
+  "security_flags": [],
+  "review": "Original V20; ZIP/XML readable; key cohort, graph, community, ranking and V1 metrics agree with saved findings. No modification or new rendering.",
+  "visual_qa_rerun": false,
+  "temporary_office_lockfile_excluded": true
+}

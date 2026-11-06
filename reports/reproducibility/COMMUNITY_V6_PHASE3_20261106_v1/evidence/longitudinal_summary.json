@@ -1,0 +1,41 @@
+{
+  "version": "HTT-LONGITUDINAL-POSTER-20261105-v1",
+  "trials": 24,
+  "observations": 72,
+  "archive_snapshots": 6,
+  "anchor_groups": {
+    "2021-09-01": 16,
+    "2023-04-01": 8
+  },
+  "trials_with_recorded_status_change": 9,
+  "trials_with_unchanged_recorded_status": 15,
+  "adjacent_comparisons": 48,
+  "changed_adjacent_comparisons": 10,
+  "unchanged_adjacent_comparisons": 38,
+  "terminal_status_observations": 0,
+  "missing_statuses": 0,
+  "duplicate_trial_snapshot_pairs": 0,
+  "duplicate_trial_observation_dates": 0,
+  "observations_corroborated_in_additional_local_archive_caches": 56,
+  "observations_with_primary_pilot_extract_only": 16,
+  "existing_scale_cache_content_digests_verified": 4,
+  "actual_observation_offsets_days": [
+    0,
+    91,
+    92,
+    181,
+    183
+  ],
+  "legacy_offset_column_is_days_despite_months_name": true,
+  "ambiguous_clinical_event_dates": "Not derived; none are supplied by the longitudinal status panel",
+  "updated_at_timezone": "Unspecified in source strings; not used to order observations or infer events",
+  "previous_claims": {
+    "24_trials": true,
+    "72_observations": true,
+    "9_changing_trials": true
+  },
+  "new_model_training": false,
+  "v1_predictive_evaluation_repeated": false,
+  "figure_choice": "Two-panel trial-level observation timeline with actual calendar dates and neutral dashed comparison links",
+  "scientific_scope": "Exploratory archive-status descriptions only; no clinical event dating, causal effect or validated longitudinal prediction"
+}

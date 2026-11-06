@@ -1,0 +1,17 @@
+{
+  "schema_version": "HTT-V6-FINAL-PUBLICATION-CHECK-v1",
+  "staged": false,
+  "allowlisted_paths": 93,
+  "hashed_files": 90,
+  "bytes": 2921277,
+  "integrity_issues": [],
+  "secret_pattern_candidates": [],
+  "missing_or_excluded_documentation_links": [],
+  "immutable_whitespace_exceptions": [],
+  "limitations": [
+    "Scoped patterns and previously recorded history findings, not credential validity or exhaustive secret absence",
+    "No private .env or exposed credential read",
+    "Runtime redistribution is not cleared"
+  ],
+  "status": "PASS"
+}

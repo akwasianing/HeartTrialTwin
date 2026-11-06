@@ -1,0 +1,28 @@
+{
+  "schema_version": "HTT-COMMUNITY-V6-PRIVATE-RUNTIME-v1",
+  "date": "2026-11-06",
+  "distribution": "PRIVATE_LOCAL_TEST_ONLY_PUBLIC_DISTRIBUTION_NOT_APPROVED",
+  "archive_name": "HTT-COMMUNITY-V6-PRIVATE-RUNTIME-v1.tar",
+  "test_archive_location": "/private/tmp/hearttrialtwin-phase4-20261106/HTT-COMMUNITY-V6-PRIVATE-RUNTIME-v1.tar",
+  "archive_sha256": "7b6944290de538c4ce1fcc196199e6c6ed60c71030e6cff0abd59918907e3fa5",
+  "archive_bytes": 37683200,
+  "payload_files": 144,
+  "payload_bytes": 37521267,
+  "inventory_sha256": "5a06766aa1188ebb5d69397b1e0684b67da102e59f53d5dc57cc0297286844e6",
+  "source_base_commit": "be520bcd40748abfc03e4ff9b64bf244650c5367",
+  "source_overlay": "Phase 3 exact allowlist before Phase 4 README additions; application bytes unchanged",
+  "member_rule": "payload/ plus the root-relative paths with missing_in_source_only=true in ASSET_DISTRIBUTION_REVIEW.json",
+  "create": "Completed from owner-supplied pinned local bytes, no downloads",
+  "install": {
+    "copied": 144,
+    "verified_assets": 190,
+    "status": "VERIFIED_LOCAL_HANDOFF",
+    "destination": "/private/tmp/hearttrialtwin-phase4-20261106/source"
+  },
+  "contains_executable_frozen_models": true,
+  "env_files_included": false,
+  "private_path_content_included_in_private_test_only": true,
+  "public_bundle_url": null,
+  "uploaded": false,
+  "proposed_for_git": false
+}

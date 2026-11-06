@@ -1,0 +1,1889 @@
+{
+  "schema_version": "HTT-V6-PHASE4-SCOPED-SCAN-v1",
+  "files": [
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/cohort_membership.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/COVERAGE_REPORT.md",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_condition_term.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_intervention.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_planned_outcome.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 1,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_source_dataset.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_sponsor.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_trial.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_condition_term_source_dataset.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_intervention_source_dataset.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_planned_outcome_source_dataset.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_sponsor_source_dataset.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_browse_condition.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_intervention.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_planned_outcome.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_source_dataset.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_sponsor.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_submitted_condition.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/browse_conditions.jsonl",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/conditions.jsonl",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/design_outcomes.jsonl",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 1,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/interventions.jsonl",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/sponsors.jsonl",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/studies.jsonl",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_coverage.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/VALIDATION_REPORT.md",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "full_cohort_graphrag/semantic_v1/demo_v2/facts.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "full_cohort_graphrag/src/generate_answer.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "full_cohort_graphrag/src/list_planned_outcomes.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "full_cohort_graphrag/src/prepare_evidence.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "full_cohort_graphrag/src/queries.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "full_cohort_graphrag/src/retrieve.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "full_system_feasibility/independent_evaluation_2021_2024_v1/post_unseal_evaluation_results_status_only_v2.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-02-18_e3570e580749.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-04-03_5abf9c97c80b.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-05-02_0e2bd3f7a17c.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-06-13_e509d8e2f735.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-07-03_06044d304da8.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-08-11_7d7605b8e201.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-09-06_946d26cc2d20.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-10-17_0f67919f2a78.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-11-02_fdb3701ff5ad.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-12-17_d36d1754c716.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-01-11_e32b7600bbe9.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-02-01_8fd4a0c91932.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-03-14_8f877f095172.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-04-01_2f9fd382f66e.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-05-01_a07831bb0a6b.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-06-01_8437d01d70b4.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-07-01_7f65d04e14dc.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-08-01_7ca46e1a7d73.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-09-01_84d662fa7f40.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-10-01_82dc1f205654.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-11-01_6977ddc1ea6d.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-12-01_8abb167d1306.json.gz",
+      "method": "DECOMPRESSED_JSON_TEXT",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "top_level_fields": [
+        "audit",
+        "cache_key",
+        "tables"
+      ],
+      "tables": [
+        "brief_summaries.txt",
+        "conditions.txt",
+        "designs.txt",
+        "interventions.txt",
+        "sponsors.txt",
+        "studies.txt"
+      ]
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/historical_snapshot_eligibility_audit_HTT-P1-AACT-HIST-A45-20260921.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/full_cohort_results/community_exploration_v1/manifest.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/full_cohort_results/community_sensitivity_v2.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v4/app.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v4/community_graph_v4.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/app.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/community_page.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/integrity.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/provision.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/requirements-ui.txt",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/requirements-worker.txt",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/runtime_integrity_v1.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/trial_intelligence_v5.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/challenge4/ai_design/pilot_v1/run_pilot.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/adjusted_full2824.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/adjusted_phase1319.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/all_trial_characteristics.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/calendar_period_status.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/common.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/complete_evidence.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/design_status.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/duration_summary.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/enrollment_applicable.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/enrollment_full.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/exercise_rehabilitation_cues.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/intervention_status_applicable.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/intervention_status_full.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/na_drug_trial_audit.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/na_intervention_composition.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/output_manifest.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/phase_design_status.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/phase_sponsor_status.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/phase_status_applicable.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/phase_status_full.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/recorded_duration_intervals.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/results.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/run_analysis.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/sponsor_status.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/supplement_manifest.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/app.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/phase_explorer.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/README.md",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/record_demo.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/test_app.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/verified_examples.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/analysis_cohort.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/authorization_record.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/chronology_quarantine_six.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/coefficients.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/cohort_manifest.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/comparison.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/development_fold_metrics.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/development_oof.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/eligibility_ledger_651.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/ELIGIBILITY_PROTOCOL.md",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/experiment_config.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/exploratory_predictions.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/feature_missingness.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/fold_isolation.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/intercept.joblib",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/metadata_with_phase.joblib",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/metadata_without_phase.joblib",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/phase_event_counts.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/phase_only.joblib",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/prepare_cohort.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/results.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/run_manifest.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/train_exploratory.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 1,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/ABSTRACT_AND_PRESENTATION.md",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/build_poster.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/FIGURE_CAPTIONS_AND_SOURCES.md",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/adjusted_phase_associations.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/adjusted_phase_associations.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/allocation_status.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/allocation_status.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/enrollment_applicable.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/enrollment_applicable.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/historical_model_comparison.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/historical_model_comparison.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/integrated_architecture.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/integrated_architecture.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/intervention_status_full.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/intervention_status_full.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/na_intervention_composition.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/na_intervention_composition.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_distribution_applicable.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_distribution_applicable.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_distribution_full.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_distribution_full.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_status_applicable.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_status_applicable.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_status_full.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_status_full.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/recruitment_by_phase.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/recruitment_by_phase.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/sponsor_status.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/sponsor_status.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/HeartTrialTwin_Final_Capstone_Poster_20261102.pdf",
+      "method": "PDF_TEXT_AND_METADATA_NO_IMAGE_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "pages": 1
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/qa_figures.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/recruitment/coding_rules.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/recruitment/intervention_summary.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/recruitment/phase_summary.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/recruitment/reason_coding.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/COMPLETION_AND_LIMITATIONS.md",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/FINAL_SCIENTIFIC_SUMMARY.md",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/FINAL_VALIDATION.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/REPRODUCIBILITY.md",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 1,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/test_final_package.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/test_results.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/validate_package.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/simulation/SCENARIO_BOUNDARY.md",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/data/development_scores.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/data/factor_comparisons.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/data/factor_membership.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/data/historical_profile_catalog.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/data/phase_intervention_cells.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/development_score_distribution.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/factor_comparison_heatmap.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/factor_comparison_heatmap.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/model_performance_comparison.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/model_performance_comparison.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/phase_intervention_heatmap.png",
+      "method": "PNG_METADATA_ONLY_NO_OCR",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false,
+      "image_size": [
+        3000,
+        1850
+      ]
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/phase_intervention_heatmap.svg",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/results/dashboard_manifest.json",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/client.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/identity.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/inference.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/pages.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/risk_dashboard_refined.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/worker.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "reports/project_review/historical_label_feature_qualification_v1/qualify_historical.py",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    },
+    {
+      "path": "step3_manifest/HeartTrialTwin_first_p1_cohort_manifest_HTT-P1-AACT-20260905.csv",
+      "method": "UTF8_OR_PRINTABLE_BINARY_STRINGS",
+      "credential_pattern_findings": [],
+      "private_home_path_count": 0,
+      "email_pattern_count": 0,
+      "over_50_mb": false
+    }
+  ],
+  "scope": "190 exact runtime assets, not Git history; no secret value printed or retained",
+  "limitations": [
+    "Regex inspection cannot certify absence of secrets",
+    "No fresh OCR of raster figures or PDF image layers",
+    "Joblib printable strings inspected without deserializing",
+    "No credential validity or rotation test",
+    "Private source paths and possible public contact emails require owner review"
+  ],
+  "credential_pattern_findings": 0
+}

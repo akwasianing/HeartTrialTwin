@@ -1,0 +1,54 @@
+{
+  "schema": "HTT-C4-EXPLORATION-REVIEW-v1",
+  "created_utc": "2026-11-02T23:28:12.718380+00:00",
+  "candidate_universe": 2824,
+  "anchors": 36,
+  "unique_review_pairs": 593,
+  "stratum_population_counts": {
+    "B3_isolate": 820,
+    "B1_isolate_only": 0,
+    "both_connected": 2004
+  },
+  "sampling_quotas": {
+    "B3_isolate": 10,
+    "B1_isolate_only": 6,
+    "both_connected": 20
+  },
+  "methods": {
+    "E0_semantic": "Top 10 cosine similarities excluding anchor",
+    "E1_B1": "Same B1 community first, cosine-ranked; fill remaining slots with cosine baseline",
+    "E2_B3": "Same B3 community first, cosine-ranked; fill remaining slots with cosine baseline"
+  },
+  "community_seed": 42,
+  "review_scale": {
+    "0": "Not clinically related for the specific research question",
+    "1": "Partially related (some clinical concept overlap)",
+    "2": "Strongly related with supporting registered information",
+    "U": "Uncertain or inadequate registered evidence"
+  },
+  "review_instructions": [
+    "Review without opening algorithm_key.json; reviewers should not see algorithm sources or community labels.",
+    "Use registered title and planned measures as prompts; independently verify source records for substantive judgments.",
+    "Do not interpret registered planned outcomes as observed clinical effectiveness or trial results.",
+    "Mark uncertain cases U rather than inferring irrelevance; record an evidence-based rationale.",
+    "Prefer two independent reviewers with adjudication for disagreements; predefine relevance threshold before unblinding.",
+    "This is a fixed exploratory transductive trial-neighbor evaluation; no held-out clinical generalization claim."
+  ],
+  "selection_coverage": {
+    "anchors": 36,
+    "B1_community_selections": 227,
+    "B3_community_selections": 217,
+    "B1_fallback_selections": 133,
+    "B3_fallback_selections": 143
+  },
+  "inputs_sha256": {
+    "gnn_graphrag/feature_artifacts/HTT-GNN-ASSOC-FEATURES-v1/context_features.npy": "477a4b7ec0a3f2177e08761dcd22f8ada867fd9ff4f13be69f55c40c4367f494",
+    "gnn_graphrag/feature_artifacts/HTT-GNN-ASSOC-FEATURES-v1/context_index.csv": "e517c4582225d83a879a1ac293dbe3924829431004e1cdc6ac4661f1a827853b",
+    "gnn_graphrag/feature_artifacts/HTT-GNN-ASSOC-FEATURES-v1/manifest.json": "e2f167b01b2e83aef1f11ef6e4dba673d741246927a43f30936888beecf99a17",
+    "gnn_graphrag/protocols/HTT-GNN-ASSOC-PROTOCOL-v2/candidate_trials.csv": "d7878be290494d4cb54e2dc07d4c4019575ff598048b2797aff4cb1a20654931",
+    "reports/challenge4_community_graphrag/full_cohort_results/louvain_full_cohort_v1.json": "b401f8766ba407c627489835517c96cf71b4ed433d3a0d0ea1d10ac7b69dc868",
+    "reports/challenge4_community_graphrag/full_cohort_results/community_sensitivity_v2.json": "b6fef8b50c71cdfea5906c64f321fc1e3db79c5d2e9f0027c92c4b99883d2bcb",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_trial.csv": "0e69762d763141eadde037449bc425aa4a1ea3db4876d535d596b7db8736e723",
+    "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_planned_outcome.csv": "7e101b17b25f8c4ddefd5ee45b97d3f64ded09f8eda320eb32b8e453f25b7d42"
+  }
+}

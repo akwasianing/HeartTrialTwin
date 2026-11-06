@@ -1,0 +1,1747 @@
+{
+  "schema_version": "HTT-V6-PHASE3-ASSETS-v1",
+  "phase2_receipt_sha256": "958f09f86117ee7cdad8315ffa7d1f1ffdcf8d2ce931d58293654fa70e846655",
+  "destination_rule": "Each path is the exact project-root-relative destination; no renaming or substitution.",
+  "source_references": {
+    "AACT_ARCHIVE_REFERENCE": {
+      "url": "https://aact.ctti-clinicaltrials.org/static/exported_files/daily/20260905_export_ctgov.zip",
+      "note": "Documented upstream archive, not a direct download of these derived files; not downloaded here."
+    },
+    "EXISTING_LOCAL_ARTIFACT": {
+      "url": null,
+      "note": "Exact local project bytes; authority field names original hash provenance."
+    },
+    "PYTHON_PACKAGES": {
+      "url": "https://pypi.org/simple/",
+      "note": "Public package index reference; exact installed versions and successful fresh installation are recorded in ENVIRONMENTS.json. No model/data download is implied."
+    }
+  },
+  "classification_policy": {
+    "SAFE_TO_COMMIT": "Source/provenance or already tracked artifact. Content review is not a new redistribution license.",
+    "SEPARATE_RUNTIME_BUNDLE": "Exact derived artifact; owner-approved bundle and source-term review required; no public bundle URL established.",
+    "UNSUITABLE_FOR_PUBLIC_DISTRIBUTION": "Trusted frozen executable model; owner-controlled external provision only. Not in publication allowlist."
+  },
+  "additional_dependency_finding": "The unchanged load_contract verifies the original frozen cohort CSV outside the Phase 2 receipt. Phase 3 adds this dependency without changing Phase 2.",
+  "required_assets": [
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/cohort_membership.csv",
+      "sha256": "b245d627e261dad74314c15bbbd1d3a5fdb42d73d872add555de13956ab4f027",
+      "bytes": 189246,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": "https://github.com/akwasianing/HeartTrialTwin/blob/be520bcd40748abfc03e4ff9b64bf244650c5367/artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/cohort_membership.csv"
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/COVERAGE_REPORT.md",
+      "sha256": "13e1cffb264b390dd129a1d5fb58a4106591ba6787bbaa4991a5e8966b4dd1dc",
+      "bytes": 742,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": "https://github.com/akwasianing/HeartTrialTwin/blob/be520bcd40748abfc03e4ff9b64bf244650c5367/artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/COVERAGE_REPORT.md"
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+      "bytes": 29489,
+      "authority": "Existing pinned graph manifest",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": "https://github.com/akwasianing/HeartTrialTwin/blob/be520bcd40748abfc03e4ff9b64bf244650c5367/artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json"
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_condition_term.csv",
+      "sha256": "ccfac2a32cfd5f578735e75b0df01261226ce3c19df3d6e9fab3591509f38828",
+      "bytes": 245153,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_intervention.csv",
+      "sha256": "4b58e929708a39049d5bafc55584049d4ef30f22879c75b81fb7a8c0670b39d7",
+      "bytes": 513322,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_planned_outcome.csv",
+      "sha256": "7e101b17b25f8c4ddefd5ee45b97d3f64ded09f8eda320eb32b8e453f25b7d42",
+      "bytes": 8149255,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_source_dataset.csv",
+      "sha256": "921cb0b107e4a3c000edd168ffc0a0341e06f190213a6784583e92bbadd6665e",
+      "bytes": 546,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_sponsor.csv",
+      "sha256": "6d8e89bc99fbe438259775faedc3690cfb12cf66c5d08ae8aa83fe9622879465",
+      "bytes": 142157,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/nodes_trial.csv",
+      "sha256": "0e69762d763141eadde037449bc425aa4a1ea3db4876d535d596b7db8736e723",
+      "bytes": 536489,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_condition_term_source_dataset.csv",
+      "sha256": "4b9c61189f226a04ee897a7f94b2c62921fdeb3cf276dcb71ba63f5b2b2584cf",
+      "bytes": 151712,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_intervention_source_dataset.csv",
+      "sha256": "51a805aacacb7fd792142b3beea202e4784344af7834bad379f0a9217c9cd2fc",
+      "bytes": 307600,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_planned_outcome_source_dataset.csv",
+      "sha256": "daa30f70419418b3df2a4baa423b7689014b6c897e09925e74c1ccdf4e13e8cf",
+      "bytes": 1638492,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_sponsor_source_dataset.csv",
+      "sha256": "89fc286330587d616b9c6fc498b5bdb2ed57bfbaf33417cdee2a12da63534975",
+      "bytes": 89485,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_browse_condition.csv",
+      "sha256": "f916e376c09c4522f729d792d9b4a4c05d1e90bff1c13c008fb6963f902883d7",
+      "bytes": 2092947,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_intervention.csv",
+      "sha256": "8ec179b53ba17c0d8f814c8e52f845dcc5416958887a23cfa6efdaad6e8245f2",
+      "bytes": 534201,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_planned_outcome.csv",
+      "sha256": "16aa1185f340315701131eaf5333f353adb7cbb9acc826251f0b7679b434d4b5",
+      "bytes": 2210974,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_source_dataset.csv",
+      "sha256": "f41ec5d2f26b916f5ae540e6c313fdc701ec84417d5959c06ce2e10d9daed144",
+      "bytes": 206215,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_sponsor.csv",
+      "sha256": "8f589557849227fd120cc6bc8e8018a35ad6016c34cf3c4e1f6928293df6fdad",
+      "bytes": 293784,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/relationships_trial_submitted_condition.csv",
+      "sha256": "6d28180ca5eba2fff4f4be231781e781527c2de99080f459016c20fb09ed00dd",
+      "bytes": 625042,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/browse_conditions.jsonl",
+      "sha256": "0faf29a21b037ad55caef9860711f5b91d974bed4f4f13d3a4689b794495933d",
+      "bytes": 1960061,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/conditions.jsonl",
+      "sha256": "5ed95a0660a929c06e3f797a6b57310ac918dea12f2db06497a863cefe3abd06",
+      "bytes": 421882,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/design_outcomes.jsonl",
+      "sha256": "f6d6a63f74205222bf6de2099f990a49344f97c5d7217310af666b1b810a22af",
+      "bytes": 7536553,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/interventions.jsonl",
+      "sha256": "23470ad02ec92b0661d95555d3994647fb43b92fdf089612aaaa8a9f124b8b40",
+      "bytes": 1364142,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/sponsors.jsonl",
+      "sha256": "a4ef2f045bbd0472ba96ac7e09390d98d3fda6d016023db60ee848b12001aec4",
+      "bytes": 717807,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_cache/studies.jsonl",
+      "sha256": "68cb408ad31a56c9c1a23dbe138e7c5bc07767f9040f81346c78d92a7780c970",
+      "bytes": 504961,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_coverage.csv",
+      "sha256": "5157e0889383e3ecf32f02be0cb0138b56838298fb301ac6761addfa0609ef3b",
+      "bytes": 1655585,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": "https://github.com/akwasianing/HeartTrialTwin/blob/be520bcd40748abfc03e4ff9b64bf244650c5367/artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/source_coverage.csv"
+    },
+    {
+      "path": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/VALIDATION_REPORT.md",
+      "sha256": "c68877f48fd2ca990dfefbca00b7624683822a033037058ea207192be6722ca7",
+      "bytes": 2000,
+      "authority": "artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/full_cohort_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": "https://github.com/akwasianing/HeartTrialTwin/blob/be520bcd40748abfc03e4ff9b64bf244650c5367/artifacts/cohort_scaling/HTT-KG-AACT-20260905-FULL2824-v1/VALIDATION_REPORT.md"
+    },
+    {
+      "path": "full_cohort_graphrag/semantic_v1/demo_v2/facts.py",
+      "sha256": "59b898d6b67afd21b3faa167c86b613d716f4fbb673cd5541bbfef5955f0694f",
+      "bytes": 5927,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": "https://github.com/akwasianing/HeartTrialTwin/blob/be520bcd40748abfc03e4ff9b64bf244650c5367/full_cohort_graphrag/semantic_v1/demo_v2/facts.py"
+    },
+    {
+      "path": "full_cohort_graphrag/src/generate_answer.py",
+      "sha256": "742d7a29d850da273d49b56ecdb030f1be19f93c7f2c09cf1b28a8d8dc8f75dc",
+      "bytes": 32080,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": "https://github.com/akwasianing/HeartTrialTwin/blob/be520bcd40748abfc03e4ff9b64bf244650c5367/full_cohort_graphrag/src/generate_answer.py"
+    },
+    {
+      "path": "full_cohort_graphrag/src/list_planned_outcomes.py",
+      "sha256": "a533cf8a599d5c620c4f034db6b8d7f02b1426a87ddacde1b147fccdd9ddbfe4",
+      "bytes": 10361,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": "https://github.com/akwasianing/HeartTrialTwin/blob/be520bcd40748abfc03e4ff9b64bf244650c5367/full_cohort_graphrag/src/list_planned_outcomes.py"
+    },
+    {
+      "path": "full_cohort_graphrag/src/prepare_evidence.py",
+      "sha256": "5590d9e9baa3c9847137608c7219f7d0e914d4f881b1aadb2e9b967630d0890d",
+      "bytes": 24142,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": "https://github.com/akwasianing/HeartTrialTwin/blob/be520bcd40748abfc03e4ff9b64bf244650c5367/full_cohort_graphrag/src/prepare_evidence.py"
+    },
+    {
+      "path": "full_cohort_graphrag/src/queries.py",
+      "sha256": "a2cd6b7519c02343f8b89013f4556b5db8b5430befc720f04433cbff4486c53e",
+      "bytes": 3895,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": "https://github.com/akwasianing/HeartTrialTwin/blob/be520bcd40748abfc03e4ff9b64bf244650c5367/full_cohort_graphrag/src/queries.py"
+    },
+    {
+      "path": "full_cohort_graphrag/src/retrieve.py",
+      "sha256": "ac77b3211d166fc5c823b0898b08822d2f9b0dffb90b51202faff79055abba43",
+      "bytes": 25363,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": "https://github.com/akwasianing/HeartTrialTwin/blob/be520bcd40748abfc03e4ff9b64bf244650c5367/full_cohort_graphrag/src/retrieve.py"
+    },
+    {
+      "path": "full_system_feasibility/independent_evaluation_2021_2024_v1/post_unseal_evaluation_results_status_only_v2.json",
+      "sha256": "12e82d5fd01ca840f97ec6ed91ce5654fc1e160ab67b158856a22305210dd795",
+      "bytes": 2392,
+      "authority": "Existing risk_dashboard_refined.py EXPECTED_EVAL_SHA256",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-02-18_e3570e580749.json.gz",
+      "sha256": "14af1f8b5839da11974d0f1ed00d4f234afc9540f840e8d812c7edc7fe450082",
+      "bytes": 13918,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-04-03_5abf9c97c80b.json.gz",
+      "sha256": "3f273f35cae47367a663aa8a81343936b7b9fae80ed9303b312e6fa27e34cb4f",
+      "bytes": 8467,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-05-02_0e2bd3f7a17c.json.gz",
+      "sha256": "817e95d0984fcdf3b00d10819add8e51337ffd4402779afeb2eeda38d354e196",
+      "bytes": 12943,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-06-13_e509d8e2f735.json.gz",
+      "sha256": "8c0d93963182acae6e39852716d81d25bd899b65745d9f43f7dd1daffd3a73fe",
+      "bytes": 12446,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-07-03_06044d304da8.json.gz",
+      "sha256": "1482be37437419205c1fabb0d03bd551be37310370621d1f85ef1c45c660ab6f",
+      "bytes": 16902,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-08-11_7d7605b8e201.json.gz",
+      "sha256": "56fbe8f71985c63476a09e93aa312b40fac65f175064a9d4b9e6eb3c42c64033",
+      "bytes": 12180,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-09-06_946d26cc2d20.json.gz",
+      "sha256": "8d53dd5998ebfc1cdc8659301d69dc80b634e15a335bb9924695d651b55dfc53",
+      "bytes": 14301,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-10-17_0f67919f2a78.json.gz",
+      "sha256": "5ff6187a807c0b05804334dd1b9b493088a13832b19676d77c4beb49d0ec619d",
+      "bytes": 14286,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-11-02_fdb3701ff5ad.json.gz",
+      "sha256": "ea7320a84d37e14aec8fc2e9546c361f80ed4c7accdb8dd7bfb0d076b3e881b5",
+      "bytes": 16527,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2017-12-17_d36d1754c716.json.gz",
+      "sha256": "c4129a69ae5e73cf4bcbd6e6f012fed05a65a3bcb830018cac4a6b04261f8892",
+      "bytes": 16131,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-01-11_e32b7600bbe9.json.gz",
+      "sha256": "ac901ce9727e65dd22ccaefb59c5daccb2476e8eaa76fab927bb339427f1d1c3",
+      "bytes": 14710,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-02-01_8fd4a0c91932.json.gz",
+      "sha256": "02972555da923cc9d33d4618f5ed04f51a536aa31986747f6039b4182de7a10a",
+      "bytes": 15443,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-03-14_8f877f095172.json.gz",
+      "sha256": "dae4f760c0446c76d6c642410e94575e5e7ea18ab9474ce37e13312e012ff7ff",
+      "bytes": 20680,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-04-01_2f9fd382f66e.json.gz",
+      "sha256": "e6ff7bf70c3180d2ebc335d2a6fcb8b6479294cee0fdf5e7e7a0bfacb60414b3",
+      "bytes": 16818,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-05-01_a07831bb0a6b.json.gz",
+      "sha256": "aed4e40bc8bf58b21960c335a71f4542095cb0befb4c86ba00a9d08be9b04cb3",
+      "bytes": 20237,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-06-01_8437d01d70b4.json.gz",
+      "sha256": "a89cc144d865aef003775a42c9ca6be78cb53dddc88098be0c34a7fb60d288b6",
+      "bytes": 20552,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-07-01_7f65d04e14dc.json.gz",
+      "sha256": "24e53057a8795c6b5c84c6930a955a053865b2d6e0a5059171ef113daba63d50",
+      "bytes": 17875,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-08-01_7ca46e1a7d73.json.gz",
+      "sha256": "3e0e4e53a89d424b0b9b446e70eedc6a3a00ddf1e74442ebdbb5203630bba809",
+      "bytes": 18859,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-09-01_84d662fa7f40.json.gz",
+      "sha256": "b50d52560dc78cb8efb55d04257f5820550431c1b057e07d0336eefe7f51a407",
+      "bytes": 27513,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-10-01_82dc1f205654.json.gz",
+      "sha256": "2b86cb68bdf0669699365554f9c1d456ab41070f35fa5e1f254e63e7a69f9a7b",
+      "bytes": 19406,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-11-01_6977ddc1ea6d.json.gz",
+      "sha256": "58d92f5a6c7acc515b5cb4801aff602a506406c0e347531ce98b84a5d58fbceb",
+      "bytes": 20235,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/archive_extracts/2018-12-01_8abb167d1306.json.gz",
+      "sha256": "e6a8e15bb47563dd68bca38d7f13b7443523e27ba03fdd1987e53856268b9205",
+      "bytes": 23369,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "AACT_ARCHIVE_REFERENCE",
+      "public_source_url": null
+    },
+    {
+      "path": "full_system_feasibility/snapshot_strategy/historical_snapshot_eligibility_audit_HTT-P1-AACT-HIST-A45-20260921.csv",
+      "sha256": "920341b3aedfb574bb28369b03c53a9a4d04d3a2aaf8b5ea9e42c056ef30e2cf",
+      "bytes": 912223,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/full_cohort_results/community_exploration_v1/manifest.json",
+      "sha256": "157253cdbf001284c6ac430d1d27e3eae3468b922d158769095b5d62db3ce09e",
+      "bytes": 3137,
+      "authority": "Preserved community input provenance",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/full_cohort_results/community_sensitivity_v2.json",
+      "sha256": "b6fef8b50c71cdfea5906c64f321fc1e3db79c5d2e9f0027c92c4b99883d2bcb",
+      "bytes": 788884,
+      "authority": "reports/challenge4_community_graphrag/full_cohort_results/community_exploration_v1/manifest.json inputs_sha256",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v4/app.py",
+      "sha256": "4c0ded84455417aa2019ad2011470b392e68c769f24b530da002925a0aad7431",
+      "bytes": 32666,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v4/community_graph_v4.py",
+      "sha256": "dbb1cf99dacbc2ce1e01affa59df6a832037336645081bf79d03078f349f0d63",
+      "bytes": 4863,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/app.py",
+      "sha256": "4ad1df40c580c037fb775bca31c4b504f3b9acadf52ade54fc1b573a0f277583",
+      "bytes": 5155,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/community_page.py",
+      "sha256": "28d3aa2760cff874963864b5a43b0b08fac26603296b10d5d1bd64eff169c274",
+      "bytes": 6415,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/integrity.py",
+      "sha256": "5ddd0a6887280edb774ce42793c0e04ffd82f4e7fbb93f3b3ceca2ea7a9cbc63",
+      "bytes": 4292,
+      "authority": "Preserved Phase 2 verifier",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/provision.py",
+      "sha256": "2f1e7664a39562a50b3de8f6e6998b446f0d25404dae84099551cbdadc8790e6",
+      "bytes": 3635,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/requirements-ui.txt",
+      "sha256": "4f5d7b96150012fc7254163f820031d44e4d7de3aa39d4aac8eb6456f1f6d079",
+      "bytes": 178,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/requirements-worker.txt",
+      "sha256": "02e2cddfc6b1ee260785ccd2e8f821c973c126b6a075cb2f760e60bdfd30201d",
+      "bytes": 234,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/runtime_integrity_v1.json",
+      "sha256": "958f09f86117ee7cdad8315ffa7d1f1ffdcf8d2ce931d58293654fa70e846655",
+      "bytes": 74502,
+      "authority": "Preserved Phase 2 receipt",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/trial_intelligence_v5.py",
+      "sha256": "f157b0f847283aed685db37a6ef6680cb537ef30b8b047dd4e1feb4538a0fe8b",
+      "bytes": 9147,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/challenge4/ai_design/pilot_v1/run_pilot.py",
+      "sha256": "cb0e6f404678a19ce783cceed414348cf7e627e8716cda97fee0153b39fb4f41",
+      "bytes": 30855,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/adjusted_full2824.csv",
+      "sha256": "5d2441fef15247bbf87af2d7a7245444821b6390f093f798bf122a83eb88c4c5",
+      "bytes": 1849,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/adjusted_phase1319.csv",
+      "sha256": "3ab3a0ec1326cee2aefeacbe1c20ed5daf6d0b820aceaee9e4d958de126a5640",
+      "bytes": 1757,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/all_trial_characteristics.csv",
+      "sha256": "b3a0094aabcbe5e441572c9066a8d8c3db91b1aaa6cdbf685e11ac7012123675",
+      "bytes": 900197,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/calendar_period_status.csv",
+      "sha256": "ba6b6e56d5e07cd08a27d0ee9e04e2c445d1ed0b5ce700271726b8faa612cd64",
+      "bytes": 1311,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/common.py",
+      "sha256": "a7834a5c8347f37ab0b86ebcd1374fd12159bac84c2beed335ccd61fdc96699c",
+      "bytes": 6700,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/complete_evidence.py",
+      "sha256": "6dba2c24afe20bed6235f0116ca2a14cd99f766281b2d400041112b72b3840d1",
+      "bytes": 9084,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/design_status.csv",
+      "sha256": "f0a2cab67ecbb44ae4cd61ac607014f7cf530a670283c53385f3aa471c186582",
+      "bytes": 2733,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/duration_summary.csv",
+      "sha256": "b085cb5d0c3c8e86878543c47e430a4a3f40c090c6a82340b636faaddf599e2e",
+      "bytes": 1166,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/enrollment_applicable.csv",
+      "sha256": "79da672bcdad4c05ff0c557f9db9d6259a2af87524d6b5ca4ad432e344c50350",
+      "bytes": 860,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/enrollment_full.csv",
+      "sha256": "65b8c9825275830fbc4291d686312cd1659ab4e6d090df0957ab6104e2105c0a",
+      "bytes": 964,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/exercise_rehabilitation_cues.csv",
+      "sha256": "1330131e97eea3d3a6ef9febe9cdfe423193a828a8a712a114553b40ae9af37d",
+      "bytes": 23581,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/intervention_status_applicable.csv",
+      "sha256": "5aa7e174493a25f7d081a6c00f4bad9c33ba5ee0c03f45e74b0ac5658bf1881b",
+      "bytes": 1153,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/intervention_status_full.csv",
+      "sha256": "a9c0b138bf10cea894dc39931a1a996d66d8754195421e9f77b2f918d00cf74a",
+      "bytes": 1216,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/na_drug_trial_audit.csv",
+      "sha256": "e3913e296b3bac3bd4b6fcab5272088ca9ba903c241b17177540c4980da34ff3",
+      "bytes": 32436,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/na_intervention_composition.csv",
+      "sha256": "edcc6963b9263577b7ae87f8aaa4ad21ae429528de5961d8389047b5900aa6ad",
+      "bytes": 534,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/output_manifest.json",
+      "sha256": "eada7c8e93025ea0f9277ca1d848f6d46cea18f4888b92ed1eab4fc8468f6127",
+      "bytes": 4513,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/phase_design_status.csv",
+      "sha256": "53ff81d05dfbc109a99fdfaf74caef4a1634e88b8c9b8ef038debbd706e9a09f",
+      "bytes": 18418,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/phase_sponsor_status.csv",
+      "sha256": "f3d3bedacc20393e5bb9e9b4c2c4b00738767c0706db66f51c2c8314d17de49f",
+      "bytes": 4702,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/phase_status_applicable.csv",
+      "sha256": "9665c2863ccff000cc18d1749de8ba38bf20d2cb69485958209aac25a3baa69d",
+      "bytes": 746,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/phase_status_full.csv",
+      "sha256": "df75f7df4636070fbe022731f79f259a79a3b4d90f45deb36e28634036c095a1",
+      "bytes": 836,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/recorded_duration_intervals.csv",
+      "sha256": "09f1766b44bb41e17fbabb981a7b20f6b58d3b6894d08010785a122e8d12155f",
+      "bytes": 421341,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/results.json",
+      "sha256": "8ac3b3cb6e679828e05ed82ac3e468259c98a4be2622f130aa0628d2a8874fa6",
+      "bytes": 2728,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/run_analysis.py",
+      "sha256": "e2507ec5192fd730802291f434e62d3718dae43b2cbfc20a514e600780943ecc",
+      "bytes": 16736,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/sponsor_status.csv",
+      "sha256": "48a2d756e798cca9d1e67fda56bcac3e00a1f46f7d3b1d518840090042b358e3",
+      "bytes": 756,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/analysis/supplement_manifest.json",
+      "sha256": "93a11d78101e9016e0f5701440e7856c34f4ce4259dce17d291ff1265bfe6bf3",
+      "bytes": 333,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/app.py",
+      "sha256": "c272746859a3f0a5b52baa767d48eaad00275341a11cf74dcaa65ef4a7fcf1b8",
+      "bytes": 4731,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/phase_explorer.py",
+      "sha256": "a9c87e378b7ed4610e0439373f11fe880b181f10a22cac8faa2dfc992024761b",
+      "bytes": 4166,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/README.md",
+      "sha256": "1185863a677573d3c09869beb8615223328c67c075651c2d088f23ffe9c1decd",
+      "bytes": 1979,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/record_demo.py",
+      "sha256": "e55c71e90f5481ce3fdd000cc6893730f4094a7442ef982e4d6b8555938edb27",
+      "bytes": 1715,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/test_app.py",
+      "sha256": "8f0629c00e68d9ae2629faed987ab1f2f16b7f1e56e1f0a3911c41ff76e5d306",
+      "bytes": 2051,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/integration/verified_examples.json",
+      "sha256": "2d7cb5c6910c4701953e015bd6e3f7252e8276da5daaf6c71c4ef486d348e96e",
+      "bytes": 503052,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/analysis_cohort.csv",
+      "sha256": "736ac6d9a2557eb52de172878a91ae4386650ecba8edb2659f7933561bca7a5f",
+      "bytes": 135421,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/authorization_record.json",
+      "sha256": "39741656befc04a14b3485e7d22ea86a7edaf490ccfff5f8c62cdaeea626d3e2",
+      "bytes": 509,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/chronology_quarantine_six.csv",
+      "sha256": "97500c7a9d0ec52f39d998cbc4750f16e1240fe2cb53f1f38b1438744d2534a6",
+      "bytes": 1672,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/coefficients.csv",
+      "sha256": "c162cf93f5e044069b23daf3e363fb2aa8c8745f7ef25acc7be923ea5a065dce",
+      "bytes": 16968,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/cohort_manifest.json",
+      "sha256": "27a747499ca599a061e758ebf9e062f5bd6660bf31f6d0574385eae24e07e78f",
+      "bytes": 2080,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/comparison.csv",
+      "sha256": "f785dd883fe9daf1efd884684db2eea2f7e3819f494908e2a0869629ee8f002c",
+      "bytes": 1283,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/development_fold_metrics.csv",
+      "sha256": "b7b9fe280cd8d202ca7dc31867f75115513e75e47712192be60850bc7908fb2a",
+      "bytes": 1176,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/development_oof.csv",
+      "sha256": "a00ef72f3955b5ada2e925ae6eacb23f0c05ef1d00dfd565e585777318b0c518",
+      "bytes": 40263,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/eligibility_ledger_651.csv",
+      "sha256": "94c9c490d470e12822960492f4ccf9eb7a5afa0ef1f1d2fd2ee58be78dac0662",
+      "bytes": 134330,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/ELIGIBILITY_PROTOCOL.md",
+      "sha256": "272c9aefcd0959fb260dfb42b50c6eadf6342f6c99cead3536ab3735871a3d10",
+      "bytes": 5698,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/experiment_config.json",
+      "sha256": "d2cdd7d8116f96fbf1229bc9412673f782daedec8014578651d7b0386d336e56",
+      "bytes": 691,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/exploratory_predictions.csv",
+      "sha256": "2aadcdbdb9fb4f41d95d9509b16512c09b2de501b8b846fd0c912da3866fd753",
+      "bytes": 27986,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/feature_missingness.csv",
+      "sha256": "4be33b57a32ac8be1f297bc730105485714ed62069b00e96764736f1643db126",
+      "bytes": 938,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/fold_isolation.json",
+      "sha256": "d36b158860ec32eac99bb0a9d2d149033d24f8a288e05c5c30b7715836b0f1b8",
+      "bytes": 12541,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/intercept.joblib",
+      "sha256": "7dd03c438b376ea2b562cb83221afaac779cc2d89859884635409465de53a05b",
+      "bytes": 583,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "UNSUITABLE_FOR_PUBLIC_DISTRIBUTION",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/metadata_with_phase.joblib",
+      "sha256": "ed19f69bf3ee7cf46184d4af695c502a939a77983d8963546dd111103e780ca6",
+      "bytes": 5818,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "UNSUITABLE_FOR_PUBLIC_DISTRIBUTION",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/metadata_without_phase.joblib",
+      "sha256": "75c63d32bf56262fc2a6a8463401dc96ad84812d4ae9f369360bde134d85eb83",
+      "bytes": 5482,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "UNSUITABLE_FOR_PUBLIC_DISTRIBUTION",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/phase_event_counts.csv",
+      "sha256": "24a29477d17a19a6765b0e581d0b1fe3da22e7f76dfbda10e56168e668a37126",
+      "bytes": 669,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/phase_only.joblib",
+      "sha256": "56ee99607f1760930ea97437794469e11673fb6c168b4d5621cc392bcca8494f",
+      "bytes": 2129,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "UNSUITABLE_FOR_PUBLIC_DISTRIBUTION",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/prepare_cohort.py",
+      "sha256": "deb0a12b00bcfdc4485882edb132c17170e9312b748f1ef911cb6e86ed4d49a5",
+      "bytes": 8038,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/results.json",
+      "sha256": "70d57fae1f2470b4a54d4c092e7bdb2a906f69e79db303739d93ef6e7fa50ae0",
+      "bytes": 13460,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/run_manifest.json",
+      "sha256": "7f09937ddc33faa3e55da081f798eac260c789eabf8cbf3e60d7b59bfa375e9a",
+      "bytes": 2261,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/modeling/train_exploratory.py",
+      "sha256": "2a8edabe0f46c77e8401e2f0bb743d8d0a2519c4d75a8900792dc065258cc4b1",
+      "bytes": 12717,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "UNSUITABLE_FOR_PUBLIC_DISTRIBUTION",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null,
+      "publication_hold": "Preserved training main contains a machine-private authorization attachment path; serving imports only its unchanged inference helpers. Keep exact module in owner-controlled runtime bundle, not this public source proposal. No secret value or attachment contents are copied."
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/ABSTRACT_AND_PRESENTATION.md",
+      "sha256": "a464a22c0c1c1576bacae5098a3da3c64466655685590cc20c1fea4a7e0f9d51",
+      "bytes": 6365,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/build_poster.py",
+      "sha256": "59b7092996d63bb15b5e1deb302cda44dd412765f914c87b097fb17f84d313ee",
+      "bytes": 12524,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/FIGURE_CAPTIONS_AND_SOURCES.md",
+      "sha256": "e115f45c12b010849d3b74ac02969cab0593661ae1186029aca3cb061f817a5a",
+      "bytes": 6373,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/adjusted_phase_associations.png",
+      "sha256": "52cef7788098ea8dd6d99e56b535f6b4c1d21cb5b5baf03a8841c120f634ddfe",
+      "bytes": 128644,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/adjusted_phase_associations.svg",
+      "sha256": "f5ef495217220b2ef9301ae59b2a90884165829eed18574b22b37733aae3611c",
+      "bytes": 3688,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/allocation_status.png",
+      "sha256": "2acc941e6c751896ebf1b76ab4ca6125b25e6d2b66f873a6c75e9abd7cfb84a3",
+      "bytes": 88699,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/allocation_status.svg",
+      "sha256": "9a1aa42580654d5941cb58b7f56cd7c99df8d05ebff29f35ea7fa78abfff4479",
+      "bytes": 4158,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/enrollment_applicable.png",
+      "sha256": "c95b7952cb0d74d9092e800b6988f1c10a7341f2c47ddedaa2a4171fb2b9bfa7",
+      "bytes": 112965,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/enrollment_applicable.svg",
+      "sha256": "fd7e09ab19bebd6adf73a1503b67bb11b81b43896a62fe86a3194cf909041e0c",
+      "bytes": 3953,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/historical_model_comparison.png",
+      "sha256": "bb5c57d5a46b3ea2d33c50e8c95f6ee7030a26c9c819efd5df8ae7f43b3b4147",
+      "bytes": 119861,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/historical_model_comparison.svg",
+      "sha256": "41b2fee089b0025b7540c54864e364ec5e2ca042663ca015e50595c4caf3fa5c",
+      "bytes": 3311,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/integrated_architecture.png",
+      "sha256": "b0229564239f55abf3b27c766901011b25fadc9177b52a3203ce17dfef0d781a",
+      "bytes": 145184,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/integrated_architecture.svg",
+      "sha256": "56966e03a9c5e6579194b63caadc00b452fb0c31e12975a81079be59377be66c",
+      "bytes": 4729,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/intervention_status_full.png",
+      "sha256": "a90dbb85733e5a7d1d9257fe3404680f8e49e475fd29f00e3e334d90506edbbb",
+      "bytes": 134677,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/intervention_status_full.svg",
+      "sha256": "61096c75897b843ba90db0c3c81f7e8be67d46563f8143dcdf780572f68a73eb",
+      "bytes": 10673,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/na_intervention_composition.png",
+      "sha256": "b3cde47c69cef52e0522a67e65669381f48164025357e1cba78705fc60ca215e",
+      "bytes": 140252,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/na_intervention_composition.svg",
+      "sha256": "f7a44efab2f07ffe5f1f3feb2104d13d31cf581a9b8e1d9c93146ba3f6131f73",
+      "bytes": 4450,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_distribution_applicable.png",
+      "sha256": "1b4a626c81296429aaf36435d352dd166ab89b3bbfc2ac93011f2bfd4bd37b55",
+      "bytes": 108062,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_distribution_applicable.svg",
+      "sha256": "f8fec0bc5b4fe991b0b8ae66eccd16ba6d8259d3e4663a59d2ca21a344455125",
+      "bytes": 2830,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_distribution_full.png",
+      "sha256": "7a2a258c1aad633d1f043d1773bf91926bfc189383b964e03b9925f0650b4f6f",
+      "bytes": 117704,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_distribution_full.svg",
+      "sha256": "065ee2ecb15e6e73d3ab45b9dbd46736f0418d468011276451c5364bbb8dba23",
+      "bytes": 3139,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_status_applicable.png",
+      "sha256": "3820e566e7a85a36bbd3fe56f16a07814282d982eefa21a73678752e6e4850c3",
+      "bytes": 111134,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_status_applicable.svg",
+      "sha256": "731b1a6e1a3a099c6725f45f10d24ff03d297ff23c576e144296ad863ccda2bf",
+      "bytes": 6634,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_status_full.png",
+      "sha256": "04f6aa66fae49b819d227bd0409eb250989f090c4dcf0f09f9e3bb946b55997b",
+      "bytes": 118305,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/phase_status_full.svg",
+      "sha256": "a3b126ec34fb60355ff58dda92ad40e07d6f19de62c40bb6155c515e0c128b76",
+      "bytes": 7461,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/recruitment_by_phase.png",
+      "sha256": "d1de7752dff6cc8f83210ede907086539e68cbb1f49ef5289503009faffd2fc1",
+      "bytes": 86853,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/recruitment_by_phase.svg",
+      "sha256": "fe5b86267cb6abde268eb6dd1b62cd792937a2c9a9ae8c5bea6234b9bea3cd75",
+      "bytes": 3080,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/sponsor_status.png",
+      "sha256": "967a931f651579b48f056880582467d1e7dd70e3fe4b9ecc8629cfe28fed7553",
+      "bytes": 96111,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/figures/sponsor_status.svg",
+      "sha256": "9323f8dbef4ffd276db2afbefd337b0370a1b41c6d8bb83c439530d1c1a7db53",
+      "bytes": 6293,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/HeartTrialTwin_Final_Capstone_Poster_20261102.pdf",
+      "sha256": "9a5629b60a031005d199faf6115a15fb5dd10bd27e688de6e9656de432049d34",
+      "bytes": 70885,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/poster/qa_figures.py",
+      "sha256": "f71c7952239f061cd28f50fabed282492bbb89220efffa1a0ad9843477dfd691",
+      "bytes": 670,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/recruitment/coding_rules.json",
+      "sha256": "64a4655782de7d6ded57e0cfdbfb1583e104c29cbfd1c2ee1bfe488c2ec6036b",
+      "bytes": 1130,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/recruitment/intervention_summary.csv",
+      "sha256": "063fdf4a467e70fa3118ef4007844317d256d4282d88759f948eae864b016d41",
+      "bytes": 918,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/recruitment/phase_summary.csv",
+      "sha256": "165d404e2169ba89461b81c9fdd09178ca7807e00fd778469fadc36064378f06",
+      "bytes": 240,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/recruitment/reason_coding.csv",
+      "sha256": "6514acfcdcd948ea227afbd4c3460e704f99b752c98e7fd9d59f6dfb3875f2d5",
+      "bytes": 130537,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/COMPLETION_AND_LIMITATIONS.md",
+      "sha256": "950eb337da5348944979852266e90b3c86c7fc87fc34e4f2bd1b8a0a240ab2df",
+      "bytes": 3667,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "sha256": "29c54f92e4720271d6d103ddce0c7bf44abaf724a88703c59092c902c36f4c0a",
+      "bytes": 10836,
+      "authority": "Existing base-package manifest / identity.py",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/FINAL_SCIENTIFIC_SUMMARY.md",
+      "sha256": "8f4e3a47c92b907e35588d2e39af0a8d8a9654e4fb64509c314c04d0f5a8778f",
+      "bytes": 15509,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/FINAL_VALIDATION.json",
+      "sha256": "f2e8e9fbe6126c96cdc3eddb462baff1645ca38d9694f8453d7f711f4145c9f0",
+      "bytes": 829,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/REPRODUCIBILITY.md",
+      "sha256": "cbaa17c2fb90f13e025bf35d28fd111cb6f27ffce3c6fd1c6aae77c1d04cd09d",
+      "bytes": 6826,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "sha256": "65f2b0bbd0fd3cb22033936f6095a82408530a70ead558f42231a27502c1888c",
+      "bytes": 45018,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/test_final_package.py",
+      "sha256": "cbff17594d887c17618259358ef068264d79706a9da1bb997264b3eb9e5b1b63",
+      "bytes": 8912,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/test_results.json",
+      "sha256": "75fa759dce5e0fb8b10403ec6e41a8be90a6f9e8368628b54c3e9ecd555da63e",
+      "bytes": 706,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/validate_package.py",
+      "sha256": "a1ffd30bd08ac6eb9d74ea1b4952273c5957302300885c72f4c845efb9c6dce7",
+      "bytes": 5952,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/simulation/SCENARIO_BOUNDARY.md",
+      "sha256": "16cc3b15a8cdf08ed2618daa11241c9cb528bb7bc2b398d3165f02d41fbb57e5",
+      "bytes": 1324,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/final_package_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/data/development_scores.csv",
+      "sha256": "c150081f755e58524da382b17a8e09ebf048dc93ad0414f2da423d7d1fb7d911",
+      "bytes": 43085,
+      "authority": "Original integration manifest",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/data/factor_comparisons.csv",
+      "sha256": "eb7107928756e99ecab96099175694602c7a8f148fcdce2fed4e6ebbb11fd7cc",
+      "bytes": 4762,
+      "authority": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/results/dashboard_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/data/factor_membership.json",
+      "sha256": "ae3eb78d79cfaf2959f07d055f0da4d0f35e999c4bc88ea880718e217d1ef2f9",
+      "bytes": 772536,
+      "authority": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/results/dashboard_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/data/historical_profile_catalog.json",
+      "sha256": "cdaa648a1fda9ec708f11b0decc359b975efeed1e725e8fa3907f42f6aaaa197",
+      "bytes": 166137,
+      "authority": "Original integration manifest",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/data/phase_intervention_cells.csv",
+      "sha256": "0eeab4f9ab4dea353a1d107e0f4e9b7ea654e96e795596336e009f011fba367f",
+      "bytes": 51781,
+      "authority": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/results/dashboard_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/development_score_distribution.png",
+      "sha256": "3b0704e4d8dcb35d2b8142eaff3bef889ca2a038db82a34da86f333f03b5e2d0",
+      "bytes": 95106,
+      "authority": "Original integration manifest",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/factor_comparison_heatmap.png",
+      "sha256": "f9df2d87d8e18f08b8572a548aac5b4adbbf57172d1aa46d2a1cd2bbe27f2d96",
+      "bytes": 212283,
+      "authority": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/results/dashboard_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/factor_comparison_heatmap.svg",
+      "sha256": "aefab4d270a3a0f7ad1fa6157a2e661ec5b9e0a7766b9e63043ab90100f8627b",
+      "bytes": 8324,
+      "authority": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/results/dashboard_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/model_performance_comparison.png",
+      "sha256": "3bc62f1ca877118b309c4b9ab999aa587cdfcc920dd4e3ae817f4bd8c7b34d85",
+      "bytes": 136367,
+      "authority": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/results/dashboard_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/model_performance_comparison.svg",
+      "sha256": "daba393f675b94c10af74333827b30482a5a425a1895f844fb55715184f06edd",
+      "bytes": 4976,
+      "authority": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/results/dashboard_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/phase_intervention_heatmap.png",
+      "sha256": "db8d756075e64aaa5d6744a9bdbdae1cb9c39e6d6e2fa0305f1d71c5c73a1e88",
+      "bytes": 243610,
+      "authority": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/results/dashboard_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/figures/phase_intervention_heatmap.svg",
+      "sha256": "b57ffcb1ef13c568590ff3a7684a1ec428c70694bf34c61eaeb4d1dd7f868dae",
+      "bytes": 25986,
+      "authority": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/results/dashboard_manifest.json",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/results/dashboard_manifest.json",
+      "sha256": "b36edb3233245aa699eff013306a42367d69a629c017296e276b2f7107903ea7",
+      "bytes": 1758,
+      "authority": "Original integration manifest",
+      "classification": "SEPARATE_RUNTIME_BUNDLE",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/client.py",
+      "sha256": "4a7e4be7fc3a3d90e04076c8e462f4d2849431420c739e15a4deccf4ba49f90f",
+      "bytes": 1301,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/identity.py",
+      "sha256": "1f67040c480cf74d969412e7d97166511eacf7a6cb02ac6d63e5392b2683b843",
+      "bytes": 2185,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/inference.py",
+      "sha256": "b4a898b407538b8c8514a081d1f4ce807537e906204ff967cb5708d95b4f9297",
+      "bytes": 9344,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/pages.py",
+      "sha256": "457ff9544a815fe991f683f1684aaa3e5e5bf429db3aa8e0acbeef6d1d68d851",
+      "bytes": 9669,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/risk_dashboard_refined.py",
+      "sha256": "24c9715142ff37242ab325dc9a58f3fb645601efd7058ce9686abee7d279a6a1",
+      "bytes": 14685,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/final_project/HEARTTRIALTWIN_INTEGRATED_20261102_v1/src/worker.py",
+      "sha256": "ae38ffdb607184f9c19745253a3208e0f2a5dd380cb32e03c77d28c1eac8e988",
+      "bytes": 2912,
+      "authority": "Current reviewed runtime code snapshot; not a replacement for historical research manifests",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "reports/project_review/historical_label_feature_qualification_v1/qualify_historical.py",
+      "sha256": "812924f979395cbbe576537117f773ffc19d2cbce34f9f13e713c4810466d643",
+      "bytes": 28277,
+      "authority": "reports/final_project/HEARTTRIALTWIN_FINAL_20261102/reports/source_preservation_manifest.json",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": null
+    },
+    {
+      "path": "step3_manifest/HeartTrialTwin_first_p1_cohort_manifest_HTT-P1-AACT-20260905.csv",
+      "sha256": "5a2d6bbb0973a45988275efb4e9caff8400438edf4e3c560b1b7c0b1688fe7ab",
+      "bytes": 985300,
+      "authority": "Graph manifest membership.frozen_source_sha256",
+      "classification": "SAFE_TO_COMMIT",
+      "source_reference": "EXISTING_LOCAL_ARTIFACT",
+      "public_source_url": "https://github.com/akwasianing/HeartTrialTwin/blob/be520bcd40748abfc03e4ff9b64bf244650c5367/step3_manifest/HeartTrialTwin_first_p1_cohort_manifest_HTT-P1-AACT-20260905.csv"
+    }
+  ],
+  "public_runtime_bundle_url": null,
+  "optional_not_required": [
+    "Neo4j credentials/databases",
+    "Ollama",
+    "MiniLM weights/embeddings",
+    "GraphSAGE weights",
+    "Raw AACT ZIP"
+  ],
+  "public_source_note": "GitHub links identify already tracked bytes at the base commit; new candidate source and external runtime bundles are not claimed already public."
+}

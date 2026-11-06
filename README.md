@@ -2,6 +2,115 @@
 
 > **Experimental — not validated for clinical decision-making.**
 
+## Main capstone demonstration: Community v6
+
+HeartTrialTwin helps **clinical-trial researchers and evidence reviewers** inspect
+registered trial information, source-linked relationships, exploratory communities
+and the limitations of discontinuation research. It does not recommend treatment,
+infer efficacy from planned outcomes, or offer validated risk forecasts.
+
+The frozen `HTT-P1-AACT-20260905` cohort contains **2,824 selected terminal-outcome
+heart-failure trials**: 2,237 Completed, 393 Terminated and 194 Withdrawn. Its
+September 5, 2026 AACT snapshot supports **28,777 graph nodes / 79,125 original
+relationships / 19,740 registered planned-outcome links**. This is not all ongoing
+heart-failure research, and recorded fields may include later amendments.
+
+The **primary application is Community v6**, an offline, deterministic research
+demo—not the older classifier or the separate live semantic-search demo:
+
+```text
+Verified NCT / title → pinned local graph evidence → trial-bound citations
+                                     ↓
+Exploratory B3 navigation · phase filters · descriptive dashboard
+                                     ↓
+Complete registered-outcome lists or explicit abstention
+Optional acknowledged scenario replay of frozen models—not causal forecasting
+```
+
+- **Trial Intelligence:** source records, sponsor/intervention facts, complete
+  planned-outcome listings and trial-bound citations.
+- **Community Explorer:** saved B3 Louvain seed-42 memberships, exact shared
+  source nodes and session-only human review. **904 groups / 820 singletons**;
+  groups are derived similarities, not clinical subtypes or registered edges.
+- **Phase and Intervention Explorer:** all 2,824 records; overlapping intervention
+  types; NA + DRUG retrieves 115 trials.
+- **Operational Risk Dashboard:** descriptive associations, uncertainty and the
+  later independent evaluation—not individual future-risk predictions.
+- **Digital Trial-Twin Scenario Lab:** bounded, acknowledged, in-sample replay of
+  saved classifier scores. Exploratory and noncausal, not a patient twin or a
+  validated prospective simulator.
+
+Unvalidated community Ollama generation is **disabled**. The main app requires
+no live Neo4j, Ollama, Chroma or MiniLM assets. It still needs exact external
+registry artifacts, trusted saved models and two Python environments.
+
+### Quick Start — source plus approved runtime assets required
+
+**A GitHub clone alone is not sufficient.** There is currently no verified public
+download for the complete runtime bundle. Read the
+[current Phase 4 setup guide](reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/SETUP.md)
+and [exact asset inventory](reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/RUNTIME_ASSETS.json)
+before installation. Do not regenerate frozen results to fill missing files.
+
+The isolated source candidate lacks **144 files (37,521,267 bytes)**. A private,
+checksum-verified local handoff is documented; it is **not** an approved public
+download. See the [per-file distribution review](reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/ASSET_DISTRIBUTION_REVIEW.json)
+and [Phase 4 readiness report](reports/reproducibility/COMMUNITY_V6_PHASE4_20261106_v1/PHASE4_REPORT.md).
+
+On a new Python 3.12 checkout, create the environments **only if absent**:
+
+```bash
+python3.12 -m venv .venv-full-system
+.venv-full-system/bin/python -I -B -m pip --isolated install --no-cache-dir -r reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/requirements-ui.txt
+python3.12 -m venv .venv-vector-rag
+.venv-vector-rag/bin/python -I -B -m pip --isolated install --no-cache-dir -r reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/requirements-worker.txt
+```
+
+After approved assets are provisioned at their recorded paths:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 .venv-full-system/bin/python -B reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/provision.py --check-environments
+PYTHONDONTWRITEBYTECODE=1 .venv-full-system/bin/python -B -m streamlit run reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/app.py --server.address 127.0.0.1 --server.port 8510 --server.headless true --browser.gatherUsageStats false
+```
+
+Open <http://127.0.0.1:8510/>. Enter **NCT00206232** and retrieve lead sponsor
+**Baylor College of Medicine**, intervention **Spironolactone**, or all **seven
+registered planned outcomes**, with citations. A survival-effectiveness question
+abstains. NCT99999999 is outside this cohort; missing evidence is not clinical
+absence. See the [v6 walkthrough](reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/README.md).
+
+### Results, reproducibility and submission evidence
+
+- [Traceable results index](reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/RESULTS_INDEX.md)
+  separates saved research findings from new functional reproduction.
+- The later V1 evaluation scored 358 provisional trials: **329 binary-evaluable
+  (289 Completed / 40 Terminated), 29 Withdrawn excluded**. ROC-AUC **0.487**
+  (95% CI **0.385–0.589**), AP **0.157**, Brier **0.1100**. Predictive release
+  remains **BLOCKED**; this is not the older 462-record classification test below.
+- Longitudinal feasibility: **24 trials / 72 archived observations**, nine trials
+  with changes and ten changed adjacent comparisons. Archive changes do not date
+  clinical events or validate longitudinal prediction.
+- Community stability: saved B1 mean ARI **0.648**, B3 **0.867**. Stability and
+  shared source nodes do not establish clinical equivalence or improved retrieval.
+- [Phase 3 measured readiness](reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/PHASE3_REPORT.md)
+  reports dependency installation, isolated local-asset testing and the remaining
+  public-clone/distribution gates separately.
+- [Version 20 research poster](figures%20and%20charts%20/HeartTrialTwin_V20.pptx):
+  original editable 48 × 36-inch PowerPoint, located during final submission
+  review outside the reports directories. Earlier reports remain archival evidence.
+  **No demonstration-video file or verified video URL was located.**
+
+The [supplementary MiniLM + GraphRAG demo](full_cohort_graphrag/semantic_v1/demo_v2/README.md)
+retains semantic ranking and read-only Neo4j retrieval. It has additional graph,
+cached-model and credential requirements. The previously exposed full-cohort
+Neo4j credential has **not been confirmed rotated/revoked**: do not reuse it.
+This phase tests only the offline main app. See the
+[security/publication boundary](reports/reproducibility/COMMUNITY_V6_PHASE3_20261106_v1/SECURITY_AND_SCOPE.md).
+
+The following Challenge 3 and earlier-classifier sections are preserved historical
+implementations and results, not a claim that they are the current main UI or a
+clinically validated forecast. No new model was trained for this handoff.
+
 ## Challenge 3: HeartTrialTwin — Human, AI, and Human–AI Co-Design of an Evidence-Grounded Clinical Trial Research System
 
 The later Challenge 3 implementation is a **registered-information retrieval

@@ -1,0 +1,10 @@
+# Observed fresh Intel macOS / Python 3.12.14 environment; no hashes or cross-platform guarantee.
+# Derived from the successful Phase 2 requirements installation. Installer version is in ENVIRONMENTS.json.
+cloudpickle==3.1.2
+joblib==1.6.0
+narwhals==2.28.0
+numpy==1.26.4
+pillow==12.3.0
+scikit-learn==1.9.1
+scipy==1.17.1
+threadpoolctl==3.8.0

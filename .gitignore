@@ -82,3 +82,8 @@ week 7/
 week 8/
 week 9/
 week 10/
+
+# Local capstone recovery archives are not publication assets.
+/backups/
+# Future isolated handoff workspaces must not be staged as source.
+reports/reproducibility/**/_workspaces/

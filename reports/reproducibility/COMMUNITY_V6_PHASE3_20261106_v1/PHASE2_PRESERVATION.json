@@ -1,0 +1,21 @@
+{
+  "schema_version": "HTT-PHASE2-PRESERVATION-v1",
+  "source": "Recovered hashes recorded before Phase 3 edits; exact bytes retained",
+  "files_sha256": {
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/app.py": "4ad1df40c580c037fb775bca31c4b504f3b9acadf52ade54fc1b573a0f277583",
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/trial_intelligence_v5.py": "f157b0f847283aed685db37a6ef6680cb537ef30b8b047dd4e1feb4538a0fe8b",
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/README.md": "aae9e7abe6d20da9cf481ab4da11c68a7d9a962263db5c77f9ffacce74b06e96",
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/community_page.py": "28d3aa2760cff874963864b5a43b0b08fac26603296b10d5d1bd64eff169c274",
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/integrity.py": "5ddd0a6887280edb774ce42793c0e04ffd82f4e7fbb93f3b3ceca2ea7a9cbc63",
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/provision.py": "2f1e7664a39562a50b3de8f6e6998b446f0d25404dae84099551cbdadc8790e6",
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/requirements-ui.txt": "4f5d7b96150012fc7254163f820031d44e4d7de3aa39d4aac8eb6456f1f6d079",
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/requirements-worker.txt": "02e2cddfc6b1ee260785ccd2e8f821c973c126b6a075cb2f760e60bdfd30201d",
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/runtime_integrity_v1.json": "958f09f86117ee7cdad8315ffa7d1f1ffdcf8d2ce931d58293654fa70e846655",
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/PROVISIONING.md": "7b90e7422b81677a80999ce8f52fb64004a1209dadf308dafccee9dad0a48c07",
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/VALIDATION_PHASE2.md": "329f768d43473a49b90158d5a03b3141c55c0a0cc33a49bdf8e5c5cb55ce1f47",
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/tests/test_app.py": "583b7e3d6f0a8c360128375a6d1dc2d121eef265eb99b929be7c659309355f59",
+    "reports/challenge4_community_graphrag/hearttrialtwin_community_app_v6/tests/test_integrity.py": "e948b158301470c8cff1148db34f4dee7b0612dd2617fe3d936164960264af98"
+  },
+  "changed": [],
+  "frozen_research_modified": false
+}

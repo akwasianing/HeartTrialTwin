@@ -1,0 +1,75 @@
+{
+  "schema_version": "HTT-V6-PHASE3-EXECUTION-v1",
+  "date": "2026-11-06",
+  "branch": "codex/v6-submission-readiness",
+  "base_commit": "be520bcd40748abfc03e4ff9b64bf244650c5367",
+  "scope": "Isolated tracked-tree export plus proposed source; fresh pip environments and explicitly local pinned runtime assets. Not remote-clone-only reproduction.",
+  "source_only": {
+    "phase2_inventory_missing": 143,
+    "checksum_mismatches": 0,
+    "ready": false,
+    "developer_project_on_sys_path": false
+  },
+  "local_asset_provision": {
+    "additional_runtime_copies": 143,
+    "required_phase3_assets": 190,
+    "phase2_preflight_assets": 187,
+    "status": "READY_LOCAL",
+    "environment_errors": [],
+    "credential_copies": 0
+  },
+  "initial_fresh_suite": {
+    "tests": 24,
+    "passed": 23,
+    "failures": 0,
+    "errors": 1,
+    "skipped": 0,
+    "runner_seconds": 143.059,
+    "wall_seconds": 145.304,
+    "error_test": "test_scenario_acknowledgement_gate",
+    "error": "KeyError: expected count absent from historical_profiles response; underlying worker status/error was not retained"
+  },
+  "diagnosis": {
+    "operation": "Direct frozen inference profile load; no fitting or score optimization",
+    "count": 257,
+    "seconds": 42.87076583599264,
+    "status": "OK",
+    "conclusion": "Cold initialization/resource latency is plausible but the initial underlying worker failure was not conclusively identified"
+  },
+  "focused_scenario_rerun": {
+    "tests": 1,
+    "passed": 1,
+    "failures": 0,
+    "errors": 0,
+    "runner_seconds": 11.674,
+    "wall_seconds": 11.675,
+    "automatic_application_retry": false,
+    "verified": "257 profiles, acknowledgement gate, NCT03015402 26-to-39 saved-model replay, four outputs, zero fits, no source writes, release BLOCKED"
+  },
+  "server": {
+    "fresh_environment": true,
+    "loopback_port": 8511,
+    "health": "ok",
+    "stopped_after_test": true
+  },
+  "research_experiments_rerun": false,
+  "neo4j_or_ollama_calls": false,
+  "credential_rotation": "UNCONFIRMED_OWNER_REPORTED",
+  "clean_github_only_reproducibility": false,
+  "independent_other_machine_test": false,
+  "release": "PARTIAL_HANDOFF_READINESS",
+  "final_source_only": {
+    "phase2_inventory_missing": 144,
+    "checksum_mismatches": 0,
+    "privacy_held_legacy_helper_present": false,
+    "ready": false
+  },
+  "handoff_tools": {
+    "tests": 7,
+    "passed": 7,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 0.03,
+    "focused_publication_exclusion_recheck": "1 passed after privacy hold"
+  }
+}

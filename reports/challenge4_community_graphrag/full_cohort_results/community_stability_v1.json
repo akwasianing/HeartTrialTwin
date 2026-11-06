@@ -1,0 +1,87 @@
+{
+  "method": "Adjusted Rand Index across Louvain seeds",
+  "sklearn_version": "1.9.1",
+  "networkx_version": "3.7",
+  "source": "louvain_full_cohort_v1.json",
+  "singleton_limitation": "Persistent singleton communities are used as a proxy. This is not equivalent to identifying true graph isolates.",
+  "results": [
+    {
+      "projection": "A_interventions",
+      "trial_count": 2824,
+      "persistent_singletons_excluded": 1726,
+      "comparison_population": 1098,
+      "comparisons": [
+        {
+          "seed_1": 0,
+          "seed_2": 42,
+          "full_cohort_ari": 0.943122,
+          "nonpersistent_singleton_ari": 0.942329
+        },
+        {
+          "seed_1": 0,
+          "seed_2": 20261027,
+          "full_cohort_ari": 0.943122,
+          "nonpersistent_singleton_ari": 0.942329
+        },
+        {
+          "seed_1": 42,
+          "seed_2": 20261027,
+          "full_cohort_ari": 1.0,
+          "nonpersistent_singleton_ari": 1.0
+        }
+      ]
+    },
+    {
+      "projection": "B_clinical",
+      "trial_count": 2824,
+      "persistent_singletons_excluded": 747,
+      "comparison_population": 2077,
+      "comparisons": [
+        {
+          "seed_1": 0,
+          "seed_2": 42,
+          "full_cohort_ari": 0.679939,
+          "nonpersistent_singleton_ari": 0.666454
+        },
+        {
+          "seed_1": 0,
+          "seed_2": 20261027,
+          "full_cohort_ari": 0.660493,
+          "nonpersistent_singleton_ari": 0.645989
+        },
+        {
+          "seed_1": 42,
+          "seed_2": 20261027,
+          "full_cohort_ari": 0.603803,
+          "nonpersistent_singleton_ari": 0.58717
+        }
+      ]
+    },
+    {
+      "projection": "C_multirelationship",
+      "trial_count": 2824,
+      "persistent_singletons_excluded": 170,
+      "comparison_population": 2654,
+      "comparisons": [
+        {
+          "seed_1": 0,
+          "seed_2": 42,
+          "full_cohort_ari": 0.700812,
+          "nonpersistent_singleton_ari": 0.697841
+        },
+        {
+          "seed_1": 0,
+          "seed_2": 20261027,
+          "full_cohort_ari": 0.610494,
+          "nonpersistent_singleton_ari": 0.606509
+        },
+        {
+          "seed_1": 42,
+          "seed_2": 20261027,
+          "full_cohort_ari": 0.687878,
+          "nonpersistent_singleton_ari": 0.684615
+        }
+      ]
+    }
+  ]
+}

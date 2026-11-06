@@ -1,0 +1,79 @@
+{
+  "amendment_lock_sha256": "10c5af6fe27a2a08bc5e3764aec8c26126475e9be064473f73c13c14c4af32a1",
+  "average_precision": 0.15748675154281805,
+  "bootstrap": {
+    "ap_ci95": [
+      0.09296209510577996,
+      0.2538632995777907
+    ],
+    "auc_ci95": [
+      0.3849070115712319,
+      0.5885094581091993
+    ],
+    "brier_ci95": [
+      0.08134909001000769,
+      0.13998941234406873
+    ],
+    "draws": 2000,
+    "family_clusters": 329,
+    "family_map_sha256": "e2acecbc06b8a18e9d0a7b08b6ac80e3032bf8b2a9e1548fa346b71d94f9d923",
+    "method": "outcome_blind_family_cluster_percentile",
+    "seed": 20261103,
+    "valid": 2000
+  },
+  "brier": 0.11003896477460952,
+  "calibration_logistic": {
+    "intercept": -2.426795874609145,
+    "slope": -0.19523286712756444
+  },
+  "evaluator_sha256": "4b3c7b7e9af1032c2d235db92bf881327a221fdb9d34f6275df593396e8a5171",
+  "event_date_unknown": true,
+  "flow": {
+    "BINARY_EVALUABLE": 329,
+    "COMPLETED": 289,
+    "STATUS_WITHDRAWN": 29,
+    "TERMINATED": 40
+  },
+  "frozen_scores_sha256": "21b17849e96d9daf472eb5d2e43ded31a35c097c4de60eb646996155018f7b8d",
+  "n_provisional": 358,
+  "observed_prevalence": 0.12158054711246201,
+  "original_intercept_comparator": {
+    "average_precision": 0.12158054711246201,
+    "brier": 0.11046986523379743,
+    "fixed_training_prior": 0.1821705426356589,
+    "roc_auc": 0.5
+  },
+  "outcomes_sha256": "7159679c39bc0bdf7ed4eba027965ca25ec8d5acad87ec41266b52caf82ca049",
+  "prevalence_only_reference_brier": 0.10679871767629641,
+  "primary_metric_status": "ESTIMABLE_WITH_LIMITATIONS",
+  "protocol_lock_sha256": "0b390ba1f5e4affc80a9d9eca38f72fb661d0f73faff378dfa4004e8cc9698cc",
+  "reliability_bins_5_fixed_equal_width": [
+    {
+      "bin": 0,
+      "mean_predicted": 0.09969444238661,
+      "n": 312,
+      "observed_fraction": 0.12179487179487179
+    },
+    {
+      "bin": 1,
+      "mean_predicted": 0.2634674206314593,
+      "n": 17,
+      "observed_fraction": 0.11764705882352941
+    }
+  ],
+  "risk_release": "BLOCKED_EXPLORATORY_ONLY",
+  "roc_auc": 0.48659169550173015,
+  "snapshot_id": 4481,
+  "status": "RESEARCH_ONLY_STATUS_SNAPSHOT_CONDITIONAL",
+  "terminal_event_date_inferred": false,
+  "threshold_0_09": {
+    "FN": 15,
+    "FP": 173,
+    "TN": 116,
+    "TP": 25,
+    "f1": 0.21008403361344538,
+    "precision": 0.12626262626262627,
+    "sensitivity": 0.625,
+    "specificity": 0.4013840830449827
+  }
+}
