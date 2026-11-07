@@ -1,0 +1,40 @@
+name: Publish public evidence replay (manual only)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-evidence-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Validate replay, citations and restricted site inventory
+        run: |
+          python3 -I -B -m unittest discover -s demos/public_evidence_v1/tests -p 'test_*.py' -v
+          python3 -I -B demos/public_evidence_v1/build_site.py --check
+          node --test demos/public_evidence_v1/tests/test_browser.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: demos/public_evidence_v1/site
+      - name: Deploy verified static folder
+        id: deployment
+        uses: actions/deploy-pages@v4
