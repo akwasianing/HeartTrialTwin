@@ -19,6 +19,10 @@ Exact proposed files:
    observations, exact public asset hashes and limitations.
 5. `docs/FINAL_DOCUMENTATION_REVIEW.md`: this review and publication boundary.
 6. [Final reviewed poster PDF](../reports/final_project/HEARTTRIALTWIN_POSTER_FINAL_REVIEWED_v1/final/HeartTrialTwin_Poster_FINAL_REVIEWED_48x36.pdf).
+7. `demos/public_evidence_v1/README.md`: correct the now-stale hosting notice,
+   current button wording and historical PR #2 inventory context.
+8. `demos/public_evidence_v1/DEPLOYMENT.md`: record successful deployment above
+   the clearly labeled archived preparation handoff. No workflow/site edit.
 
 No source code, deployed site asset, frozen research record, fitted model,
 protocol, original poster or Community v6 file changes. Original challenge
@@ -90,10 +94,11 @@ status observation is not an event date. No prospective or causal claim is added
   plus the exact proposed documentation/poster set, not merely local untracked
   file presence. Internal heading fragments and command script/requirements paths
   are checked. Public URLs are tested without credentials.
-  Final result: **59 relative links, one heading fragment and six command/reference
-  paths passed**; all **seven distinct public URL targets returned HTTP 200**
-  (the clone URL redirects to the correct public repository). No broken target
-  was found in the five proposed Markdown files.
+  The initial five Markdown files passed 59 relative links, one heading fragment,
+  six command/reference paths and seven distinct public URL targets (HTTP 200).
+  After the two supporting corrections, **all 65 relative targets in seven
+  Markdown files passed**; the added official GitHub deployment guide is also
+  accessible. The clone URL redirects to the correct public repository.
 - Full Community v6 installation/provisioning instructions were reconciled with
   the existing requirements, startup code paths and Phase 4 guide. Prior fresh
   environment success is retained, not misrepresented as a new full-app install

@@ -1,4 +1,18 @@
-# Static deployment handoff — approval required, NOT deployed
+# Static deployment — live and verified
+
+The owner approved PR #3 merge, Pages enablement and manual publication.
+Deployment succeeded on November 7, 2026:
+**https://akwasianing.github.io/HeartTrialTwin/**.
+See the [actual deployment and public browser checks](../../docs/PUBLIC_WEBSITE_VERIFICATION.md).
+The static files and scientific safeguards are unchanged. The poster QR still
+points to the repository; no poster revision is included here.
+
+## Archived predeployment handoff
+
+The remainder records preparation before approval/deployment. Its NOT-deployed
+statements and required future approvals describe that earlier checkpoint,
+not the current site status. Preserve the manual-only workflow and seek new
+approval before changing its publication scope or deploying changed evidence.
 
 GitHub Pages is suitable for this buildless, dependency-free static folder. The
 [official custom-workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
