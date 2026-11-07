@@ -4,6 +4,10 @@
 This small demonstration runs from public repository source alone. It is separate
 from the full Community v6 application and its externally provisioned runtime.
 
+**[Launch Public Demo](https://akwasianing.github.io/HeartTrialTwin/)** — deployed
+and verified over public HTTPS on November 7, 2026. See the
+[desktop/mobile verification](../../docs/PUBLIC_WEBSITE_VERIFICATION.md).
+
 ## Run immediately — Python standard library only
 
 From the repository root, Python 3.10 or later (tested with 3.14.6):
@@ -36,17 +40,17 @@ router pretending to be a general-purpose question-answering model.
 ## Local browser demonstration
 
 ```bash
-# Rebuild only if the new static package needs regeneration:
+# Verify the existing package; do not regenerate it to bypass a failed check:
 python3 -I -B demos/public_evidence_v1/build_site.py --check
 python3 -I -B -m http.server 8521 --bind 127.0.0.1 --directory demos/public_evidence_v1/site
 ```
 
-Open <http://127.0.0.1:8521/>. Click **Launch Evidence Demo**, choose one of the
+Open <http://127.0.0.1:8521/>. Click **Launch Demo**, choose one of the
 three views, and click **Replay verified evidence**. Source details expose
 original citation IDs, relationship paths, source tables and record IDs. A fourth
 request demonstrates abstention for unsupported survival-effectiveness claims.
 Do not open `index.html` using `file://`: fetch and cryptographic checks need
-localhost or HTTPS. No public demo URL is claimed; hosting requires owner approval.
+localhost or HTTPS. The approved public deployment is available at the URL above.
 
 The static page has no framework, remote scripts, fonts, analytics, API calls,
 cookies or persistence. `site/evidence.json` is a deterministic 18,960-byte
@@ -89,8 +93,11 @@ effectiveness inference, or clinical advice is produced.
 
 ## Validation and deployment
 
-See [VALIDATION.md](VALIDATION.md), [publication allowlist](PUBLICATION_FILES.txt),
-and [DEPLOYMENT.md](DEPLOYMENT.md). Optional maintainer-only browser-core tests
+The original PR #2 [validation](VALIDATION.md) and
+[publication allowlist](PUBLICATION_FILES.txt) remain historical records, not
+the inventory of later documentation/deployment changes. See the
+[current public verification](../../docs/PUBLIC_WEBSITE_VERIFICATION.md) and
+[deployment record](DEPLOYMENT.md). Optional maintainer-only browser-core tests
 use existing Node.js (no npm packages):
 
 ```bash
