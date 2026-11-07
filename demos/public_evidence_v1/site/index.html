@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Inspect a verified HeartTrialTwin clinical-trial evidence example. Saved replay, not live GraphRAG or clinical prediction.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>HeartTrialTwin — Evidence-Grounded Trial Research</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#evidence-demo">Skip to evidence demo</a>
+  <header class="masthead wrap"><a class="brand" href="#top">HeartTrialTwin<span>UMKC · CS 5588 Capstone</span></a><a class="github" href="https://github.com/akwasianing/HeartTrialTwin" target="_blank" rel="noopener noreferrer">View GitHub ↗</a></header>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="title">
+      <div><p class="eyebrow">A public, source-linked research example</p><h1 id="title">Evidence-grounded<br>trial research.</h1><p class="intro">Inspect what was registered. Follow each fact back to its source. Keep planned measures separate from observed results.</p><a class="launch" href="#evidence-demo">Launch Evidence Demo <span aria-hidden="true">↓</span></a></div>
+      <aside class="scope" aria-label="Demo scope"><p class="eyebrow">The example</p><p class="trial-code">NCT00206232</p><h2>One trial.<br>Seven registered measures.<br>Original citations.</h2><p>September 5, 2026 snapshot</p><p class="scope-note">Saved-evidence replay. No database connection, generative model, or prediction service.</p></aside>
+    </section>
+    <div class="boundary"><div class="wrap"><strong>Research only.</strong> Registered planned outcomes are not observed clinical results. This demo does not predict clinical effectiveness or patient outcomes.</div></div>
+    <section id="evidence-demo" class="wrap demo" aria-labelledby="demo-title">
+      <div class="section-head"><div><p class="eyebrow">Inspect the saved record</p><h2 id="demo-title">Evidence, with its boundaries visible.</h2></div><p id="integrity" role="status" aria-live="polite">Checking packaged evidence…</p></div>
+      <form id="replay-form">
+        <div><label for="nct">Trial identifier</label><input id="nct" name="nct" value="NCT00206232" maxlength="30" autocomplete="off" spellcheck="false"></div>
+        <div><label for="field">Evidence request</label><select id="field" name="field"><option value="outcomes">All seven registered planned outcomes</option><option value="sponsor">Registered lead sponsor</option><option value="intervention">Registered intervention</option><option value="unsupported">Did the intervention improve survival? (safety example)</option></select></div>
+        <button id="replay-button" type="submit" disabled>Replay verified evidence</button>
+      </form>
+      <p class="hint">Only this saved trial and these declared requests are supported. No arbitrary clinical questions are sent to an AI.</p>
+      <section id="result" aria-labelledby="result-title" aria-live="polite" aria-busy="false"><h3 id="result-title">Choose a request to inspect its evidence.</h3><p id="result-status">The original source records are checked before facts can be displayed.</p><ol id="records"></ol></section>
+      <p class="amendment">Snapshot values may include amendments. Availability at original registration is not asserted. Missing fields are not evidence of clinical absence.</p>
+    </section>
+    <section class="provenance wrap" aria-labelledby="provenance-title"><div><p class="eyebrow">Traceability</p><h2 id="provenance-title">A replay, not a live answer.</h2><p>The Python replay verifies the original published trace bytes, prepared evidence, source associations and citation hashes. This browser verifies a smaller, deterministic evidence package and checks its trial-bound citation identities.</p><p>Package integrity does not prove registry correctness or account security. The original source hashes remain inspectable below; there is no clinical-effectiveness inference.</p></div><dl><dt>Dataset</dt><dd>HTT-P1-AACT-20260905</dd><dt>Graph</dt><dd>HTT-KG-AACT-20260905-FULL2824-v1</dd><dt>Source tables</dt><dd>sponsors.txt · interventions.txt · design_outcomes.txt</dd><dt>Published source records</dt><dd><a href="https://github.com/akwasianing/HeartTrialTwin/tree/b57afc6f0bfd24f3821c19bba9221c2b8ec8d471/full_cohort_graphrag/semantic_v1/demo_v2/validation/HTT-DEMO-v2-SMOKE-v1" target="_blank" rel="noopener noreferrer">Open the pinned validation traces ↗</a></dd></dl><details class="hashes"><summary>Inspect package and original trace SHA-256 hashes</summary><pre id="hashes">Hashes appear after integrity verification.</pre></details></section>
+  </main>
+  <footer class="wrap"><p>HeartTrialTwin · Evidence-grounded trial intelligence</p><p>This lightweight public example is separate from the full Community v6 application, which has additional runtime requirements.</p></footer>
+</body></html>

@@ -1,0 +1,33 @@
+{
+  "scope": "Local static replay, no live services",
+  "cases": [
+    {
+      "case": "complete outcomes",
+      "records": 7,
+      "status": "COMPLETE_LISTING · Complete saved listing: seven distinct registered measures."
+    },
+    {
+      "case": "sponsor",
+      "value": "Baylor College of Medicine"
+    },
+    {
+      "case": "intervention",
+      "value": "Spironolactone"
+    },
+    {
+      "case": "effectiveness abstention",
+      "records": 0,
+      "status": "ABSTAIN · Observed clinical effects and survival benefits are not available in these registered records. No clinical-effectiveness answer can be supported."
+    },
+    {
+      "case": "unknown NCT",
+      "records": 0,
+      "status": "NOT_FOUND · This saved replay contains only NCT00206232. Other trials are outside its scope, not necessarily absent from the registry."
+    },
+    {
+      "case": "invalid identifier/XSS input",
+      "records": 0,
+      "status": "INVALID_INPUT · Enter an NCT identifier in the form NCT00206232."
+    }
+  ]
+}
