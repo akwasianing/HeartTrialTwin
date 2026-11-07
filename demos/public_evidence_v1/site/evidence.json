@@ -1,0 +1,418 @@
+{
+  "dataset_version": "HTT-P1-AACT-20260905",
+  "graph_manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+  "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+  "mode": "SAVED_EVIDENCE_REPLAY",
+  "nct_id": "NCT00206232",
+  "notice": "Saved-evidence replay — not live GraphRAG, model generation, or prospective prediction.",
+  "records": {
+    "intervention": [
+      {
+        "citations": [
+          {
+            "citation_id": "cite:21f56031bbf8289fe76bfdcb",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00206232|HAS_INTERVENTION|intervention:eb4e562ee31fac7ede8a",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00206232",
+            "relationship": {
+              "end_id": "intervention:eb4e562ee31fac7ede8a",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "392379839",
+                "source_table": "interventions.txt"
+              },
+              "start_id": "NCT00206232",
+              "type": "HAS_INTERVENTION"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "392379839",
+            "source_table": "interventions.txt"
+          }
+        ],
+        "evidence_id": "NCT00206232|HAS_INTERVENTION|intervention:eb4e562ee31fac7ede8a",
+        "kind": "intervention",
+        "nct_id": "NCT00206232",
+        "node_id": "intervention:eb4e562ee31fac7ede8a",
+        "outcome_type": null,
+        "relationship": {
+          "end_id": "intervention:eb4e562ee31fac7ede8a",
+          "properties": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "source_record_ids": "392379839",
+            "source_table": "interventions.txt"
+          },
+          "start_id": "NCT00206232",
+          "type": "HAS_INTERVENTION"
+        },
+        "sentence": "For NCT00206232, the registered intervention is \"Spironolactone\" [cite:21f56031bbf8289fe76bfdcb].",
+        "time_frame": null,
+        "value": "Spironolactone"
+      }
+    ],
+    "outcomes": [
+      {
+        "citations": [
+          {
+            "citation_id": "cite:0b1654c7b32dcf6c84b359b6",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532164",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00206232",
+            "relationship": {
+              "end_id": "planned_outcome:1426532164",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426532164",
+                "source_table": "design_outcomes.txt"
+              },
+              "start_id": "NCT00206232",
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1426532164",
+            "source_table": "design_outcomes.txt"
+          }
+        ],
+        "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532164",
+        "kind": "outcomes",
+        "nct_id": "NCT00206232",
+        "node_id": "planned_outcome:1426532164",
+        "outcome_type": "other",
+        "relationship": {
+          "end_id": "planned_outcome:1426532164",
+          "properties": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "source_record_id": "1426532164",
+            "source_table": "design_outcomes.txt"
+          },
+          "start_id": "NCT00206232",
+          "type": "HAS_PLANNED_OUTCOME"
+        },
+        "sentence": "For NCT00206232, the registered planned outcome measure is \"Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide\" (type: \"other\"; time frame: \"Baseline then 3 and 6 months after randomization\") [cite:0b1654c7b32dcf6c84b359b6].",
+        "time_frame": "Baseline then 3 and 6 months after randomization",
+        "value": "Procollagen peptides, troponin I, tumor necrosis factor alpha, Brain Natriuretic Peptide"
+      },
+      {
+        "citations": [
+          {
+            "citation_id": "cite:7cc2203163d432f20b1f0dc9",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532165",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00206232",
+            "relationship": {
+              "end_id": "planned_outcome:1426532165",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426532165",
+                "source_table": "design_outcomes.txt"
+              },
+              "start_id": "NCT00206232",
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1426532165",
+            "source_table": "design_outcomes.txt"
+          }
+        ],
+        "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532165",
+        "kind": "outcomes",
+        "nct_id": "NCT00206232",
+        "node_id": "planned_outcome:1426532165",
+        "outcome_type": "other",
+        "relationship": {
+          "end_id": "planned_outcome:1426532165",
+          "properties": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "source_record_id": "1426532165",
+            "source_table": "design_outcomes.txt"
+          },
+          "start_id": "NCT00206232",
+          "type": "HAS_PLANNED_OUTCOME"
+        },
+        "sentence": "For NCT00206232, the registered planned outcome measure is \"Electrolytes, blood urea nitrogen, creatinine\" (type: \"other\"; time frame: \"Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization\") [cite:7cc2203163d432f20b1f0dc9].",
+        "time_frame": "Screening and enrollment then 10 days, 4 weeks, 11 weeks, 13 weeks, and 15 weeks after randomization",
+        "value": "Electrolytes, blood urea nitrogen, creatinine"
+      },
+      {
+        "citations": [
+          {
+            "citation_id": "cite:c39166004f6b4ec2880630ce",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532166",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00206232",
+            "relationship": {
+              "end_id": "planned_outcome:1426532166",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426532166",
+                "source_table": "design_outcomes.txt"
+              },
+              "start_id": "NCT00206232",
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1426532166",
+            "source_table": "design_outcomes.txt"
+          }
+        ],
+        "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532166",
+        "kind": "outcomes",
+        "nct_id": "NCT00206232",
+        "node_id": "planned_outcome:1426532166",
+        "outcome_type": "other",
+        "relationship": {
+          "end_id": "planned_outcome:1426532166",
+          "properties": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "source_record_id": "1426532166",
+            "source_table": "design_outcomes.txt"
+          },
+          "start_id": "NCT00206232",
+          "type": "HAS_PLANNED_OUTCOME"
+        },
+        "sentence": "For NCT00206232, the registered planned outcome measure is \"Quality of Life Questionaire\" (type: \"other\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:c39166004f6b4ec2880630ce].",
+        "time_frame": "Baseline, then 3 and 6 months after randomization",
+        "value": "Quality of Life Questionaire"
+      },
+      {
+        "citations": [
+          {
+            "citation_id": "cite:afc21d2763ef61bb371ab945",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532167",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00206232",
+            "relationship": {
+              "end_id": "planned_outcome:1426532167",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426532167",
+                "source_table": "design_outcomes.txt"
+              },
+              "start_id": "NCT00206232",
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1426532167",
+            "source_table": "design_outcomes.txt"
+          }
+        ],
+        "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532167",
+        "kind": "outcomes",
+        "nct_id": "NCT00206232",
+        "node_id": "planned_outcome:1426532167",
+        "outcome_type": "other",
+        "relationship": {
+          "end_id": "planned_outcome:1426532167",
+          "properties": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "source_record_id": "1426532167",
+            "source_table": "design_outcomes.txt"
+          },
+          "start_id": "NCT00206232",
+          "type": "HAS_PLANNED_OUTCOME"
+        },
+        "sentence": "For NCT00206232, the registered planned outcome measure is \"New York Heart Association Classification\" (type: \"other\"; time frame: \"Baseline then 3 and 6 months after randomization\") [cite:afc21d2763ef61bb371ab945].",
+        "time_frame": "Baseline then 3 and 6 months after randomization",
+        "value": "New York Heart Association Classification"
+      },
+      {
+        "citations": [
+          {
+            "citation_id": "cite:7b224cc3bc6196fe295bdb64",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532168",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00206232",
+            "relationship": {
+              "end_id": "planned_outcome:1426532168",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426532168",
+                "source_table": "design_outcomes.txt"
+              },
+              "start_id": "NCT00206232",
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1426532168",
+            "source_table": "design_outcomes.txt"
+          }
+        ],
+        "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426532168",
+        "kind": "outcomes",
+        "nct_id": "NCT00206232",
+        "node_id": "planned_outcome:1426532168",
+        "outcome_type": "other",
+        "relationship": {
+          "end_id": "planned_outcome:1426532168",
+          "properties": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "source_record_id": "1426532168",
+            "source_table": "design_outcomes.txt"
+          },
+          "start_id": "NCT00206232",
+          "type": "HAS_PLANNED_OUTCOME"
+        },
+        "sentence": "For NCT00206232, the registered planned outcome measure is \"Number of participants with adverse events\" (type: \"other\"; time frame: \"From randomization until trial completion at 6 months.\") [cite:7b224cc3bc6196fe295bdb64].",
+        "time_frame": "From randomization until trial completion at 6 months.",
+        "value": "Number of participants with adverse events"
+      },
+      {
+        "citations": [
+          {
+            "citation_id": "cite:5f7801d0898b5b5096a9fef4",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426533443",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00206232",
+            "relationship": {
+              "end_id": "planned_outcome:1426533443",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426533443",
+                "source_table": "design_outcomes.txt"
+              },
+              "start_id": "NCT00206232",
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1426533443",
+            "source_table": "design_outcomes.txt"
+          }
+        ],
+        "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426533443",
+        "kind": "outcomes",
+        "nct_id": "NCT00206232",
+        "node_id": "planned_outcome:1426533443",
+        "outcome_type": "secondary",
+        "relationship": {
+          "end_id": "planned_outcome:1426533443",
+          "properties": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "source_record_id": "1426533443",
+            "source_table": "design_outcomes.txt"
+          },
+          "start_id": "NCT00206232",
+          "type": "HAS_PLANNED_OUTCOME"
+        },
+        "sentence": "For NCT00206232, the registered planned outcome measure is \"Echocardiography parameters of diastolic function\" (type: \"secondary\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:5f7801d0898b5b5096a9fef4].",
+        "time_frame": "Baseline, then 3 and 6 months after randomization",
+        "value": "Echocardiography parameters of diastolic function"
+      },
+      {
+        "citations": [
+          {
+            "citation_id": "cite:59a973a72a79cfe5535af0c7",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426534673",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00206232",
+            "relationship": {
+              "end_id": "planned_outcome:1426534673",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_id": "1426534673",
+                "source_table": "design_outcomes.txt"
+              },
+              "start_id": "NCT00206232",
+              "type": "HAS_PLANNED_OUTCOME"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "1426534673",
+            "source_table": "design_outcomes.txt"
+          }
+        ],
+        "evidence_id": "NCT00206232|HAS_PLANNED_OUTCOME|planned_outcome:1426534673",
+        "kind": "outcomes",
+        "nct_id": "NCT00206232",
+        "node_id": "planned_outcome:1426534673",
+        "outcome_type": "primary",
+        "relationship": {
+          "end_id": "planned_outcome:1426534673",
+          "properties": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "source_record_id": "1426534673",
+            "source_table": "design_outcomes.txt"
+          },
+          "start_id": "NCT00206232",
+          "type": "HAS_PLANNED_OUTCOME"
+        },
+        "sentence": "For NCT00206232, the registered planned outcome measure is \"Six minute walk distance\" (type: \"primary\"; time frame: \"Baseline, then 3 and 6 months after randomization\") [cite:59a973a72a79cfe5535af0c7].",
+        "time_frame": "Baseline, then 3 and 6 months after randomization",
+        "value": "Six minute walk distance"
+      }
+    ],
+    "sponsor": [
+      {
+        "citations": [
+          {
+            "citation_id": "cite:3db774038cf4618ff9294543",
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "evidence_id": "NCT00206232|LEAD_SPONSORED_BY|sponsor:64f999d92d1b73893f9b",
+            "graph_version": "HTT-KG-AACT-20260905-FULL2824-v1",
+            "manifest_sha256": "3ef82624d131b36abc1eb9ad4e89b3439fed9f9600b92262c21bbcbfe6cf8757",
+            "nct_id": "NCT00206232",
+            "relationship": {
+              "end_id": "sponsor:64f999d92d1b73893f9b",
+              "properties": {
+                "dataset_version": "HTT-P1-AACT-20260905",
+                "source_record_ids": "381715287",
+                "source_table": "sponsors.txt"
+              },
+              "start_id": "NCT00206232",
+              "type": "LEAD_SPONSORED_BY"
+            },
+            "snapshot_date": "2026-09-05",
+            "source_record_id": "381715287",
+            "source_table": "sponsors.txt"
+          }
+        ],
+        "evidence_id": "NCT00206232|LEAD_SPONSORED_BY|sponsor:64f999d92d1b73893f9b",
+        "kind": "sponsor",
+        "nct_id": "NCT00206232",
+        "node_id": "sponsor:64f999d92d1b73893f9b",
+        "outcome_type": null,
+        "relationship": {
+          "end_id": "sponsor:64f999d92d1b73893f9b",
+          "properties": {
+            "dataset_version": "HTT-P1-AACT-20260905",
+            "source_record_ids": "381715287",
+            "source_table": "sponsors.txt"
+          },
+          "start_id": "NCT00206232",
+          "type": "LEAD_SPONSORED_BY"
+        },
+        "sentence": "For NCT00206232, the registered lead sponsor is \"Baylor College of Medicine\" [cite:3db774038cf4618ff9294543].",
+        "time_frame": null,
+        "value": "Baylor College of Medicine"
+      }
+    ]
+  },
+  "safeguards": [
+    "Registered planned outcomes are not observed clinical results.",
+    "September 5, 2026 snapshot values may include amendments; original-registration availability is not asserted.",
+    "Research only; not clinical advice."
+  ],
+  "schema_version": "HTT-PUBLIC-EVIDENCE-REPLAY-v1",
+  "snapshot_date": "2026-09-05",
+  "source_commit": "b57afc6f0bfd24f3821c19bba9221c2b8ec8d471",
+  "source_directory": "full_cohort_graphrag/semantic_v1/demo_v2/validation/HTT-DEMO-v2-SMOKE-v1",
+  "source_manifest_sha256": "37cb033b70248493f2df16de163a831a18042f15c5eae5eb8dee663754c92bb0",
+  "source_trace_sha256": {
+    "01_sponsor.json": "e16ff47e33f5b3063706e0bf974eeea43dfdc2843c0dbb74474cd0b077f1f7b5",
+    "02_intervention.json": "02d28e838c7138ed7a7f4224a6d8202f4b38bead92d1848ebdda22974f09a73f",
+    "03_outcomes.json": "c48966909d1eda95481709d8188a67c154b0a7a663fb5e23527599c508c4eeab"
+  }
+}

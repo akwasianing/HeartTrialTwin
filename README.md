@@ -2,6 +2,21 @@
 
 > **Experimental — not validated for clinical decision-making.**
 
+## Lightweight public-source evidence replay
+
+The [standalone evidence demo](demos/public_evidence_v1/README.md) runs with only
+Python's standard library—no private runtime bundle, database, model or credentials:
+
+```bash
+python3 -I -B demos/public_evidence_v1/replay.py --field outcomes
+```
+
+It replays the published NCT00206232 sponsor, intervention and all seven registered
+planned outcomes with original citations and checksum verification. A self-contained
+static browser interface is included; see the demo guide for local serving.
+**Saved-evidence replay, not live GraphRAG or prediction. Hosting is not enabled.**
+The full Community v6 demonstration below retains its separate asset requirements.
+
 ## Main capstone demonstration: Community v6
 
 HeartTrialTwin helps **clinical-trial researchers and evidence reviewers** inspect
