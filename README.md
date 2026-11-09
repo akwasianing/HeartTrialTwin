@@ -8,18 +8,19 @@ and modeling stages into one research framework—not a validated clinical syste
 **Reliable predictive discrimination was not established. Risk prediction release
 remains BLOCKED.** Registered planned outcomes are not observed treatment results.
 
+
 ## Try HeartTrialTwin
 
 | Option | What you can use |
 | --- | --- |
-| **[Launch Public Demo](https://akwasianing.github.io/HeartTrialTwin/)** | Verified HTTPS landing page with Launch Demo and View GitHub. One-trial **saved-evidence replay**; no installation or credentials. |
-| **[Explore the Full Research Application](docs/REPRODUCIBILITY.md#community-v6-local-research-application)** | Community v6: five local research pages; requires approved external runtime assets and trusted saved models. A clone alone is insufficient. |
-| **[View Research Poster](reports/final_project/HEARTTRIALTWIN_POSTER_FINAL_REVIEWED_v1/final/HeartTrialTwin_Poster_FINAL_REVIEWED_48x36.pdf)** | Final reviewed 48 × 36-inch PDF; identical to the author's named final copy. |
+| **[Launch Public Demo](https://akwasianing.github.io/HeartTrialTwin/)** | Verified HTTPS landing page with Launch Demo and View GitHub. One-trial **saved-evidence replay**; no installation or credentials required. |
+| **[Explore the Full Research Application](docs/REPRODUCIBILITY.md#community-v6-local-research-application)** | Community v6: five local research pages for trial intelligence, community exploration, phase and intervention analysis, historical risk evidence, and experimental scenario analysis. Requires approved external runtime assets and trusted saved models; cloning the repository alone is insufficient. |
+| **[View Research Poster](reports/final_project/HEARTTRIALTWIN_POSTER_FINAL_REVIEWED_v1/final/HeartTrialTwin_Poster_FINAL_REVIEWED_48x36.pdf)** | Final reviewed 48 × 36-inch landscape research poster (PDF), identical to the author's named final copy. |
+| **[Watch the 3-Minute Capstone Demo](https://github.com/akwasianing/HeartTrialTwin/releases/tag/v1.0-capstone-demo)** | Narrated demonstration of the working Community v6 research prototype, public evidence replay, research results, predictive evaluation, and limitations. Downloadable MP4 available under the GitHub release assets. |
 
-The hosted example is **not live GraphRAG, the full Community v6 application,
-or validated clinical prediction**. Public verification and deployment evidence
-are recorded in the [website verification](docs/PUBLIC_WEBSITE_VERIFICATION.md).
-No demonstration video is currently provided.
+**Important research limitations:** The hosted public demonstration is a saved-evidence replay, **not live GraphRAG or the full Community v6 application**. HeartTrialTwin is an experimental research prototype, not validated for clinical decision-making. Reliable predictive discrimination was not established (ROC-AUC 0.487), and predictive release remains **BLOCKED**.
+
+Public website verification and deployment evidence are documented in [Website Verification](docs/PUBLIC_WEBSITE_VERIFICATION.md).
 
 ## Research problem and objectives
 
